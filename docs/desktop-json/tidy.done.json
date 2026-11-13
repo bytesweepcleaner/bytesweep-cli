@@ -1,0 +1,9 @@
+{
+ "cleaned": [
+  "/srv/downloads/big.iso.part"
+ ],
+ "failed": [],
+ "root": "/srv/downloads",
+ "size": 2002944,
+ "undo": true
+}

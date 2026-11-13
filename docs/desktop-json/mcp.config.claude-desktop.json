@@ -1,0 +1,23 @@
+{
+ "client": "claude-desktop",
+ "name": "bsweep",
+ "command": "/home/alex.guest/agent-mcp/bsweep",
+ "args": [
+  "mcp"
+ ],
+ "allowChanges": false,
+ "needsSudo": false,
+ "file": "/home/alex.guest/.config/Claude/claude_desktop_config.json",
+ "json": {
+  "mcpServers": {
+   "bsweep": {
+    "args": [
+     "mcp"
+    ],
+    "command": "/home/alex.guest/agent-mcp/bsweep"
+   }
+  }
+ },
+ "shell": "",
+ "note": "It can look at this machine and plan changes, but not make them. Add --allow-changes to let it apply a plan after your yes."
+}

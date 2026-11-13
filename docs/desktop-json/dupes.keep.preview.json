@@ -1,0 +1,13 @@
+{
+ "dryRun": true,
+ "freed": 15728640,
+ "items": [
+  {
+   "path": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+   "keep": "/srv/media/photos/IMG_0001.jpg",
+   "size": 15728640
+  }
+ ],
+ "keep": "newest",
+ "undo": true
+}

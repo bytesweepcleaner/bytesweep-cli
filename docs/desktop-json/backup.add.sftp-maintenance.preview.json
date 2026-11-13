@@ -1,0 +1,53 @@
+{
+ "about": "b2 would back up /srv/bk-test/site to sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/fx, encrypted with a new password shown once. It runs with the maintenance plan, which gains the backup step; the plan is off, so until it is on this backup runs only when you run it. After each run it keeps 7 daily, 4 weekly, 6 monthly copies.",
+ "dryRun": true,
+ "maintenance": {
+  "planOn": false,
+  "stepAdded": true
+ },
+ "plan": {
+  "id": "b2",
+  "folders": [
+   "/srv/bk-test/site"
+  ],
+  "target": {
+   "kind": "sftp",
+   "where": "sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/fx"
+  },
+  "keep": {
+   "daily": 7,
+   "weekly": 4,
+   "monthly": 6
+  },
+  "schedule": {
+   "every": "",
+   "day": "",
+   "at": "",
+   "withMaintenance": true,
+   "when": "with the maintenance plan"
+  },
+  "created": "2026-11-09T10:40:27+05:30",
+  "keys": [],
+  "sameDisk": true,
+  "last": {
+   "id": "b2",
+   "time": "0001-01-01T00:00:00Z",
+   "ok": false,
+   "added": 0,
+   "total": 0,
+   "files": 0,
+   "changed": 0,
+   "duration": 0,
+   "snapshot": "",
+   "snapshots": 0,
+   "forgotten": 0,
+   "warnings": [],
+   "error": "",
+   "by": ""
+  },
+  "lastOK": "0001-01-01T00:00:00Z",
+  "next": "",
+  "timer": false
+ },
+ "resticInstalled": true
+}

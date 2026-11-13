@@ -1,0 +1,8 @@
+{
+ "about": "tell every place when the newest backup is older than 26 hours",
+ "dryRun": true,
+ "watch": {
+  "hours": 26,
+  "kind": "backups"
+ }
+}

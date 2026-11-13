@@ -1,0 +1,37 @@
+{
+ "dryRun": true,
+ "refused": [
+  {
+   "pid": 1501,
+   "name": "python3.14",
+   "user": "root",
+   "command": "/usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers",
+   "service": "networkd-dispatcher.service",
+   "useInstead": "sudo systemctl restart networkd-dispatcher.service  (or sudo systemctl stop networkd-dispatcher.service)"
+  },
+  {
+   "pid": 1589,
+   "name": "python3.14",
+   "user": "root",
+   "command": "/usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal",
+   "service": "unattended-upgrades.service",
+   "useInstead": "sudo systemctl restart unattended-upgrades.service  (or sudo systemctl stop unattended-upgrades.service)"
+  },
+  {
+   "pid": 248276,
+   "name": "python3",
+   "user": "root",
+   "command": "/usr/bin/python3 -m http.server 3000",
+   "service": "shop-dev.service",
+   "useInstead": "sudo systemctl restart shop-dev.service  (or sudo systemctl stop shop-dev.service)"
+  }
+ ],
+ "wouldStop": [
+  {
+   "pid": 294664,
+   "name": "python3",
+   "user": "alex",
+   "command": "python3 -m http.server 3001"
+  }
+ ]
+}

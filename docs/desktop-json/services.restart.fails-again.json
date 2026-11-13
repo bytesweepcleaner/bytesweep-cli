@@ -1,0 +1,6 @@
+{
+ "error": "it started, then failed again: bsweep services shows its last log lines",
+ "name": "demo-fail.service",
+ "ok": false,
+ "state": "failed"
+}

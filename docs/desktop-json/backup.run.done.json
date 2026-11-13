@@ -1,0 +1,16 @@
+{
+ "id": "b1",
+ "time": "2026-11-09T10:39:45+05:30",
+ "ok": true,
+ "added": 20915,
+ "total": 11925019,
+ "files": 54,
+ "changed": 1,
+ "duration": 0.8,
+ "snapshot": "553a872521e8894ba9a14601b6fd9bee9ec049be112cda15ed10fc71e3c1eaa3",
+ "snapshots": 2,
+ "forgotten": 1,
+ "warnings": [],
+ "error": "",
+ "by": "person"
+}

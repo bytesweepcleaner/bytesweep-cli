@@ -1,0 +1,67 @@
+{
+ "dryRun": true,
+ "items": [
+  {
+   "path": "/srv/downloads/big.iso.part",
+   "size": 2002944,
+   "why": "unfinished, last written 10 days ago"
+  }
+ ],
+ "picked": [
+  "installers",
+  "archives",
+  "copies",
+  "unfinished"
+ ],
+ "root": "/srv/downloads",
+ "rules": [
+  {
+   "rule": "installers",
+   "about": "installers and disk images older than 30 days",
+   "count": 0,
+   "size": 0,
+   "items": [],
+   "default": true
+  },
+  {
+   "rule": "archives",
+   "about": "archives whose contents are unpacked beside them",
+   "count": 0,
+   "size": 0,
+   "items": [],
+   "default": true
+  },
+  {
+   "rule": "copies",
+   "about": "\"name (1).ext\" copies identical by content to the original",
+   "count": 0,
+   "size": 0,
+   "items": [],
+   "default": true
+  },
+  {
+   "rule": "unfinished",
+   "about": "unfinished downloads nothing has written to for a day",
+   "count": 1,
+   "size": 2002944,
+   "items": [
+    {
+     "path": "/srv/downloads/big.iso.part",
+     "size": 2002944,
+     "why": "unfinished, last written 10 days ago"
+    }
+   ],
+   "default": true
+  },
+  {
+   "rule": "never-opened",
+   "about": "files never opened since they arrived, older than 90 days",
+   "count": 0,
+   "size": 0,
+   "items": [],
+   "default": false
+  }
+ ],
+ "total": 2002944,
+ "undo": true
+}

@@ -1,0 +1,548 @@
+[
+ {
+  "time": "2026-11-06T16:37:29.626431406+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 20971520
+ },
+ {
+  "time": "2026-11-06T16:37:30.262324582+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.4",
+  "freed": 2759106
+ },
+ {
+  "time": "2026-11-06T16:37:30.420979259+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.5",
+  "freed": 2759067
+ },
+ {
+  "time": "2026-11-06T16:37:30.586244635+05:30",
+  "user": "alex",
+  "action": "archive",
+  "what": "/srv/old-projects/shop-v1 -\u003e /mnt/backup/bytesweep-archive/20261106-163730-0404",
+  "freed": 31457280
+ },
+ {
+  "time": "2026-11-06T16:37:30.947896115+05:30",
+  "user": "alex",
+  "action": "tidy",
+  "what": "/srv/downloads/big.iso.part",
+  "freed": 2002944
+ },
+ {
+  "time": "2026-11-06T16:37:31.080739337+05:30",
+  "user": "alex",
+  "action": "organize",
+  "what": "/srv/inbox",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:31.332740953+05:30",
+  "user": "alex",
+  "action": "rename",
+  "what": "/srv/pictures",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:31.5857768+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-001.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:31.587246006+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-002.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:31.588409647+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-003.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:31.929761893+05:30",
+  "user": "alex",
+  "action": "ports stop",
+  "what": "3001: [python3 (143321)] []",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:32.460253832+05:30",
+  "user": "alex",
+  "action": "startup off",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:32.812263166+05:30",
+  "user": "alex",
+  "action": "startup on",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:33.136941841+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "added s1: every Sun at 03:00",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:35.843690917+05:30",
+  "user": "alex",
+  "action": "apps",
+  "what": "remove deb:cowsay",
+  "freed": 135168
+ },
+ {
+  "time": "2026-11-06T16:37:35.97223114+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "System journal older than 7 days",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:37:35.974346808+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "Rotated logs older than 7 days (8 files)",
+  "freed": 63741952
+ },
+ {
+  "time": "2026-11-06T16:37:36.354384884+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "crash-dumps",
+  "freed": 41943040
+ },
+ {
+  "time": "2026-11-06T16:40:57.036719693+05:30",
+  "user": "alex",
+  "action": "dupes",
+  "what": "/srv/media/photos-copy",
+  "freed": 62914560
+ },
+ {
+  "time": "2026-11-06T16:40:57.036819478+05:30",
+  "user": "alex",
+  "action": "dupes",
+  "what": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "freed": 15728640
+ },
+ {
+  "time": "2026-11-06T16:40:57.408799982+05:30",
+  "user": "alex",
+  "action": "undo restore",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:40:57.537666102+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 20971520
+ },
+ {
+  "time": "2026-11-06T16:40:57.66497973+05:30",
+  "user": "alex",
+  "action": "organize undo",
+  "what": "/srv/inbox",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:40:57.787403059+05:30",
+  "user": "alex",
+  "action": "rename undo",
+  "what": "/srv/pictures",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:40:58.886680249+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "dev-go-build",
+  "freed": 437547008
+ },
+ {
+  "time": "2026-11-06T16:40:58.892355543+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "package-cache",
+  "freed": 271945728
+ },
+ {
+  "time": "2026-11-06T16:44:33.159457188+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "removed s1",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:16.85671972+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 20971520
+ },
+ {
+  "time": "2026-11-06T16:45:17.126203494+05:30",
+  "user": "alex",
+  "action": "dupes",
+  "what": "/srv/media/photos",
+  "freed": 62914560
+ },
+ {
+  "time": "2026-11-06T16:45:17.126279288+05:30",
+  "user": "alex",
+  "action": "dupes",
+  "what": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "freed": 15728640
+ },
+ {
+  "time": "2026-11-06T16:45:17.480701799+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.5",
+  "freed": 2759056
+ },
+ {
+  "time": "2026-11-06T16:45:17.637599617+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.4",
+  "freed": 2759066
+ },
+ {
+  "time": "2026-11-06T16:45:17.802330496+05:30",
+  "user": "alex",
+  "action": "archive",
+  "what": "/srv/old-projects/shop-v1 -\u003e /mnt/backup/bytesweep-archive/20261106-164517-b176",
+  "freed": 31457280
+ },
+ {
+  "time": "2026-11-06T16:45:18.17103348+05:30",
+  "user": "alex",
+  "action": "tidy",
+  "what": "/srv/downloads/big.iso.part",
+  "freed": 2002944
+ },
+ {
+  "time": "2026-11-06T16:45:18.297624154+05:30",
+  "user": "alex",
+  "action": "organize",
+  "what": "/srv/inbox",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:18.557360248+05:30",
+  "user": "alex",
+  "action": "rename",
+  "what": "/srv/pictures",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:18.826454807+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-001.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:18.827821249+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-002.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:18.828819392+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-003.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:19.446646899+05:30",
+  "user": "alex",
+  "action": "startup off",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:19.792563961+05:30",
+  "user": "alex",
+  "action": "startup on",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:20.114770294+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "added s1: every Sun at 03:00",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:22.886521168+05:30",
+  "user": "alex",
+  "action": "apps",
+  "what": "remove deb:cowsay",
+  "freed": 249856
+ },
+ {
+  "time": "2026-11-06T16:45:23.065159096+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "System journal older than 7 days",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:23.066807543+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "Rotated logs older than 7 days (8 files)",
+  "freed": 63741952
+ },
+ {
+  "time": "2026-11-06T16:45:23.373543923+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "crash-dumps",
+  "freed": 41943040
+ },
+ {
+  "time": "2026-11-06T16:45:25.431472681+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "added s2: every day at 02:30",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:26.223336406+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "removed s2",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:30.742544215+05:30",
+  "user": "alex",
+  "action": "undo restore",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:30.878077554+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 20971520
+ },
+ {
+  "time": "2026-11-06T16:45:31.264031982+05:30",
+  "user": "alex",
+  "action": "organize undo",
+  "what": "/srv/inbox",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:31.390508112+05:30",
+  "user": "alex",
+  "action": "rename undo",
+  "what": "/srv/pictures",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:31.699781831+05:30",
+  "user": "alex",
+  "action": "archive bring-back",
+  "what": "/srv/old-projects/shop-v1",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:45:32.174460899+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "dev-go-build",
+  "freed": 357777408
+ },
+ {
+  "time": "2026-11-06T16:49:52.304156368+05:30",
+  "user": "alex",
+  "action": "ports stop",
+  "what": "3001: [python3 (287146)] []",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:54:33.918651127+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "removed s1",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:21.551858877+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/srv/exports/old-export.csv",
+  "freed": 20971520
+ },
+ {
+  "time": "2026-11-06T16:55:22.178847018+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.5",
+  "freed": 2759104
+ },
+ {
+  "time": "2026-11-06T16:55:22.364491772+05:30",
+  "user": "alex",
+  "action": "compress",
+  "what": "/var/log/shop/app.log.4",
+  "freed": 2759042
+ },
+ {
+  "time": "2026-11-06T16:55:29.364682299+05:30",
+  "user": "alex",
+  "action": "rm",
+  "what": "/home/alex.guest/bsweep-e2e-ac60dd96/old export.bin",
+  "freed": 2097152
+ },
+ {
+  "time": "2026-11-06T16:55:29.655537955+05:30",
+  "user": "alex",
+  "action": "undo restore",
+  "what": "/home/alex.guest/bsweep-e2e-ac60dd96/old export.bin",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:30.155738452+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "added s1: every Sun at 04:15",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:30.253411897+05:30",
+  "user": "alex",
+  "action": "archive",
+  "what": "/srv/old-projects/shop-v1 -\u003e /mnt/backup/bytesweep-archive/20261106-165530-2dc6",
+  "freed": 31457280
+ },
+ {
+  "time": "2026-11-06T16:55:30.687906247+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "removed s1",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:30.876827352+05:30",
+  "user": "alex",
+  "action": "tidy",
+  "what": "/srv/downloads/big.iso.part",
+  "freed": 2002944
+ },
+ {
+  "time": "2026-11-06T16:55:31.03108627+05:30",
+  "user": "alex",
+  "action": "organize",
+  "what": "/srv/inbox",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:31.643847+05:30",
+  "user": "alex",
+  "action": "rename",
+  "what": "/srv/pictures",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:31.920182703+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-001.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:31.921529586+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-002.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:31.922592925+05:30",
+  "user": "alex",
+  "action": "convert",
+  "what": "/srv/pictures/scan-003.PNG",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:32.084923636+05:30",
+  "user": "alex",
+  "action": "ports stop",
+  "what": "3001: [python3 (294664)] []",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:33.107659459+05:30",
+  "user": "alex",
+  "action": "startup off",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:33.497105124+05:30",
+  "user": "alex",
+  "action": "startup on",
+  "what": "shop-dev.service",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:33.838226904+05:30",
+  "user": "alex",
+  "action": "schedule",
+  "what": "added s1: every Sun at 03:00",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:37.885237+05:30",
+  "user": "alex",
+  "action": "apps",
+  "what": "remove deb:cowsay",
+  "freed": 241664
+ },
+ {
+  "time": "2026-11-06T16:55:38.023521897+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "System journal older than 7 days",
+  "freed": 0
+ },
+ {
+  "time": "2026-11-06T16:55:38.023955274+05:30",
+  "user": "alex",
+  "action": "logs",
+  "what": "Rotated logs older than 7 days (8 files)",
+  "freed": 63746048
+ },
+ {
+  "time": "2026-11-06T16:55:38.350619556+05:30",
+  "user": "alex",
+  "action": "clean",
+  "what": "crash-dumps",
+  "freed": 41943040
+ }
+]

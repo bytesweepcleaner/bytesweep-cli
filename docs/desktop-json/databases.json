@@ -1,0 +1,104 @@
+{
+ "engines": [
+  {
+   "id": "mysql",
+   "name": "MariaDB 11.8.6",
+   "dataDir": "/var/lib/mariadb",
+   "bytes": 181878567,
+   "disk": "/",
+   "diskSize": 30083776512,
+   "asked": true,
+   "parts": [
+    {
+     "kind": "temp",
+     "name": "Temporary tablespace (ibtmp1)",
+     "path": "/var/lib/mariadb/ibtmp1",
+     "bytes": 12582912,
+     "files": 1,
+     "oldest": "2026-11-06T16:23:34.707007499+05:30"
+    },
+    {
+     "kind": "general-log",
+     "name": "General query log",
+     "path": "/var/lib/mariadb/lima-linux.log",
+     "bytes": 5347,
+     "files": 1,
+     "oldest": "2026-11-06T16:54:33.56314472+05:30"
+    }
+   ],
+   "databases": [
+    {
+     "name": "shop",
+     "bytes": 19923999
+    },
+    {
+     "name": "mysql",
+     "bytes": 3795349,
+     "system": true
+    },
+    {
+     "name": "sys",
+     "bytes": 411427,
+     "system": true
+    },
+    {
+     "name": "performance_schema",
+     "bytes": 67,
+     "system": true
+    }
+   ],
+   "findings": [
+    {
+     "level": "warn",
+     "title": "General query log: 5.2 KB: it writes down every query",
+     "fix": "mysql -e \"SET GLOBAL general_log = 'OFF'\", then empty the file: sudo truncate -s 0 /var/lib/mariadb/lima-linux.log",
+     "note": "It is meant for a few minutes of debugging; also take general_log out of the config."
+    }
+   ]
+  },
+  {
+   "id": "postgresql",
+   "name": "PostgreSQL 18",
+   "dataDir": "/var/lib/postgresql/18/main",
+   "bytes": 103381482,
+   "disk": "/",
+   "diskSize": 30083776512,
+   "asked": true,
+   "parts": [
+    {
+     "kind": "wal",
+     "name": "WAL (write-ahead log)",
+     "path": "/var/lib/postgresql/18/main/pg_wal",
+     "bytes": 50331648,
+     "files": 3,
+     "oldest": "2026-11-06T16:32:46.321435948+05:30"
+    },
+    {
+     "kind": "server-logs",
+     "name": "Server logs",
+     "path": "/var/log/postgresql",
+     "bytes": 3069,
+     "files": 1,
+     "oldest": "2026-11-06T16:54:33.589507625+05:30"
+    }
+   ],
+   "databases": [
+    {
+     "name": "analytics",
+     "bytes": 28956351
+    },
+    {
+     "name": "postgres",
+     "bytes": 7861951,
+     "system": true
+    }
+   ],
+   "findings": [
+    {
+     "level": "ok",
+     "title": "Nothing beside the data is out of hand"
+    }
+   ]
+  }
+ ]
+}

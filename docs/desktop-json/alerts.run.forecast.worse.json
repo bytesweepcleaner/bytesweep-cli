@@ -1,0 +1,44 @@
+{
+ "new": [
+  {
+   "key": "forecast:/mnt/fc-small",
+   "level": "critical",
+   "text": "/mnt/fc-small will be full around 10 Nov at this rate, in about 2 days; /mnt/fc-small/growing grew 29.8 MB a day this week (high confidence)",
+   "rank": 4
+  }
+ ],
+ "over": [],
+ "problems": [
+  {
+   "key": "disk:/mnt/fc-small:space",
+   "level": "warning",
+   "text": "/mnt/fc-small is 94% full (space)"
+  },
+  {
+   "key": "job:cron:/opt/old-app/bin/cleanup.sh",
+   "level": "critical",
+   "text": "scheduled job /opt/old-app/bin/cleanup.sh: runs /opt/old-app/bin/cleanup.sh, which doesn't exist"
+  },
+  {
+   "key": "site:shop.example.com Its folder /var/www/shop/public is gone: the site answers with errors",
+   "level": "critical",
+   "text": "site shop.example.com: Its folder /var/www/shop/public is gone: the site answers with errors"
+  },
+  {
+   "key": "key:/home/alex.guest/.ssh/authorized_keys:SHA256:O3kw2pixpnI7GvWkAr/JrG4ZTOheMW7KfXfVbvRaTvs",
+   "level": "critical",
+   "text": "a new SSH key can log in as alex (SHA256:O3kw2pixpnI7GvWkAr/JrG4ZTOheMW7KfXfVbvRaTvs bsweep-backup-test); bsweep logins accept if it is yours"
+  },
+  {
+   "key": "unit:shop-worker.service",
+   "level": "critical",
+   "text": "shop-worker.service has failed"
+  },
+  {
+   "key": "forecast:/mnt/fc-small",
+   "level": "critical",
+   "text": "/mnt/fc-small will be full around 10 Nov at this rate, in about 2 days; /mnt/fc-small/growing grew 29.8 MB a day this week (high confidence)",
+   "rank": 4
+  }
+ ]
+}

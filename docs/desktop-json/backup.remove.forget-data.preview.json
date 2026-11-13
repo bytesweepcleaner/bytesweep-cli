@@ -1,0 +1,49 @@
+{
+ "about": "b3 would stop: no more backups of /srv/bk-test/db. Every copy at /mnt/backup/bytesweep-test-b3 would be deleted too, and its password. This can't be undone.",
+ "dryRun": true,
+ "forgetData": true,
+ "plan": {
+  "id": "b3",
+  "folders": [
+   "/srv/bk-test/db"
+  ],
+  "target": {
+   "kind": "disk",
+   "where": "/mnt/backup/bytesweep-test-b3"
+  },
+  "keep": {
+   "daily": 7,
+   "weekly": 4,
+   "monthly": 6
+  },
+  "schedule": {
+   "every": "",
+   "day": "",
+   "at": "",
+   "withMaintenance": true,
+   "when": "with the maintenance plan"
+  },
+  "created": "2026-11-09T10:36:18+05:30",
+  "keys": [],
+  "sameDisk": true,
+  "last": {
+   "id": "b3",
+   "time": "2026-11-09T10:39:57+05:30",
+   "ok": true,
+   "added": 735,
+   "total": 3000000,
+   "files": 1,
+   "changed": 0,
+   "duration": 0.7,
+   "snapshot": "3633fa43929b066744c4406964447f4d3c5f7910ffb075387b9d18f1a8dc8a52",
+   "snapshots": 2,
+   "forgotten": 0,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  },
+  "lastOK": "2026-11-09T10:39:57+05:30",
+  "next": "",
+  "timer": false
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "about": "In 2 minutes this machine would restart.",
+ "at": "2026-11-09T09:06:15+05:30",
+ "command": [
+  "shutdown",
+  "-r",
+  "+2"
+ ],
+ "dryRun": true,
+ "needed": true,
+ "packages": [
+  "libc6",
+  "linux-base",
+  "linux-image-7.0.0-42-generic"
+ ],
+ "scheduled": "",
+ "uptime": 3304,
+ "why": [
+  "Updates were installed that only take effect after a restart: the system says so (/var/run/reboot-required)."
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "device": {
+  "device": "/dev/loop1",
+  "model": "virtual disk",
+  "size": 134217728,
+  "kind": "loop",
+  "removable": false,
+  "system": false,
+  "mounted": []
+ },
+ "dryRun": true,
+ "image": "dl.iso",
+ "imageSize": 55879680,
+ "verdict": {
+  "refused": "",
+  "needsConfirm": true,
+  "reason": "it is a virtual disk"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "dryRun": true,
+ "schedule": {
+  "id": "s2",
+  "every": "daily",
+  "day": "sun",
+  "at": "02:30",
+  "older": "3d",
+  "when": "every day at 02:30",
+  "next": "2026-11-07T02:30:00+05:30"
+ }
+}

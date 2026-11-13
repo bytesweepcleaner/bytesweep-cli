@@ -1,0 +1,111 @@
+{
+ "dryRun": true,
+ "action": "clean-safe",
+ "about": "Clean what is safe to clean: package caches, old journals, temporary files.",
+ "command": [
+  "clean",
+  "--safe",
+  "--json"
+ ],
+ "parallel": 8,
+ "hosts": [
+  {
+   "name": "web1",
+   "ok": true,
+   "skipped": false,
+   "did": "Would clean 2 safe items: 2.7 GB.",
+   "freed": 2846404608,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "dryRun": true,
+    "items": [
+     {
+      "id": "dev-go-build",
+      "group": "dev",
+      "title": "Go build cache",
+      "why": "Built again on the next go build, which is slower once.",
+      "size": 2702807040,
+      "level": "safe",
+      "command": "go clean -cache, as alex",
+      "where": "/home/alex.guest/.cache/go-build",
+      "lastUsed": "2026-11-09T05:08:50Z"
+     },
+     {
+      "id": "package-cache",
+      "group": "system",
+      "title": "Downloaded package files",
+      "why": "Installers kept after installing; downloaded again if needed.",
+      "size": 143597568,
+      "level": "safe",
+      "command": "apt-get clean",
+      "where": "/var/cache"
+     }
+    ],
+    "undo": false
+   },
+   "seconds": 0.326
+  },
+  {
+   "name": "web2",
+   "ok": true,
+   "skipped": false,
+   "did": "Would clean 2 safe items: 2.7 GB.",
+   "freed": 2846404608,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "dryRun": true,
+    "items": [
+     {
+      "id": "dev-go-build",
+      "group": "dev",
+      "title": "Go build cache",
+      "why": "Built again on the next go build, which is slower once.",
+      "size": 2702807040,
+      "level": "safe",
+      "command": "go clean -cache, as alex",
+      "where": "/home/alex.guest/.cache/go-build",
+      "lastUsed": "2026-11-09T05:08:50Z"
+     },
+     {
+      "id": "package-cache",
+      "group": "system",
+      "title": "Downloaded package files",
+      "why": "Installers kept after installing; downloaded again if needed.",
+      "size": 143597568,
+      "level": "safe",
+      "command": "apt-get clean",
+      "where": "/var/cache"
+     }
+    ],
+    "undo": false
+   },
+   "seconds": 0.326
+  },
+  {
+   "name": "dead",
+   "ok": false,
+   "skipped": false,
+   "did": "",
+   "freed": 0,
+   "error": "can't reach it: ssh: connect to host 127.0.0.1 port 1: Connection refused",
+   "exit": -1,
+   "licensed": true,
+   "restarts": false,
+   "output": {},
+   "seconds": 0.001
+  }
+ ],
+ "ok": 2,
+ "failed": 1,
+ "skipped": 0,
+ "stopped": false,
+ "freed": 5692809216,
+ "started": "2026-11-09T10:38:58.339850782+05:30",
+ "finished": "2026-11-09T10:38:58.666815066+05:30"
+}

@@ -1,0 +1,55 @@
+[
+ {
+  "id": "dev-go-build",
+  "group": "dev",
+  "title": "Go build cache",
+  "why": "Built again on the next go build, which is slower once.",
+  "size": 325947392,
+  "level": "safe",
+  "command": "go clean -cache, as alex",
+  "where": "/home/alex.guest/.cache/go-build",
+  "lastUsed": "2026-11-06T11:24:32Z"
+ },
+ {
+  "id": "dev-nuget",
+  "group": "dev",
+  "title": "NuGet packages",
+  "why": "Restored again on the next dotnet restore.",
+  "size": 1235353600,
+  "level": "review",
+  "command": "rm -r ~alex/.nuget/packages",
+  "where": "/home/alex.guest/.nuget/packages",
+  "lastUsed": "2026-11-06T11:15:31Z"
+ },
+ {
+  "id": "rotated-logs",
+  "group": "logs",
+  "title": "Old rotated logs (8 files)",
+  "why": "Archived copies of logs. Keep them if an audit needs them.",
+  "size": 69263360,
+  "level": "review",
+  "command": "remove old copies in /var/log",
+  "where": "/var/log"
+ },
+ {
+  "id": "dev-go-mod",
+  "group": "dev",
+  "title": "Go module cache",
+  "why": "Downloaded again on the next go build. A build with no network needs it.",
+  "size": 56446976,
+  "level": "review",
+  "command": "go clean -modcache, as alex",
+  "where": "/home/alex.guest/go/pkg/mod",
+  "lastUsed": "2026-11-06T10:52:58Z"
+ },
+ {
+  "id": "crash-dumps",
+  "group": "system",
+  "title": "Crash dumps (1)",
+  "why": "Memory copies from crashed programs. Keep them if you are debugging one.",
+  "size": 41943040,
+  "level": "review",
+  "command": "remove what is in /var/crash, /var/lib/systemd/coredump",
+  "where": "/var"
+ }
+]

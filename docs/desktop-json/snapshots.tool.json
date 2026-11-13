@@ -1,0 +1,77 @@
+{
+ "system": "linux",
+ "tools": [
+  "timeshift",
+  "snapper",
+  "zfs",
+  "btrfs",
+  "lvm"
+ ],
+ "snapshots": [
+  {
+   "id": "bspool/data@one",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 10509312,
+   "sizeKnown": true,
+   "description": "one",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@one"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  },
+  {
+   "id": "bspool/data@two",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 0,
+   "sizeKnown": true,
+   "description": "two",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@two"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  },
+  {
+   "id": "bspool/data@three",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 0,
+   "sizeKnown": true,
+   "description": "three",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@three"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  }
+ ],
+ "totals": [
+  {
+   "tool": "zfs",
+   "name": "ZFS snapshots",
+   "count": 3,
+   "size": 10509312,
+   "sizeKnown": true
+  }
+ ],
+ "shadowStorage": [],
+ "notes": []
+}

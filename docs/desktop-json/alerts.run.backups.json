@@ -1,0 +1,43 @@
+{
+ "new": [
+  {
+   "key": "backups:stale",
+   "level": "warning",
+   "text": "the newest backup is 30 h 0 min old (more than 26 hours)"
+  }
+ ],
+ "over": [
+  {
+   "key": "unit:user@501.service",
+   "level": "critical",
+   "text": "user@501.service has failed"
+  }
+ ],
+ "problems": [
+  {
+   "key": "job:cron:/opt/old-app/bin/cleanup.sh",
+   "level": "critical",
+   "text": "scheduled job /opt/old-app/bin/cleanup.sh: runs /opt/old-app/bin/cleanup.sh, which doesn't exist"
+  },
+  {
+   "key": "site:shop.example.com Its folder /var/www/shop/public is gone: the site answers with errors",
+   "level": "critical",
+   "text": "site shop.example.com: Its folder /var/www/shop/public is gone: the site answers with errors"
+  },
+  {
+   "key": "unit:demo-fail.service",
+   "level": "critical",
+   "text": "demo-fail.service has failed"
+  },
+  {
+   "key": "unit:shop-worker.service",
+   "level": "critical",
+   "text": "shop-worker.service has failed"
+  },
+  {
+   "key": "backups:stale",
+   "level": "warning",
+   "text": "the newest backup is 30 h 0 min old (more than 26 hours)"
+  }
+ ]
+}

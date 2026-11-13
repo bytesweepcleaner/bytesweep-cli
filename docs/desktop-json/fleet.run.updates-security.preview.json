@@ -1,0 +1,39 @@
+{
+ "dryRun": true,
+ "action": "updates-security",
+ "about": "Install the security updates. Nothing restarts by itself.",
+ "command": [
+  "updates",
+  "install",
+  "--security",
+  "--json"
+ ],
+ "parallel": 8,
+ "hosts": [
+  {
+   "name": "web1",
+   "ok": true,
+   "skipped": false,
+   "did": "No updates to install.",
+   "freed": 0,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "dryRun": true,
+    "ran": false,
+    "skipped": [],
+    "steps": []
+   },
+   "seconds": 3.685
+  }
+ ],
+ "ok": 1,
+ "failed": 0,
+ "skipped": 0,
+ "stopped": false,
+ "freed": 0,
+ "started": "2026-11-09T10:38:59.17192969+05:30",
+ "finished": "2026-11-09T10:39:02.857532049+05:30"
+}

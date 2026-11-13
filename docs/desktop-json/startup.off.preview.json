@@ -1,0 +1,18 @@
+{
+ "dryRun": true,
+ "item": {
+  "id": "shop-dev.service",
+  "name": "shop-dev",
+  "group": "Runs in the background",
+  "kind": "systemd service",
+  "runs": "/usr/bin/python3 -m http.server 3000",
+  "maker": "added on this computer",
+  "on": true,
+  "lastStart": "2026-11-06T16:45:19+05:30",
+  "needsAdmin": true,
+  "path": "/etc/systemd/system/shop-dev.service"
+ },
+ "name": "shop-dev",
+ "off": "shop-dev.service",
+ "words": "Runs systemctl disable --now shop-dev.service: it stops now and won't start at boot."
+}

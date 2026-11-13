@@ -1,0 +1,116 @@
+[
+ {
+  "id": "18e571113abb35a9",
+  "original": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "size": 15728640,
+  "cleaned": "2026-11-06T16:55:45.390740905+05:30"
+ },
+ {
+  "id": "18e5710dd99fc72d",
+  "original": "/srv/downloads/big.iso.part",
+  "size": 2002944,
+  "cleaned": "2026-11-06T16:55:30.876651309+05:30"
+ },
+ {
+  "id": "18e5710bd3323203",
+  "original": "/var/log/shop/app.log.4",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:55:22.178871811+05:30",
+  "made": "/var/log/shop/app.log.4.gz",
+  "madeSize": 8572939
+ },
+ {
+  "id": "18e5710bc7d7590f",
+  "original": "/var/log/shop/app.log.5",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:55:21.988368655+05:30",
+  "made": "/var/log/shop/app.log.5.gz",
+  "madeSize": 8572877
+ },
+ {
+  "id": "18e5710badcf714f",
+  "original": "/srv/exports/old-export.csv",
+  "size": 20971520,
+  "cleaned": "2026-11-06T16:55:21.551642959+05:30"
+ },
+ {
+  "id": "18e5708226e9dc8b",
+  "original": "/srv/exports/old-export.csv",
+  "size": 20971520,
+  "cleaned": "2026-11-06T16:45:30.877930635+05:30"
+ },
+ {
+  "id": "18e5707f31840e4a",
+  "original": "/srv/downloads/big.iso.part",
+  "size": 2002944,
+  "cleaned": "2026-11-06T16:45:18.170906186+05:30"
+ },
+ {
+  "id": "18e5707f08609bf4",
+  "original": "/var/log/shop/app.log.4",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:45:17.4807173+05:30",
+  "made": "/var/log/shop/app.log.4.gz",
+  "madeSize": 8572915
+ },
+ {
+  "id": "18e5707eff079bf2",
+  "original": "/var/log/shop/app.log.5",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:45:17.32388965+05:30",
+  "made": "/var/log/shop/app.log.5.gz",
+  "madeSize": 8572925
+ },
+ {
+  "id": "18e5707ef33c0842",
+  "original": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "size": 15728640,
+  "cleaned": "2026-11-06T16:45:17.125998658+05:30"
+ },
+ {
+  "id": "18e5707ef33c0841",
+  "original": "/srv/media/photos",
+  "size": 62914560,
+  "cleaned": "2026-11-06T16:45:17.125998657+05:30"
+ },
+ {
+  "id": "18e57042828ef1fb",
+  "original": "/srv/exports/old-export.csv",
+  "size": 20971520,
+  "cleaned": "2026-11-06T16:40:57.537569275+05:30"
+ },
+ {
+  "id": "18e5704264b0bf9d",
+  "original": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "size": 15728640,
+  "cleaned": "2026-11-06T16:40:57.036468125+05:30"
+ },
+ {
+  "id": "18e5704264b0bf9c",
+  "original": "/srv/media/photos-copy",
+  "size": 62914560,
+  "cleaned": "2026-11-06T16:40:57.036468124+05:30"
+ },
+ {
+  "id": "18e5701268d8c8fe",
+  "original": "/srv/downloads/big.iso.part",
+  "size": 2002944,
+  "cleaned": "2026-11-06T16:37:30.947770622+05:30"
+ },
+ {
+  "id": "18e570123ffe933b",
+  "original": "/var/log/shop/app.log.5",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:37:30.262381371+05:30",
+  "made": "/var/log/shop/app.log.5.gz",
+  "madeSize": 8572914
+ },
+ {
+  "id": "18e57012367b6192",
+  "original": "/var/log/shop/app.log.4",
+  "size": 11331981,
+  "cleaned": "2026-11-06T16:37:30.102788498+05:30",
+  "made": "/var/log/shop/app.log.4.gz",
+  "madeSize": 8572875
+ }
+]

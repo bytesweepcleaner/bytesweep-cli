@@ -1,0 +1,271 @@
+fixture	exit	valid_json	command	stderr (first line)
+drives	0	yes	sudo -n bsweep drives --json	
+grown	0	yes	sudo -n bsweep grown --json --days 7	
+why	0	yes	sudo -n bsweep why --json	
+top	0	yes	sudo -n bsweep top /srv --dirs 10 --files 10 --json	
+top.inodes	0	yes	sudo -n bsweep top /var --dirs 5 --inodes --json	
+find	0	yes	sudo -n bsweep find /srv --larger 10M --older 30d --json	
+stats	0	yes	sudo -n bsweep stats --json	
+stats.detail	0	yes	sudo -n bsweep stats --detail --json	
+live	0	yes	sudo -n bsweep live --json --count 1	
+live.detail	0	yes	sudo -n bsweep live --json --count 1 --detail	
+advanced	0	yes	bsweep advanced --json	
+report	0	yes	sudo -n bsweep report --json	
+config	0	yes	sudo -n bsweep config --json	
+config.check	0	yes	sudo -n bsweep config check --json	
+databases	1	yes	sudo -n bsweep databases --json	
+databases.all	1	yes	sudo -n bsweep databases --all --json	
+sites	2	yes	sudo -n bsweep sites --json	
+sites.problems	2	yes	sudo -n bsweep sites --problems --json	
+jobs	2	yes	sudo -n bsweep jobs --json	
+ports	0	yes	sudo -n bsweep ports --json	
+ports.open	0	yes	sudo -n bsweep ports --open --json	
+updates	0	yes	sudo -n bsweep updates --json	
+updates.security	0	yes	sudo -n bsweep updates --security --json	
+logins	0	yes	sudo -n bsweep logins --json	
+sleep	0	yes	sudo -n bsweep sleep --json	
+startup	0	yes	sudo -n bsweep startup --json	
+startup.failed	0	yes	sudo -n bsweep startup --failed --json	
+apps	0	yes	sudo -n bsweep apps --json	
+apps.leftovers	0	yes	sudo -n bsweep apps leftovers --json	
+dupes	0	yes	sudo -n bsweep dupes /srv --json	
+clean.list	0	yes	sudo -n bsweep clean --list --json	
+clean.list.logs	0	yes	sudo -n bsweep clean --list --group logs --json	
+logs	0	yes	sudo -n bsweep logs --json	
+undo	0	yes	sudo -n bsweep undo --json	
+alerts	0	yes	sudo -n bsweep alerts --json	
+before.list	0	yes	sudo -n bsweep before --list --json	
+clean.safe.preview	0	yes	sudo -n bsweep clean --safe --json	
+clean.group-older.preview	0	yes	sudo -n bsweep clean --group logs --older 7d --json	
+clean.ids.preview	0	yes	sudo -n bsweep clean rotated-logs crash-dumps --json	
+clean.now.preview	0	yes	sudo -n bsweep clean --safe --now --json	
+rm.preview	0	yes	sudo -n bsweep rm /srv/exports/old-export.csv --json	
+rm.now.preview	0	yes	sudo -n bsweep rm /srv/exports/old-export.csv --now --json	
+rescue.preview	0	yes	sudo -n bsweep rescue --json	
+rescue.hard.preview	0	yes	sudo -n bsweep rescue --disk / --target 24G --hard --json	
+logs.clear.preview	0	yes	sudo -n bsweep logs clear --older 7d --json	
+logs.clear.all.preview	0	yes	sudo -n bsweep logs clear --older 7d --docker --live --json	
+dupes.keep.preview	0	yes	sudo -n bsweep dupes /srv/media --keep newest --json	
+compress.preview	0	yes	sudo -n bsweep compress /var/log/shop --older 30d --json	
+archive.preview	0	yes	sudo -n bsweep archive /srv/old-projects/shop-v1 --to /mnt/backup --json	
+tidy.preview	0	yes	sudo -n bsweep tidy /srv/downloads --json	
+organize.preview	0	yes	sudo -n bsweep organize /srv/inbox --by kind --json	
+rename.preview	0	yes	sudo -n bsweep rename /srv/pictures --replace SCAN_=scan- --case lower --json	
+convert.preview	0	yes	sudo -n bsweep convert /srv/pictures --to jpeg --json	
+apps.remove.preview	0	yes	sudo -n bsweep apps remove cowsay --json	
+apps.leftovers.clean.preview	0	yes	sudo -n bsweep apps leftovers clean --all --json	
+stop.preview	0	yes	sudo -n bsweep stop python3 --json	
+ports.stop.preview	0	yes	sudo -n bsweep ports stop 3001 --json	
+ports.stop.service-refused	3	empty	sudo -n bsweep ports stop 3000 --json	python3 on port 3000 is the service shop-dev.service, which would start it again. Use instead: sudo systemctl restart shop-dev.service  (or sudo systemctl stop 
+startup.off.preview	0	yes	sudo -n bsweep startup off shop-dev.service --json	
+updates.install.preview	0	yes	sudo -n bsweep updates install --json	
+updates.install.security.preview	0	yes	sudo -n bsweep updates install --security --json	
+schedule.logs.preview	0	yes	sudo -n bsweep schedule logs --every weekly --day sun --at 03:00 --older 7d --json	
+alerts.add.preview	0	yes	sudo -n bsweep alerts add webhook --url http://127.0.0.1:8799/hook --json	
+logins.accept.preview	0	yes	sudo -n bsweep logins accept --json	
+grow.preview	3	empty	sudo -n bsweep grow --json	no unused space after the partitions, so there is nothing to grow into
+before	0	yes	sudo -n bsweep before --json	
+compress.done	0	yes	sudo -n bsweep compress /var/log/shop --older 30d --json --yes	
+archive.done	0	yes	sudo -n bsweep archive /srv/old-projects/shop-v1 --to /mnt/backup --json --yes	
+archive.list	0	yes	sudo -n bsweep archive list --json	
+archive.where	0	yes	sudo -n bsweep archive where shop-v1 --json	
+tidy.done	0	yes	sudo -n bsweep tidy /srv/downloads --json --yes	
+organize.done	0	yes	sudo -n bsweep organize /srv/inbox --by kind --json --yes	
+organize.undo.preview	0	yes	sudo -n bsweep organize undo /srv/inbox --json	
+rename.done	0	yes	sudo -n bsweep rename /srv/pictures --replace SCAN_=scan- --case lower --json --yes	
+rename.undo.preview	0	yes	sudo -n bsweep rename undo --json	
+convert.done	0	yes	sudo -n bsweep convert /srv/pictures --to jpeg --json --yes	
+ports.stop.done	0	yes	sudo -n bsweep ports stop 3001 --json --yes	
+startup.off.done	0	yes	sudo -n bsweep startup off shop-dev.service --json --yes	
+startup.on.preview	0	yes	sudo -n bsweep startup on shop-dev.service --json	
+startup.on.done	0	yes	sudo -n bsweep startup on shop-dev.service --json --yes	
+schedule.logs.done	0	yes	sudo -n bsweep schedule logs --every weekly --day sun --at 03:00 --older 7d --json --yes	
+schedule.list	0	yes	sudo -n bsweep schedule list --json	
+alerts.add.done	0	yes	sudo -n bsweep alerts add webhook --url http://127.0.0.1:8799/hook --json --yes	
+alerts.test	0	yes	sudo -n bsweep alerts test --json	
+alerts.on.preview	0	yes	sudo -n bsweep alerts on --every 30m --json	
+alerts.on.done	0	yes	sudo -n bsweep alerts on --every 30m --json --yes	
+alerts.list	0	yes	sudo -n bsweep alerts --json	
+alerts.run	0	yes	sudo -n bsweep alerts run --json	
+alerts.off.preview	0	yes	sudo -n bsweep alerts off --json	
+logins.accept.done	0	yes	sudo -n bsweep logins accept --json --yes	
+advanced.on	0	yes	bsweep advanced on --json	
+advanced.off	0	yes	bsweep advanced off --json	
+apps.remove.done	0	yes	sudo -n bsweep apps remove cowsay --json --yes	
+logs.clear.done	0	yes	sudo -n bsweep logs clear --older 7d --json --yes	
+clean.ids.done	0	yes	sudo -n bsweep clean crash-dumps --json --yes	
+after	1	yes	sudo -n bsweep after --json	
+log	0	yes	sudo -n bsweep log --since 1d --json	
+alerts.add.second	0	yes	sudo -n bsweep alerts add webhook --url http://127.0.0.1:8799/hook?second --json --yes	
+alerts.remove.preview	0	yes	sudo -n bsweep alerts remove a2 --json	
+alerts.remove.done	0	yes	sudo -n bsweep alerts remove a2 --json --yes	
+alerts.off.done	0	yes	sudo -n bsweep alerts off --json --yes	
+alerts.on.again	0	yes	sudo -n bsweep alerts on --every 30m --json --yes	
+schedule.logs.second	0	yes	sudo -n bsweep schedule logs --every daily --at 02:30 --older 3d --json --yes	
+schedule.remove.preview	0	yes	sudo -n bsweep schedule remove s2 --json	
+schedule.remove.done	0	yes	sudo -n bsweep schedule remove s2 --json --yes	
+check	0	yes	sudo -n bsweep check --json	
+fleet	0	yes	bsweep fleet 127.0.0.1 localhost --json	
+dupes.keep.done	0	yes	sudo -n bsweep dupes /srv/media --keep newest --json --yes	
+undo.list	0	yes	sudo -n bsweep undo --json	
+undo.restore.preview	0	yes	sudo -n bsweep undo restore 18e5710badcf714f --json	
+undo.restore.done	0	yes	sudo -n bsweep undo restore 18e5710badcf714f --json --yes	
+rm.done	0	yes	sudo -n bsweep rm /srv/exports/old-export.csv --json --yes	
+undo.free.preview	0	yes	sudo -n bsweep undo free 18e5707f31840e4a --json	
+undo.free.all.preview	0	yes	sudo -n bsweep undo free --all --json	
+organize.undo.done	0	yes	sudo -n bsweep organize undo /srv/inbox --json --yes	
+rename.undo.done	0	yes	sudo -n bsweep rename undo --json --yes	
+archive.bring-back.preview	0	yes	sudo -n bsweep archive bring-back 20261106-165530-2dc6 --json	
+archive.bring-back.done	0	yes	sudo -n bsweep archive bring-back 20261106-165530-2dc6 --json --yes	
+clean.safe.done	0	yes	sudo -n bsweep clean --safe --json --yes	
+rescue.disk.preview	0	yes	sudo -n bsweep rescue --disk / --target 24G --json	
+rescue.done	1	yes	sudo -n bsweep rescue --disk / --target 24G --json --yes	
+diff	0	yes	sudo -n bsweep diff /tmp/report-before.json /tmp/report-after.json --json	
+error.needs-root	5	empty	bsweep schedule remove s1 --json --yes	run with sudo
+error.needs-root.alerts	5	empty	bsweep alerts --json	run with sudo
+error.bad-usage	3	empty	sudo -n bsweep undo restore nosuchid --json --yes	no Undo entry nosuchid
+error.update-offline	3	empty	sudo -n bsweep update --check --json	bsweep-SHA256SUMS.txt: server answered 404
+deactivate.preview	0	yes	sudo -n bsweep deactivate --json	
+deactivate.done	0	yes	sudo -n bsweep deactivate --json --yes	
+sharesafe	1	yes	sudo -n bsweep sharesafe --json	
+version.nosudo	0	yes	bsweep version --json	
+health	2	yes	sudo -n bsweep health --json	
+summary	0	yes	sudo -n bsweep summary --json	
+stats.history	0	yes	sudo -n bsweep stats --history --json	
+stats.history.since	0	yes	sudo -n bsweep stats --history --json --since 7d --points 50	
+monitor.on.preview	0	yes	sudo -n bsweep monitor on --json	
+monitor.on.done	0	yes	sudo -n bsweep monitor on --json --yes	
+services	0	yes	sudo -n bsweep services --json	
+services.failed	0	yes	sudo -n bsweep services --failed --json	
+reboot	0	yes	sudo -n bsweep reboot --json	
+reboot.at.preview	0	yes	sudo -n bsweep reboot --at 23:59 --json	
+reboot.now.preview	0	yes	sudo -n bsweep reboot --now --json	
+reboot.at.done	0	yes	sudo -n bsweep reboot --at 23:59 --json --yes	
+reboot.scheduled	0	yes	sudo -n bsweep reboot --json	
+reboot.cancel.preview	0	yes	sudo -n bsweep reboot cancel --json	
+reboot.cancel.done	0	yes	sudo -n bsweep reboot cancel --json --yes	
+backups	0	yes	sudo -n bsweep backups --json	
+alerts.add.backups.preview	0	yes	sudo -n bsweep alerts add backups --hours 26 --json	
+alerts.add.backups.done	0	yes	sudo -n bsweep alerts add backups --hours 26 --json --yes	
+alerts.run.backups	0	yes	sudo -n bsweep alerts run --json	
+maintain	0	yes	sudo -n bsweep maintain --json	
+maintain.plan.preview	0	yes	sudo -n bsweep maintain plan --every weekly --day sun --at 03:00 --steps updates-security,logs,clean-safe,restart-services --older 7d --json	
+maintain.plan.monthly.preview	0	yes	sudo -n bsweep maintain plan --every monthly --day 15 --at 04:30 --steps logs,clean-safe --json	
+maintain.plan.bad-step	3	empty	sudo -n bsweep maintain plan --steps logs,format-disk --json	no step "format-disk": the steps are updates-security,updates-all,logs,clean-safe,restart-services,reboot-if-needed
+maintain.plan.done	0	yes	sudo -n bsweep maintain plan --every weekly --day sun --at 03:00 --steps updates-security,logs,clean-safe,restart-services --older 7d --json --yes	
+maintain.window.preview	0	yes	sudo -n bsweep maintain window --days sat,sun --from 02:00 --to 05:00 --pause-alerts --json	
+maintain.window.done	0	yes	sudo -n bsweep maintain window --days sat,sun --from 02:00 --to 05:00 --pause-alerts --json --yes	
+maintain.on	0	yes	sudo -n bsweep maintain --json	
+maintain.run.preview	0	yes	sudo -n bsweep maintain run --json	
+maintain.run.done	0	yes	sudo -n bsweep maintain run --json --yes	
+maintain.reports	0	yes	sudo -n bsweep maintain reports --json --limit 5	
+maintain.plan.off.preview	0	yes	sudo -n bsweep maintain plan off --json	
+maintain.plan.off.done	0	yes	sudo -n bsweep maintain plan off --json --yes	
+maintain.window.off.preview	0	yes	sudo -n bsweep maintain window off --json	
+maintain.window.off.done	0	yes	sudo -n bsweep maintain window off --json --yes	
+error.needs-root.maintain	5	empty	bsweep maintain plan --json --yes	run with sudo
+services.restart.preview	0	yes	sudo -n bsweep services restart demo-ok.service --json	
+services.restart.done	0	yes	sudo -n bsweep services restart demo-ok.service --json --yes	
+services.restart.fails-again	3	yes	sudo -n bsweep services restart demo-fail.service --json --yes	
+services.restart.refused	3	empty	sudo -n bsweep services restart ssh.service --json	ByteSweep doesn't restart ssh.service: restarting SSH can end the login you use; do it by hand from a console.
+version	0	yes	sudo -n bsweep version --json	
+rescue-boot.list	0	yes	sudo -n bsweep rescue-boot --list --json	
+why.root	2	yes	sudo -n bsweep why --root /mnt/target --json	
+clean.root.list	0	yes	sudo -n bsweep clean --root /mnt/target --list --json	
+rescue.root.preview	0	yes	sudo -n bsweep rescue --root /mnt/target --json	
+rescue.root.done	0	yes	sudo -n bsweep rescue --root /mnt/target --json --yes	
+rescue-usb.preview	0	yes	bsweep rescue-usb --arch x86_64 --json	
+rescue-usb.done	0	yes	bsweep rescue-usb --arch x86_64 --out dl.iso --json --yes	
+rescue-usb.error.tampered	3	empty	bsweep rescue-usb --arch x86_64 --out bad.iso --json --yes	bsweep-rescue-x86_64.iso doesn't match the signed checksums, so it was refused
+rescue-usb.write.preview	0	yes	bsweep rescue-usb write --image dl.iso --device stick.img --json	
+rescue-usb.write.done.file	0	yes	bsweep rescue-usb write --image dl.iso --device stick.img --json --yes	
+rescue-usb.write.preview.needs-confirm	0	yes	sudo -n bsweep rescue-usb write --image dl.iso --device /dev/loop1 --json	
+rescue-usb.write.error.needs-confirm	3	empty	sudo -n bsweep rescue-usb write --image dl.iso --device /dev/loop1 --json --yes	/dev/loop1 needs its name confirmed, because it is a virtual disk: add --confirm /dev/loop1
+rescue-usb.write.done	0	yes	sudo -n bsweep rescue-usb write --image dl.iso --device /dev/loop1 --confirm /dev/loop1 --json --yes	
+rescue-usb.write.preview.mounted	0	yes	sudo -n bsweep rescue-usb write --image dl.iso --device /dev/loop1 --json	
+rescue-usb.write.preview.refused	3	yes	sudo -n bsweep rescue-usb write --image dl.iso --device /dev/loop1 --json	
+rescue-usb.write.error.needs-root	5	empty	bsweep rescue-usb write --image dl.iso --device /dev/loop0 --json --yes	run with sudo
+forecast.not-enough	0	yes	sudo -n bsweep forecast --json	
+forecast	1	yes	sudo -n bsweep forecast --json	
+forecast.disk	1	yes	sudo -n bsweep forecast --disk /var/log --json	
+forecast.days-7	0	yes	sudo -n bsweep forecast --days 7 --json	
+summary.forecast	0	yes	sudo -n bsweep summary --json	
+health.filling-soon	2	yes	sudo -n bsweep health --json	
+alerts.add.forecast.preview	0	yes	sudo -n bsweep alerts add forecast --days 14 --json	
+alerts.add.forecast.done	0	yes	sudo -n bsweep alerts add forecast --days 14 --json --yes	
+alerts.run.forecast	0	yes	sudo -n bsweep alerts run --json	
+alerts.remove.forecast.preview	0	yes	sudo -n bsweep alerts remove forecast --json	
+alerts.run.forecast.worse	0	yes	sudo -n bsweep alerts run --json	(a 1 GB test disk at /mnt/fc-small, told at 8 days, now 2: told again)
+alerts.remove.forecast.done	0	yes	sudo -n bsweep alerts remove forecast --json --yes	
+forecast.critical	2	yes	sudo -n bsweep forecast --disk /mnt/fc-small --json	(a 1 GB test disk, seeded to fill in 2 days)
+snapshots	0	yes	sudo -n bsweep snapshots --json	
+snapshots.nosudo	0	yes	bsweep snapshots --json	Timeshift lists its snapshots only with sudo.
+snapshots.tool	0	yes	sudo -n bsweep snapshots --tool zfs --json	
+snapshots.remove.preview	0	yes	sudo -n bsweep snapshots remove snapper:bstest:2 snapper:bstest:4 bspool/data@two btrfs:/mnt/bs-btrfs/manual-snap lvm:bsvg/data_snap --json	
+snapshots.remove.keep0.refused	3	empty	sudo -n bsweep snapshots remove snapper:bstest:4 --keep-newest 0 --json	--keep-newest 0 removes the newest snapshot too, which may be the only way back. Add --i-understand if that is what you want.
+snapshots.remove.unknown	3	empty	sudo -n bsweep snapshots remove nope --json	no snapshot has the ID nope. bsweep snapshots lists them
+snapshots.remove.nosudo	5	empty	bsweep snapshots remove snapper:bstest:2 --json --yes	run with sudo
+snapshots.remove.done	0	yes	sudo -n bsweep snapshots remove snapper:bstest:2 bspool/data@one --json --yes	
+snapshots.thin.preview	0	yes	sudo -n bsweep snapshots thin --keep-newest 1 --json	
+snapshots.thin.tool.preview	0	yes	sudo -n bsweep snapshots thin --tool timeshift --keep-newest 2 --json	
+snapshots.thin.done	0	yes	sudo -n bsweep snapshots thin --tool timeshift --keep-newest 2 --json --yes	
+snapshots.remove.newest.done	0	yes	sudo -n bsweep snapshots remove bspool/data@three --keep-newest 0 --i-understand --json --yes	
+snapshots.resize.notwindows	3	empty	sudo -n bsweep snapshots resize --max 5% --json	bsweep snapshots resize works on Windows only: it sets how much of a drive shadow copies may use.
+snapshots.after	0	yes	sudo -n bsweep snapshots --json	
+clean.list.snapshots	0	yes	sudo -n bsweep clean --list --group snapshots --json	
+snapshots.mac	0	yes	bsweep snapshots --json (macOS 27 on the Mac mini, no sudo: only the update snapshot)	
+snapshots.windows-sample	0	yes	(not captured: the parser over internal/snapshots/testdata/windows-script.json, BSWEEP_WINDOWS_SAMPLE=FILE go test -run WindowsSample ./internal/snapshots)	
+backup	0	yes	sudo -n bsweep backup --json	
+backup.run.done	0	yes	sudo -n bsweep backup run b1 --json --yes	
+backup.run.all.done	0	yes	sudo -n bsweep backup run --json --yes	
+backup.list	0	yes	sudo -n bsweep backup list b1 --json	
+backup.check	0	yes	sudo -n bsweep backup check b1 --json	
+backup.restore.preview	0	yes	sudo -n bsweep backup restore b1 latest --to /home/alex.guest/agent-backup/restore3 --json	
+backup.restore.done	0	yes	sudo -n bsweep backup restore b1 latest --to /home/alex.guest/agent-backup/restore3 --json --yes	
+backup.restore.path.preview	0	yes	sudo -n bsweep backup restore b1 latest --path /srv/bk-test/site/page7.html --to /home/alex.guest/agent-backup/restore4 --json	
+backup.restore.path.done	0	yes	sudo -n bsweep backup restore b1 latest --path /srv/bk-test/site/page7.html --to /home/alex.guest/agent-backup/restore4 --json --yes	
+backup.restore.in-place.preview	0	yes	sudo -n bsweep backup restore b1 latest --path /srv/bk-test/site/page7.html --in-place --i-understand --json	
+backup.restore.in-place.refused	3	empty	sudo -n bsweep backup restore b1 latest --in-place --json	--in-place writes over the files there now, with the copy's version. If you mean it, add --i-understand too. Restoring to an empty folder (--to DIR) is safer: t
+backup.restore.not-empty.refused	3	empty	sudo -n bsweep backup restore b1 latest --to /srv --json	/srv isn't empty: restore into an empty or new folder, so nothing there is written over
+backups.with-plans	0	yes	sudo -n bsweep backups --json	
+backup.remove.preview	0	yes	sudo -n bsweep backup remove b2 --json	
+backup.remove.done	0	yes	sudo -n bsweep backup remove b2 --json --yes	
+backup.remove.forget-data.preview	0	yes	sudo -n bsweep backup remove b3 --forget-data --json	
+backup.remove.forget-data.done	0	yes	sudo -n bsweep backup remove b3 --forget-data --json --yes	
+backup.remove.b1	0	yes	sudo -n bsweep backup remove b1 --forget-data --json --yes	
+backup.empty	0	yes	sudo -n bsweep backup --json	
+backup.no-restic	0	yes	sudo -n bsweep backup --json	
+backup.add.no-restic.preview	0	yes	sudo -n bsweep backup add --folders /srv/bk-test --to /mnt/backup/bytesweep-test --same-disk-ok --json	note: /mnt/backup/bytesweep-test is on the same disk as /srv/bk-test (--same-disk-ok): this copy doesn't protect against that disk breaking.
+backup.install-restic.preview	0	yes	sudo -n bsweep backup install-restic --json	
+backup.install-restic.done	0	yes	sudo -n bsweep backup install-restic --json --yes	Reading package lists...
+backup.install-restic.installed	0	yes	sudo -n bsweep backup install-restic --json --yes	
+backup.add.same-disk.refused	3	empty	sudo -n bsweep backup add --folders /srv/bk-test --to /mnt/backup/bytesweep-test --json	refused: /mnt/backup/bytesweep-test is on the same disk as /srv/bk-test, so one broken disk would take the folders and their backup together. Back up to another
+backup.add.preview	0	yes	sudo -n bsweep backup add --folders /srv/bk-test --to /mnt/backup/bytesweep-test --same-disk-ok --json	note: /mnt/backup/bytesweep-test is on the same disk as /srv/bk-test (--same-disk-ok): this copy doesn't protect against that disk breaking.
+backup.add.done	0	yes	sudo -n bsweep backup add --folders /srv/bk-test --to /mnt/backup/bytesweep-test --same-disk-ok --json --yes	note: /mnt/backup/bytesweep-test is on the same disk as /srv/bk-test (--same-disk-ok): this copy doesn't protect against that disk breaking.
+backup.add.not-empty.refused	3	empty	sudo -n bsweep backup add --folders /srv/bk-test --to /mnt/backup --same-disk-ok --json --yes	note: /mnt/backup is on the same disk as /srv/bk-test (--same-disk-ok): this copy doesn't protect against that disk breaking.
+backup.add.s3.preview	0	yes	sudo -n bsweep backup add --folders /srv/bk-test --to s3:s3.amazonaws.com/my-bucket/web1 --key-file /home/alex.guest/agent-backup/s3.env --keep 14,8,12 --every weekly --day sat --at 01:30 --json	
+backup.add.sftp-maintenance.preview	0	yes	sudo -n bsweep backup add --folders /srv/bk-test/site --to sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/fx --with-maintenance --same-disk-ok --json	note: localhost is this machine (--same-disk-ok): this copy doesn't protect against that disk breaking.
+backup.add.sftp.refused	3	empty	sudo -n bsweep backup add --folders /srv/bk-test/site --to sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/fx --json	refused: localhost is this machine, so one broken disk would take the folders and their backup together. Back up to another disk or another machine, or add --sa
+backup.never-run	0	yes	sudo -n bsweep backup --json	
+backup.run.first	0	yes	sudo -n bsweep backup run b1 --json --yes	
+backup.list.after	0	yes	sudo -n bsweep backup list b1 --json	
+backup.no-such-plan	3	empty	sudo -n bsweep backup list b9 --json	no backup b9: bsweep backup lists them
+backup.run.preview	0	yes	sudo -n bsweep backup run b1 --json	
+backup.run.all.preview	0	yes	sudo -n bsweep backup run --json	
+fleet.status	2	yes	bsweep fleet status --hosts web1,web2,dead --json	
+fleet.status.tag	2	yes	bsweep fleet status --tag prod --sort updates --json	
+fleet.run.clean-safe.preview	1	yes	bsweep fleet run clean-safe --hosts web1,web2,dead --json	
+fleet.run.logs-clear.done	0	yes	bsweep fleet run logs-clear --hosts web1,web2 --json --yes	
+fleet.run.logs-clear.stopped	3	yes	bsweep fleet run logs-clear --hosts dead,web1,web2 --json --yes	
+fleet.run.logs-clear.keep-going	3	yes	bsweep fleet run logs-clear --hosts dead,web1,web2 --json --yes --keep-going	
+fleet.run.updates-security.preview	0	yes	bsweep fleet run updates-security --hosts web1 --json	
+fleet.run.maintain-run.preview	0	yes	bsweep fleet run maintain-run --tag prod --json	
+fleet.run.services-restart.preview	0	yes	bsweep fleet run services-restart shop-worker.service --hosts web1,web2 --json	
+fleet.run.no-hosts	3	empty	bsweep fleet run clean-safe --json	say which servers: --hosts web1,web2, --tag prod, or --all
+fleet.run.bad-action	3	empty	bsweep fleet run format-disks --all --json	no action "format-disks": the actions are updates-security, updates-all, clean-safe, logs-clear, maintain-run, services-restart
+fleet.history	0	yes	bsweep fleet history --limit 5 --json	
+mcp.config	0	yes	bsweep mcp config --json	
+mcp.config.claude-desktop	0	yes	bsweep mcp config claude-desktop --json	
+mcp.config.claude-code.allow	0	yes	sudo -n bsweep mcp config claude-code --allow-changes --json	
+mcp.config.vscode	0	yes	bsweep mcp config vscode --json	
+mcp.config.bad-client	3	empty	bsweep mcp config chatgpt --json	no assistant "chatgpt": say one of claude-desktop, claude-code, cursor, vscode

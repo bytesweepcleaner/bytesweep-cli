@@ -1,0 +1,39 @@
+[
+ {
+  "started": "2026-11-09T09:04:39+05:30",
+  "finished": "2026-11-09T09:04:45+05:30",
+  "by": "person",
+  "steps": [
+   {
+    "step": "updates-security",
+    "ok": true,
+    "did": "No security updates were waiting.",
+    "freed": 0,
+    "error": ""
+   },
+   {
+    "step": "logs",
+    "ok": true,
+    "did": "Cleared logs older than 7d: 66.1 MB back.",
+    "freed": 69263360,
+    "error": ""
+   },
+   {
+    "step": "clean-safe",
+    "ok": true,
+    "did": "Cleaned 1 safe item: 751.2 MB back.",
+    "freed": 787648512,
+    "error": ""
+   },
+   {
+    "step": "restart-services",
+    "ok": true,
+    "did": "No service was running old files.",
+    "freed": 0,
+    "error": ""
+   }
+  ],
+  "restartNeeded": true,
+  "rebooted": false
+ }
+]

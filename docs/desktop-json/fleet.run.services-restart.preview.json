@@ -1,0 +1,64 @@
+{
+ "dryRun": true,
+ "action": "services-restart",
+ "service": "shop-worker.service",
+ "about": "Restart one service by name.",
+ "command": [
+  "services",
+  "restart",
+  "shop-worker.service",
+  "--json"
+ ],
+ "parallel": 8,
+ "hosts": [
+  {
+   "name": "web1",
+   "ok": true,
+   "skipped": false,
+   "did": "Would restart shop-worker.service.",
+   "freed": 0,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "command": [
+     "systemctl",
+     "restart",
+     "shop-worker.service"
+    ],
+    "dryRun": true,
+    "name": "shop-worker.service"
+   },
+   "seconds": 0.278
+  },
+  {
+   "name": "web2",
+   "ok": true,
+   "skipped": false,
+   "did": "Would restart shop-worker.service.",
+   "freed": 0,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "command": [
+     "systemctl",
+     "restart",
+     "shop-worker.service"
+    ],
+    "dryRun": true,
+    "name": "shop-worker.service"
+   },
+   "seconds": 0.278
+  }
+ ],
+ "ok": 2,
+ "failed": 0,
+ "skipped": 0,
+ "stopped": false,
+ "freed": 0,
+ "started": "2026-11-09T10:39:06.163411256+05:30",
+ "finished": "2026-11-09T10:39:06.441741122+05:30"
+}

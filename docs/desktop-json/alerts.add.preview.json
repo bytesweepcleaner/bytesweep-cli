@@ -1,0 +1,9 @@
+{
+ "about": "webhook 127.0.0.1:8799/…",
+ "dryRun": true,
+ "target": {
+  "id": "a1",
+  "kind": "webhook",
+  "url": "http://127.0.0.1:8799/hook"
+ }
+}

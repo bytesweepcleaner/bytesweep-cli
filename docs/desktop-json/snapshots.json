@@ -1,0 +1,281 @@
+{
+ "system": "linux",
+ "tools": [
+  "timeshift",
+  "snapper",
+  "zfs",
+  "btrfs",
+  "lvm"
+ ],
+ "snapshots": [
+  {
+   "id": "2026-11-01_10-00-01",
+   "tool": "timeshift",
+   "when": "2026-11-01T10:00:01+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "on demand. before the big upgrade",
+   "where": "/dev/loop3",
+   "disk": "",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "timeshift",
+    "--delete",
+    "--snapshot",
+    "2026-11-01_10-00-01",
+    "--scripted"
+   ],
+   "note": "Timeshift's own snapshot of the system. Files that didn't change are stored once, so one snapshot's own size is unknown. Kept on /dev/loop3."
+  },
+  {
+   "id": "2026-11-05_03-00-01",
+   "tool": "timeshift",
+   "when": "2026-11-05T03:00:01+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "daily",
+   "where": "/dev/loop3",
+   "disk": "",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "timeshift",
+    "--delete",
+    "--snapshot",
+    "2026-11-05_03-00-01",
+    "--scripted"
+   ],
+   "note": "Timeshift's own snapshot of the system. Files that didn't change are stored once, so one snapshot's own size is unknown. Kept on /dev/loop3."
+  },
+  {
+   "id": "2026-11-08_03-00-01",
+   "tool": "timeshift",
+   "when": "2026-11-08T03:00:01+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "daily. nightly",
+   "where": "/dev/loop3",
+   "disk": "",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "timeshift",
+    "--delete",
+    "--snapshot",
+    "2026-11-08_03-00-01",
+    "--scripted"
+   ],
+   "note": "Timeshift's own snapshot of the system. Files that didn't change are stored once, so one snapshot's own size is unknown. Kept on /dev/loop3."
+  },
+  {
+   "id": "snapper:bstest:1",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 16384,
+   "sizeKnown": true,
+   "description": "first one",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "snapper:bstest:2",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 20987904,
+   "sizeKnown": true,
+   "description": "after big file",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "snapper:bstest:3",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 16384,
+   "sizeKnown": true,
+   "description": "third",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "3"
+   ],
+   "note": "Snapper removes it by itself in time (number rule)."
+  },
+  {
+   "id": "snapper:bstest:4",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 8404992,
+   "sizeKnown": true,
+   "description": "nightly",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "4"
+   ],
+   "note": ""
+  },
+  {
+   "id": "bspool/data@one",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 10509312,
+   "sizeKnown": true,
+   "description": "one",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@one"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  },
+  {
+   "id": "bspool/data@two",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 0,
+   "sizeKnown": true,
+   "description": "two",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@two"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  },
+  {
+   "id": "bspool/data@three",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 0,
+   "sizeKnown": true,
+   "description": "three",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@three"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  },
+  {
+   "id": "btrfs:/mnt/bs-btrfs/manual-snap",
+   "tool": "btrfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 16384,
+   "sizeKnown": true,
+   "description": "manual-snap",
+   "where": "/mnt/bs-btrfs",
+   "disk": "/mnt/bs-btrfs",
+   "newest": true,
+   "canRemove": false,
+   "removeCommand": [
+    "btrfs",
+    "subvolume",
+    "delete",
+    "/mnt/bs-btrfs/manual-snap"
+   ],
+   "note": "Made by hand or by another tool, so ByteSweep only explains it. Btrfs can't size one without quotas. If nobody needs it, the command removes it (as root); check it is the snapshot first: the path is from the top of the filesystem."
+  },
+  {
+   "id": "lvm:bsvg/data_snap",
+   "tool": "lvm",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 20971520,
+   "sizeKnown": true,
+   "description": "Snapshot of bsvg/data, 0% of its area used",
+   "where": "bsvg/data",
+   "disk": "",
+   "newest": true,
+   "canRemove": false,
+   "removeCommand": [
+    "lvremove",
+    "bsvg/data_snap"
+   ],
+   "note": "LVM sets this area aside for it, and every write to data is slower while it exists. ByteSweep only explains it: a backup run may still read it. When nothing does, the command removes it (as root)."
+  }
+ ],
+ "totals": [
+  {
+   "tool": "timeshift",
+   "name": "Timeshift",
+   "count": 3,
+   "size": 0,
+   "sizeKnown": false
+  },
+  {
+   "tool": "snapper",
+   "name": "Snapper",
+   "count": 4,
+   "size": 29425664,
+   "sizeKnown": true
+  },
+  {
+   "tool": "zfs",
+   "name": "ZFS snapshots",
+   "count": 3,
+   "size": 10509312,
+   "sizeKnown": true
+  },
+  {
+   "tool": "btrfs",
+   "name": "Btrfs snapshots",
+   "count": 1,
+   "size": 16384,
+   "sizeKnown": true
+  },
+  {
+   "tool": "lvm",
+   "name": "LVM snapshots",
+   "count": 1,
+   "size": 20971520,
+   "sizeKnown": true
+  }
+ ],
+ "shadowStorage": [],
+ "notes": []
+}

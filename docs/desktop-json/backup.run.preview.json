@@ -1,0 +1,49 @@
+{
+ "dryRun": true,
+ "plan": {
+  "id": "b1",
+  "folders": [
+   "/srv/bk-test"
+  ],
+  "target": {
+   "kind": "disk",
+   "where": "/mnt/backup/bytesweep-test"
+  },
+  "keep": {
+   "daily": 7,
+   "weekly": 4,
+   "monthly": 6
+  },
+  "schedule": {
+   "every": "daily",
+   "day": "",
+   "at": "02:00",
+   "withMaintenance": false,
+   "when": "every day at 02:00"
+  },
+  "created": "2026-11-09T10:40:23+05:30",
+  "keys": [],
+  "sameDisk": true,
+  "last": {
+   "id": "b1",
+   "time": "2026-11-09T10:40:31+05:30",
+   "ok": true,
+   "added": 11946815,
+   "total": 11925019,
+   "files": 54,
+   "changed": 54,
+   "duration": 0.7,
+   "snapshot": "4082e869eacb48a34767e3e64ed6731a05cb804e599c9e6c2b5b77cb5586cc35",
+   "snapshots": 1,
+   "forgotten": 0,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  },
+  "lastOK": "2026-11-09T10:40:31+05:30",
+  "next": "2026-11-10T02:00:00+05:30",
+  "timer": true
+ },
+ "resticInstalled": true,
+ "would": "b1 would back up /srv/bk-test to /mnt/backup/bytesweep-test, then keep 7 daily, 4 weekly, 6 monthly copies."
+}

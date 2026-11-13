@@ -1,0 +1,21 @@
+{
+ "device": {
+  "device": "/dev/loop1",
+  "model": "virtual disk",
+  "size": 134217728,
+  "kind": "loop",
+  "removable": false,
+  "system": false,
+  "mounted": [
+   "/home/alex.guest/agent-rescueusb/m"
+  ]
+ },
+ "dryRun": true,
+ "image": "dl.iso",
+ "imageSize": 55879680,
+ "verdict": {
+  "refused": "",
+  "needsConfirm": true,
+  "reason": "it is a virtual disk; it is in use at /home/alex.guest/agent-rescueusb/m and will be unmounted"
+ }
+}

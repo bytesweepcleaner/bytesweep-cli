@@ -1,0 +1,18 @@
+{
+ "about": "Maintenance would run every Sun at 03:00: install the security updates, clear old logs, clean what is safe to clean, restart services still running the old files after updates.",
+ "dryRun": true,
+ "plan": {
+  "on": true,
+  "every": "weekly",
+  "day": "sun",
+  "at": "03:00",
+  "steps": [
+   "updates-security",
+   "logs",
+   "clean-safe",
+   "restart-services"
+  ],
+  "older": "7d",
+  "next": "2026-11-15T03:00:00+05:30"
+ }
+}

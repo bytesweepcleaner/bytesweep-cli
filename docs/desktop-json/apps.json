@@ -1,0 +1,5608 @@
+[
+ {
+  "id": "deb:linux-modules-7.0.0-28-generic",
+  "name": "linux-modules-7.0.0-28-generic",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 281832448,
+  "kept": "it is the running kernel"
+ },
+ {
+  "id": "deb:linux-headers-7.0.0-28-generic",
+  "name": "linux-headers-7.0.0-28-generic",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 186441728,
+  "kept": "it is the running kernel"
+ },
+ {
+  "id": "deb:golang-1.26-src",
+  "name": "golang-1.26-src",
+  "version": "1.26.8-1~ubuntu0.26.04.2",
+  "source": "dpkg",
+  "size": 154706944
+ },
+ {
+  "id": "deb:snapd",
+  "name": "snapd",
+  "version": "2.75.2+ubuntu26.04.2",
+  "source": "dpkg",
+  "size": 137310208,
+  "kept": "the system needs it to start, to let you in, or to install anything again"
+ },
+ {
+  "id": "deb:libllvm21:arm64",
+  "name": "libllvm21:arm64",
+  "version": "1:21.1.8-6ubuntu1",
+  "source": "dpkg",
+  "size": 133808128
+ },
+ {
+  "id": "deb:python3-botocore",
+  "name": "python3-botocore",
+  "version": "1.40.72+repack-1build1",
+  "source": "dpkg",
+  "size": 110788608
+ },
+ {
+  "id": "deb:linux-headers-7.0.0-28",
+  "name": "linux-headers-7.0.0-28",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 94665728
+ },
+ {
+  "id": "deb:golang-1.26-go",
+  "name": "golang-1.26-go",
+  "version": "1.26.8-1~ubuntu0.26.04.2",
+  "source": "dpkg",
+  "size": 76303360
+ },
+ {
+  "id": "deb:gcc-15-aarch64-linux-gnu",
+  "name": "gcc-15-aarch64-linux-gnu",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 71823360
+ },
+ {
+  "id": "deb:libclang-cpp21",
+  "name": "libclang-cpp21",
+  "version": "1:21.1.8-6ubuntu1",
+  "source": "dpkg",
+  "size": 60248064
+ },
+ {
+  "id": "deb:mariadb-server",
+  "name": "mariadb-server",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 45729792
+ },
+ {
+  "id": "deb:libicu78:arm64",
+  "name": "libicu78:arm64",
+  "version": "78.2-2ubuntu1",
+  "source": "dpkg",
+  "size": 39826432
+ },
+ {
+  "id": "deb:vim-runtime",
+  "name": "vim-runtime",
+  "version": "2:9.1.2141-1ubuntu4.7",
+  "source": "dpkg",
+  "size": 39052288
+ },
+ {
+  "id": "deb:g++-15-aarch64-linux-gnu",
+  "name": "g++-15-aarch64-linux-gnu",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 38621184
+ },
+ {
+  "id": "deb:cpp-15-aarch64-linux-gnu",
+  "name": "cpp-15-aarch64-linux-gnu",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 35778560
+ },
+ {
+  "id": "deb:mariadb-server-core",
+  "name": "mariadb-server-core",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 35578880
+ },
+ {
+  "id": "deb:libclang1-21",
+  "name": "libclang1-21",
+  "version": "1:21.1.8-6ubuntu1",
+  "source": "dpkg",
+  "size": 32411648
+ },
+ {
+  "id": "deb:libperl5.40:arm64",
+  "name": "libperl5.40:arm64",
+  "version": "5.40.1-7ubuntu0.3",
+  "source": "dpkg",
+  "size": 31729664
+ },
+ {
+  "id": "deb:python-babel-localedata",
+  "name": "python-babel-localedata",
+  "version": "2.17.0-2",
+  "source": "dpkg",
+  "size": 30839808
+ },
+ {
+  "id": "deb:mariadb-client",
+  "name": "mariadb-client",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 27502592
+ },
+ {
+  "id": "deb:libstdc++-15-dev:arm64",
+  "name": "libstdc++-15-dev:arm64",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 26406912
+ },
+ {
+  "id": "deb:git",
+  "name": "git",
+  "version": "1:2.53.0-1ubuntu1",
+  "source": "dpkg",
+  "size": 25432064
+ },
+ {
+  "id": "deb:postgresql-18",
+  "name": "postgresql-18",
+  "version": "18.6-0ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 24875008
+ },
+ {
+  "id": "deb:iso-codes",
+  "name": "iso-codes",
+  "version": "4.20.1-1",
+  "source": "dpkg",
+  "size": 24597504,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:postgresql-18-jit",
+  "name": "postgresql-18-jit",
+  "version": "18.6-0ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 24365056
+ },
+ {
+  "id": "deb:linux-image-7.0.0-28-generic",
+  "name": "linux-image-7.0.0-28-generic",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 23861248,
+  "kept": "it is the running kernel"
+ },
+ {
+  "id": "deb:linux-perf",
+  "name": "linux-perf",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 23626752
+ },
+ {
+  "id": "deb:perl-modules-5.40",
+  "name": "perl-modules-5.40",
+  "version": "5.40.1-7ubuntu0.3",
+  "source": "dpkg",
+  "size": 20464640
+ },
+ {
+  "id": "deb:libc-gconv-modules-extra:arm64",
+  "name": "libc-gconv-modules-extra:arm64",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 19443712,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:fwupd",
+  "name": "fwupd",
+  "version": "2.1.1-1ubuntu3.1",
+  "source": "dpkg",
+  "size": 19263488
+ },
+ {
+  "id": "deb:grub2-common",
+  "name": "grub2-common",
+  "version": "2.14-2ubuntu2",
+  "source": "dpkg",
+  "size": 17469440,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:libgcc-15-dev:arm64",
+  "name": "libgcc-15-dev:arm64",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 16758784
+ },
+ {
+  "id": "deb:locales",
+  "name": "locales",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 16180224,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ieee-data",
+  "name": "ieee-data",
+  "version": "20240722build1",
+  "source": "dpkg",
+  "size": 15249408
+ },
+ {
+  "id": "deb:rust-coreutils",
+  "name": "rust-coreutils",
+  "version": "0.8.0-0ubuntu3",
+  "source": "dpkg",
+  "size": 15204352,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:systemd",
+  "name": "systemd",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 14839808,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:bpftrace",
+  "name": "bpftrace",
+  "version": "0.25.0-1ubuntu1",
+  "source": "dpkg",
+  "size": 13722624
+ },
+ {
+  "id": "deb:python3-twisted",
+  "name": "python3-twisted",
+  "version": "25.5.0-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 13391872
+ },
+ {
+  "id": "deb:libpython3.14-stdlib:arm64",
+  "name": "libpython3.14-stdlib:arm64",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 11947008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:mariadb-client-core",
+  "name": "mariadb-client-core",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 11441152
+ },
+ {
+  "id": "deb:libasan8:arm64",
+  "name": "libasan8:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 11262976
+ },
+ {
+  "id": "deb:udev",
+  "name": "udev",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 11073536,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libc6-dev:arm64",
+  "name": "libc6-dev:arm64",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 10963968
+ },
+ {
+  "id": "deb:libmagic-mgc",
+  "name": "libmagic-mgc",
+  "version": "1:5.46-5build2",
+  "source": "dpkg",
+  "size": 10378240
+ },
+ {
+  "id": "deb:gnu-coreutils",
+  "name": "gnu-coreutils",
+  "version": "9.7-3ubuntu2",
+  "source": "dpkg",
+  "size": 9715712,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:binutils-aarch64-linux-gnu",
+  "name": "binutils-aarch64-linux-gnu",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 9517056
+ },
+ {
+  "id": "deb:libtsan2:arm64",
+  "name": "libtsan2:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 9498624
+ },
+ {
+  "id": "deb:iptables",
+  "name": "iptables",
+  "version": "1.8.11-2ubuntu3",
+  "source": "dpkg",
+  "size": 8650752
+ },
+ {
+  "id": "deb:libpython3.14:arm64",
+  "name": "libpython3.14:arm64",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 8500224
+ },
+ {
+  "id": "deb:binutils-gold-aarch64-linux-gnu",
+  "name": "binutils-gold-aarch64-linux-gnu",
+  "version": "2.44-3build1",
+  "source": "dpkg",
+  "size": 8358912
+ },
+ {
+  "id": "deb:perl-base",
+  "name": "perl-base",
+  "version": "5.40.1-7ubuntu0.3",
+  "source": "dpkg",
+  "size": 8324096,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libssl3t64:arm64",
+  "name": "libssl3t64:arm64",
+  "version": "3.5.5-1ubuntu3.2",
+  "source": "dpkg",
+  "size": 8209408,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:grub-efi-arm64-unsigned",
+  "name": "grub-efi-arm64-unsigned",
+  "version": "2.14-2ubuntu1",
+  "source": "dpkg",
+  "size": 8133632,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:grub-efi-arm64-signed",
+  "name": "grub-efi-arm64-signed",
+  "version": "1.215+2.14-2ubuntu1",
+  "source": "dpkg",
+  "size": 8075264,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:linux-libc-dev:arm64",
+  "name": "linux-libc-dev:arm64",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 7944192
+ },
+ {
+  "id": "deb:modemmanager",
+  "name": "modemmanager",
+  "version": "1.25.95-1ubuntu1",
+  "source": "dpkg",
+  "size": 7651328
+ },
+ {
+  "id": "deb:libsystemd-shared:arm64",
+  "name": "libsystemd-shared:arm64",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 7623680,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3.14-minimal",
+  "name": "python3.14-minimal",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 7598080,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:console-setup-linux",
+  "name": "console-setup-linux",
+  "version": "1.237ubuntu3",
+  "source": "dpkg",
+  "size": 7465984,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:shim-signed",
+  "name": "shim-signed",
+  "version": "1.59+15.8-0ubuntu2",
+  "source": "dpkg",
+  "size": 6821888,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:dpkg",
+  "name": "dpkg",
+  "version": "1.23.7ubuntu1",
+  "source": "dpkg",
+  "size": 6604800,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:sg3-utils",
+  "name": "sg3-utils",
+  "version": "1.48-3ubuntu3.1",
+  "source": "dpkg",
+  "size": 6472704
+ },
+ {
+  "id": "deb:libpython3.14-minimal:arm64",
+  "name": "libpython3.14-minimal:arm64",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 5784576,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:postgresql-client-18",
+  "name": "postgresql-client-18",
+  "version": "18.6-0ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 5595136
+ },
+ {
+  "id": "deb:btrfs-progs",
+  "name": "btrfs-progs",
+  "version": "6.17.1-1build1",
+  "source": "dpkg",
+  "size": 5448704
+ },
+ {
+  "id": "deb:libhwasan0:arm64",
+  "name": "libhwasan0:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 5269504
+ },
+ {
+  "id": "deb:libc6:arm64",
+  "name": "libc6:arm64",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 5254144,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libqmi-glib5:arm64",
+  "name": "libqmi-glib5:arm64",
+  "version": "1.38.0-1",
+  "source": "dpkg",
+  "size": 5041152
+ },
+ {
+  "id": "deb:libglib2.0-0t64:arm64",
+  "name": "libglib2.0-0t64:arm64",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 4970496,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:passwd",
+  "name": "passwd",
+  "version": "1:4.17.4-2ubuntu3",
+  "source": "dpkg",
+  "size": 4907008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:apt",
+  "name": "apt",
+  "version": "3.2.0",
+  "source": "dpkg",
+  "size": 4904960,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-pygments",
+  "name": "python3-pygments",
+  "version": "2.19.2+dfsg-1",
+  "source": "dpkg",
+  "size": 4691968,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-passlib",
+  "name": "python3-passlib",
+  "version": "1.9.3-1ubuntu1",
+  "source": "dpkg",
+  "size": 4627456
+ },
+ {
+  "id": "deb:vim",
+  "name": "vim",
+  "version": "2:9.1.2141-1ubuntu4.7",
+  "source": "dpkg",
+  "size": 4579328
+ },
+ {
+  "id": "deb:util-linux",
+  "name": "util-linux",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 4552704,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ncurses-term",
+  "name": "ncurses-term",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 4527104
+ },
+ {
+  "id": "deb:libintl-perl",
+  "name": "libintl-perl",
+  "version": "1.37-1",
+  "source": "dpkg",
+  "size": 4404224
+ },
+ {
+  "id": "deb:xfsprogs",
+  "name": "xfsprogs",
+  "version": "6.18.0-3",
+  "source": "dpkg",
+  "size": 4341760
+ },
+ {
+  "id": "deb:libnss3:arm64",
+  "name": "libnss3:arm64",
+  "version": "2:3.120-1ubuntu2.1",
+  "source": "dpkg",
+  "size": 4304896
+ },
+ {
+  "id": "deb:libtcl8.6:arm64",
+  "name": "libtcl8.6:arm64",
+  "version": "8.6.17+dfsg-1build1",
+  "source": "dpkg",
+  "size": 4277248
+ },
+ {
+  "id": "deb:manpages-dev",
+  "name": "manpages-dev",
+  "version": "6.17-1",
+  "source": "dpkg",
+  "size": 4246528
+ },
+ {
+  "id": "deb:xkb-data",
+  "name": "xkb-data",
+  "version": "2.46-2",
+  "source": "dpkg",
+  "size": 4239360,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-cryptography",
+  "name": "python3-cryptography",
+  "version": "46.0.5-1ubuntu2",
+  "source": "dpkg",
+  "size": 4188160
+ },
+ {
+  "id": "deb:open-vm-tools",
+  "name": "open-vm-tools",
+  "version": "2:13.0.10-1ubuntu1",
+  "source": "dpkg",
+  "size": 4185088
+ },
+ {
+  "id": "deb:lvm2",
+  "name": "lvm2",
+  "version": "2.03.31-2ubuntu3",
+  "source": "dpkg",
+  "size": 4164608
+ },
+ {
+  "id": "deb:liblsan0:arm64",
+  "name": "liblsan0:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 4099072
+ },
+ {
+  "id": "deb:mtd-utils",
+  "name": "mtd-utils",
+  "version": "1:2.3.0-1ubuntu2",
+  "source": "dpkg",
+  "size": 4047872
+ },
+ {
+  "id": "deb:python3-setuptools",
+  "name": "python3-setuptools",
+  "version": "78.1.1-0.1build1",
+  "source": "dpkg",
+  "size": 3990528
+ },
+ {
+  "id": "deb:groff-base",
+  "name": "groff-base",
+  "version": "1.23.0-10",
+  "source": "dpkg",
+  "size": 3986432,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:sudo",
+  "name": "sudo",
+  "version": "1.9.17p2-1ubuntu3",
+  "source": "dpkg",
+  "size": 3919872,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgstreamer1.0-0:arm64",
+  "name": "libgstreamer1.0-0:arm64",
+  "version": "1.28.2-1",
+  "source": "dpkg",
+  "size": 3915776
+ },
+ {
+  "id": "deb:openssh-client",
+  "name": "openssh-client",
+  "version": "1:10.2p1-2ubuntu3.5",
+  "source": "dpkg",
+  "size": 3834880
+ },
+ {
+  "id": "deb:iproute2",
+  "name": "iproute2",
+  "version": "6.19.0-1ubuntu1.1",
+  "source": "dpkg",
+  "size": 3791872,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:grub-efi-arm64-bin",
+  "name": "grub-efi-arm64-bin",
+  "version": "2.14-2ubuntu1",
+  "source": "dpkg",
+  "size": 3704832,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:bind9-libs:arm64",
+  "name": "bind9-libs:arm64",
+  "version": "1:9.20.18-1ubuntu2.1",
+  "source": "dpkg",
+  "size": 3695616
+ },
+ {
+  "id": "deb:libubsan1:arm64",
+  "name": "libubsan1:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 3641344
+ },
+ {
+  "id": "deb:man-db",
+  "name": "man-db",
+  "version": "2.13.1-1build1",
+  "source": "dpkg",
+  "size": 3556352,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:rsyslog",
+  "name": "rsyslog",
+  "version": "8.2512.0-1ubuntu4.2",
+  "source": "dpkg",
+  "size": 3552256,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libapt-pkg7.0:arm64",
+  "name": "libapt-pkg7.0:arm64",
+  "version": "3.2.0",
+  "source": "dpkg",
+  "size": 3529728,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libbinutils:arm64",
+  "name": "libbinutils:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 3367936
+ },
+ {
+  "id": "deb:libstdc++6:arm64",
+  "name": "libstdc++6:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 3297280,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpam-modules:arm64",
+  "name": "libpam-modules:arm64",
+  "version": "1.7.0-5ubuntu3",
+  "source": "dpkg",
+  "size": 3201024,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:thin-provisioning-tools",
+  "name": "thin-provisioning-tools",
+  "version": "1.1.0-4ubuntu2",
+  "source": "dpkg",
+  "size": 3159040
+ },
+ {
+  "id": "deb:cloud-init-base",
+  "name": "cloud-init-base",
+  "version": "26.1-0ubuntu2",
+  "source": "dpkg",
+  "size": 3083264
+ },
+ {
+  "id": "deb:liblvm2cmd2.03:arm64",
+  "name": "liblvm2cmd2.03:arm64",
+  "version": "2.03.31-2ubuntu3",
+  "source": "dpkg",
+  "size": 3060736
+ },
+ {
+  "id": "deb:bpfcc-tools",
+  "name": "bpfcc-tools",
+  "version": "0.35.0+ds-1ubuntu2",
+  "source": "dpkg",
+  "size": 2998272
+ },
+ {
+  "id": "deb:shared-mime-info",
+  "name": "shared-mime-info",
+  "version": "2.4-5build3",
+  "source": "dpkg",
+  "size": 2990080,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:openssh-server",
+  "name": "openssh-server",
+  "version": "1:10.2p1-2ubuntu3.5",
+  "source": "dpkg",
+  "size": 2894848,
+  "kept": "the system needs it to start, to let you in, or to install anything again"
+ },
+ {
+  "id": "deb:libgprofng0:arm64",
+  "name": "libgprofng0:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 2870272
+ },
+ {
+  "id": "deb:linux-tools-7.0.0-28",
+  "name": "linux-tools-7.0.0-28",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 2802688
+ },
+ {
+  "id": "deb:gawk",
+  "name": "gawk",
+  "version": "1:5.3.2-1ubuntu1",
+  "source": "dpkg",
+  "size": 2699264
+ },
+ {
+  "id": "deb:apparmor",
+  "name": "apparmor",
+  "version": "5.0.0~beta1-0ubuntu7",
+  "source": "dpkg",
+  "size": 2691072
+ },
+ {
+  "id": "deb:libbpfcc:arm64",
+  "name": "libbpfcc:arm64",
+  "version": "0.35.0+ds-1ubuntu2",
+  "source": "dpkg",
+  "size": 2668544
+ },
+ {
+  "id": "deb:util-linux-extra",
+  "name": "util-linux-extra",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 2658304
+ },
+ {
+  "id": "deb:libslang2:arm64",
+  "name": "libslang2:arm64",
+  "version": "2.3.3-5build1",
+  "source": "dpkg",
+  "size": 2616320,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:openssl",
+  "name": "openssl",
+  "version": "3.5.5-1ubuntu3.2",
+  "source": "dpkg",
+  "size": 2599936,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libdbi-perl:arm64",
+  "name": "libdbi-perl:arm64",
+  "version": "1.647-1ubuntu0.26.04.4",
+  "source": "dpkg",
+  "size": 2545664
+ },
+ {
+  "id": "deb:kbd",
+  "name": "kbd",
+  "version": "2.7.1-2ubuntu2",
+  "source": "dpkg",
+  "size": 2539520,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgnutls30t64:arm64",
+  "name": "libgnutls30t64:arm64",
+  "version": "3.8.12-2ubuntu1.1",
+  "source": "dpkg",
+  "size": 2531328,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:sudo-rs",
+  "name": "sudo-rs",
+  "version": "0.2.13-0ubuntu1",
+  "source": "dpkg",
+  "size": 2499584,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:bpftool",
+  "name": "bpftool",
+  "version": "7.7.0+7.0.0-28.28",
+  "source": "dpkg",
+  "size": 2482176
+ },
+ {
+  "id": "deb:procps",
+  "name": "procps",
+  "version": "2:4.0.4-9ubuntu1",
+  "source": "dpkg",
+  "size": 2453504,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:git-man",
+  "name": "git-man",
+  "version": "1:2.53.0-1ubuntu1",
+  "source": "dpkg",
+  "size": 2433024
+ },
+ {
+  "id": "deb:klibc-utils",
+  "name": "klibc-utils",
+  "version": "2.0.14-1ubuntu2",
+  "source": "dpkg",
+  "size": 2359296
+ },
+ {
+  "id": "deb:fonts-dejavu-core",
+  "name": "fonts-dejavu-core",
+  "version": "2.37-8build1",
+  "source": "dpkg",
+  "size": 2347008
+ },
+ {
+  "id": "deb:vim-common",
+  "name": "vim-common",
+  "version": "2:9.1.2141-1ubuntu4.7",
+  "source": "dpkg",
+  "size": 2326528,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libisl23:arm64",
+  "name": "libisl23:arm64",
+  "version": "0.27-1build1",
+  "source": "dpkg",
+  "size": 2322432
+ },
+ {
+  "id": "deb:packagekit",
+  "name": "packagekit",
+  "version": "1.3.4-3ubuntu1.1",
+  "source": "dpkg",
+  "size": 2322432
+ },
+ {
+  "id": "deb:libc-bin",
+  "name": "libc-bin",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 2292736,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:sos",
+  "name": "sos",
+  "version": "4.10.2-1",
+  "source": "dpkg",
+  "size": 2278400
+ },
+ {
+  "id": "deb:libp11-kit0:arm64",
+  "name": "libp11-kit0:arm64",
+  "version": "0.26.2-2",
+  "source": "dpkg",
+  "size": 2198528,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:bash",
+  "name": "bash",
+  "version": "5.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 2187264,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:e2fsprogs",
+  "name": "e2fsprogs",
+  "version": "1.47.2-3ubuntu4",
+  "source": "dpkg",
+  "size": 2177024,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:strace",
+  "name": "strace",
+  "version": "6.19+ds-0ubuntu5",
+  "source": "dpkg",
+  "size": 2120704
+ },
+ {
+  "id": "deb:libunistring5:arm64",
+  "name": "libunistring5:arm64",
+  "version": "1.3-2build1",
+  "source": "dpkg",
+  "size": 2110464,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:linux-main-modules-zfs-7.0.0-28-generic",
+  "name": "linux-main-modules-zfs-7.0.0-28-generic",
+  "version": "7.0.0-28.28+1",
+  "source": "dpkg",
+  "size": 2095104,
+  "kept": "it is the running kernel"
+ },
+ {
+  "id": "deb:busybox-static",
+  "name": "busybox-static",
+  "version": "1:1.37.0-7ubuntu1",
+  "source": "dpkg",
+  "size": 2030592
+ },
+ {
+  "id": "deb:ntfs-3g",
+  "name": "ntfs-3g",
+  "version": "1:2022.10.3-5ubuntu1.1",
+  "source": "dpkg",
+  "size": 2027520
+ },
+ {
+  "id": "deb:multipath-tools",
+  "name": "multipath-tools",
+  "version": "0.14.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 2018304
+ },
+ {
+  "id": "deb:bash-completion",
+  "name": "bash-completion",
+  "version": "1:2.16.0-8build1",
+  "source": "dpkg",
+  "size": 1998848
+ },
+ {
+  "id": "deb:vim-tiny",
+  "name": "vim-tiny",
+  "version": "2:9.1.2141-1ubuntu4.7",
+  "source": "dpkg",
+  "size": 1998848,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:u-boot-tools",
+  "name": "u-boot-tools",
+  "version": "2025.10-0ubuntu2",
+  "source": "dpkg",
+  "size": 1914880
+ },
+ {
+  "id": "deb:libsqlite3-0:arm64",
+  "name": "libsqlite3-0:arm64",
+  "version": "3.46.1-9ubuntu0.1",
+  "source": "dpkg",
+  "size": 1895424,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:galera-4",
+  "name": "galera-4",
+  "version": "26.4.25-2",
+  "source": "dpkg",
+  "size": 1881088
+ },
+ {
+  "id": "deb:ibverbs-providers:arm64",
+  "name": "ibverbs-providers:arm64",
+  "version": "61.0-2ubuntu3",
+  "source": "dpkg",
+  "size": 1857536
+ },
+ {
+  "id": "deb:socat",
+  "name": "socat",
+  "version": "1.8.1.1-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 1821696
+ },
+ {
+  "id": "deb:python3-launchpadlib",
+  "name": "python3-launchpadlib",
+  "version": "2.1.0-1build1",
+  "source": "dpkg",
+  "size": 1811456
+ },
+ {
+  "id": "deb:libdb5.3t64:arm64",
+  "name": "libdb5.3t64:arm64",
+  "version": "5.3.28+dfsg2-10ubuntu1",
+  "source": "dpkg",
+  "size": 1807360,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:zstd",
+  "name": "zstd",
+  "version": "1.5.7+dfsg-3",
+  "source": "dpkg",
+  "size": 1769472
+ },
+ {
+  "id": "deb:sysstat",
+  "name": "sysstat",
+  "version": "12.7.7-0ubuntu2",
+  "source": "dpkg",
+  "size": 1757184
+ },
+ {
+  "id": "deb:manpages",
+  "name": "manpages",
+  "version": "6.17-1",
+  "source": "dpkg",
+  "size": 1702912
+ },
+ {
+  "id": "deb:libxml2-16:arm64",
+  "name": "libxml2-16:arm64",
+  "version": "2.15.2+dfsg-0.1ubuntu0.1",
+  "source": "dpkg",
+  "size": 1664000,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:trace-cmd",
+  "name": "trace-cmd",
+  "version": "3.3.3-1ubuntu2",
+  "source": "dpkg",
+  "size": 1642496
+ },
+ {
+  "id": "deb:nginx",
+  "name": "nginx",
+  "version": "1.28.3-2ubuntu1.12",
+  "source": "dpkg",
+  "size": 1635328
+ },
+ {
+  "id": "deb:update-notifier-common",
+  "name": "update-notifier-common",
+  "version": "3.207.1",
+  "source": "dpkg",
+  "size": 1618944
+ },
+ {
+  "id": "deb:pci.ids",
+  "name": "pci.ids",
+  "version": "0.0~2026.02.12-1",
+  "source": "dpkg",
+  "size": 1598464
+ },
+ {
+  "id": "deb:gpg",
+  "name": "gpg",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 1511424
+ },
+ {
+  "id": "deb:python3-netaddr",
+  "name": "python3-netaddr",
+  "version": "1.3.0-1build1",
+  "source": "dpkg",
+  "size": 1476608
+ },
+ {
+  "id": "deb:libmm-glib0:arm64",
+  "name": "libmm-glib0:arm64",
+  "version": "1.25.95-1ubuntu1",
+  "source": "dpkg",
+  "size": 1448960
+ },
+ {
+  "id": "deb:udisks2",
+  "name": "udisks2",
+  "version": "2.10.91-1ubuntu2",
+  "source": "dpkg",
+  "size": 1441792
+ },
+ {
+  "id": "deb:libx11-6:arm64",
+  "name": "libx11-6:arm64",
+  "version": "2:1.8.13-1",
+  "source": "dpkg",
+  "size": 1421312
+ },
+ {
+  "id": "deb:dracut-core",
+  "name": "dracut-core",
+  "version": "110-11",
+  "source": "dpkg",
+  "size": 1414144
+ },
+ {
+  "id": "deb:ubuntu-pro-client",
+  "name": "ubuntu-pro-client",
+  "version": "37.2ubuntu0.1",
+  "source": "dpkg",
+  "size": 1404928,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:tcpdump",
+  "name": "tcpdump",
+  "version": "4.99.6-1",
+  "source": "dpkg",
+  "size": 1400832
+ },
+ {
+  "id": "deb:tzdata",
+  "name": "tzdata",
+  "version": "2026b-0ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 1392640,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libx11-data",
+  "name": "libx11-data",
+  "version": "2:1.8.13-1",
+  "source": "dpkg",
+  "size": 1375232
+ },
+ {
+  "id": "deb:libgcrypt20:arm64",
+  "name": "libgcrypt20:arm64",
+  "version": "1.12.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 1362944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:binutils",
+  "name": "binutils",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 1349632
+ },
+ {
+  "id": "deb:fonts-dejavu-mono",
+  "name": "fonts-dejavu-mono",
+  "version": "2.37-8build1",
+  "source": "dpkg",
+  "size": 1311744
+ },
+ {
+  "id": "deb:open-iscsi",
+  "name": "open-iscsi",
+  "version": "2.1.11-3ubuntu3",
+  "source": "dpkg",
+  "size": 1296384
+ },
+ {
+  "id": "deb:libsystemd0:arm64",
+  "name": "libsystemd0:arm64",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 1295360,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:tmux",
+  "name": "tmux",
+  "version": "3.6a-2ubuntu0.2",
+  "source": "dpkg",
+  "size": 1287168
+ },
+ {
+  "id": "deb:mdadm",
+  "name": "mdadm",
+  "version": "4.5-5ubuntu1",
+  "source": "dpkg",
+  "size": 1275904
+ },
+ {
+  "id": "deb:plymouth",
+  "name": "plymouth",
+  "version": "24.004.60+git20250831.4a3c171d-0ubuntu8",
+  "source": "dpkg",
+  "size": 1253376
+ },
+ {
+  "id": "deb:libmpfr6:arm64",
+  "name": "libmpfr6:arm64",
+  "version": "4.2.2-3",
+  "source": "dpkg",
+  "size": 1219584
+ },
+ {
+  "id": "deb:python3-chardet",
+  "name": "python3-chardet",
+  "version": "5.2.0+dfsg-2build1",
+  "source": "dpkg",
+  "size": 1168384
+ },
+ {
+  "id": "deb:ethtool",
+  "name": "ethtool",
+  "version": "1:6.19-1",
+  "source": "dpkg",
+  "size": 1142784,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libkrb5-3:arm64",
+  "name": "libkrb5-3:arm64",
+  "version": "1.22.1-2ubuntu4",
+  "source": "dpkg",
+  "size": 1124352,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libnftables1:arm64",
+  "name": "libnftables1:arm64",
+  "version": "1.1.6-1",
+  "source": "dpkg",
+  "size": 1117184
+ },
+ {
+  "id": "deb:xz-utils",
+  "name": "xz-utils",
+  "version": "5.8.3-1",
+  "source": "dpkg",
+  "size": 1081344
+ },
+ {
+  "id": "deb:python3-rich",
+  "name": "python3-rich",
+  "version": "13.9.4-1.2",
+  "source": "dpkg",
+  "size": 1078272,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:screen",
+  "name": "screen",
+  "version": "4.9.1-3ubuntu2",
+  "source": "dpkg",
+  "size": 1069056
+ },
+ {
+  "id": "deb:python3-boto3",
+  "name": "python3-boto3",
+  "version": "1.40.72-1build1",
+  "source": "dpkg",
+  "size": 1055744
+ },
+ {
+  "id": "deb:libcurl3t64-gnutls:arm64",
+  "name": "libcurl3t64-gnutls:arm64",
+  "version": "8.18.0-1ubuntu2.8",
+  "source": "dpkg",
+  "size": 1044480
+ },
+ {
+  "id": "deb:libcurl4t64:arm64",
+  "name": "libcurl4t64:arm64",
+  "version": "8.18.0-1ubuntu2.8",
+  "source": "dpkg",
+  "size": 1041408
+ },
+ {
+  "id": "deb:libstemmer0d:arm64",
+  "name": "libstemmer0d:arm64",
+  "version": "3.0.1-1",
+  "source": "dpkg",
+  "size": 1017856
+ },
+ {
+  "id": "deb:libudisks2-0:arm64",
+  "name": "libudisks2-0:arm64",
+  "version": "2.10.91-1ubuntu2",
+  "source": "dpkg",
+  "size": 1009664
+ },
+ {
+  "id": "deb:libmbim-glib4:arm64",
+  "name": "libmbim-glib4:arm64",
+  "version": "1.32.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 990208
+ },
+ {
+  "id": "deb:python3-zope.interface",
+  "name": "python3-zope.interface",
+  "version": "8.2-1build1",
+  "source": "dpkg",
+  "size": 984064
+ },
+ {
+  "id": "deb:systemd-resolved",
+  "name": "systemd-resolved",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 982016,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:systemd-cryptsetup",
+  "name": "systemd-cryptsetup",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 953344,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libbrotli1:arm64",
+  "name": "libbrotli1:arm64",
+  "version": "1.2.0-3build1",
+  "source": "dpkg",
+  "size": 948224
+ },
+ {
+  "id": "deb:ncurses-bin",
+  "name": "ncurses-bin",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 945152,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:nano",
+  "name": "nano",
+  "version": "8.7.1-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 933888,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3.14",
+  "name": "python3.14",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 933888,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libqmi-utils",
+  "name": "libqmi-utils",
+  "version": "1.38.0-1",
+  "source": "dpkg",
+  "size": 926720
+ },
+ {
+  "id": "deb:libmariadb3:arm64",
+  "name": "libmariadb3:arm64",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 921600
+ },
+ {
+  "id": "deb:libfreetype6:arm64",
+  "name": "libfreetype6:arm64",
+  "version": "2.14.2+dfsg-1",
+  "source": "dpkg",
+  "size": 911360
+ },
+ {
+  "id": "deb:libtraceevent1-plugin:arm64",
+  "name": "libtraceevent1-plugin:arm64",
+  "version": "1:1.8.7-1",
+  "source": "dpkg",
+  "size": 900096
+ },
+ {
+  "id": "deb:libsepol2:arm64",
+  "name": "libsepol2:arm64",
+  "version": "3.9-2",
+  "source": "dpkg",
+  "size": 883712,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ufw",
+  "name": "ufw",
+  "version": "0.36.2-9build1",
+  "source": "dpkg",
+  "size": 870400
+ },
+ {
+  "id": "deb:psmisc",
+  "name": "psmisc",
+  "version": "23.7-2ubuntu2",
+  "source": "dpkg",
+  "size": 864256
+ },
+ {
+  "id": "deb:debconf-i18n",
+  "name": "debconf-i18n",
+  "version": "1.5.92",
+  "source": "dpkg",
+  "size": 862208,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libappstream5:arm64",
+  "name": "libappstream5:arm64",
+  "version": "1.1.2-1",
+  "source": "dpkg",
+  "size": 859136
+ },
+ {
+  "id": "deb:perl",
+  "name": "perl",
+  "version": "5.40.1-7ubuntu0.3",
+  "source": "dpkg",
+  "size": 856064
+ },
+ {
+  "id": "deb:gdisk",
+  "name": "gdisk",
+  "version": "1.0.10-2build1",
+  "source": "dpkg",
+  "size": 851968
+ },
+ {
+  "id": "deb:rsync",
+  "name": "rsync",
+  "version": "3.4.1+ds1-7ubuntu0.3",
+  "source": "dpkg",
+  "size": 843776
+ },
+ {
+  "id": "deb:python3-gi",
+  "name": "python3-gi",
+  "version": "3.56.2-1",
+  "source": "dpkg",
+  "size": 839680,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:keyboard-configuration",
+  "name": "keyboard-configuration",
+  "version": "1.237ubuntu3",
+  "source": "dpkg",
+  "size": 838656,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libdw1t64:arm64",
+  "name": "libdw1t64:arm64",
+  "version": "0.194-4",
+  "source": "dpkg",
+  "size": 834560
+ },
+ {
+  "id": "deb:python3-rpds-py",
+  "name": "python3-rpds-py",
+  "version": "0.27.1-2ubuntu3",
+  "source": "dpkg",
+  "size": 824320
+ },
+ {
+  "id": "deb:dirmngr",
+  "name": "dirmngr",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 815104
+ },
+ {
+  "id": "deb:python3-pyasn1-modules",
+  "name": "python3-pyasn1-modules",
+  "version": "0.4.1-2build1",
+  "source": "dpkg",
+  "size": 815104
+ },
+ {
+  "id": "deb:libflashrom1:arm64",
+  "name": "libflashrom1:arm64",
+  "version": "1.6.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 813056
+ },
+ {
+  "id": "deb:libpam-systemd:arm64",
+  "name": "libpam-systemd:arm64",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 813056,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:lshw",
+  "name": "lshw",
+  "version": "02.19.git.2021.06.19.996aaad9c7-2.1ubuntu3",
+  "source": "dpkg",
+  "size": 786432
+ },
+ {
+  "id": "deb:tar",
+  "name": "tar",
+  "version": "1.35+dfsg-4ubuntu0.3",
+  "source": "dpkg",
+  "size": 778240,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gpg-agent",
+  "name": "gpg-agent",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 765952
+ },
+ {
+  "id": "deb:gir1.2-glib-2.0:arm64",
+  "name": "gir1.2-glib-2.0:arm64",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 762880,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:wget",
+  "name": "wget",
+  "version": "1.25.0-2ubuntu4.2",
+  "source": "dpkg",
+  "size": 761856
+ },
+ {
+  "id": "deb:info",
+  "name": "info",
+  "version": "7.2-5ubuntu2",
+  "source": "dpkg",
+  "size": 755712
+ },
+ {
+  "id": "deb:libnl-route-3-200:arm64",
+  "name": "libnl-route-3-200:arm64",
+  "version": "3.12.0-2",
+  "source": "dpkg",
+  "size": 751616
+ },
+ {
+  "id": "deb:usb.ids",
+  "name": "usb.ids",
+  "version": "2025.12.13-1",
+  "source": "dpkg",
+  "size": 743424
+ },
+ {
+  "id": "deb:chrony",
+  "name": "chrony",
+  "version": "4.8-2ubuntu1",
+  "source": "dpkg",
+  "size": 741376,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:cryptsetup-bin",
+  "name": "cryptsetup-bin",
+  "version": "2:2.8.4-1ubuntu4",
+  "source": "dpkg",
+  "size": 737280
+ },
+ {
+  "id": "deb:polkitd",
+  "name": "polkitd",
+  "version": "127-2ubuntu1",
+  "source": "dpkg",
+  "size": 729088
+ },
+ {
+  "id": "deb:device-tree-compiler",
+  "name": "device-tree-compiler",
+  "version": "1.7.2-2ubuntu1",
+  "source": "dpkg",
+  "size": 726016
+ },
+ {
+  "id": "deb:python3-apt",
+  "name": "python3-apt",
+  "version": "3.1.0ubuntu1",
+  "source": "dpkg",
+  "size": 722944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libonig5:arm64",
+  "name": "libonig5:arm64",
+  "version": "6.9.10-1build1",
+  "source": "dpkg",
+  "size": 715776
+ },
+ {
+  "id": "deb:python3-pkg-resources",
+  "name": "python3-pkg-resources",
+  "version": "78.1.1-0.1build1",
+  "source": "dpkg",
+  "size": 712704
+ },
+ {
+  "id": "deb:libfyaml0:arm64",
+  "name": "libfyaml0:arm64",
+  "version": "0.9.4-1",
+  "source": "dpkg",
+  "size": 697344
+ },
+ {
+  "id": "deb:libtinfo6:arm64",
+  "name": "libtinfo6:arm64",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 693248,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpcre2-8-0:arm64",
+  "name": "libpcre2-8-0:arm64",
+  "version": "10.46-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 685056,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libzstd1:arm64",
+  "name": "libzstd1:arm64",
+  "version": "1.5.7+dfsg-3",
+  "source": "dpkg",
+  "size": 681984,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:3cpio",
+  "name": "3cpio",
+  "version": "0.14.0-1ubuntu1",
+  "source": "dpkg",
+  "size": 680960
+ },
+ {
+  "id": "deb:bind9-dnsutils",
+  "name": "bind9-dnsutils",
+  "version": "1:9.20.18-1ubuntu2.1",
+  "source": "dpkg",
+  "size": 665600
+ },
+ {
+  "id": "deb:apport",
+  "name": "apport",
+  "version": "2.34.0-0ubuntu2",
+  "source": "dpkg",
+  "size": 655360
+ },
+ {
+  "id": "deb:libcryptsetup12:arm64",
+  "name": "libcryptsetup12:arm64",
+  "version": "2:2.8.4-1ubuntu4",
+  "source": "dpkg",
+  "size": 655360,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:squashfs-tools",
+  "name": "squashfs-tools",
+  "version": "1:4.7.5-1",
+  "source": "dpkg",
+  "size": 654336
+ },
+ {
+  "id": "deb:libxmlsec1-1:arm64",
+  "name": "libxmlsec1-1:arm64",
+  "version": "1.3.9-1",
+  "source": "dpkg",
+  "size": 650240
+ },
+ {
+  "id": "deb:dhcpcd-base",
+  "name": "dhcpcd-base",
+  "version": "1:10.3.0-7",
+  "source": "dpkg",
+  "size": 644096,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:bsdextrautils",
+  "name": "bsdextrautils",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 634880
+ },
+ {
+  "id": "deb:findutils",
+  "name": "findutils",
+  "version": "4.10.0-3build2",
+  "source": "dpkg",
+  "size": 634880,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-debian",
+  "name": "python3-debian",
+  "version": "1.0.1ubuntu2",
+  "source": "dpkg",
+  "size": 622592
+ },
+ {
+  "id": "deb:publicsuffix",
+  "name": "publicsuffix",
+  "version": "20260129.1928-1",
+  "source": "dpkg",
+  "size": 616448
+ },
+ {
+  "id": "deb:libext2fs2t64:arm64",
+  "name": "libext2fs2t64:arm64",
+  "version": "1.47.2-3ubuntu4",
+  "source": "dpkg",
+  "size": 613376,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gcc-15",
+  "name": "gcc-15",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 609280
+ },
+ {
+  "id": "deb:libfwupd3:arm64",
+  "name": "libfwupd3:arm64",
+  "version": "2.1.1-1ubuntu3.1",
+  "source": "dpkg",
+  "size": 598016
+ },
+ {
+  "id": "deb:libpam-modules-bin",
+  "name": "libpam-modules-bin",
+  "version": "1.7.0-5ubuntu3",
+  "source": "dpkg",
+  "size": 596992,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-oauthlib",
+  "name": "python3-oauthlib",
+  "version": "3.3.1-1build1",
+  "source": "dpkg",
+  "size": 594944
+ },
+ {
+  "id": "deb:libplymouth5:arm64",
+  "name": "libplymouth5:arm64",
+  "version": "24.004.60+git20250831.4a3c171d-0ubuntu8",
+  "source": "dpkg",
+  "size": 591872
+ },
+ {
+  "id": "deb:libldap2:arm64",
+  "name": "libldap2:arm64",
+  "version": "2.6.10+dfsg-1ubuntu5",
+  "source": "dpkg",
+  "size": 589824
+ },
+ {
+  "id": "deb:gpgsm",
+  "name": "gpgsm",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 586752
+ },
+ {
+  "id": "deb:libmultipath0",
+  "name": "libmultipath0",
+  "version": "0.14.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 585728
+ },
+ {
+  "id": "deb:libncursesw6:arm64",
+  "name": "libncursesw6:arm64",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 583680,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:cryptsetup",
+  "name": "cryptsetup",
+  "version": "2:2.8.4-1ubuntu4",
+  "source": "dpkg",
+  "size": 573440
+ },
+ {
+  "id": "deb:libreadline8t64:arm64",
+  "name": "libreadline8t64:arm64",
+  "version": "8.3-4",
+  "source": "dpkg",
+  "size": 570368,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-bcrypt",
+  "name": "python3-bcrypt",
+  "version": "5.0.0-3build1",
+  "source": "dpkg",
+  "size": 570368
+ },
+ {
+  "id": "deb:python3-yaml",
+  "name": "python3-yaml",
+  "version": "6.0.3-1build1",
+  "source": "dpkg",
+  "size": 562176,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libjemalloc2:arm64",
+  "name": "libjemalloc2:arm64",
+  "version": "5.3.0-4",
+  "source": "dpkg",
+  "size": 556032
+ },
+ {
+  "id": "deb:liburcu8t64:arm64",
+  "name": "liburcu8t64:arm64",
+  "version": "0.15.6-1",
+  "source": "dpkg",
+  "size": 552960
+ },
+ {
+  "id": "deb:needrestart",
+  "name": "needrestart",
+  "version": "3.11-1ubuntu2",
+  "source": "dpkg",
+  "size": 552960
+ },
+ {
+  "id": "deb:libisns0t64:arm64",
+  "name": "libisns0t64:arm64",
+  "version": "0.101-2.1",
+  "source": "dpkg",
+  "size": 551936
+ },
+ {
+  "id": "deb:gnupg-utils",
+  "name": "gnupg-utils",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 550912
+ },
+ {
+  "id": "deb:libgmp10:arm64",
+  "name": "libgmp10:arm64",
+  "version": "2:6.3.0+dfsg-5ubuntu2",
+  "source": "dpkg",
+  "size": 548864,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libnss-systemd:arm64",
+  "name": "libnss-systemd:arm64",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 548864,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:binutils-common:arm64",
+  "name": "binutils-common:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 544768
+ },
+ {
+  "id": "deb:dmeventd",
+  "name": "dmeventd",
+  "version": "2:1.02.205-2ubuntu3",
+  "source": "dpkg",
+  "size": 544768
+ },
+ {
+  "id": "deb:python3-jinja2",
+  "name": "python3-jinja2",
+  "version": "3.1.6-1build1",
+  "source": "dpkg",
+  "size": 543744
+ },
+ {
+  "id": "deb:libpam-runtime",
+  "name": "libpam-runtime",
+  "version": "1.7.0-5ubuntu3",
+  "source": "dpkg",
+  "size": 540672,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libsasl2-modules:arm64",
+  "name": "libsasl2-modules:arm64",
+  "version": "2.1.28+dfsg1-9ubuntu3",
+  "source": "dpkg",
+  "size": 538624
+ },
+ {
+  "id": "deb:libglib2.0-bin",
+  "name": "libglib2.0-bin",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 536576
+ },
+ {
+  "id": "deb:mount",
+  "name": "mount",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 536576,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:bolt",
+  "name": "bolt",
+  "version": "0.9.10-1",
+  "source": "dpkg",
+  "size": 530432
+ },
+ {
+  "id": "deb:python3-typing-extensions",
+  "name": "python3-typing-extensions",
+  "version": "4.15.0-2",
+  "source": "dpkg",
+  "size": 523264
+ },
+ {
+  "id": "deb:curl",
+  "name": "curl",
+  "version": "8.18.0-1ubuntu2.8",
+  "source": "dpkg",
+  "size": 520192
+ },
+ {
+  "id": "deb:debconf",
+  "name": "debconf",
+  "version": "1.5.92",
+  "source": "dpkg",
+  "size": 519168,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:install-info",
+  "name": "install-info",
+  "version": "7.2-5ubuntu2",
+  "source": "dpkg",
+  "size": 517120
+ },
+ {
+  "id": "deb:python3-dbus",
+  "name": "python3-dbus",
+  "version": "1.4.0-1build2",
+  "source": "dpkg",
+  "size": 517120,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libdevmapper1.02.1:arm64",
+  "name": "libdevmapper1.02.1:arm64",
+  "version": "2:1.02.205-2ubuntu3",
+  "source": "dpkg",
+  "size": 516096,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-babel",
+  "name": "python3-babel",
+  "version": "2.17.0-2",
+  "source": "dpkg",
+  "size": 516096
+ },
+ {
+  "id": "deb:sbsigntool",
+  "name": "sbsigntool",
+  "version": "0.9.4-3.1ubuntu9",
+  "source": "dpkg",
+  "size": 515072
+ },
+ {
+  "id": "deb:less",
+  "name": "less",
+  "version": "668-1build1",
+  "source": "dpkg",
+  "size": 513024,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libncurses6:arm64",
+  "name": "libncurses6:arm64",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 513024
+ },
+ {
+  "id": "deb:diffutils",
+  "name": "diffutils",
+  "version": "1:3.12-1",
+  "source": "dpkg",
+  "size": 512000,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpackagekit-glib2-18:arm64",
+  "name": "libpackagekit-glib2-18:arm64",
+  "version": "1.3.4-3ubuntu1.1",
+  "source": "dpkg",
+  "size": 505856
+ },
+ {
+  "id": "deb:libdbus-1-3:arm64",
+  "name": "libdbus-1-3:arm64",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 503808,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-apport",
+  "name": "python3-apport",
+  "version": "2.34.0-0ubuntu2",
+  "source": "dpkg",
+  "size": 502784
+ },
+ {
+  "id": "deb:base-files",
+  "name": "base-files",
+  "version": "14ubuntu6.1",
+  "source": "dpkg",
+  "size": 501760,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-distupgrade",
+  "name": "python3-distupgrade",
+  "version": "1:26.04.22",
+  "source": "dpkg",
+  "size": 500736
+ },
+ {
+  "id": "deb:libbpf1:arm64",
+  "name": "libbpf1:arm64",
+  "version": "1:1.6.3-1ubuntu1",
+  "source": "dpkg",
+  "size": 498688,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libxmlsec1-openssl1:arm64",
+  "name": "libxmlsec1-openssl1:arm64",
+  "version": "1.3.9-1",
+  "source": "dpkg",
+  "size": 496640
+ },
+ {
+  "id": "deb:python3-pyparsing",
+  "name": "python3-pyparsing",
+  "version": "3.3.2-2",
+  "source": "dpkg",
+  "size": 496640
+ },
+ {
+  "id": "deb:python3-urllib3",
+  "name": "python3-urllib3",
+  "version": "2.6.3-1ubuntu1.1",
+  "source": "dpkg",
+  "size": 496640
+ },
+ {
+  "id": "deb:lsof",
+  "name": "lsof",
+  "version": "4.99.4+dfsg-2build2",
+  "source": "dpkg",
+  "size": 495616
+ },
+ {
+  "id": "deb:gnupg",
+  "name": "gnupg",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 490496
+ },
+ {
+  "id": "deb:python3-jsonschema",
+  "name": "python3-jsonschema",
+  "version": "4.19.2-6ubuntu2",
+  "source": "dpkg",
+  "size": 489472
+ },
+ {
+  "id": "deb:libnettle8t64:arm64",
+  "name": "libnettle8t64:arm64",
+  "version": "3.10.2-1",
+  "source": "dpkg",
+  "size": 488448,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpq5:arm64",
+  "name": "libpq5:arm64",
+  "version": "18.6-0ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 487424
+ },
+ {
+  "id": "deb:fdisk",
+  "name": "fdisk",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 484352,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libssh2-1t64:arm64",
+  "name": "libssh2-1t64:arm64",
+  "version": "1.11.1-1ubuntu0.26.04.3",
+  "source": "dpkg",
+  "size": 484352
+ },
+ {
+  "id": "deb:libxslt1.1:arm64",
+  "name": "libxslt1.1:arm64",
+  "version": "1.1.45-0.1",
+  "source": "dpkg",
+  "size": 468992
+ },
+ {
+  "id": "deb:python3-serial",
+  "name": "python3-serial",
+  "version": "3.5-2build1",
+  "source": "dpkg",
+  "size": 468992
+ },
+ {
+  "id": "deb:liblzma5:arm64",
+  "name": "liblzma5:arm64",
+  "version": "5.8.3-1",
+  "source": "dpkg",
+  "size": 467968,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmount1:arm64",
+  "name": "libmount1:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 467968,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libfdisk1:arm64",
+  "name": "libfdisk1:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 466944
+ },
+ {
+  "id": "deb:libparted2t64:arm64",
+  "name": "libparted2t64:arm64",
+  "version": "3.6-6",
+  "source": "dpkg",
+  "size": 466944
+ },
+ {
+  "id": "deb:unattended-upgrades",
+  "name": "unattended-upgrades",
+  "version": "2.12ubuntu9",
+  "source": "dpkg",
+  "size": 458752
+ },
+ {
+  "id": "deb:htop",
+  "name": "htop",
+  "version": "3.4.1-5build2",
+  "source": "dpkg",
+  "size": 454656
+ },
+ {
+  "id": "deb:libcgi-pm-perl",
+  "name": "libcgi-pm-perl",
+  "version": "4.71-1build1",
+  "source": "dpkg",
+  "size": 454656
+ },
+ {
+  "id": "deb:libexpat1:arm64",
+  "name": "libexpat1:arm64",
+  "version": "2.7.4-1",
+  "source": "dpkg",
+  "size": 453632,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:adduser",
+  "name": "adduser",
+  "version": "3.153ubuntu1",
+  "source": "dpkg",
+  "size": 447488,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:exfatprogs",
+  "name": "exfatprogs",
+  "version": "1.3.2-1",
+  "source": "dpkg",
+  "size": 439296
+ },
+ {
+  "id": "deb:libnspr4:arm64",
+  "name": "libnspr4:arm64",
+  "version": "2:4.38.2-1ubuntu1",
+  "source": "dpkg",
+  "size": 436224
+ },
+ {
+  "id": "deb:usbutils",
+  "name": "usbutils",
+  "version": "1:019-1",
+  "source": "dpkg",
+  "size": 436224
+ },
+ {
+  "id": "deb:dbus-daemon",
+  "name": "dbus-daemon",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 433152,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:dbus-bin",
+  "name": "dbus-bin",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 431104,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgssapi-krb5-2:arm64",
+  "name": "libgssapi-krb5-2:arm64",
+  "version": "1.22.1-2ubuntu4",
+  "source": "dpkg",
+  "size": 431104,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-pyasn1",
+  "name": "python3-pyasn1",
+  "version": "0.6.3-1",
+  "source": "dpkg",
+  "size": 430080
+ },
+ {
+  "id": "deb:libntfs-3g89t64:arm64",
+  "name": "libntfs-3g89t64:arm64",
+  "version": "1:2022.10.3-5ubuntu1.1",
+  "source": "dpkg",
+  "size": 429056
+ },
+ {
+  "id": "deb:libgomp1:arm64",
+  "name": "libgomp1:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 428032
+ },
+ {
+  "id": "deb:libgpgme45:arm64",
+  "name": "libgpgme45:arm64",
+  "version": "2.0.1-2build1",
+  "source": "dpkg",
+  "size": 427008
+ },
+ {
+  "id": "deb:busybox-initramfs",
+  "name": "busybox-initramfs",
+  "version": "1:1.37.0-7ubuntu1",
+  "source": "dpkg",
+  "size": 424960
+ },
+ {
+  "id": "deb:libnetplan1:arm64",
+  "name": "libnetplan1:arm64",
+  "version": "1.2-1ubuntu5",
+  "source": "dpkg",
+  "size": 424960,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libsgutils2-1.48:arm64",
+  "name": "libsgutils2-1.48:arm64",
+  "version": "1.48-3ubuntu3.1",
+  "source": "dpkg",
+  "size": 424960
+ },
+ {
+  "id": "deb:libfontconfig1:arm64",
+  "name": "libfontconfig1:arm64",
+  "version": "2.17.1-3ubuntu1",
+  "source": "dpkg",
+  "size": 423936
+ },
+ {
+  "id": "deb:openssl-provider-legacy",
+  "name": "openssl-provider-legacy",
+  "version": "3.5.5-1ubuntu3.2",
+  "source": "dpkg",
+  "size": 423936,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpcap0.8t64:arm64",
+  "name": "libpcap0.8t64:arm64",
+  "version": "1.10.6-1ubuntu1",
+  "source": "dpkg",
+  "size": 420864
+ },
+ {
+  "id": "deb:python3-systemd",
+  "name": "python3-systemd",
+  "version": "235-1build9",
+  "source": "dpkg",
+  "size": 420864
+ },
+ {
+  "id": "deb:bsdutils",
+  "name": "bsdutils",
+  "version": "1:2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 419840,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libxkbcommon0:arm64",
+  "name": "libxkbcommon0:arm64",
+  "version": "1.13.1-1",
+  "source": "dpkg",
+  "size": 418816
+ },
+ {
+  "id": "deb:appstream",
+  "name": "appstream",
+  "version": "1.1.2-1",
+  "source": "dpkg",
+  "size": 417792
+ },
+ {
+  "id": "deb:gnupg-l10n",
+  "name": "gnupg-l10n",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 417792
+ },
+ {
+  "id": "deb:netplan-generator",
+  "name": "netplan-generator",
+  "version": "1.2-1ubuntu5",
+  "source": "dpkg",
+  "size": 414720,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:landscape-common",
+  "name": "landscape-common",
+  "version": "26.02.2-0ubuntu1",
+  "source": "dpkg",
+  "size": 413696
+ },
+ {
+  "id": "deb:console-setup",
+  "name": "console-setup",
+  "version": "1.237ubuntu3",
+  "source": "dpkg",
+  "size": 411648,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libudev1:arm64",
+  "name": "libudev1:arm64",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 402432,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ncurses-base",
+  "name": "ncurses-base",
+  "version": "6.6+20251231-1",
+  "source": "dpkg",
+  "size": 402432,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpng16-16t64:arm64",
+  "name": "libpng16-16t64:arm64",
+  "version": "1.6.57-1",
+  "source": "dpkg",
+  "size": 387072
+ },
+ {
+  "id": "deb:libhogweed6t64:arm64",
+  "name": "libhogweed6t64:arm64",
+  "version": "3.10.2-1",
+  "source": "dpkg",
+  "size": 386048,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-click",
+  "name": "python3-click",
+  "version": "8.2.0+0.really.8.1.8-1build1",
+  "source": "dpkg",
+  "size": 382976
+ },
+ {
+  "id": "deb:python3-idna",
+  "name": "python3-idna",
+  "version": "3.11-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 381952
+ },
+ {
+  "id": "deb:grep",
+  "name": "grep",
+  "version": "3.12-1",
+  "source": "dpkg",
+  "size": 380928,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:netplan.io",
+  "name": "netplan.io",
+  "version": "1.2-1ubuntu5",
+  "source": "dpkg",
+  "size": 380928,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:debianutils",
+  "name": "debianutils",
+  "version": "5.23.2build1",
+  "source": "dpkg",
+  "size": 377856,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libfuse3-4:arm64",
+  "name": "libfuse3-4:arm64",
+  "version": "3.18.2-1",
+  "source": "dpkg",
+  "size": 373760
+ },
+ {
+  "id": "deb:libjq1:arm64",
+  "name": "libjq1:arm64",
+  "version": "1.8.1-4ubuntu2",
+  "source": "dpkg",
+  "size": 373760
+ },
+ {
+  "id": "deb:gpgv",
+  "name": "gpgv",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 372736,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gettext-base",
+  "name": "gettext-base",
+  "version": "0.23.2-1",
+  "source": "dpkg",
+  "size": 368640
+ },
+ {
+  "id": "deb:numactl",
+  "name": "numactl",
+  "version": "2.0.19-1build1",
+  "source": "dpkg",
+  "size": 368640
+ },
+ {
+  "id": "deb:sed",
+  "name": "sed",
+  "version": "4.9-2ubuntu1",
+  "source": "dpkg",
+  "size": 368640,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libctf-nobfd0:arm64",
+  "name": "libctf-nobfd0:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 367616
+ },
+ {
+  "id": "deb:libksba8:arm64",
+  "name": "libksba8:arm64",
+  "version": "1.6.7-2build1",
+  "source": "dpkg",
+  "size": 367616
+ },
+ {
+  "id": "deb:libnvme1t64:arm64",
+  "name": "libnvme1t64:arm64",
+  "version": "1.16.1-4",
+  "source": "dpkg",
+  "size": 366592
+ },
+ {
+  "id": "deb:postgresql-common",
+  "name": "postgresql-common",
+  "version": "290ubuntu1",
+  "source": "dpkg",
+  "size": 362496
+ },
+ {
+  "id": "deb:libsemanage2:arm64",
+  "name": "libsemanage2:arm64",
+  "version": "3.9-1build1",
+  "source": "dpkg",
+  "size": 361472,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libduktape207:arm64",
+  "name": "libduktape207:arm64",
+  "version": "2.7.0+tests-0ubuntu4",
+  "source": "dpkg",
+  "size": 355328
+ },
+ {
+  "id": "deb:ca-certificates",
+  "name": "ca-certificates",
+  "version": "20260601~26.04.1",
+  "source": "dpkg",
+  "size": 340992,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gpgconf",
+  "name": "gpgconf",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 339968
+ },
+ {
+  "id": "deb:python3-wadllib",
+  "name": "python3-wadllib",
+  "version": "2.0.0-3",
+  "source": "dpkg",
+  "size": 337920
+ },
+ {
+  "id": "deb:dosfstools",
+  "name": "dosfstools",
+  "version": "4.2-1.2build1",
+  "source": "dpkg",
+  "size": 335872
+ },
+ {
+  "id": "deb:python3-s3transfer",
+  "name": "python3-s3transfer",
+  "version": "0.14.0-1build1",
+  "source": "dpkg",
+  "size": 335872
+ },
+ {
+  "id": "deb:pciutils",
+  "name": "pciutils",
+  "version": "1:3.14.0-1build2",
+  "source": "dpkg",
+  "size": 331776
+ },
+ {
+  "id": "deb:python3-dateutil",
+  "name": "python3-dateutil",
+  "version": "2.9.0-4build1",
+  "source": "dpkg",
+  "size": 330752
+ },
+ {
+  "id": "deb:libblkid1:arm64",
+  "name": "libblkid1:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 329728,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libuv1t64:arm64",
+  "name": "libuv1t64:arm64",
+  "version": "1.51.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 321536
+ },
+ {
+  "id": "deb:libsodium23:arm64",
+  "name": "libsodium23:arm64",
+  "version": "1.0.18-2",
+  "source": "dpkg",
+  "size": 320512
+ },
+ {
+  "id": "deb:base-passwd",
+  "name": "base-passwd",
+  "version": "3.6.8",
+  "source": "dpkg",
+  "size": 316416,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-more-itertools",
+  "name": "python3-more-itertools",
+  "version": "10.8.0-1build1",
+  "source": "dpkg",
+  "size": 315392
+ },
+ {
+  "id": "deb:libevent-core-2.1-7t64:arm64",
+  "name": "libevent-core-2.1-7t64:arm64",
+  "version": "2.1.12-stable-10build2",
+  "source": "dpkg",
+  "size": 313344
+ },
+ {
+  "id": "deb:bcache-tools",
+  "name": "bcache-tools",
+  "version": "1.0.8-5ubuntu1",
+  "source": "dpkg",
+  "size": 312320
+ },
+ {
+  "id": "deb:libblockdev3:arm64",
+  "name": "libblockdev3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 312320
+ },
+ {
+  "id": "deb:libmbim-utils",
+  "name": "libmbim-utils",
+  "version": "1.32.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 311296
+ },
+ {
+  "id": "deb:libedit2:arm64",
+  "name": "libedit2:arm64",
+  "version": "3.1-20251016-1",
+  "source": "dpkg",
+  "size": 309248,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:mawk",
+  "name": "mawk",
+  "version": "1.3.4.20260129-1",
+  "source": "dpkg",
+  "size": 309248,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libcap2-bin",
+  "name": "libcap2-bin",
+  "version": "1:2.75-10ubuntu2",
+  "source": "dpkg",
+  "size": 307200,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpam0g:arm64",
+  "name": "libpam0g:arm64",
+  "version": "1.7.0-5ubuntu3",
+  "source": "dpkg",
+  "size": 306176,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libproc2-0:arm64",
+  "name": "libproc2-0:arm64",
+  "version": "2:4.0.4-9ubuntu1",
+  "source": "dpkg",
+  "size": 304128,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-cffi-backend:arm64",
+  "name": "python3-cffi-backend:arm64",
+  "version": "2.0.0-3build1",
+  "source": "dpkg",
+  "size": 304128,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libnftnl11:arm64",
+  "name": "libnftnl11:arm64",
+  "version": "1.3.1-1",
+  "source": "dpkg",
+  "size": 302080
+ },
+ {
+  "id": "deb:libcrypt1:arm64",
+  "name": "libcrypt1:arm64",
+  "version": "1:4.5.1-1",
+  "source": "dpkg",
+  "size": 299008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libselinux1:arm64",
+  "name": "libselinux1:arm64",
+  "version": "3.9-4build1",
+  "source": "dpkg",
+  "size": 299008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgirepository-2.0-0:arm64",
+  "name": "libgirepository-2.0-0:arm64",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 296960,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:cpio",
+  "name": "cpio",
+  "version": "2.15+dfsg-2.1",
+  "source": "dpkg",
+  "size": 294912,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:kmod",
+  "name": "kmod",
+  "version": "34.2-2ubuntu2",
+  "source": "dpkg",
+  "size": 294912,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:liburi-perl",
+  "name": "liburi-perl",
+  "version": "5.34-2build1",
+  "source": "dpkg",
+  "size": 294912
+ },
+ {
+  "id": "deb:python3-packaging",
+  "name": "python3-packaging",
+  "version": "26.0-1",
+  "source": "dpkg",
+  "size": 294912
+ },
+ {
+  "id": "deb:libfido2-1:arm64",
+  "name": "libfido2-1:arm64",
+  "version": "1.16.0-2build1",
+  "source": "dpkg",
+  "size": 292864
+ },
+ {
+  "id": "deb:uuid-runtime",
+  "name": "uuid-runtime",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 292864
+ },
+ {
+  "id": "deb:rpcsvc-proto",
+  "name": "rpcsvc-proto",
+  "version": "1.4.3-1build1",
+  "source": "dpkg",
+  "size": 287744
+ },
+ {
+  "id": "deb:python3-markdown-it",
+  "name": "python3-markdown-it",
+  "version": "3.0.0-3build1",
+  "source": "dpkg",
+  "size": 286720,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:dmsetup",
+  "name": "dmsetup",
+  "version": "2:1.02.205-2ubuntu3",
+  "source": "dpkg",
+  "size": 284672,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libk5crypto3:arm64",
+  "name": "libk5crypto3:arm64",
+  "version": "1.22.1-2ubuntu4",
+  "source": "dpkg",
+  "size": 283648,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libctf0:arm64",
+  "name": "libctf0:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 282624
+ },
+ {
+  "id": "deb:login",
+  "name": "login",
+  "version": "1:4.16.0-2+really2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 278528,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:cron",
+  "name": "cron",
+  "version": "3.0pl1-200ubuntu1",
+  "source": "dpkg",
+  "size": 277504
+ },
+ {
+  "id": "deb:inetutils-telnet",
+  "name": "inetutils-telnet",
+  "version": "2:2.7-2ubuntu1.1",
+  "source": "dpkg",
+  "size": 277504
+ },
+ {
+  "id": "deb:python3-attr",
+  "name": "python3-attr",
+  "version": "25.4.0-1build1",
+  "source": "dpkg",
+  "size": 269312
+ },
+ {
+  "id": "deb:libsmartcols1:arm64",
+  "name": "libsmartcols1:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 267264,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:linux-tools-common",
+  "name": "linux-tools-common",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 266240
+ },
+ {
+  "id": "deb:dracut-network",
+  "name": "dracut-network",
+  "version": "110-11",
+  "source": "dpkg",
+  "size": 264192
+ },
+ {
+  "id": "deb:ubuntu-release-upgrader-core",
+  "name": "ubuntu-release-upgrader-core",
+  "version": "1:26.04.22",
+  "source": "dpkg",
+  "size": 262144
+ },
+ {
+  "id": "deb:libibverbs1:arm64",
+  "name": "libibverbs1:arm64",
+  "version": "61.0-2ubuntu3",
+  "source": "dpkg",
+  "size": 260096
+ },
+ {
+  "id": "deb:bc",
+  "name": "bc",
+  "version": "1.07.1-4build1",
+  "source": "dpkg",
+  "size": 257024
+ },
+ {
+  "id": "deb:tnftp",
+  "name": "tnftp",
+  "version": "20260211-1",
+  "source": "dpkg",
+  "size": 256000
+ },
+ {
+  "id": "deb:gzip",
+  "name": "gzip",
+  "version": "1.14-1~exp2ubuntu1.1",
+  "source": "dpkg",
+  "size": 253952,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:uidmap",
+  "name": "uidmap",
+  "version": "1:4.17.4-2ubuntu3",
+  "source": "dpkg",
+  "size": 251904
+ },
+ {
+  "id": "deb:iputils-ping",
+  "name": "iputils-ping",
+  "version": "3:20250605-1ubuntu1",
+  "source": "dpkg",
+  "size": 250880,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-openssl",
+  "name": "python3-openssl",
+  "version": "25.3.0-1ubuntu1",
+  "source": "dpkg",
+  "size": 250880
+ },
+ {
+  "id": "deb:fontconfig-config",
+  "name": "fontconfig-config",
+  "version": "2.17.1-3ubuntu1",
+  "source": "dpkg",
+  "size": 248832
+ },
+ {
+  "id": "deb:python3-requests",
+  "name": "python3-requests",
+  "version": "2.32.5+dfsg-1ubuntu1",
+  "source": "dpkg",
+  "size": 247808
+ },
+ {
+  "id": "deb:libmagic1t64:arm64",
+  "name": "libmagic1t64:arm64",
+  "version": "1:5.46-5build2",
+  "source": "dpkg",
+  "size": 246784
+ },
+ {
+  "id": "deb:mtr-tiny",
+  "name": "mtr-tiny",
+  "version": "0.95-1.1ubuntu2",
+  "source": "dpkg",
+  "size": 246784
+ },
+ {
+  "id": "deb:gpg-wks-client",
+  "name": "gpg-wks-client",
+  "version": "2.4.8-4ubuntu3",
+  "source": "dpkg",
+  "size": 244736
+ },
+ {
+  "id": "deb:libgpg-error0:arm64",
+  "name": "libgpg-error0:arm64",
+  "version": "1.58-2",
+  "source": "dpkg",
+  "size": 244736,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libjson-perl",
+  "name": "libjson-perl",
+  "version": "4.10000-1",
+  "source": "dpkg",
+  "size": 243712
+ },
+ {
+  "id": "deb:coreutils-from-uutils",
+  "name": "coreutils-from-uutils",
+  "version": "0.0.0~ubuntu25",
+  "source": "dpkg",
+  "size": 242688,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:flash-kernel",
+  "name": "flash-kernel",
+  "version": "3.110ubuntu2.1",
+  "source": "dpkg",
+  "size": 242688
+ },
+ {
+  "id": "deb:pv",
+  "name": "pv",
+  "version": "1.10.3-1",
+  "source": "dpkg",
+  "size": 241664
+ },
+ {
+  "id": "deb:libtirpc3t64:arm64",
+  "name": "libtirpc3t64:arm64",
+  "version": "1.3.7-0.1",
+  "source": "dpkg",
+  "size": 240640,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libxcb1:arm64",
+  "name": "libxcb1:arm64",
+  "version": "1.17.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 238592
+ },
+ {
+  "id": "deb:libjson-glib-1.0-0:arm64",
+  "name": "libjson-glib-1.0-0:arm64",
+  "version": "1.10.8+ds-2",
+  "source": "dpkg",
+  "size": 236544
+ },
+ {
+  "id": "deb:libnl-3-200:arm64",
+  "name": "libnl-3-200:arm64",
+  "version": "3.12.0-2",
+  "source": "dpkg",
+  "size": 236544
+ },
+ {
+  "id": "deb:nftables",
+  "name": "nftables",
+  "version": "1.1.6-1",
+  "source": "dpkg",
+  "size": 235520,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:patch",
+  "name": "patch",
+  "version": "2.8-2build1",
+  "source": "dpkg",
+  "size": 235520
+ },
+ {
+  "id": "deb:initramfs-tools-bin",
+  "name": "initramfs-tools-bin",
+  "version": "0.151ubuntu1",
+  "source": "dpkg",
+  "size": 234496
+ },
+ {
+  "id": "deb:libidn2-0:arm64",
+  "name": "libidn2-0:arm64",
+  "version": "2.3.8-4build1",
+  "source": "dpkg",
+  "size": 233472,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libnghttp2-14:arm64",
+  "name": "libnghttp2-14:arm64",
+  "version": "1.68.0-2ubuntu0.2",
+  "source": "dpkg",
+  "size": 233472
+ },
+ {
+  "id": "deb:python3-hyperlink",
+  "name": "python3-hyperlink",
+  "version": "21.0.0-6build1",
+  "source": "dpkg",
+  "size": 233472
+ },
+ {
+  "id": "deb:nginx-common",
+  "name": "nginx-common",
+  "version": "1.28.3-2ubuntu1.12",
+  "source": "dpkg",
+  "size": 232448
+ },
+ {
+  "id": "deb:hdparm",
+  "name": "hdparm",
+  "version": "9.65+ds-1.1build1",
+  "source": "dpkg",
+  "size": 231424
+ },
+ {
+  "id": "deb:libhtml-parser-perl:arm64",
+  "name": "libhtml-parser-perl:arm64",
+  "version": "3.83-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 231424
+ },
+ {
+  "id": "deb:python3-bpfcc",
+  "name": "python3-bpfcc",
+  "version": "0.35.0+ds-1ubuntu2",
+  "source": "dpkg",
+  "size": 228352
+ },
+ {
+  "id": "deb:dmidecode",
+  "name": "dmidecode",
+  "version": "3.6-2build1",
+  "source": "dpkg",
+  "size": 227328,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:liblsof0",
+  "name": "liblsof0",
+  "version": "4.99.4+dfsg-2build2",
+  "source": "dpkg",
+  "size": 226304
+ },
+ {
+  "id": "deb:libpolkit-gobject-1-0:arm64",
+  "name": "libpolkit-gobject-1-0:arm64",
+  "version": "127-2ubuntu1",
+  "source": "dpkg",
+  "size": 226304
+ },
+ {
+  "id": "deb:libtracefs1:arm64",
+  "name": "libtracefs1:arm64",
+  "version": "1.8.2-1ubuntu1",
+  "source": "dpkg",
+  "size": 226304
+ },
+ {
+  "id": "deb:libxmlb2:arm64",
+  "name": "libxmlb2:arm64",
+  "version": "0.3.24-2",
+  "source": "dpkg",
+  "size": 224256
+ },
+ {
+  "id": "deb:parted",
+  "name": "parted",
+  "version": "3.6-6",
+  "source": "dpkg",
+  "size": 223232
+ },
+ {
+  "id": "deb:liblz4-1:arm64",
+  "name": "liblz4-1:arm64",
+  "version": "1.10.0-8",
+  "source": "dpkg",
+  "size": 222208,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libaudit1:arm64",
+  "name": "libaudit1:arm64",
+  "version": "1:4.1.2-1build1",
+  "source": "dpkg",
+  "size": 220160,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libefivar1t64:arm64",
+  "name": "libefivar1t64:arm64",
+  "version": "39-2",
+  "source": "dpkg",
+  "size": 219136
+ },
+ {
+  "id": "deb:libnewt0.52:arm64",
+  "name": "libnewt0.52:arm64",
+  "version": "0.52.25-1ubuntu3",
+  "source": "dpkg",
+  "size": 217088,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libseccomp2:arm64",
+  "name": "libseccomp2:arm64",
+  "version": "2.6.0-2ubuntu5",
+  "source": "dpkg",
+  "size": 217088,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-pexpect",
+  "name": "python3-pexpect",
+  "version": "4.9-4",
+  "source": "dpkg",
+  "size": 217088
+ },
+ {
+  "id": "deb:libuchardet0:arm64",
+  "name": "libuchardet0:arm64",
+  "version": "0.0.8-2",
+  "source": "dpkg",
+  "size": 216064
+ },
+ {
+  "id": "deb:xxd",
+  "name": "xxd",
+  "version": "2:9.1.2141-1ubuntu4.7",
+  "source": "dpkg",
+  "size": 214016,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libcc1-0:arm64",
+  "name": "libcc1-0:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 212992
+ },
+ {
+  "id": "deb:libelf1t64:arm64",
+  "name": "libelf1t64:arm64",
+  "version": "0.194-4",
+  "source": "dpkg",
+  "size": 212992,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:linux-tools-7.0.0-28-generic",
+  "name": "linux-tools-7.0.0-28-generic",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 212992,
+  "kept": "it is the running kernel"
+ },
+ {
+  "id": "deb:xdg-user-dirs",
+  "name": "xdg-user-dirs",
+  "version": "0.19-1",
+  "source": "dpkg",
+  "size": 212992,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:dash",
+  "name": "dash",
+  "version": "0.5.12-12ubuntu3",
+  "source": "dpkg",
+  "size": 208896,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:initramfs-tools-core",
+  "name": "initramfs-tools-core",
+  "version": "0.151ubuntu1",
+  "source": "dpkg",
+  "size": 208896
+ },
+ {
+  "id": "deb:libvolume-key1:arm64",
+  "name": "libvolume-key1:arm64",
+  "version": "0.3.12-10build2",
+  "source": "dpkg",
+  "size": 208896
+ },
+ {
+  "id": "deb:sysvinit-utils",
+  "name": "sysvinit-utils",
+  "version": "3.15-5ubuntu1",
+  "source": "dpkg",
+  "size": 208896,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libjson-xs-perl",
+  "name": "libjson-xs-perl",
+  "version": "4.040-1",
+  "source": "dpkg",
+  "size": 205824
+ },
+ {
+  "id": "deb:libhttp-message-perl",
+  "name": "libhttp-message-perl",
+  "version": "7.01-1ubuntu1",
+  "source": "dpkg",
+  "size": 199680
+ },
+ {
+  "id": "deb:software-properties-common",
+  "name": "software-properties-common",
+  "version": "0.120.1",
+  "source": "dpkg",
+  "size": 196608
+ },
+ {
+  "id": "deb:python3-netplan",
+  "name": "python3-netplan",
+  "version": "1.2-1ubuntu5",
+  "source": "dpkg",
+  "size": 194560,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-update-manager",
+  "name": "python3-update-manager",
+  "version": "1:26.04.5",
+  "source": "dpkg",
+  "size": 191488
+ },
+ {
+  "id": "deb:python3-automat",
+  "name": "python3-automat",
+  "version": "25.4.16-1build1",
+  "source": "dpkg",
+  "size": 188416
+ },
+ {
+  "id": "deb:zlib1g:arm64",
+  "name": "zlib1g:arm64",
+  "version": "1:1.3.dfsg+really1.3.1-1ubuntu3",
+  "source": "dpkg",
+  "size": 187392,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libbsd0:arm64",
+  "name": "libbsd0:arm64",
+  "version": "0.12.2-2build2",
+  "source": "dpkg",
+  "size": 185344,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:logrotate",
+  "name": "logrotate",
+  "version": "3.22.0-1build1",
+  "source": "dpkg",
+  "size": 185344,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libhtml-template-perl",
+  "name": "libhtml-template-perl",
+  "version": "2.97-2build1",
+  "source": "dpkg",
+  "size": 184320
+ },
+ {
+  "id": "deb:libsasl2-2:arm64",
+  "name": "libsasl2-2:arm64",
+  "version": "2.1.28+dfsg1-9ubuntu3",
+  "source": "dpkg",
+  "size": 184320
+ },
+ {
+  "id": "deb:python3-lazr.restfulclient",
+  "name": "python3-lazr.restfulclient",
+  "version": "0.14.6-3build1",
+  "source": "dpkg",
+  "size": 182272
+ },
+ {
+  "id": "deb:python3-hamcrest",
+  "name": "python3-hamcrest",
+  "version": "2.1.0-3",
+  "source": "dpkg",
+  "size": 179200
+ },
+ {
+  "id": "deb:dbus",
+  "name": "dbus",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 177152,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:fuse3",
+  "name": "fuse3",
+  "version": "3.18.2-1",
+  "source": "dpkg",
+  "size": 177152
+ },
+ {
+  "id": "deb:libpkgconf7:arm64",
+  "name": "libpkgconf7:arm64",
+  "version": "2.5.1-4",
+  "source": "dpkg",
+  "size": 175104
+ },
+ {
+  "id": "deb:libkmod2:arm64",
+  "name": "libkmod2:arm64",
+  "version": "34.2-2ubuntu2",
+  "source": "dpkg",
+  "size": 174080,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:liburing2:arm64",
+  "name": "liburing2:arm64",
+  "version": "2.14-1",
+  "source": "dpkg",
+  "size": 172032
+ },
+ {
+  "id": "deb:libtasn1-6:arm64",
+  "name": "libtasn1-6:arm64",
+  "version": "4.21.0-2",
+  "source": "dpkg",
+  "size": 171008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:time",
+  "name": "time",
+  "version": "1.9-0.4",
+  "source": "dpkg",
+  "size": 169984
+ },
+ {
+  "id": "deb:libapparmor1:arm64",
+  "name": "libapparmor1:arm64",
+  "version": "5.0.0~beta1-0ubuntu7",
+  "source": "dpkg",
+  "size": 168960,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-typeguard",
+  "name": "python3-typeguard",
+  "version": "4.4.4-2",
+  "source": "dpkg",
+  "size": 168960
+ },
+ {
+  "id": "deb:libpci3:arm64",
+  "name": "libpci3:arm64",
+  "version": "1:3.14.0-1build2",
+  "source": "dpkg",
+  "size": 167936
+ },
+ {
+  "id": "deb:libsframe3:arm64",
+  "name": "libsframe3:arm64",
+  "version": "2.46-3ubuntu2",
+  "source": "dpkg",
+  "size": 167936
+ },
+ {
+  "id": "deb:grub-efi-arm64",
+  "name": "grub-efi-arm64",
+  "version": "2.14-2ubuntu1",
+  "source": "dpkg",
+  "size": 165888,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:libassuan9:arm64",
+  "name": "libassuan9:arm64",
+  "version": "3.0.2-2build1",
+  "source": "dpkg",
+  "size": 165888
+ },
+ {
+  "id": "deb:liblzo2-2:arm64",
+  "name": "liblzo2-2:arm64",
+  "version": "2.10-3build2",
+  "source": "dpkg",
+  "size": 164864
+ },
+ {
+  "id": "deb:python3-configobj",
+  "name": "python3-configobj",
+  "version": "5.0.9-1build1",
+  "source": "dpkg",
+  "size": 164864
+ },
+ {
+  "id": "deb:libdrm2:arm64",
+  "name": "libdrm2:arm64",
+  "version": "2.4.131-1",
+  "source": "dpkg",
+  "size": 162816
+ },
+ {
+  "id": "deb:libopeniscsiusr",
+  "name": "libopeniscsiusr",
+  "version": "2.1.11-3ubuntu3",
+  "source": "dpkg",
+  "size": 162816
+ },
+ {
+  "id": "deb:libxext6:arm64",
+  "name": "libxext6:arm64",
+  "version": "2:1.3.4-1build3",
+  "source": "dpkg",
+  "size": 162816
+ },
+ {
+  "id": "deb:bind9-host",
+  "name": "bind9-host",
+  "version": "1:9.20.18-1ubuntu2.1",
+  "source": "dpkg",
+  "size": 161792
+ },
+ {
+  "id": "deb:jq",
+  "name": "jq",
+  "version": "1.8.1-4ubuntu2",
+  "source": "dpkg",
+  "size": 161792
+ },
+ {
+  "id": "deb:efibootmgr",
+  "name": "efibootmgr",
+  "version": "18-4ubuntu1",
+  "source": "dpkg",
+  "size": 160768
+ },
+ {
+  "id": "deb:libcap2:arm64",
+  "name": "libcap2:arm64",
+  "version": "1:2.75-10ubuntu2",
+  "source": "dpkg",
+  "size": 160768,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libfcgi0t64:arm64",
+  "name": "libfcgi0t64:arm64",
+  "version": "2.4.5-0.1build2",
+  "source": "dpkg",
+  "size": 160768
+ },
+ {
+  "id": "deb:libfribidi0:arm64",
+  "name": "libfribidi0:arm64",
+  "version": "1.0.16-5",
+  "source": "dpkg",
+  "size": 159744,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:distro-info",
+  "name": "distro-info",
+  "version": "1.15",
+  "source": "dpkg",
+  "size": 158720,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:dracut-install",
+  "name": "dracut-install",
+  "version": "110-11",
+  "source": "dpkg",
+  "size": 158720
+ },
+ {
+  "id": "deb:libblockdev-fs3:arm64",
+  "name": "libblockdev-fs3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 158720
+ },
+ {
+  "id": "deb:libffi8:arm64",
+  "name": "libffi8:arm64",
+  "version": "3.5.2-4",
+  "source": "dpkg",
+  "size": 158720,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libjson-c5:arm64",
+  "name": "libjson-c5:arm64",
+  "version": "0.18+ds-3",
+  "source": "dpkg",
+  "size": 158720,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpsl5t64:arm64",
+  "name": "libpsl5t64:arm64",
+  "version": "0.21.2-1.1build2",
+  "source": "dpkg",
+  "size": 158720
+ },
+ {
+  "id": "deb:libusb-1.0-0:arm64",
+  "name": "libusb-1.0-0:arm64",
+  "version": "2:1.0.29-2build1",
+  "source": "dpkg",
+  "size": 158720
+ },
+ {
+  "id": "deb:libevdev2:arm64",
+  "name": "libevdev2:arm64",
+  "version": "1.13.6+dfsg-1",
+  "source": "dpkg",
+  "size": 157696
+ },
+ {
+  "id": "deb:libklibc:arm64",
+  "name": "libklibc:arm64",
+  "version": "2.0.14-1ubuntu2",
+  "source": "dpkg",
+  "size": 157696
+ },
+ {
+  "id": "deb:linux-base",
+  "name": "linux-base",
+  "version": "4.15ubuntu5",
+  "source": "dpkg",
+  "size": 157696,
+  "kept": "the system needs it to start"
+ },
+ {
+  "id": "deb:postgresql-client-common",
+  "name": "postgresql-client-common",
+  "version": "290ubuntu1",
+  "source": "dpkg",
+  "size": 157696
+ },
+ {
+  "id": "deb:libc-dev-bin",
+  "name": "libc-dev-bin",
+  "version": "2.43-2ubuntu2",
+  "source": "dpkg",
+  "size": 156672
+ },
+ {
+  "id": "deb:libgdbm6t64:arm64",
+  "name": "libgdbm6t64:arm64",
+  "version": "1.26-1build1",
+  "source": "dpkg",
+  "size": 156672
+ },
+ {
+  "id": "deb:libkrb5support0:arm64",
+  "name": "libkrb5support0:arm64",
+  "version": "1.22.1-2ubuntu4",
+  "source": "dpkg",
+  "size": 155648,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libnetfilter-conntrack3:arm64",
+  "name": "libnetfilter-conntrack3:arm64",
+  "version": "1.1.1-1",
+  "source": "dpkg",
+  "size": 155648
+ },
+ {
+  "id": "deb:libcap-ng0:arm64",
+  "name": "libcap-ng0:arm64",
+  "version": "0.8.5-4build5",
+  "source": "dpkg",
+  "size": 154624,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libjcat1:arm64",
+  "name": "libjcat1:arm64",
+  "version": "0.2.5-1build1",
+  "source": "dpkg",
+  "size": 154624
+ },
+ {
+  "id": "deb:libtraceevent1:arm64",
+  "name": "libtraceevent1:arm64",
+  "version": "1:1.8.7-1",
+  "source": "dpkg",
+  "size": 154624
+ },
+ {
+  "id": "deb:libmspack0t64:arm64",
+  "name": "libmspack0t64:arm64",
+  "version": "0.11-1.1build2",
+  "source": "dpkg",
+  "size": 153600
+ },
+ {
+  "id": "deb:libefiboot1t64:arm64",
+  "name": "libefiboot1t64:arm64",
+  "version": "39-2",
+  "source": "dpkg",
+  "size": 152576
+ },
+ {
+  "id": "deb:libgcc-s1:arm64",
+  "name": "libgcc-s1:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 152576,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmpc3:arm64",
+  "name": "libmpc3:arm64",
+  "version": "1.3.1-3",
+  "source": "dpkg",
+  "size": 152576
+ },
+ {
+  "id": "deb:liblmdb0:arm64",
+  "name": "liblmdb0:arm64",
+  "version": "0.9.31-1build2",
+  "source": "dpkg",
+  "size": 151552
+ },
+ {
+  "id": "deb:librtmp1:arm64",
+  "name": "librtmp1:arm64",
+  "version": "2.4+20151223.gitfa8646d.1-3",
+  "source": "dpkg",
+  "size": 151552
+ },
+ {
+  "id": "deb:libyaml-0-2:arm64",
+  "name": "libyaml-0-2:arm64",
+  "version": "0.2.5-2build3",
+  "source": "dpkg",
+  "size": 151552,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-inflect",
+  "name": "python3-inflect",
+  "version": "7.5.0-1build1",
+  "source": "dpkg",
+  "size": 151552
+ },
+ {
+  "id": "deb:ucf",
+  "name": "ucf",
+  "version": "3.0052ubuntu1",
+  "source": "dpkg",
+  "size": 151552,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libitm1:arm64",
+  "name": "libitm1:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 149504
+ },
+ {
+  "id": "deb:openssh-sftp-server",
+  "name": "openssh-sftp-server",
+  "version": "1:10.2p1-2ubuntu3.5",
+  "source": "dpkg",
+  "size": 148480
+ },
+ {
+  "id": "deb:python-apt-common",
+  "name": "python-apt-common",
+  "version": "3.1.0ubuntu1",
+  "source": "dpkg",
+  "size": 147456,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libproc-processtable-perl:arm64",
+  "name": "libproc-processtable-perl:arm64",
+  "version": "0.637-1",
+  "source": "dpkg",
+  "size": 141312
+ },
+ {
+  "id": "deb:usb-modeswitch",
+  "name": "usb-modeswitch",
+  "version": "2.6.2-1ubuntu1",
+  "source": "dpkg",
+  "size": 141312
+ },
+ {
+  "id": "deb:python3-referencing",
+  "name": "python3-referencing",
+  "version": "0.36.2-1ubuntu2",
+  "source": "dpkg",
+  "size": 139264
+ },
+ {
+  "id": "deb:python3.14-gdbm",
+  "name": "python3.14-gdbm",
+  "version": "3.14.4-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 138240
+ },
+ {
+  "id": "deb:python3-httplib2",
+  "name": "python3-httplib2",
+  "version": "0.22.0-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 137216
+ },
+ {
+  "id": "deb:init-system-helpers",
+  "name": "init-system-helpers",
+  "version": "1.69",
+  "source": "dpkg",
+  "size": 136192,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:netcat-openbsd",
+  "name": "netcat-openbsd",
+  "version": "1.234-1",
+  "source": "dpkg",
+  "size": 136192,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpopt0:arm64",
+  "name": "libpopt0:arm64",
+  "version": "1.19+dfsg-2build1",
+  "source": "dpkg",
+  "size": 135168,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libwrap0:arm64",
+  "name": "libwrap0:arm64",
+  "version": "7.6.q-36build2",
+  "source": "dpkg",
+  "size": 134144
+ },
+ {
+  "id": "deb:python3-software-properties",
+  "name": "python3-software-properties",
+  "version": "0.120.1",
+  "source": "dpkg",
+  "size": 133120
+ },
+ {
+  "id": "deb:mariadb-plugin-provider-bzip2",
+  "name": "mariadb-plugin-provider-bzip2",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 132096
+ },
+ {
+  "id": "deb:mariadb-plugin-provider-lz4",
+  "name": "mariadb-plugin-provider-lz4",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 132096
+ },
+ {
+  "id": "deb:mariadb-plugin-provider-lzma",
+  "name": "mariadb-plugin-provider-lzma",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 132096
+ },
+ {
+  "id": "deb:mariadb-plugin-provider-lzo",
+  "name": "mariadb-plugin-provider-lzo",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 132096
+ },
+ {
+  "id": "deb:mariadb-plugin-provider-snappy",
+  "name": "mariadb-plugin-provider-snappy",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 132096
+ },
+ {
+  "id": "deb:eject",
+  "name": "eject",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 129024,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libtimedate-perl",
+  "name": "libtimedate-perl",
+  "version": "2.3300-2",
+  "source": "dpkg",
+  "size": 125952
+ },
+ {
+  "id": "deb:libuuid1:arm64",
+  "name": "libuuid1:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 124928,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:binutils-gold",
+  "name": "binutils-gold",
+  "version": "2.44-3build1",
+  "source": "dpkg",
+  "size": 122880
+ },
+ {
+  "id": "deb:liblastlog2-2:arm64",
+  "name": "liblastlog2-2:arm64",
+  "version": "2.41.3-3ubuntu2",
+  "source": "dpkg",
+  "size": 122880
+ },
+ {
+  "id": "deb:update-manager-core",
+  "name": "update-manager-core",
+  "version": "1:26.04.5",
+  "source": "dpkg",
+  "size": 122880
+ },
+ {
+  "id": "deb:ed",
+  "name": "ed",
+  "version": "1.22.4-1",
+  "source": "dpkg",
+  "size": 119808
+ },
+ {
+  "id": "deb:python3-incremental",
+  "name": "python3-incremental",
+  "version": "24.7.2-4",
+  "source": "dpkg",
+  "size": 118784
+ },
+ {
+  "id": "deb:libcom-err2:arm64",
+  "name": "libcom-err2:arm64",
+  "version": "1.47.2-3ubuntu4",
+  "source": "dpkg",
+  "size": 116736,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libss2:arm64",
+  "name": "libss2:arm64",
+  "version": "1.47.2-3ubuntu4",
+  "source": "dpkg",
+  "size": 116736,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libterm-readkey-perl",
+  "name": "libterm-readkey-perl",
+  "version": "2.38-2build5",
+  "source": "dpkg",
+  "size": 116736
+ },
+ {
+  "id": "deb:xml-core",
+  "name": "xml-core",
+  "version": "0.19build1",
+  "source": "dpkg",
+  "size": 116736
+ },
+ {
+  "id": "deb:libsnappy1v5:arm64",
+  "name": "libsnappy1v5:arm64",
+  "version": "1.2.2-2",
+  "source": "dpkg",
+  "size": 115712
+ },
+ {
+  "id": "deb:logsave",
+  "name": "logsave",
+  "version": "1.47.2-3ubuntu4",
+  "source": "dpkg",
+  "size": 114688,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gir1.2-packagekitglib-1.0",
+  "name": "gir1.2-packagekitglib-1.0",
+  "version": "1.3.4-3ubuntu1.1",
+  "source": "dpkg",
+  "size": 113664
+ },
+ {
+  "id": "deb:python3-minimal",
+  "name": "python3-minimal",
+  "version": "3.14.3-0ubuntu2",
+  "source": "dpkg",
+  "size": 112640,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:pkgconf-bin",
+  "name": "pkgconf-bin",
+  "version": "2.5.1-4",
+  "source": "dpkg",
+  "size": 111616
+ },
+ {
+  "id": "deb:gir1.2-girepository-3.0:arm64",
+  "name": "gir1.2-girepository-3.0:arm64",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 110592,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libglib2.0-data",
+  "name": "libglib2.0-data",
+  "version": "2.88.0-1",
+  "source": "dpkg",
+  "size": 110592,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libsasl2-modules-db:arm64",
+  "name": "libsasl2-modules-db:arm64",
+  "version": "2.1.28+dfsg1-9ubuntu3",
+  "source": "dpkg",
+  "size": 109568
+ },
+ {
+  "id": "deb:gcc-15-base:arm64",
+  "name": "gcc-15-base:arm64",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 108544
+ },
+ {
+  "id": "deb:gcc-16-base:arm64",
+  "name": "gcc-16-base:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 107520,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-jwt",
+  "name": "python3-jwt",
+  "version": "2.10.1-4ubuntu1",
+  "source": "dpkg",
+  "size": 107520
+ },
+ {
+  "id": "deb:krb5-locales",
+  "name": "krb5-locales",
+  "version": "1.22.1-2ubuntu4",
+  "source": "dpkg",
+  "size": 106496,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpam-cap:arm64",
+  "name": "libpam-cap:arm64",
+  "version": "1:2.75-10ubuntu2",
+  "source": "dpkg",
+  "size": 106496,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libxtables12:arm64",
+  "name": "libxtables12:arm64",
+  "version": "1.8.11-2ubuntu3",
+  "source": "dpkg",
+  "size": 106496,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-markupsafe",
+  "name": "python3-markupsafe",
+  "version": "3.0.3-1build1",
+  "source": "dpkg",
+  "size": 106496
+ },
+ {
+  "id": "deb:login.defs",
+  "name": "login.defs",
+  "version": "1:4.17.4-2ubuntu3",
+  "source": "dpkg",
+  "size": 105472,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmaxminddb0:arm64",
+  "name": "libmaxminddb0:arm64",
+  "version": "1.12.2-1build2",
+  "source": "dpkg",
+  "size": 104448
+ },
+ {
+  "id": "deb:libacl1:arm64",
+  "name": "libacl1:arm64",
+  "version": "2.3.2-2",
+  "source": "dpkg",
+  "size": 103424,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libattr1:arm64",
+  "name": "libattr1:arm64",
+  "version": "1:2.5.2-4",
+  "source": "dpkg",
+  "size": 103424,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libfcgi-perl",
+  "name": "libfcgi-perl",
+  "version": "0.82+ds-3build3",
+  "source": "dpkg",
+  "size": 103424
+ },
+ {
+  "id": "deb:liblocale-gettext-perl",
+  "name": "liblocale-gettext-perl",
+  "version": "1.07-8",
+  "source": "dpkg",
+  "size": 103424,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:file",
+  "name": "file",
+  "version": "1:5.46-5build2",
+  "source": "dpkg",
+  "size": 102400
+ },
+ {
+  "id": "deb:kpartx",
+  "name": "kpartx",
+  "version": "0.14.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 102400
+ },
+ {
+  "id": "deb:libip4tc2:arm64",
+  "name": "libip4tc2:arm64",
+  "version": "1.8.11-2ubuntu3",
+  "source": "dpkg",
+  "size": 102400
+ },
+ {
+  "id": "deb:libip6tc2:arm64",
+  "name": "libip6tc2:arm64",
+  "version": "1.8.11-2ubuntu3",
+  "source": "dpkg",
+  "size": 102400
+ },
+ {
+  "id": "deb:pinentry-curses",
+  "name": "pinentry-curses",
+  "version": "1.3.2-3ubuntu1",
+  "source": "dpkg",
+  "size": 102400
+ },
+ {
+  "id": "deb:libintl-xs-perl",
+  "name": "libintl-xs-perl",
+  "version": "1.37-1",
+  "source": "dpkg",
+  "size": 101376
+ },
+ {
+  "id": "deb:libjansson4:arm64",
+  "name": "libjansson4:arm64",
+  "version": "2.14-2build4",
+  "source": "dpkg",
+  "size": 101376
+ },
+ {
+  "id": "deb:libldap-common",
+  "name": "libldap-common",
+  "version": "2.6.10+dfsg-1ubuntu5",
+  "source": "dpkg",
+  "size": 101376
+ },
+ {
+  "id": "deb:libsubid5:arm64",
+  "name": "libsubid5:arm64",
+  "version": "1:4.17.4-2ubuntu3",
+  "source": "dpkg",
+  "size": 101376
+ },
+ {
+  "id": "deb:media-types",
+  "name": "media-types",
+  "version": "14.0.0build1",
+  "source": "dpkg",
+  "size": 101376,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libdebuginfod1t64:arm64",
+  "name": "libdebuginfod1t64:arm64",
+  "version": "0.194-4",
+  "source": "dpkg",
+  "size": 100352
+ },
+ {
+  "id": "deb:python3-netifaces:arm64",
+  "name": "python3-netifaces:arm64",
+  "version": "0.11.0-2build7",
+  "source": "dpkg",
+  "size": 98304
+ },
+ {
+  "id": "deb:iputils-tracepath",
+  "name": "iputils-tracepath",
+  "version": "3:20250605-1ubuntu1",
+  "source": "dpkg",
+  "size": 97280
+ },
+ {
+  "id": "deb:libtext-iconv-perl:arm64",
+  "name": "libtext-iconv-perl:arm64",
+  "version": "1.7-8.1",
+  "source": "dpkg",
+  "size": 97280,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:tcl8.6",
+  "name": "tcl8.6",
+  "version": "8.6.17+dfsg-1build1",
+  "source": "dpkg",
+  "size": 97280
+ },
+ {
+  "id": "deb:dbus-system-bus-common",
+  "name": "dbus-system-bus-common",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 96256,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-jmespath",
+  "name": "python3-jmespath",
+  "version": "1.0.1-1build1",
+  "source": "dpkg",
+  "size": 96256
+ },
+ {
+  "id": "deb:libcbor0.10:arm64",
+  "name": "libcbor0.10:arm64",
+  "version": "0.10.2-2ubuntu3",
+  "source": "dpkg",
+  "size": 95232
+ },
+ {
+  "id": "deb:libtext-charwidth-perl:arm64",
+  "name": "libtext-charwidth-perl:arm64",
+  "version": "0.04-11build4",
+  "source": "dpkg",
+  "size": 95232,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:plymouth-theme-ubuntu-text",
+  "name": "plymouth-theme-ubuntu-text",
+  "version": "24.004.60+git20250831.4a3c171d-0ubuntu8",
+  "source": "dpkg",
+  "size": 95232
+ },
+ {
+  "id": "deb:libdrm-amdgpu1:arm64",
+  "name": "libdrm-amdgpu1:arm64",
+  "version": "2.4.131-1",
+  "source": "dpkg",
+  "size": 94208
+ },
+ {
+  "id": "deb:libftdi1-2:arm64",
+  "name": "libftdi1-2:arm64",
+  "version": "1.6~rc1-1build1",
+  "source": "dpkg",
+  "size": 94208
+ },
+ {
+  "id": "deb:libdebconfclient0:arm64",
+  "name": "libdebconfclient0:arm64",
+  "version": "0.280ubuntu1",
+  "source": "dpkg",
+  "size": 93184,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmd0:arm64",
+  "name": "libmd0:arm64",
+  "version": "1.1.0-2build4",
+  "source": "dpkg",
+  "size": 93184,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:whiptail",
+  "name": "whiptail",
+  "version": "0.52.25-1ubuntu3",
+  "source": "dpkg",
+  "size": 93184,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:hostname",
+  "name": "hostname",
+  "version": "3.25build1",
+  "source": "dpkg",
+  "size": 92160,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libaio1t64:arm64",
+  "name": "libaio1t64:arm64",
+  "version": "0.3.113-8build1",
+  "source": "dpkg",
+  "size": 91136
+ },
+ {
+  "id": "deb:libblockdev-crypto3:arm64",
+  "name": "libblockdev-crypto3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 91136
+ },
+ {
+  "id": "deb:libclone-perl:arm64",
+  "name": "libclone-perl:arm64",
+  "version": "0.47-1",
+  "source": "dpkg",
+  "size": 91136
+ },
+ {
+  "id": "deb:libdevmapper-event1.02.1:arm64",
+  "name": "libdevmapper-event1.02.1:arm64",
+  "version": "2:1.02.205-2ubuntu3",
+  "source": "dpkg",
+  "size": 91136
+ },
+ {
+  "id": "deb:libpcre2-posix3:arm64",
+  "name": "libpcre2-posix3:arm64",
+  "version": "10.46-1ubuntu0.1",
+  "source": "dpkg",
+  "size": 91136
+ },
+ {
+  "id": "deb:libatasmart4:arm64",
+  "name": "libatasmart4:arm64",
+  "version": "0.19-6",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:libblockdev-nvme3:arm64",
+  "name": "libblockdev-nvme3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:libblockdev-utils3:arm64",
+  "name": "libblockdev-utils3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:libmpathpersist0",
+  "name": "libmpathpersist0",
+  "version": "0.14.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:libqrtr-glib0:arm64",
+  "name": "libqrtr-glib0:arm64",
+  "version": "1.2.2-2ubuntu1",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:libsensors5:arm64",
+  "name": "libsensors5:arm64",
+  "version": "1:3.6.2-2build1",
+  "source": "dpkg",
+  "size": 90112
+ },
+ {
+  "id": "deb:cowsay",
+  "name": "cowsay",
+  "version": "3.03+dfsg2-8build1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:dbus-user-session",
+  "name": "dbus-user-session",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 89088,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libblockdev-loop3:arm64",
+  "name": "libblockdev-loop3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libblockdev-mdraid3:arm64",
+  "name": "libblockdev-mdraid3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libblockdev-part3:arm64",
+  "name": "libblockdev-part3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libblockdev-smart3:arm64",
+  "name": "libblockdev-smart3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libblockdev-swap3:arm64",
+  "name": "libblockdev-swap3:arm64",
+  "version": "3.4.0-1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libbz2-1.0:arm64",
+  "name": "libbz2-1.0:arm64",
+  "version": "1.0.8-6build2",
+  "source": "dpkg",
+  "size": 89088,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgdbm-compat4t64:arm64",
+  "name": "libgdbm-compat4t64:arm64",
+  "version": "1.26-1build1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libmnl0:arm64",
+  "name": "libmnl0:arm64",
+  "version": "1.0.5-3build1",
+  "source": "dpkg",
+  "size": 89088,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmpathcmd0",
+  "name": "libmpathcmd0",
+  "version": "0.14.3-2ubuntu1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libnpth0t64:arm64",
+  "name": "libnpth0t64:arm64",
+  "version": "1.8-3build1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libnuma1:arm64",
+  "name": "libnuma1:arm64",
+  "version": "2.0.19-1build1",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libpipeline1:arm64",
+  "name": "libpipeline1:arm64",
+  "version": "1.5.8-2",
+  "source": "dpkg",
+  "size": 89088
+ },
+ {
+  "id": "deb:libeatmydata1:arm64",
+  "name": "libeatmydata1:arm64",
+  "version": "131-2build1",
+  "source": "dpkg",
+  "size": 88064
+ },
+ {
+  "id": "deb:libfcgi-bin",
+  "name": "libfcgi-bin",
+  "version": "2.4.5-0.1build2",
+  "source": "dpkg",
+  "size": 88064
+ },
+ {
+  "id": "deb:libfdt1:arm64",
+  "name": "libfdt1:arm64",
+  "version": "1.7.2-2ubuntu1",
+  "source": "dpkg",
+  "size": 88064
+ },
+ {
+  "id": "deb:libkeyutils1:arm64",
+  "name": "libkeyutils1:arm64",
+  "version": "1.6.3-6ubuntu3",
+  "source": "dpkg",
+  "size": 88064,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpolkit-agent-1-0:arm64",
+  "name": "libpolkit-agent-1-0:arm64",
+  "version": "127-2ubuntu1",
+  "source": "dpkg",
+  "size": 88064
+ },
+ {
+  "id": "deb:mokutil",
+  "name": "mokutil",
+  "version": "0.7.2-2",
+  "source": "dpkg",
+  "size": 88064
+ },
+ {
+  "id": "deb:libfastjson4:arm64",
+  "name": "libfastjson4:arm64",
+  "version": "1.2304.0-2build1",
+  "source": "dpkg",
+  "size": 87040,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libgudev-1.0-0:arm64",
+  "name": "libgudev-1.0-0:arm64",
+  "version": "1:238-7build1",
+  "source": "dpkg",
+  "size": 87040
+ },
+ {
+  "id": "deb:libxxhash0:arm64",
+  "name": "libxxhash0:arm64",
+  "version": "0.8.3-2build1",
+  "source": "dpkg",
+  "size": 87040,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:fwupd-signed",
+  "name": "fwupd-signed",
+  "version": "1.55+1.7-1",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:libgpm2:arm64",
+  "name": "libgpm2:arm64",
+  "version": "1.20.7-12build1",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:libubootenv-tool",
+  "name": "libubootenv-tool",
+  "version": "0.3.5-0.2",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:libubootenv0.1:arm64",
+  "name": "libubootenv0.1:arm64",
+  "version": "0.3.5-0.2",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:usb-modeswitch-data",
+  "name": "usb-modeswitch-data",
+  "version": "20191128-7build1",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:xauth",
+  "name": "xauth",
+  "version": "1:1.1.2-1.1build1",
+  "source": "dpkg",
+  "size": 86016
+ },
+ {
+  "id": "deb:dbus-session-bus-common",
+  "name": "dbus-session-bus-common",
+  "version": "1.16.2-2ubuntu4",
+  "source": "dpkg",
+  "size": 84992,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libbytesize1:arm64",
+  "name": "libbytesize1:arm64",
+  "version": "2.12-1",
+  "source": "dpkg",
+  "size": 84992
+ },
+ {
+  "id": "deb:libiniparser4:arm64",
+  "name": "libiniparser4:arm64",
+  "version": "4.2.6-1build1",
+  "source": "dpkg",
+  "size": 84992
+ },
+ {
+  "id": "deb:libjs-sphinxdoc",
+  "name": "libjs-sphinxdoc",
+  "version": "8.2.3-12",
+  "source": "dpkg",
+  "size": 84992
+ },
+ {
+  "id": "deb:libnfnetlink0:arm64",
+  "name": "libnfnetlink0:arm64",
+  "version": "1.0.2-3build1",
+  "source": "dpkg",
+  "size": 84992
+ },
+ {
+  "id": "deb:libxmuu1:arm64",
+  "name": "libxmuu1:arm64",
+  "version": "2:1.1.3-4",
+  "source": "dpkg",
+  "size": 84992
+ },
+ {
+  "id": "deb:devio",
+  "name": "devio",
+  "version": "1.2-5",
+  "source": "dpkg",
+  "size": 83968
+ },
+ {
+  "id": "deb:libinih1:arm64",
+  "name": "libinih1:arm64",
+  "version": "61-1ubuntu1",
+  "source": "dpkg",
+  "size": 83968
+ },
+ {
+  "id": "deb:libqmi-proxy",
+  "name": "libqmi-proxy",
+  "version": "1.38.0-1",
+  "source": "dpkg",
+  "size": 83968
+ },
+ {
+  "id": "deb:libatomic1:arm64",
+  "name": "libatomic1:arm64",
+  "version": "16-20260322-1ubuntu1",
+  "source": "dpkg",
+  "size": 82944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libestr0:arm64",
+  "name": "libestr0:arm64",
+  "version": "0.1.11-2build1",
+  "source": "dpkg",
+  "size": 82944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libmbim-proxy",
+  "name": "libmbim-proxy",
+  "version": "1.32.0-2ubuntu1",
+  "source": "dpkg",
+  "size": 82944
+ },
+ {
+  "id": "deb:libxau6:arm64",
+  "name": "libxau6:arm64",
+  "version": "1:1.0.11-1build2",
+  "source": "dpkg",
+  "size": 82944
+ },
+ {
+  "id": "deb:libxdmcp6:arm64",
+  "name": "libxdmcp6:arm64",
+  "version": "1:1.1.5-2",
+  "source": "dpkg",
+  "size": 82944
+ },
+ {
+  "id": "deb:python3-jsonschema-specifications",
+  "name": "python3-jsonschema-specifications",
+  "version": "2023.12.1-4",
+  "source": "dpkg",
+  "size": 82944
+ },
+ {
+  "id": "deb:readline-common",
+  "name": "readline-common",
+  "version": "8.3-4",
+  "source": "dpkg",
+  "size": 82944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ubuntu-pro-client-l10n",
+  "name": "ubuntu-pro-client-l10n",
+  "version": "37.2ubuntu0.1",
+  "source": "dpkg",
+  "size": 82944,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:zerofree",
+  "name": "zerofree",
+  "version": "1.1.1-1build6",
+  "source": "dpkg",
+  "size": 82944
+ },
+ {
+  "id": "deb:python3",
+  "name": "python3",
+  "version": "3.14.3-0ubuntu2",
+  "source": "dpkg",
+  "size": 81920,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:systemd-sysv",
+  "name": "systemd-sysv",
+  "version": "259.5-0ubuntu3",
+  "source": "dpkg",
+  "size": 81920,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-constantly",
+  "name": "python3-constantly",
+  "version": "23.10.4-2build1",
+  "source": "dpkg",
+  "size": 80896
+ },
+ {
+  "id": "deb:python3-distro",
+  "name": "python3-distro",
+  "version": "1.9.0-1build1",
+  "source": "dpkg",
+  "size": 80896
+ },
+ {
+  "id": "deb:python3-linkify-it",
+  "name": "python3-linkify-it",
+  "version": "2.0.3-1ubuntu3",
+  "source": "dpkg",
+  "size": 79872,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:overlayroot",
+  "name": "overlayroot",
+  "version": "0.58ubuntu",
+  "source": "dpkg",
+  "size": 77824
+ },
+ {
+  "id": "deb:python3-lazr.uri",
+  "name": "python3-lazr.uri",
+  "version": "1.0.6-7build1",
+  "source": "dpkg",
+  "size": 75776
+ },
+ {
+  "id": "deb:pkgconf:arm64",
+  "name": "pkgconf:arm64",
+  "version": "2.5.1-4",
+  "source": "dpkg",
+  "size": 74752
+ },
+ {
+  "id": "deb:pnp.ids",
+  "name": "pnp.ids",
+  "version": "0.394-1build1",
+  "source": "dpkg",
+  "size": 74752
+ },
+ {
+  "id": "deb:liblwp-mediatypes-perl",
+  "name": "liblwp-mediatypes-perl",
+  "version": "6.04-2",
+  "source": "dpkg",
+  "size": 73728
+ },
+ {
+  "id": "deb:os-prober",
+  "name": "os-prober",
+  "version": "1.84ubuntu1",
+  "source": "dpkg",
+  "size": 70656
+ },
+ {
+  "id": "deb:liberror-perl",
+  "name": "liberror-perl",
+  "version": "0.17030-1",
+  "source": "dpkg",
+  "size": 68608
+ },
+ {
+  "id": "deb:networkd-dispatcher",
+  "name": "networkd-dispatcher",
+  "version": "2.2.4-1.1ubuntu1",
+  "source": "dpkg",
+  "size": 68608,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ssl-cert",
+  "name": "ssl-cert",
+  "version": "1.1.3ubuntu2",
+  "source": "dpkg",
+  "size": 68608
+ },
+ {
+  "id": "deb:sensible-utils",
+  "name": "sensible-utils",
+  "version": "0.0.26build1",
+  "source": "dpkg",
+  "size": 67584,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:sgml-base",
+  "name": "sgml-base",
+  "version": "1.31+nmu1build1",
+  "source": "dpkg",
+  "size": 66560
+ },
+ {
+  "id": "deb:mariadb-common",
+  "name": "mariadb-common",
+  "version": "1:11.8.6-5ubuntu0.1",
+  "source": "dpkg",
+  "size": 65536
+ },
+ {
+  "id": "deb:cloud-guest-utils",
+  "name": "cloud-guest-utils",
+  "version": "0.33-1build1",
+  "source": "dpkg",
+  "size": 62464
+ },
+ {
+  "id": "deb:golang-go:arm64",
+  "name": "golang-go:arm64",
+  "version": "2:1.26~1",
+  "source": "dpkg",
+  "size": 62464
+ },
+ {
+  "id": "deb:python3-autocommand",
+  "name": "python3-autocommand",
+  "version": "2.2.2-4",
+  "source": "dpkg",
+  "size": 62464
+ },
+ {
+  "id": "deb:apport-symptoms",
+  "name": "apport-symptoms",
+  "version": "0.25build1",
+  "source": "dpkg",
+  "size": 61440
+ },
+ {
+  "id": "deb:libgpg-error-l10n",
+  "name": "libgpg-error-l10n",
+  "version": "1.58-2",
+  "source": "dpkg",
+  "size": 61440,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-jsonpatch",
+  "name": "python3-jsonpatch",
+  "version": "1.32-6",
+  "source": "dpkg",
+  "size": 60416
+ },
+ {
+  "id": "deb:python3-ptyprocess",
+  "name": "python3-ptyprocess",
+  "version": "0.7.0-6build1",
+  "source": "dpkg",
+  "size": 60416
+ },
+ {
+  "id": "deb:python3-six",
+  "name": "python3-six",
+  "version": "1.17.0-2build1",
+  "source": "dpkg",
+  "size": 60416
+ },
+ {
+  "id": "deb:fonts-ubuntu-console",
+  "name": "fonts-ubuntu-console",
+  "version": "0.869+git20240321-0ubuntu2",
+  "source": "dpkg",
+  "size": 59392
+ },
+ {
+  "id": "deb:cron-daemon-common",
+  "name": "cron-daemon-common",
+  "version": "3.0pl1-200ubuntu1",
+  "source": "dpkg",
+  "size": 55296
+ },
+ {
+  "id": "deb:python3-commandnotfound",
+  "name": "python3-commandnotfound",
+  "version": "23.04.0build1",
+  "source": "dpkg",
+  "size": 55296
+ },
+ {
+  "id": "deb:python3-magic",
+  "name": "python3-magic",
+  "version": "2:0.4.27-3build1",
+  "source": "dpkg",
+  "size": 55296
+ },
+ {
+  "id": "deb:python3-problem-report",
+  "name": "python3-problem-report",
+  "version": "2.34.0-0ubuntu2",
+  "source": "dpkg",
+  "size": 54272
+ },
+ {
+  "id": "deb:motd-news-config",
+  "name": "motd-news-config",
+  "version": "14ubuntu6.1",
+  "source": "dpkg",
+  "size": 53248
+ },
+ {
+  "id": "deb:python3-service-identity",
+  "name": "python3-service-identity",
+  "version": "24.2.0-1build1",
+  "source": "dpkg",
+  "size": 52224
+ },
+ {
+  "id": "deb:ssh-import-id",
+  "name": "ssh-import-id",
+  "version": "5.11-0ubuntu4",
+  "source": "dpkg",
+  "size": 51200
+ },
+ {
+  "id": "deb:libdebuginfod-common",
+  "name": "libdebuginfod-common",
+  "version": "0.194-4",
+  "source": "dpkg",
+  "size": 50176
+ },
+ {
+  "id": "deb:telnet",
+  "name": "telnet",
+  "version": "0.17+2.7-2ubuntu1.1",
+  "source": "dpkg",
+  "size": 50176
+ },
+ {
+  "id": "deb:libcommon-sense-perl:arm64",
+  "name": "libcommon-sense-perl:arm64",
+  "version": "3.75-3build5",
+  "source": "dpkg",
+  "size": 49152
+ },
+ {
+  "id": "deb:pollinate",
+  "name": "pollinate",
+  "version": "4.33-4ubuntu6",
+  "source": "dpkg",
+  "size": 49152
+ },
+ {
+  "id": "deb:python3-jaraco.functools",
+  "name": "python3-jaraco.functools",
+  "version": "4.1.0-1build1",
+  "source": "dpkg",
+  "size": 48128
+ },
+ {
+  "id": "deb:python3-jaraco.text",
+  "name": "python3-jaraco.text",
+  "version": "4.0.0-1build1",
+  "source": "dpkg",
+  "size": 48128
+ },
+ {
+  "id": "deb:python3-json-pointer",
+  "name": "python3-json-pointer",
+  "version": "2.4-4",
+  "source": "dpkg",
+  "size": 46080
+ },
+ {
+  "id": "deb:python3-zipp",
+  "name": "python3-zipp",
+  "version": "3.23.0-1build1",
+  "source": "dpkg",
+  "size": 46080
+ },
+ {
+  "id": "deb:dracut",
+  "name": "dracut",
+  "version": "110-11",
+  "source": "dpkg",
+  "size": 45056
+ },
+ {
+  "id": "deb:python3-blinker",
+  "name": "python3-blinker",
+  "version": "1.9.0-2build1",
+  "source": "dpkg",
+  "size": 44032
+ },
+ {
+  "id": "deb:python3-certifi",
+  "name": "python3-certifi",
+  "version": "2026.1.4+ds-1",
+  "source": "dpkg",
+  "size": 43008
+ },
+ {
+  "id": "deb:python3-distro-info",
+  "name": "python3-distro-info",
+  "version": "1.15",
+  "source": "dpkg",
+  "size": 43008
+ },
+ {
+  "id": "deb:python3-mdurl",
+  "name": "python3-mdurl",
+  "version": "0.1.2-1build1",
+  "source": "dpkg",
+  "size": 43008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-uc-micro",
+  "name": "python3-uc-micro",
+  "version": "1.0.3-1build1",
+  "source": "dpkg",
+  "size": 43008,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libdrm-common",
+  "name": "libdrm-common",
+  "version": "2.4.131-1",
+  "source": "dpkg",
+  "size": 41984
+ },
+ {
+  "id": "deb:friendly-recovery",
+  "name": "friendly-recovery",
+  "version": "0.2.42build1",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:g++-15",
+  "name": "g++-15",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:libbytesize-common",
+  "name": "libbytesize-common",
+  "version": "2.12-1",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:libio-html-perl",
+  "name": "libio-html-perl",
+  "version": "1.004-3",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:libjson-glib-1.0-common",
+  "name": "libjson-glib-1.0-common",
+  "version": "1.10.8+ds-2",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:libsort-naturally-perl",
+  "name": "libsort-naturally-perl",
+  "version": "1.03-4",
+  "source": "dpkg",
+  "size": 40960
+ },
+ {
+  "id": "deb:libhtml-tagset-perl",
+  "name": "libhtml-tagset-perl",
+  "version": "3.24-1",
+  "source": "dpkg",
+  "size": 39936
+ },
+ {
+  "id": "deb:cloud-initramfs-dyn-netconf",
+  "name": "cloud-initramfs-dyn-netconf",
+  "version": "0.58ubuntu",
+  "source": "dpkg",
+  "size": 37888
+ },
+ {
+  "id": "deb:cpp",
+  "name": "cpp",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 37888
+ },
+ {
+  "id": "deb:gcc",
+  "name": "gcc",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 37888
+ },
+ {
+  "id": "deb:netbase",
+  "name": "netbase",
+  "version": "6.5build1",
+  "source": "dpkg",
+  "size": 35840,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:postgresql",
+  "name": "postgresql",
+  "version": "18+290ubuntu1",
+  "source": "dpkg",
+  "size": 35840
+ },
+ {
+  "id": "deb:sg3-utils-udev",
+  "name": "sg3-utils-udev",
+  "version": "1.48-3ubuntu3.1",
+  "source": "dpkg",
+  "size": 35840
+ },
+ {
+  "id": "deb:mysql-common",
+  "name": "mysql-common",
+  "version": "5.8+1.1.1ubuntu2",
+  "source": "dpkg",
+  "size": 34816
+ },
+ {
+  "id": "deb:python3-jaraco.context",
+  "name": "python3-jaraco.context",
+  "version": "6.0.1-2",
+  "source": "dpkg",
+  "size": 34816
+ },
+ {
+  "id": "deb:cloud-initramfs-copymods",
+  "name": "cloud-initramfs-copymods",
+  "version": "0.58ubuntu",
+  "source": "dpkg",
+  "size": 31744
+ },
+ {
+  "id": "deb:libencode-locale-perl",
+  "name": "libencode-locale-perl",
+  "version": "1.05-3",
+  "source": "dpkg",
+  "size": 31744
+ },
+ {
+  "id": "deb:libtypes-serialiser-perl",
+  "name": "libtypes-serialiser-perl",
+  "version": "1.01-1",
+  "source": "dpkg",
+  "size": 31744
+ },
+ {
+  "id": "deb:libhttp-date-perl",
+  "name": "libhttp-date-perl",
+  "version": "6.06-1ubuntu0.26.04.1",
+  "source": "dpkg",
+  "size": 30720
+ },
+ {
+  "id": "deb:command-not-found",
+  "name": "command-not-found",
+  "version": "23.04.0build1",
+  "source": "dpkg",
+  "size": 29696
+ },
+ {
+  "id": "deb:finalrd",
+  "name": "finalrd",
+  "version": "9build2",
+  "source": "dpkg",
+  "size": 29696
+ },
+ {
+  "id": "deb:libmodule-find-perl",
+  "name": "libmodule-find-perl",
+  "version": "0.17-1",
+  "source": "dpkg",
+  "size": 29696
+ },
+ {
+  "id": "deb:ubuntu-keyring",
+  "name": "ubuntu-keyring",
+  "version": "2023.11.28.1build1",
+  "source": "dpkg",
+  "size": 29696,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:apport-core-dump-handler",
+  "name": "apport-core-dump-handler",
+  "version": "2.34.0-0ubuntu2",
+  "source": "dpkg",
+  "size": 28672
+ },
+ {
+  "id": "deb:libsensors-config",
+  "name": "libsensors-config",
+  "version": "1:3.6.2-2build1",
+  "source": "dpkg",
+  "size": 28672
+ },
+ {
+  "id": "deb:lxd-agent-loader",
+  "name": "lxd-agent-loader",
+  "version": "0.13ubuntu0",
+  "source": "dpkg",
+  "size": 28672
+ },
+ {
+  "id": "deb:libcgi-fast-perl",
+  "name": "libcgi-fast-perl",
+  "version": "1:2.17-1",
+  "source": "dpkg",
+  "size": 27648
+ },
+ {
+  "id": "deb:libtirpc-common",
+  "name": "libtirpc-common",
+  "version": "1.3.7-0.1",
+  "source": "dpkg",
+  "size": 27648,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libpython3-stdlib:arm64",
+  "name": "libpython3-stdlib:arm64",
+  "version": "3.14.3-0ubuntu2",
+  "source": "dpkg",
+  "size": 26624,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-gdbm",
+  "name": "python3-gdbm",
+  "version": "3.14.3-0ubuntu2",
+  "source": "dpkg",
+  "size": 26624
+ },
+ {
+  "id": "deb:secureboot-db",
+  "name": "secureboot-db",
+  "version": "1.9build2",
+  "source": "dpkg",
+  "size": 26624
+ },
+ {
+  "id": "deb:sudo-common",
+  "name": "sudo-common",
+  "version": "1.2ubuntu",
+  "source": "dpkg",
+  "size": 26624,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:gcc-aarch64-linux-gnu",
+  "name": "gcc-aarch64-linux-gnu",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 25600
+ },
+ {
+  "id": "deb:lxd-installer",
+  "name": "lxd-installer",
+  "version": "14ubuntu0",
+  "source": "dpkg",
+  "size": 25600
+ },
+ {
+  "id": "deb:powermgmt-base",
+  "name": "powermgmt-base",
+  "version": "1.38ubuntu2",
+  "source": "dpkg",
+  "size": 25600
+ },
+ {
+  "id": "deb:ftp",
+  "name": "ftp",
+  "version": "20260211-1",
+  "source": "dpkg",
+  "size": 24576
+ },
+ {
+  "id": "deb:libtext-wrapi18n-perl",
+  "name": "libtext-wrapi18n-perl",
+  "version": "0.06-10",
+  "source": "dpkg",
+  "size": 24576,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:wireless-regdb",
+  "name": "wireless-regdb",
+  "version": "2026.02.04-0ubuntu1",
+  "source": "dpkg",
+  "size": 24576
+ },
+ {
+  "id": "deb:cpp-aarch64-linux-gnu",
+  "name": "cpp-aarch64-linux-gnu",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 21504
+ },
+ {
+  "id": "deb:eatmydata",
+  "name": "eatmydata",
+  "version": "131-2build1",
+  "source": "dpkg",
+  "size": 21504
+ },
+ {
+  "id": "deb:distro-info-data",
+  "name": "distro-info-data",
+  "version": "0.68ubuntu0.1",
+  "source": "dpkg",
+  "size": 20480,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libsemanage-common",
+  "name": "libsemanage-common",
+  "version": "3.9-1build1",
+  "source": "dpkg",
+  "size": 20480,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:tcl",
+  "name": "tcl",
+  "version": "8.6.16build1",
+  "source": "dpkg",
+  "size": 20480
+ },
+ {
+  "id": "deb:linux-sysctl-defaults",
+  "name": "linux-sysctl-defaults",
+  "version": "4.15ubuntu5",
+  "source": "dpkg",
+  "size": 19456,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:python3-debconf",
+  "name": "python3-debconf",
+  "version": "1.5.92",
+  "source": "dpkg",
+  "size": 19456
+ },
+ {
+  "id": "deb:lsb-release",
+  "name": "lsb-release",
+  "version": "12.1-2build1",
+  "source": "dpkg",
+  "size": 18432,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:init",
+  "name": "init",
+  "version": "1.69",
+  "source": "dpkg",
+  "size": 17408,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:libaudit-common",
+  "name": "libaudit-common",
+  "version": "1:4.1.2-1build1",
+  "source": "dpkg",
+  "size": 17408,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:systemd-hwe-hwdb",
+  "name": "systemd-hwe-hwdb",
+  "version": "259.5.3ubuntu",
+  "source": "dpkg",
+  "size": 17408,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:cloud-init",
+  "name": "cloud-init",
+  "version": "26.1-0ubuntu2",
+  "source": "dpkg",
+  "size": 15360
+ },
+ {
+  "id": "deb:hwdata",
+  "name": "hwdata",
+  "version": "0.394-1build1",
+  "source": "dpkg",
+  "size": 15360
+ },
+ {
+  "id": "deb:ubuntu-kernel-accessories",
+  "name": "ubuntu-kernel-accessories",
+  "version": "1.570.1",
+  "source": "dpkg",
+  "size": 14336
+ },
+ {
+  "id": "deb:ubuntu-minimal",
+  "name": "ubuntu-minimal",
+  "version": "1.570.1",
+  "source": "dpkg",
+  "size": 14336,
+  "kept": "it is marked essential or required: the system needs it"
+ },
+ {
+  "id": "deb:ubuntu-server",
+  "name": "ubuntu-server",
+  "version": "1.570.1",
+  "source": "dpkg",
+  "size": 14336
+ },
+ {
+  "id": "deb:ubuntu-standard",
+  "name": "ubuntu-standard",
+  "version": "1.570.1",
+  "source": "dpkg",
+  "size": 14336
+ },
+ {
+  "id": "deb:g++",
+  "name": "g++",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 13312
+ },
+ {
+  "id": "deb:linux-headers-generic",
+  "name": "linux-headers-generic",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 12288
+ },
+ {
+  "id": "deb:linux-headers-virtual",
+  "name": "linux-headers-virtual",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 12288
+ },
+ {
+  "id": "deb:linux-image-virtual",
+  "name": "linux-image-virtual",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 12288
+ },
+ {
+  "id": "deb:linux-virtual",
+  "name": "linux-virtual",
+  "version": "7.0.0-28.28",
+  "source": "dpkg",
+  "size": 12288
+ },
+ {
+  "id": "deb:cpp-15",
+  "name": "cpp-15",
+  "version": "15.2.0-16ubuntu1",
+  "source": "dpkg",
+  "size": 11264
+ },
+ {
+  "id": "deb:g++-aarch64-linux-gnu",
+  "name": "g++-aarch64-linux-gnu",
+  "version": "4:15.2.0-5ubuntu1",
+  "source": "dpkg",
+  "size": 11264
+ },
+ {
+  "id": "deb:golang-src",
+  "name": "golang-src",
+  "version": "2:1.26~1",
+  "source": "dpkg",
+  "size": 11264
+ },
+ {
+  "id": "deb:coreutils",
+  "name": "coreutils",
+  "version": "9.5-1ubuntu2+0.0.0~ubuntu25",
+  "source": "dpkg",
+  "size": 10240,
+  "kept": "it is marked essential or required: the system needs it"
+ }
+]

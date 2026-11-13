@@ -1,0 +1,184 @@
+{
+ "system": "windows",
+ "tools": [
+  "restore-point",
+  "shadow-copy"
+ ],
+ "snapshots": [
+  {
+   "id": "restore-point:41",
+   "tool": "restore-point",
+   "when": "2026-10-28T03:12:44+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Windows Update (settings were changed)",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "powershell",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$t=Add-Type -MemberDefinition '[DllImport(\"srclient.dll\")] public static extern int SRRemoveRestorePoint(int index);' -Name SR -Namespace ByteSweep -PassThru; $r=$t::SRRemoveRestorePoint(41); if($r -ne 0){throw \"System Restore said $r\"}"
+   ],
+   "note": "Windows can put system files, settings and apps back to how they were then. Its space is part of the shadow copies' storage."
+  },
+  {
+   "id": "restore-point:42",
+   "tool": "restore-point",
+   "when": "2026-11-04T18:40:02+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Installed Visual Studio Code (an app was installed)",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "powershell",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$t=Add-Type -MemberDefinition '[DllImport(\"srclient.dll\")] public static extern int SRRemoveRestorePoint(int index);' -Name SR -Namespace ByteSweep -PassThru; $r=$t::SRRemoveRestorePoint(42); if($r -ne 0){throw \"System Restore said $r\"}"
+   ],
+   "note": "Windows can put system files, settings and apps back to how they were then. Its space is part of the shadow copies' storage."
+  },
+  {
+   "id": "restore-point:43",
+   "tool": "restore-point",
+   "when": "2026-11-08T09:00:17+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Scheduled Checkpoint",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "powershell",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$t=Add-Type -MemberDefinition '[DllImport(\"srclient.dll\")] public static extern int SRRemoveRestorePoint(int index);' -Name SR -Namespace ByteSweep -PassThru; $r=$t::SRRemoveRestorePoint(43); if($r -ne 0){throw \"System Restore said $r\"}"
+   ],
+   "note": "Windows can put system files, settings and apps back to how they were then. Its space is part of the shadow copies' storage."
+  },
+  {
+   "id": "{6A1D2B3C-0F4E-4B5A-9C8D-7E6F5A4B3C2D}",
+   "tool": "shadow-copy",
+   "when": "2026-10-28T03:12:45+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Shadow copy of C:",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "vssadmin",
+    "delete",
+    "shadows",
+    "/shadow={6A1D2B3C-0F4E-4B5A-9C8D-7E6F5A4B3C2D}",
+    "/quiet"
+   ],
+   "note": "Windows made this for the restore point \"Windows Update\": removing it removes that restore point too."
+  },
+  {
+   "id": "{7B2E3C4D-1A5F-4C6B-8D9E-0F1A2B3C4D5E}",
+   "tool": "shadow-copy",
+   "when": "2026-11-04T18:40:04+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Shadow copy of C:",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "vssadmin",
+    "delete",
+    "shadows",
+    "/shadow={7B2E3C4D-1A5F-4C6B-8D9E-0F1A2B3C4D5E}",
+    "/quiet"
+   ],
+   "note": "Windows made this for the restore point \"Installed Visual Studio Code\": removing it removes that restore point too."
+  },
+  {
+   "id": "{8C3F4D5E-2B6A-4D7C-9EAF-1A2B3C4D5E6F}",
+   "tool": "shadow-copy",
+   "when": "2026-11-08T09:00:19+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Shadow copy of C:",
+   "where": "C:",
+   "disk": "C:\\",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "vssadmin",
+    "delete",
+    "shadows",
+    "/shadow={8C3F4D5E-2B6A-4D7C-9EAF-1A2B3C4D5E6F}",
+    "/quiet"
+   ],
+   "note": "Windows made this for the restore point \"Scheduled Checkpoint\": removing it removes that restore point too."
+  },
+  {
+   "id": "{9D4A5E6F-3C7B-4E8D-AFB0-2B3C4D5E6F70}",
+   "tool": "shadow-copy",
+   "when": "2026-11-06T22:15:00+05:30",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "Shadow copy of D:",
+   "where": "D:",
+   "disk": "D:\\",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "vssadmin",
+    "delete",
+    "shadows",
+    "/shadow={9D4A5E6F-3C7B-4E8D-AFB0-2B3C4D5E6F70}",
+    "/quiet"
+   ],
+   "note": "A copy of the drive as it was then, made by Windows Backup, System Restore or a backup app. Windows sizes them together, in the shadow storage."
+  }
+ ],
+ "totals": [
+  {
+   "tool": "restore-point",
+   "name": "Restore points",
+   "count": 3,
+   "size": 0,
+   "sizeKnown": false
+  },
+  {
+   "tool": "shadow-copy",
+   "name": "Shadow copies",
+   "count": 4,
+   "size": 5905580032,
+   "sizeKnown": true
+  }
+ ],
+ "shadowStorage": [
+  {
+   "for": "C:",
+   "on": "C:",
+   "used": 4831838208,
+   "allocated": 5368709120,
+   "max": 25769803776,
+   "maxPercent": 10.1
+  },
+  {
+   "for": "D:",
+   "on": "D:",
+   "used": 1073741824,
+   "allocated": 1610612736,
+   "max": -1,
+   "maxPercent": 0
+  }
+ ],
+ "notes": []
+}

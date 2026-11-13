@@ -1,0 +1,124 @@
+{
+ "dryRun": true,
+ "action": "maintain-run",
+ "about": "Run each server's own maintenance plan now.",
+ "command": [
+  "maintain",
+  "run",
+  "--json"
+ ],
+ "parallel": 8,
+ "hosts": [
+  {
+   "name": "web1",
+   "ok": true,
+   "skipped": false,
+   "did": "Would run updates-security, logs, clean-safe, restart-services.",
+   "freed": 2846404608,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "dryRun": true,
+    "plan": {
+     "on": false,
+     "every": "weekly",
+     "day": "sun",
+     "at": "03:00",
+     "steps": [
+      "updates-security",
+      "logs",
+      "clean-safe",
+      "restart-services"
+     ],
+     "older": "7d",
+     "next": ""
+    },
+    "restartNeeded": true,
+    "steps": [
+     {
+      "step": "updates-security",
+      "would": "Install the security updates.",
+      "size": 0
+     },
+     {
+      "step": "logs",
+      "would": "Clear logs older than 7d.",
+      "size": 0
+     },
+     {
+      "step": "clean-safe",
+      "would": "Clean what is safe to clean.",
+      "size": 2846404608
+     },
+     {
+      "step": "restart-services",
+      "would": "Restart services still running the old files after updates.",
+      "size": 0
+     }
+    ]
+   },
+   "seconds": 3.272
+  },
+  {
+   "name": "web2",
+   "ok": true,
+   "skipped": false,
+   "did": "Would run updates-security, logs, clean-safe, restart-services.",
+   "freed": 2846404608,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "dryRun": true,
+    "plan": {
+     "on": false,
+     "every": "weekly",
+     "day": "sun",
+     "at": "03:00",
+     "steps": [
+      "updates-security",
+      "logs",
+      "clean-safe",
+      "restart-services"
+     ],
+     "older": "7d",
+     "next": ""
+    },
+    "restartNeeded": true,
+    "steps": [
+     {
+      "step": "updates-security",
+      "would": "Install the security updates.",
+      "size": 0
+     },
+     {
+      "step": "logs",
+      "would": "Clear logs older than 7d.",
+      "size": 0
+     },
+     {
+      "step": "clean-safe",
+      "would": "Clean what is safe to clean.",
+      "size": 2846404608
+     },
+     {
+      "step": "restart-services",
+      "would": "Restart services still running the old files after updates.",
+      "size": 0
+     }
+    ]
+   },
+   "seconds": 3.271
+  }
+ ],
+ "ok": 2,
+ "failed": 0,
+ "skipped": 0,
+ "stopped": false,
+ "freed": 5692809216,
+ "started": "2026-11-09T10:39:02.873713383+05:30",
+ "finished": "2026-11-09T10:39:06.146398375+05:30"
+}

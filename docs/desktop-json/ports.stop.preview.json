@@ -1,0 +1,15 @@
+{
+ "dryRun": true,
+ "force": false,
+ "plans": [
+  {
+   "programs": [
+    "python3 (294664)"
+   ],
+   "containers": [],
+   "project": "devsite2",
+   "leftAlone": []
+  }
+ ],
+ "port": "3001"
+}

@@ -1,0 +1,77 @@
+{
+ "webServers": [
+  "nginx"
+ ],
+ "sites": [
+  {
+   "server": "nginx",
+   "names": [
+    "shop.example.com"
+   ],
+   "listen": [
+    "80"
+   ],
+   "root": "/var/www/shop/public",
+   "rootGone": true,
+   "logs": [
+    {
+     "path": "/var/log/nginx/shop.access.log",
+     "bytes": 0,
+     "rotated": true
+    }
+   ],
+   "certificateEnds": "0001-01-01T00:00:00Z",
+   "config": "/etc/nginx/sites-enabled/shop.example.com:1",
+   "findings": [
+    {
+     "level": "bad",
+     "title": "Its folder /var/www/shop/public is gone: the site answers with errors",
+     "fix": "Put the site back, or take the site out of /etc/nginx/sites-enabled/shop.example.com and reload the web server"
+    }
+   ]
+  },
+  {
+   "server": "nginx",
+   "names": [
+    "blog.example.com"
+   ],
+   "listen": [
+    "80"
+   ],
+   "root": "/var/www/blog",
+   "rootBytes": 14,
+   "logs": [
+    {
+     "path": "/var/log/nginx/access.log",
+     "bytes": 0,
+     "rotated": true
+    }
+   ],
+   "certificateEnds": "0001-01-01T00:00:00Z",
+   "config": "/etc/nginx/sites-enabled/blog.example.com:1",
+   "findings": []
+  },
+  {
+   "server": "nginx",
+   "names": [
+    "(any name)"
+   ],
+   "listen": [
+    "80",
+    "[::]:80"
+   ],
+   "root": "/var/www/html",
+   "rootBytes": 615,
+   "logs": [
+    {
+     "path": "/var/log/nginx/access.log",
+     "bytes": 0,
+     "rotated": true
+    }
+   ],
+   "certificateEnds": "0001-01-01T00:00:00Z",
+   "config": "/etc/nginx/sites-enabled/default:21",
+   "findings": []
+  }
+ ]
+}

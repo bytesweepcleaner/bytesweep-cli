@@ -1,0 +1,1834 @@
+{
+ "failed": 2,
+ "services": [
+  {
+   "name": "demo-fail.service",
+   "description": "Demo that fails on purpose",
+   "state": "failed",
+   "sub": "failed",
+   "since": "2026-11-09T09:03:56+05:30",
+   "restartable": true,
+   "log": [
+    "demo-fail.service: Failed with result 'exit-code'.",
+    "Started demo-fail.service - Demo that fails on purpose.",
+    "demo: config file /etc/demo.conf is missing",
+    "demo-fail.service: Main process exited, code=exited, status=1/FAILURE",
+    "demo-fail.service: Failed with result 'exit-code'."
+   ]
+  },
+  {
+   "name": "shop-worker.service",
+   "description": "Shop queue worker",
+   "state": "failed",
+   "sub": "failed",
+   "since": "2026-11-09T09:03:39+05:30",
+   "restartable": true,
+   "log": [
+    "shop-worker.service: Failed with result 'exit-code'.",
+    "Started shop-worker.service - Shop queue worker.",
+    "worker: redis at 127.0.0.1:6379 refused the connection",
+    "shop-worker.service: Main process exited, code=exited, status=1/FAILURE",
+    "shop-worker.service: Failed with result 'exit-code'."
+   ]
+  },
+  {
+   "name": "apparmor.service",
+   "description": "Load AppArmor profiles",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "apport.service",
+   "description": "automatic crash report generation",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "blk-availability.service",
+   "description": "Availability of block devices",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "chrony.service",
+   "description": "chrony, an NTP client/server",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:17:27+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "cloud-config.service",
+   "description": "Cloud-init: Config Stage",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "cloud-final.service",
+   "description": "Cloud-init: Final Stage",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:18+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "cloud-init-local.service",
+   "description": "Cloud-init: Local Stage (pre-network)",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": false,
+   "kept": "restarting the network can cut this connection",
+   "log": []
+  },
+  {
+   "name": "cloud-init-network.service",
+   "description": "Cloud-init: Network Stage",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "restarting the network can cut this connection",
+   "log": []
+  },
+  {
+   "name": "console-setup.service",
+   "description": "Set console font and keymap",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "cron.service",
+   "description": "Regular background program processing daemon",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:20:31+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dbus.service",
+   "description": "D-Bus System Message Bus",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:23:25+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "dracut-shutdown.service",
+   "description": "Restore /run/initramfs on shutdown",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "fake-dodo.service",
+   "description": "Fake Dodo licence server for bsweep tests",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:17:27+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "finalrd.service",
+   "description": "Create final runtime dir for shutdown pivot root",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "getty@tty1.service",
+   "description": "Getty on tty1",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "restarting it ends people's logins",
+   "log": []
+  },
+  {
+   "name": "keyboard-setup.service",
+   "description": "Set the console keyboard layout",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "kmod-static-nodes.service",
+   "description": "Create List of Static Device Nodes",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "lima-guestagent.service",
+   "description": "lima-guestagent",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "lvm2-monitor.service",
+   "description": "Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "mariadb.service",
+   "description": "MariaDB 11.8.6 database server",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:02+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ModemManager.service",
+   "description": "Modem Manager",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:06+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "multipathd-queueing.service",
+   "description": "Enable queuing for multipath maps",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "multipathd.service",
+   "description": "Device-Mapper Multipath Device Controller",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:19:03+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "netplan-configure.service",
+   "description": "Netplan Backend Configuration",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "networkd-dispatcher.service",
+   "description": "Dispatcher daemon for systemd-networkd",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:55:03+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "nginx.service",
+   "description": "A high performance web server and a reverse proxy server",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:03:40+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "packagekit.service",
+   "description": "PackageKit Daemon",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:06+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-quit-wait.service",
+   "description": "Hold until boot process finishes up",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-quit.service",
+   "description": "Terminate Plymouth Boot Screen",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-read-write.service",
+   "description": "Tell Plymouth To Write Out Runtime Data",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "polkit.service",
+   "description": "Authorization Manager",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:23:02+05:30",
+   "restartable": false,
+   "kept": "restarting it ends people's logins",
+   "log": []
+  },
+  {
+   "name": "postgresql.service",
+   "description": "PostgreSQL RDBMS",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:16+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "postgresql@18-main.service",
+   "description": "PostgreSQL Cluster 18-main",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:03+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "rsyslog.service",
+   "description": "System Logging Service",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:01+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "serial-getty@hvc0.service",
+   "description": "Serial Getty on hvc0",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "restarting it ends people's logins",
+   "log": []
+  },
+  {
+   "name": "setvtrgb.service",
+   "description": "Set console scheme",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "shop-dev.service",
+   "description": "Shop dev server on port 3000",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:23:02+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.apparmor.service",
+   "description": "Load AppArmor profiles managed internally by snapd",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:23:25+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.seeded.service",
+   "description": "Wait until snapd is fully seeded",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:23:25+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.service",
+   "description": "Snap Daemon",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:03:59+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "sshd@19-202-3:22-2:3481066287.service",
+   "description": "OpenBSD Secure Shell server per-connection daemon (vsock:2:3481066287)",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:07+05:30",
+   "restartable": false,
+   "kept": "restarting SSH can end the login you use; do it by hand from a console",
+   "log": []
+  },
+  {
+   "name": "sshd@4-8194-3:22-2:1930240419.service",
+   "description": "OpenBSD Secure Shell server per-connection daemon",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:06+05:30",
+   "restartable": false,
+   "kept": "restarting SSH can end the login you use; do it by hand from a console",
+   "log": []
+  },
+  {
+   "name": "sysstat.service",
+   "description": "Resets System Activity Logs",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "systemd-binfmt.service",
+   "description": "Set Up Additional Binary Formats",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:19:05+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-fsck-root.service",
+   "description": "File System Check on Root Device",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-fsck@dev-disk-by\\x2dlabel-BOOT.service",
+   "description": "File System Check on /dev/disk/by-label/BOOT",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-fsck@dev-disk-by\\x2dlabel-UEFI.service",
+   "description": "File System Check on /dev/disk/by-label/UEFI",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-journal-flush.service",
+   "description": "Flush Journal to Persistent Storage",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-journald.service",
+   "description": "Journal Service",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:01+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-logind.service",
+   "description": "User Login Management",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-modules-load.service",
+   "description": "Load Kernel Modules",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-networkd-persistent-storage.service",
+   "description": "Enable Persistent Storage in systemd-networkd",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:21:01+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-networkd.service",
+   "description": "Network Management",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:01+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-random-seed.service",
+   "description": "Load/Save OS Random Seed",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-remount-fs.service",
+   "description": "Remount Root and Kernel File Systems",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-resolved.service",
+   "description": "Network Name Resolution",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:01+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-sysctl.service",
+   "description": "Apply Kernel Variables",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-timedated.service",
+   "description": "Time \u0026 Date Service",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:00+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tmpfiles-setup-dev-early.service",
+   "description": "Create Static Device Nodes in /dev gracefully",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tmpfiles-setup-dev.service",
+   "description": "Create Static Device Nodes in /dev",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tmpfiles-setup.service",
+   "description": "Create System Files and Directories",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-udev-load-credentials.service",
+   "description": "Load udev Rules from Credentials",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-udev-trigger.service",
+   "description": "Coldplug All udev Devices",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-udevd.service",
+   "description": "Rule-based Manager for Device Events and Files",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:21:31+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-user-sessions.service",
+   "description": "Permit User Sessions",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "udisks2.service",
+   "description": "Disk Manager",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:04:06+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ufw.service",
+   "description": "Uncomplicated firewall",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:13+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "unattended-upgrades.service",
+   "description": "Unattended Upgrades Shutdown",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T08:55:04+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "user-runtime-dir@501.service",
+   "description": "User Runtime Directory /run/user/501",
+   "state": "active",
+   "sub": "exited",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "user@501.service",
+   "description": "User Manager for UID 501",
+   "state": "active",
+   "sub": "running",
+   "since": "2026-11-09T09:03:56+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "apport-autoreport.service",
+   "description": "Process error reports when automatic reporting is enabled",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "apt-daily-upgrade.service",
+   "description": "Daily apt upgrade and clean activities",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:24:04+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "apt-daily.service",
+   "description": "Daily apt download activities",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:56:41+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "bytesweep-alerts.service",
+   "description": "ByteSweep alerts",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T09:00:29+05:30",
+   "restartable": false,
+   "kept": "ByteSweep's own job",
+   "log": []
+  },
+  {
+   "name": "bytesweep-monitor.service",
+   "description": "ByteSweep monitor sample",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T09:00:19+05:30",
+   "restartable": false,
+   "kept": "ByteSweep's own job",
+   "log": []
+  },
+  {
+   "name": "bytesweep-sched-s1.service",
+   "description": "ByteSweep job s1",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "ByteSweep's own job",
+   "log": []
+  },
+  {
+   "name": "cloud-init-hotplugd.service",
+   "description": "Cloud-init: Hotplug Hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "restarting the network can cut this connection",
+   "log": []
+  },
+  {
+   "name": "cloud-init-main.service",
+   "description": "Cloud-init: Single Process",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:18+05:30",
+   "restartable": false,
+   "kept": "restarting the network can cut this connection",
+   "log": []
+  },
+  {
+   "name": "dm-event.service",
+   "description": "Device-mapper event daemon",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dmesg.service",
+   "description": "Save initial kernel messages after boot",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:18+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dpkg-db-backup.service",
+   "description": "Daily dpkg database backup service",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-cmdline.service",
+   "description": "dracut cmdline hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-initqueue.service",
+   "description": "dracut initqueue hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-mount.service",
+   "description": "dracut mount hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-pre-mount.service",
+   "description": "dracut pre-mount hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-pre-pivot.service",
+   "description": "dracut pre-pivot and cleanup hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-pre-trigger.service",
+   "description": "dracut pre-trigger hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-pre-udev.service",
+   "description": "dracut pre-udev hook",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "dracut-shutdown-onfailure.service",
+   "description": "Service executing upon dracut-shutdown failure to perform cleanup",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "e2scrub_all.service",
+   "description": "Online ext4 Metadata Check for All Filesystems",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "e2scrub_reap.service",
+   "description": "Remove Stale Online ext4 Metadata Check Snapshots",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "emergency.service",
+   "description": "Emergency Shell",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "fstrim.service",
+   "description": "Discard unused blocks on filesystems from /etc/fstab",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:19:00+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "fwupd-refresh.service",
+   "description": "Refresh fwupd metadata and update motd",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:18:07+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "getty-static.service",
+   "description": "getty on tty2-tty6 if dbus and logind are not available",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "grub-initrd-fallback.service",
+   "description": "GRUB failed boot detection",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "grub2-common.service",
+   "description": "Record successful boot for GRUB",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:14+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "initrd-cleanup.service",
+   "description": "Cleaning Up and Shutting Down Daemons",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "initrd-parse-etc.service",
+   "description": "Mountpoints Configured in the Real Root",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "initrd-switch-root.service",
+   "description": "Switch Root",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "initrd-udevadm-cleanup-db.service",
+   "description": "Cleanup udev Database",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "iscsid.service",
+   "description": "iSCSI initiator daemon (iscsid)",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ldconfig.service",
+   "description": "Rebuild Dynamic Linker Cache",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "logrotate.service",
+   "description": "Rotate log files",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:18:54+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "lvm2-lvmpolld.service",
+   "description": "LVM2 poll daemon",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "man-db.service",
+   "description": "Daily man-db regeneration",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:18:22+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@configfs.service",
+   "description": "Load Kernel Module configfs",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@dm_mod.service",
+   "description": "Load Kernel Module dm_mod",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@dm_multipath.service",
+   "description": "Load Kernel Module dm_multipath",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:10+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@drm.service",
+   "description": "Load Kernel Module drm",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@efi_pstore.service",
+   "description": "Load Kernel Module efi_pstore",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:09:11+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@fuse.service",
+   "description": "Load Kernel Module fuse",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "modprobe@loop.service",
+   "description": "Load Kernel Module loop",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "motd-news.service",
+   "description": "Message of the Day",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:56:37+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "netplan-ovs-cleanup.service",
+   "description": "OpenVSwitch configuration for cleanup",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "open-iscsi.service",
+   "description": "Login to default iSCSI targets",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "open-vm-tools.service",
+   "description": "Service for virtual machines hosted on VMware",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-halt.service",
+   "description": "Show Plymouth Halt Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-kexec.service",
+   "description": "Show Plymouth Reboot with kexec Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-poweroff.service",
+   "description": "Show Plymouth Power Off Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-reboot.service",
+   "description": "Show Plymouth Reboot Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-start.service",
+   "description": "Show Plymouth Boot Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-switch-root-initramfs.service",
+   "description": "Tell Plymouth To Jump To initramfs",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "plymouth-switch-root.service",
+   "description": "Plymouth switch root service",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "pollinate.service",
+   "description": "Pollinate to seed the pseudo random number generator",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "rc-local.service",
+   "description": "/etc/rc.local Compatibility",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "rescue.service",
+   "description": "Rescue Shell",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "secureboot-db.service",
+   "description": "Secure Boot updates for DB and DBX",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.autoimport.service",
+   "description": "Auto import assertions from block devices",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.core-fixup.service",
+   "description": "Automatically repair incorrect owner/permissions on core devices",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.failure.service",
+   "description": "Failure handling of the snapd snap",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.recovery-chooser-trigger.service",
+   "description": "Wait for the Ubuntu Core chooser trigger",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.snap-repair.service",
+   "description": "Automatically fetch and run repair assertions",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "snapd.system-shutdown.service",
+   "description": "Ubuntu core (all-snaps) system shutdown helper setup service",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ssh.service",
+   "description": "OpenBSD Secure Shell server",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:20:07+05:30",
+   "restartable": false,
+   "kept": "restarting SSH can end the login you use; do it by hand from a console",
+   "log": []
+  },
+  {
+   "name": "sshd-keygen.service",
+   "description": "Generate sshd host keys on first boot",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "sshd@sshd-keygen.service",
+   "description": "OpenBSD Secure Shell server per-connection daemon",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "restarting SSH can end the login you use; do it by hand from a console",
+   "log": []
+  },
+  {
+   "name": "ssl-cert.service",
+   "description": "Generate snakeoil SSL keypair",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "sysstat-collect.service",
+   "description": "system activity accounting tool",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T09:00:01+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "sysstat-rotate.service",
+   "description": "system activity accounting tool",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "sysstat-summary.service",
+   "description": "Generate a daily summary of process accounting",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "systemd-ask-password-console.service",
+   "description": "Dispatch Password Requests to Console",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-ask-password-plymouth.service",
+   "description": "Forward Password Requests to Plymouth",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-ask-password-wall.service",
+   "description": "Forward Password Requests to Wall",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-battery-check.service",
+   "description": "Early Battery Level Check",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-bsod.service",
+   "description": "Display Boot-Time Emergency Messages In Full Screen",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-confext-initrd.service",
+   "description": "Merge System Configuration Images into /etc/",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-confext.service",
+   "description": "Merge System Configuration Images into /etc/",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-firstboot.service",
+   "description": "Initial Setup",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-halt.service",
+   "description": "System Halt",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hibernate-clear.service",
+   "description": "Clear Stale Hibernate Storage Info",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hibernate-resume.service",
+   "description": "Resume from hibernation",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hibernate.service",
+   "description": "System Hibernate",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hostnamed.service",
+   "description": "Hostname Service",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hwdb-update.service",
+   "description": "Rebuild Hardware Database",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-hybrid-sleep.service",
+   "description": "System Hybrid Suspend+Hibernate",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-journal-catalog-update.service",
+   "description": "Rebuild Journal Catalog",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-kexec.service",
+   "description": "Reboot via kexec",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-machine-id-commit.service",
+   "description": "Save Transient machine-id to Disk",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-networkd-wait-online.service",
+   "description": "Wait for Network to be Online",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrmachine.service",
+   "description": "TPM PCR Machine ID Measurement",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrnvdone.service",
+   "description": "TPM PCR NvPCR Initialization Separator",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrphase-initrd.service",
+   "description": "TPM PCR Barrier (initrd)",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrphase-sysinit.service",
+   "description": "TPM PCR Barrier (Initialization)",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrphase.service",
+   "description": "TPM PCR Barrier (User)",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pcrproduct.service",
+   "description": "TPM NvPCR Product ID Measurement",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-poweroff.service",
+   "description": "System Power Off",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-pstore.service",
+   "description": "Platform Persistent Storage Archival",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-quotacheck-root.service",
+   "description": "Root File System Quota Check",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-reboot.service",
+   "description": "System Reboot",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-rfkill.service",
+   "description": "Load/Save RF Kill Switch Status",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-soft-reboot.service",
+   "description": "Reboot System Userspace",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-suspend-then-hibernate.service",
+   "description": "System Suspend then Hibernate",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-suspend.service",
+   "description": "System Suspend",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-sysext-initrd.service",
+   "description": "Merge System Extension Images into /usr/ and /opt/",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-sysext.service",
+   "description": "Merge System Extension Images into /usr/ and /opt/",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-sysusers.service",
+   "description": "Create System Users",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tmpfiles-clean.service",
+   "description": "Cleanup of Temporary Directories",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:24:12+05:30",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tpm2-setup-early.service",
+   "description": "Early TPM SRK Setup",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-tpm2-setup.service",
+   "description": "TPM SRK Setup",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-udev-settle.service",
+   "description": "Wait for udev To Complete Device Initialization",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "systemd-update-done.service",
+   "description": "Update is Completed",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": false,
+   "kept": "the system's own manager: it is restarted with the computer",
+   "log": []
+  },
+  {
+   "name": "ua-reboot-cmds.service",
+   "description": "Ubuntu Pro reboot cmds",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ua-timer.service",
+   "description": "Ubuntu Pro Timer for running repeated jobs",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "ubuntu-advantage.service",
+   "description": "Ubuntu Pro Background Auto Attach",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "update-notifier-download.service",
+   "description": "Download data for packages that failed at package install time",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "2026-11-09T08:14:12+05:30",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "update-notifier-motd.service",
+   "description": "Check to see whether there is a new version of Ubuntu available",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "uuidd.service",
+   "description": "Daemon for generating UUIDs",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "vgauth.service",
+   "description": "Authentication service for virtual machines hosted on VMware",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "xfs_scrub_all.service",
+   "description": "Online XFS Metadata Check for All Filesystems",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  },
+  {
+   "name": "xfs_scrub_all_fail.service",
+   "description": "Online XFS Metadata Check for All Filesystems Failure Reporting",
+   "state": "inactive",
+   "sub": "dead",
+   "since": "",
+   "restartable": true,
+   "log": []
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+[
+ {
+  "time": "2026-11-09T10:38:59.156152984+05:30",
+  "kind": "run",
+  "action": "logs-clear",
+  "service": "",
+  "ok": 2,
+  "failed": 1,
+  "skipped": 0,
+  "freed": 0,
+  "hosts": [
+   {
+    "name": "dead",
+    "ok": false,
+    "did": "",
+    "freed": 0,
+    "error": "can't reach it: ssh: connect to host 127.0.0.1 port 1: Connection refused",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   },
+   {
+    "name": "web1",
+    "ok": true,
+    "did": "Cleared old logs: 0 B back.",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   },
+   {
+    "name": "web2",
+    "ok": true,
+    "did": "Cleared old logs: 0 B back.",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   }
+  ]
+ },
+ {
+  "time": "2026-11-09T10:38:58.919881653+05:30",
+  "kind": "run",
+  "action": "logs-clear",
+  "service": "",
+  "ok": 0,
+  "failed": 1,
+  "skipped": 2,
+  "freed": 0,
+  "hosts": [
+   {
+    "name": "dead",
+    "ok": false,
+    "did": "",
+    "freed": 0,
+    "error": "can't reach it: ssh: connect to host 127.0.0.1 port 1: Connection refused",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   },
+   {
+    "name": "web1",
+    "ok": false,
+    "did": "",
+    "freed": 0,
+    "error": "not run: an earlier server failed (--keep-going runs the rest anyway)",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   },
+   {
+    "name": "web2",
+    "ok": false,
+    "did": "",
+    "freed": 0,
+    "error": "not run: an earlier server failed (--keep-going runs the rest anyway)",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   }
+  ]
+ },
+ {
+  "time": "2026-11-09T10:38:58.901814221+05:30",
+  "kind": "run",
+  "action": "logs-clear",
+  "service": "",
+  "ok": 2,
+  "failed": 0,
+  "skipped": 0,
+  "freed": 0,
+  "hosts": [
+   {
+    "name": "web1",
+    "ok": true,
+    "did": "Cleared old logs: 0 B back.",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   },
+   {
+    "name": "web2",
+    "ok": true,
+    "did": "Cleared old logs: 0 B back.",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   }
+  ]
+ },
+ {
+  "time": "2026-11-09T10:38:58.323616781+05:30",
+  "kind": "status",
+  "action": "",
+  "service": "",
+  "ok": 2,
+  "failed": 0,
+  "skipped": 0,
+  "freed": 0,
+  "hosts": [
+   {
+    "name": "web1",
+    "ok": true,
+    "did": "/ 47% full",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 47.20080549537257,
+    "updates": 66,
+    "security": 0,
+    "problems": 2
+   },
+   {
+    "name": "web2",
+    "ok": true,
+    "did": "/ 47% full",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 47.20080549537257,
+    "updates": 66,
+    "security": 0,
+    "problems": 2
+   }
+  ]
+ },
+ {
+  "time": "2026-11-09T10:38:50.609898283+05:30",
+  "kind": "status",
+  "action": "",
+  "service": "",
+  "ok": 2,
+  "failed": 1,
+  "skipped": 0,
+  "freed": 0,
+  "hosts": [
+   {
+    "name": "web2",
+    "ok": true,
+    "did": "/ 47% full",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 47.04303858443806,
+    "updates": 66,
+    "security": 0,
+    "problems": 2
+   },
+   {
+    "name": "web1",
+    "ok": true,
+    "did": "/ 47% full",
+    "freed": 0,
+    "error": "",
+    "fullestPct": 47.04302496152891,
+    "updates": 66,
+    "security": 0,
+    "problems": 2
+   },
+   {
+    "name": "dead",
+    "ok": false,
+    "did": "",
+    "freed": 0,
+    "error": "ssh: connect to host 127.0.0.1 port 1: Connection refused",
+    "fullestPct": 0,
+    "updates": 0,
+    "security": 0,
+    "problems": 0
+   }
+  ]
+ }
+]

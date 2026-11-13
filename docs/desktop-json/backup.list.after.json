@@ -1,0 +1,15 @@
+{
+ "id": "b1",
+ "snapshots": [
+  {
+   "id": "4082e869",
+   "full": "4082e869eacb48a34767e3e64ed6731a05cb804e599c9e6c2b5b77cb5586cc35",
+   "time": "2026-11-09T10:40:28+05:30",
+   "size": 11925019,
+   "files": 54,
+   "paths": [
+    "/srv/bk-test"
+   ]
+  }
+ ]
+}

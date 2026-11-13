@@ -1,0 +1,14 @@
+{
+ "found": [
+  {
+   "tool": "backup folder",
+   "where": "/srv/backups",
+   "last": "2026-11-08T03:03:40+05:30",
+   "ageHours": 30,
+   "ok": false,
+   "note": "The newest file is shop-db-nightly.sql.gz, from 30 hours ago."
+  }
+ ],
+ "stale": true,
+ "newest": "2026-11-08T03:03:40+05:30"
+}

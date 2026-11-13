@@ -1,0 +1,7 @@
+{
+ "dryRun": true,
+ "watch": {
+  "days": 14,
+  "kind": "forecast"
+ }
+}

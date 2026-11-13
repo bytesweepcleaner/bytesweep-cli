@@ -1,0 +1,34 @@
+{
+ "system": "darwin",
+ "tools": [
+  "timemachine-local",
+  "apfs"
+ ],
+ "snapshots": [
+  {
+   "id": "apfs:00BFE8E7-45CC-43CE-8E2B-11F4656A4523",
+   "tool": "apfs",
+   "when": "0001-01-01T00:00:00Z",
+   "size": -1,
+   "sizeKnown": false,
+   "description": "com.apple.os.update-5203530F8BB20B9DABC5CE76A0FFE87CCC885EE69B8A5488C24B458A7555E3AB",
+   "where": "/",
+   "disk": "/",
+   "newest": true,
+   "canRemove": false,
+   "removeCommand": [],
+   "note": "macOS made this for a system update: it starts the Mac from it, and removes it itself. ByteSweep only shows it: never removed from here."
+  }
+ ],
+ "totals": [
+  {
+   "tool": "apfs",
+   "name": "APFS snapshots",
+   "count": 1,
+   "size": 0,
+   "sizeKnown": false
+  }
+ ],
+ "shadowStorage": [],
+ "notes": []
+}

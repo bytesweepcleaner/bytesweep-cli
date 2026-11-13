@@ -1,0 +1,44 @@
+[
+ {
+  "id": "20261106-165530-2dc6",
+  "original": "/srv/old-projects/shop-v1",
+  "host": "lima-linux",
+  "archived": "2026-11-06T16:55:30.20983312+05:30",
+  "size": 31457280,
+  "files": 1,
+  "dir": true,
+  "target": "/mnt/backup/bytesweep-archive/20261106-165530-2dc6",
+  "onDisk": "bytesweep-archive/20261106-165530-2dc6",
+  "disk": {
+   "mount": "/mnt/backup",
+   "source": "/dev/loop0",
+   "uuid": "81c1a4e3-884f-4aa0-ab45-8f316d111a7c",
+   "label": "backup"
+  },
+  "freed": true,
+  "contents": [],
+  "connected": true,
+  "nowAt": "/mnt/backup/bytesweep-archive/20261106-165530-2dc6"
+ },
+ {
+  "id": "20261106-163730-0404",
+  "original": "/srv/old-projects/shop-v1",
+  "host": "lima-linux",
+  "archived": "2026-11-06T16:37:30.548410796+05:30",
+  "size": 31457280,
+  "files": 1,
+  "dir": true,
+  "target": "/mnt/backup/bytesweep-archive/20261106-163730-0404",
+  "onDisk": "bytesweep-archive/20261106-163730-0404",
+  "disk": {
+   "mount": "/mnt/backup",
+   "source": "/dev/loop0",
+   "uuid": "81c1a4e3-884f-4aa0-ab45-8f316d111a7c",
+   "label": "backup"
+  },
+  "freed": true,
+  "contents": [],
+  "connected": true,
+  "nowAt": "/mnt/backup/bytesweep-archive/20261106-163730-0404"
+ }
+]

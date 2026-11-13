@@ -1,0 +1,10 @@
+{
+ "failed": [],
+ "journal": "organize-18e5710de26b7319",
+ "removedFolders": [
+  "/srv/inbox/Music",
+  "/srv/inbox/Videos",
+  "/srv/inbox/Documents"
+ ],
+ "restored": 5
+}

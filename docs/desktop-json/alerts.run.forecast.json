@@ -1,0 +1,40 @@
+{
+ "new": [
+  {
+   "key": "forecast:/",
+   "level": "warning",
+   "text": "/ will be full around 22 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week (high confidence)",
+   "rank": 1
+  }
+ ],
+ "over": [
+  {
+   "key": "backups:stale",
+   "level": "warning",
+   "text": "the newest backup is 30 h 22 min old (more than 26 hours)"
+  }
+ ],
+ "problems": [
+  {
+   "key": "job:cron:/opt/old-app/bin/cleanup.sh",
+   "level": "critical",
+   "text": "scheduled job /opt/old-app/bin/cleanup.sh: runs /opt/old-app/bin/cleanup.sh, which doesn't exist"
+  },
+  {
+   "key": "site:shop.example.com Its folder /var/www/shop/public is gone: the site answers with errors",
+   "level": "critical",
+   "text": "site shop.example.com: Its folder /var/www/shop/public is gone: the site answers with errors"
+  },
+  {
+   "key": "unit:shop-worker.service",
+   "level": "critical",
+   "text": "shop-worker.service has failed"
+  },
+  {
+   "key": "forecast:/",
+   "level": "warning",
+   "text": "/ will be full around 22 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week (high confidence)",
+   "rank": 1
+  }
+ ]
+}

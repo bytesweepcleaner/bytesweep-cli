@@ -1,0 +1,44 @@
+{
+ "now": "2026-11-09T10:34:55+05:30",
+ "days": 30,
+ "recording": true,
+ "dailyRecord": false,
+ "enoughHistory": true,
+ "switchOn": [
+  [
+   "timer",
+   "on"
+  ]
+ ],
+ "say": "/mnt/fc-small will be full around 11 Nov at this rate, in about 2 days; /mnt/fc-small/growing grew 22.4 MB a day this week.",
+ "disks": [
+  {
+   "path": "/mnt/fc-small",
+   "total": 1020702720,
+   "free": 58658816,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 29329407,
+   "trend": "growing",
+   "fullOn": "2026-11-11",
+   "daysLeft": 2,
+   "soon": true,
+   "confidence": "high",
+   "setAside": 1,
+   "growing": [
+    {
+     "path": "/mnt/fc-small/growing",
+     "perDay": 23463526
+    }
+   ],
+   "say": "/mnt/fc-small will be full around 11 Nov at this rate, in about 2 days; /mnt/fc-small/growing grew 22.4 MB a day this week."
+  }
+ ],
+ "soonest": {
+  "path": "/mnt/fc-small",
+  "daysLeft": 2,
+  "fullOn": "2026-11-11",
+  "confidence": "high"
+ }
+}

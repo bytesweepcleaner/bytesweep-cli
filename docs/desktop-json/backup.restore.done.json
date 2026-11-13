@@ -1,0 +1,21 @@
+{
+ "bytes": 11925019,
+ "duration": 0.6,
+ "error": "",
+ "files": 54,
+ "id": "b1",
+ "inPlace": false,
+ "ok": true,
+ "path": "",
+ "snapshot": {
+  "id": "9ea46941",
+  "full": "9ea469414f038b579dbe0f15ee44269df134d4b913822a4fda1fbb6446887d52",
+  "time": "2026-11-09T10:39:45+05:30",
+  "size": 11925019,
+  "files": 54,
+  "paths": [
+   "/srv/bk-test"
+  ]
+ },
+ "to": "/home/alex.guest/agent-backup/restore3"
+}

@@ -1,0 +1,21 @@
+{
+ "change": {
+  "id": "shop-dev.service",
+  "name": "shop-dev",
+  "kind": "systemd service",
+  "at": "2026-11-06T16:55:32.991107704+05:30",
+  "by": "alex",
+  "before": {
+   "active": "yes",
+   "admin": "yes",
+   "kind": "systemd service",
+   "maker": "added on this computer",
+   "runs": "/usr/bin/python3 -m http.server 3000",
+   "unit": "shop-dev.service",
+   "unitFileState": "enabled"
+  }
+ },
+ "dryRun": true,
+ "name": "shop-dev",
+ "on": "shop-dev.service"
+}

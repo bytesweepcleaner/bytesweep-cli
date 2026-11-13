@@ -1,0 +1,21 @@
+{
+ "drives": [
+  {
+   "device": "/dev/vda",
+   "model": "virtual disk",
+   "size": 32212254720,
+   "kind": "virtual",
+   "state": "Unknown",
+   "note": "Virtual disk: the machine or cloud under it looks after the real drives."
+  },
+  {
+   "device": "/dev/vdb",
+   "model": "virtual disk",
+   "size": 281145344,
+   "kind": "virtual",
+   "state": "Unknown",
+   "note": "Virtual disk: the machine or cloud under it looks after the real drives."
+  }
+ ],
+ "note": "Every disk here is virtual, so this machine has no drive health of its own to read."
+}

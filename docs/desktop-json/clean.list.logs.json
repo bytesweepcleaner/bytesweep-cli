@@ -1,0 +1,12 @@
+[
+ {
+  "id": "rotated-logs",
+  "group": "logs",
+  "title": "Old rotated logs (8 files)",
+  "why": "Archived copies of logs. Keep them if an audit needs them.",
+  "size": 69263360,
+  "level": "review",
+  "command": "remove old copies in /var/log",
+  "where": "/var/log"
+ }
+]

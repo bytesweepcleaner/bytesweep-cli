@@ -1,0 +1,17 @@
+{
+ "dryRun": true,
+ "items": [
+  {
+   "id": "dev-go-build",
+   "group": "dev",
+   "title": "Go build cache",
+   "why": "Built again on the next go build, which is slower once.",
+   "size": 325947392,
+   "level": "safe",
+   "command": "go clean -cache, as alex",
+   "where": "/home/alex.guest/.cache/go-build",
+   "lastUsed": "2026-11-06T11:24:32Z"
+  }
+ ],
+ "undo": false
+}

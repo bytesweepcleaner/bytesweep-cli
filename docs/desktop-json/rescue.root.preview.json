@@ -1,0 +1,37 @@
+{
+ "disk": "/mnt/target",
+ "dryRun": true,
+ "steps": [
+  {
+   "title": "Downloaded package files",
+   "command": "remove downloaded packages in /mnt/target/var/cache/apt/archives",
+   "size": 62914560,
+   "hard": false
+  },
+  {
+   "title": "System journal older than 7 days",
+   "command": "remove archived journal files older than 7 days in /mnt/target/var/log/journal",
+   "size": 20971520,
+   "hard": false
+  },
+  {
+   "title": "Temporary files untouched for 7 days (1)",
+   "command": "remove old files in /mnt/target/tmp, /mnt/target/var/tmp",
+   "size": 15728640,
+   "hard": false
+  },
+  {
+   "title": "pip cache",
+   "command": "remove the pip cache in every home folder",
+   "size": 12582912,
+   "hard": false
+  },
+  {
+   "title": "Old rotated logs (1 files)",
+   "command": "remove old copies in /mnt/target/var/log",
+   "size": 10485760,
+   "hard": true
+  }
+ ],
+ "target": 25543680
+}

@@ -1,0 +1,15 @@
+{
+ "about": "There would be no maintenance window: unattended changes would run at their own times.",
+ "dryRun": true,
+ "window": {
+  "on": false,
+  "days": [
+   "sat",
+   "sun"
+  ],
+  "from": "02:00",
+  "to": "05:00",
+  "pauseAlerts": true,
+  "inNow": false
+ }
+}

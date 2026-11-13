@@ -1,0 +1,27 @@
+{
+ "last": {},
+ "plan": {
+  "on": false,
+  "every": "daily",
+  "day": "sun",
+  "at": "08:55",
+  "steps": [
+   "logs",
+   "clean-safe",
+   "restart-services"
+  ],
+  "older": "7d",
+  "next": ""
+ },
+ "restartNeeded": true,
+ "window": {
+  "on": false,
+  "days": [
+   "mon"
+  ],
+  "from": "08:55",
+  "to": "09:56",
+  "pauseAlerts": true,
+  "inNow": false
+ }
+}

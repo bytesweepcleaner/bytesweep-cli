@@ -1,0 +1,11 @@
+{
+ "dryRun": true,
+ "schedule": {
+  "id": "s1",
+  "every": "weekly",
+  "day": "sun",
+  "at": "03:00",
+  "older": "7d",
+  "when": "every Sun at 03:00"
+ }
+}

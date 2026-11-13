@@ -1,0 +1,25 @@
+{
+ "install": {
+  "manager": "apt",
+  "commands": [
+   [
+    "apt-get",
+    "install",
+    "-y",
+    "restic"
+   ]
+  ],
+  "root": true,
+  "note": ""
+ },
+ "installed": true,
+ "ran": [
+  [
+   "apt-get",
+   "install",
+   "-y",
+   "restic"
+  ]
+ ],
+ "version": "0.18.1"
+}

@@ -1,0 +1,7 @@
+{
+ "device": "/dev/loop1",
+ "image": "dl.iso",
+ "written": 55879680,
+ "verified": true,
+ "seconds": 0.058531866
+}

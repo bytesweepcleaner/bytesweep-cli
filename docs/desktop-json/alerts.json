@@ -1,0 +1,10 @@
+{
+ "on": false,
+ "open": {},
+ "settings": {
+  "targets": [],
+  "fullDays": 3,
+  "certDays": 14,
+  "everyMinutes": 30
+ }
+}

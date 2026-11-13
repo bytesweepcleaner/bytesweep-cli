@@ -1,0 +1,13 @@
+{
+ "window": {
+  "on": false,
+  "days": [
+   "sat",
+   "sun"
+  ],
+  "from": "02:00",
+  "to": "05:00",
+  "pauseAlerts": true,
+  "inNow": false
+ }
+}

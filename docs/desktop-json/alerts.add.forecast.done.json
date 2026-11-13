@@ -1,0 +1,7 @@
+{
+ "about": "tell every place when a disk will be full within 14 days at its pace, and again each time it gets worse",
+ "added": {
+  "days": 14,
+  "kind": "forecast"
+ }
+}

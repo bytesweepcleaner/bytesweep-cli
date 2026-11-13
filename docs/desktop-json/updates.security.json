@@ -1,0 +1,972 @@
+{
+ "tools": [
+  {
+   "name": "apt",
+   "updates": 183,
+   "security": 117,
+   "marksSecurity": true,
+   "needsAdmin": true
+  },
+  {
+   "name": "snap",
+   "updates": 0,
+   "security": 0,
+   "marksSecurity": false,
+   "needsAdmin": true
+  }
+ ],
+ "updates": [
+  {
+   "manager": "apt",
+   "name": "apt",
+   "from": "3.2.0",
+   "to": "3.2.1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "bind9-dnsutils",
+   "from": "1:9.20.18-1ubuntu2.1",
+   "to": "1:9.20.24-1ubuntu0.5",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "bind9-host",
+   "from": "1:9.20.18-1ubuntu2.1",
+   "to": "1:9.20.24-1ubuntu0.5",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "bind9-libs",
+   "from": "1:9.20.18-1ubuntu2.1",
+   "to": "1:9.20.24-1ubuntu0.5",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "bsdextrautils",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "bsdutils",
+   "from": "1:2.41.3-3ubuntu2",
+   "to": "1:2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "ca-certificates",
+   "from": "20260601~26.04.1",
+   "to": "20260816ubuntu0.26.04.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "cpio",
+   "from": "2.15+dfsg-2.1",
+   "to": "2.15+dfsg-2.1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "diffutils",
+   "from": "1:3.12-1",
+   "to": "1:3.12-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "dirmngr",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "distro-info-data",
+   "from": "0.68ubuntu0.1",
+   "to": "2026.10.12-0ubuntu0.26.04.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "dracut",
+   "from": "110-11",
+   "to": "110-11ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "dracut-core",
+   "from": "110-11",
+   "to": "110-11ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "dracut-install",
+   "from": "110-11",
+   "to": "110-11ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "dracut-network",
+   "from": "110-11",
+   "to": "110-11ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "eject",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "fdisk",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gawk",
+   "from": "1:5.3.2-1ubuntu1",
+   "to": "1:5.3.2-1ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gir1.2-girepository-3.0",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gir1.2-glib-2.0",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "git",
+   "from": "1:2.53.0-1ubuntu1",
+   "to": "1:2.53.0-1ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "git-man",
+   "from": "1:2.53.0-1ubuntu1",
+   "to": "1:2.53.0-1ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gnu-coreutils",
+   "from": "9.7-3ubuntu2",
+   "to": "9.7-3ubuntu2.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gnupg",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gnupg-l10n",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gnupg-utils",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpg",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpg-agent",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpg-wks-client",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpgconf",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpgsm",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "gpgv",
+   "from": "2.4.8-4ubuntu3",
+   "to": "2.4.8-4ubuntu3.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "krb5-locales",
+   "from": "1.22.1-2ubuntu4",
+   "to": "1.22.1-2ubuntu4.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libapt-pkg7.0",
+   "from": "3.2.0",
+   "to": "3.2.1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libattr1",
+   "from": "1:2.5.2-4",
+   "to": "1:2.5.2-4ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libblkid1",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libbrotli1",
+   "from": "1.2.0-3build1",
+   "to": "1.2.0-3ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libbz2-1.0",
+   "from": "1.0.8-6build2",
+   "to": "1.0.8-6ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libc-bin",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libc-dev-bin",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libc-gconv-modules-extra",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libc6",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libc6-dev",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libevent-core-2.1-7t64",
+   "from": "2.1.12-stable-10build2",
+   "to": "2.1.12-stable-10ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libexpat1",
+   "from": "2.7.4-1",
+   "to": "2.7.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libfdisk1",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libfreetype6",
+   "from": "2.14.2+dfsg-1",
+   "to": "2.14.2+dfsg-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libgcrypt20",
+   "from": "1.12.0-2ubuntu1",
+   "to": "1.12.0-2ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libgirepository-2.0-0",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libglib2.0-0t64",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libglib2.0-bin",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libglib2.0-data",
+   "from": "2.88.0-1",
+   "to": "2.88.0-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libgssapi-krb5-2",
+   "from": "1.22.1-2ubuntu4",
+   "to": "1.22.1-2ubuntu4.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libisns0t64",
+   "from": "0.101-2.1",
+   "to": "0.101-2.1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libk5crypto3",
+   "from": "1.22.1-2ubuntu4",
+   "to": "1.22.1-2ubuntu4.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libkrb5-3",
+   "from": "1.22.1-2ubuntu4",
+   "to": "1.22.1-2ubuntu4.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libkrb5support0",
+   "from": "1.22.1-2ubuntu4",
+   "to": "1.22.1-2ubuntu4.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "liblastlog2-2",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "liblzma5",
+   "from": "5.8.3-1",
+   "to": "5.8.3-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libmount1",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libmspack0t64",
+   "from": "0.11-1.1build2",
+   "to": "0.11-1.1ubuntu0.26.04.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libnss3",
+   "from": "2:3.120-1ubuntu2.1",
+   "to": "2:3.120-1ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpam-modules",
+   "from": "1.7.0-5ubuntu3",
+   "to": "1.7.0-5ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpam-modules-bin",
+   "from": "1.7.0-5ubuntu3",
+   "to": "1.7.0-5ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpam-runtime",
+   "from": "1.7.0-5ubuntu3",
+   "to": "1.7.0-5ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpam0g",
+   "from": "1.7.0-5ubuntu3",
+   "to": "1.7.0-5ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpcap0.8t64",
+   "from": "1.10.6-1ubuntu1",
+   "to": "1.10.6-1ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpng16-16t64",
+   "from": "1.6.57-1",
+   "to": "1.6.57-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpolkit-agent-1-0",
+   "from": "127-2ubuntu1",
+   "to": "127-2ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpolkit-gobject-1-0",
+   "from": "127-2ubuntu1",
+   "to": "127-2ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpython3.14",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpython3.14-minimal",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libpython3.14-stdlib",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libsgutils2-1.48",
+   "from": "1.48-3ubuntu3.1",
+   "to": "1.48-3ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libsmartcols1",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libsqlite3-0",
+   "from": "3.46.1-9ubuntu0.1",
+   "to": "3.46.1-9ubuntu0.3",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libssh2-1t64",
+   "from": "1.11.1-1ubuntu0.26.04.3",
+   "to": "1.11.1-1ubuntu0.26.04.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libssl3t64",
+   "from": "3.5.5-1ubuntu3.2",
+   "to": "3.5.5-1ubuntu3.7",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libudisks2-0",
+   "from": "2.10.91-1ubuntu2",
+   "to": "2.10.91-1ubuntu2.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libuuid1",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libx11-6",
+   "from": "2:1.8.13-1",
+   "to": "2:1.8.13-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libx11-data",
+   "from": "2:1.8.13-1",
+   "to": "2:1.8.13-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "libxml2-16",
+   "from": "2.15.2+dfsg-0.1ubuntu0.1",
+   "to": "2.15.2+dfsg-0.1ubuntu0.3",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "locales",
+   "from": "2.43-2ubuntu2",
+   "to": "2.43-2ubuntu2.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "login",
+   "from": "1:4.16.0-2+really2.41.3-3ubuntu2",
+   "to": "1:4.16.0-2+really2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "mount",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "openssh-client",
+   "from": "1:10.2p1-2ubuntu3.5",
+   "to": "1:10.2p1-2ubuntu3.8",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "openssh-server",
+   "from": "1:10.2p1-2ubuntu3.5",
+   "to": "1:10.2p1-2ubuntu3.8",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "openssh-sftp-server",
+   "from": "1:10.2p1-2ubuntu3.5",
+   "to": "1:10.2p1-2ubuntu3.8",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "openssl",
+   "from": "3.5.5-1ubuntu3.2",
+   "to": "3.5.5-1ubuntu3.7",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "openssl-provider-legacy",
+   "from": "3.5.5-1ubuntu3.2",
+   "to": "3.5.5-1ubuntu3.7",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "polkitd",
+   "from": "127-2ubuntu1",
+   "to": "127-2ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-cryptography",
+   "from": "46.0.5-1ubuntu2",
+   "to": "46.0.5-1ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-jwt",
+   "from": "2.10.1-4ubuntu1",
+   "to": "2.10.1-4ubuntu1.3",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-pyasn1",
+   "from": "0.6.3-1",
+   "to": "0.6.3-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-requests",
+   "from": "2.32.5+dfsg-1ubuntu1",
+   "to": "2.32.5+dfsg-1ubuntu1.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-twisted",
+   "from": "25.5.0-5ubuntu0.1",
+   "to": "25.5.0-5ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3-urllib3",
+   "from": "2.6.3-1ubuntu1.1",
+   "to": "2.6.3-1ubuntu1.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3.14",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3.14-gdbm",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "python3.14-minimal",
+   "from": "3.14.4-1ubuntu0.1",
+   "to": "3.14.4-1ubuntu0.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "sg3-utils",
+   "from": "1.48-3ubuntu3.1",
+   "to": "1.48-3ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "sg3-utils-udev",
+   "from": "1.48-3ubuntu3.1",
+   "to": "1.48-3ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "sudo",
+   "from": "1.9.17p2-1ubuntu3",
+   "to": "1.9.17p2-1ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "sudo-rs",
+   "from": "0.2.13-0ubuntu1",
+   "to": "0.2.13-0ubuntu1.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "tar",
+   "from": "1.35+dfsg-4ubuntu0.3",
+   "to": "1.35+dfsg-4ubuntu0.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "tzdata",
+   "from": "2026b-0ubuntu0.26.04.1",
+   "to": "2026e-0ubuntu0.26.04.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "u-boot-tools",
+   "from": "2025.10-0ubuntu2",
+   "to": "2025.10-0ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "udisks2",
+   "from": "2.10.91-1ubuntu2",
+   "to": "2.10.91-1ubuntu2.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "update-notifier-common",
+   "from": "3.207.1",
+   "to": "3.207.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "util-linux",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "util-linux-extra",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "uuid-runtime",
+   "from": "2.41.3-3ubuntu2",
+   "to": "2.41.3-3ubuntu2.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "wget",
+   "from": "1.25.0-2ubuntu4.2",
+   "to": "1.25.0-2ubuntu4.4",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "wireless-regdb",
+   "from": "2026.02.04-0ubuntu1",
+   "to": "2026.05.30-0ubuntu1~26.04.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "xz-utils",
+   "from": "5.8.3-1",
+   "to": "5.8.3-1ubuntu0.1",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  },
+  {
+   "manager": "apt",
+   "name": "zlib1g",
+   "from": "1:1.3.dfsg+really1.3.1-1ubuntu3",
+   "to": "1:1.3.dfsg+really1.3.1-1ubuntu3.2",
+   "source": "resolute-updates,resolute-security",
+   "security": true
+  }
+ ],
+ "security": 117,
+ "restart": {
+  "needed": false,
+  "packages": [],
+  "services": [
+   "networkd-dispatcher.service",
+   "unattended-upgrades.service"
+  ],
+  "atNextRestart": [
+   "dbus.service",
+   "systemd-logind.service"
+  ],
+  "command": "sudo systemctl restart networkd-dispatcher.service unattended-upgrades.service"
+ },
+ "locks": [],
+ "refreshed": true
+}

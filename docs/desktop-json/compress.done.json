@@ -1,0 +1,24 @@
+{
+ "compressed": [
+  {
+   "path": "/var/log/shop/app.log.5",
+   "compressed": "/var/log/shop/app.log.5.gz",
+   "size": 11331981,
+   "compressedSize": 8572877,
+   "undoId": "18e5710bc7d7590f",
+   "undo": true
+  },
+  {
+   "path": "/var/log/shop/app.log.4",
+   "compressed": "/var/log/shop/app.log.4.gz",
+   "size": 11331981,
+   "compressedSize": 8572939,
+   "undoId": "18e5710bd3323203",
+   "undo": true
+  }
+ ],
+ "compressedSize": 17145816,
+ "failed": [],
+ "size": 22663962,
+ "undo": true
+}

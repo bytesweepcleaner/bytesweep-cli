@@ -1,0 +1,13 @@
+{
+ "disks": [
+  "/ -386.9 MB"
+ ],
+ "newItems": [],
+ "goneItems": [
+  "Crash dumps (1)",
+  "Go build cache",
+  "Old rotated logs (8 files)"
+ ],
+ "newProblems": [],
+ "fixedProblems": []
+}

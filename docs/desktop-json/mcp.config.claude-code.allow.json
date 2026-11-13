@@ -1,0 +1,17 @@
+{
+ "client": "claude-code",
+ "name": "bsweep",
+ "command": "sudo",
+ "args": [
+  "-n",
+  "/home/alex.guest/agent-mcp/bsweep",
+  "mcp",
+  "--allow-changes"
+ ],
+ "allowChanges": true,
+ "needsSudo": true,
+ "file": "",
+ "json": {},
+ "shell": "claude mcp add --scope user bsweep -- sudo -n /home/alex.guest/agent-mcp/bsweep mcp --allow-changes",
+ "note": "Changes need root, so the assistant starts bsweep with sudo -n, which never asks for a password and fails if one is needed. Let alex run bsweep without a password: sudo visudo -f /etc/sudoers.d/bsweep, and add the line: alex ALL=(root) NOPASSWD: /home/alex.guest/agent-mcp/bsweep"
+}

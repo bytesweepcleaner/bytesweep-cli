@@ -1,0 +1,60 @@
+[
+ {
+  "port": 22,
+  "address": "0.0.0.0",
+  "openToNetwork": true,
+  "pid": 1,
+  "program": "systemd",
+  "user": "root",
+  "started": "2026-11-06T16:20:45+05:30",
+  "cpu": 1.153269631705638,
+  "memory": 17022976,
+  "command": "--system --deserialize=77",
+  "folder": "/",
+  "neverStopped": "it is the system's first program"
+ },
+ {
+  "port": 80,
+  "address": "0.0.0.0",
+  "openToNetwork": true,
+  "pid": 305254,
+  "program": "nginx",
+  "user": "www-data",
+  "started": "2026-11-06T16:54:32.71+05:30",
+  "cpu": 0,
+  "memory": 4845568,
+  "folder": "/",
+  "service": "nginx.service"
+ },
+ {
+  "port": 3000,
+  "address": "0.0.0.0",
+  "openToNetwork": true,
+  "pid": 248276,
+  "program": "python3",
+  "user": "root",
+  "started": "2026-11-06T16:45:18.99+05:30",
+  "cpu": 0.01393485455495558,
+  "memory": 18554880,
+  "command": "-m http.server 3000",
+  "folder": "/srv/devsite",
+  "project": "devsite",
+  "devServer": "Python",
+  "service": "shop-dev.service"
+ },
+ {
+  "port": 3001,
+  "address": "0.0.0.0",
+  "openToNetwork": true,
+  "pid": 294664,
+  "program": "python3",
+  "user": "alex",
+  "started": "2026-11-06T16:49:51.67+05:30",
+  "cpu": 0.01327051954084002,
+  "memory": 19234816,
+  "command": "-m http.server 3001",
+  "folder": "/home/alex.guest/devsite2",
+  "project": "devsite2",
+  "devServer": "Python"
+ }
+]

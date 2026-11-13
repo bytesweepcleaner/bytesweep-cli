@@ -1,0 +1,52 @@
+[
+ {
+  "id": "lvm-snapshots",
+  "group": "snapshots",
+  "title": "LVM snapshots (1)",
+  "why": "Made by hand or by another tool. bsweep snapshots lists each one with the command that removes it, for you to run once nobody needs it.",
+  "size": 20971520,
+  "level": "manual",
+  "command": "bsweep snapshots --tool lvm",
+  "where": "/"
+ },
+ {
+  "id": "snapper-snapshots",
+  "group": "snapshots",
+  "title": "Snapper (3)",
+  "why": "Deleted files stay on the disk while a snapshot holds them. bsweep snapshots lists each one with its date, and removes one with snapper, the newest always kept.",
+  "size": 8437760,
+  "level": "manual",
+  "command": "bsweep snapshots --tool snapper",
+  "where": "/mnt/bs-btrfs"
+ },
+ {
+  "id": "btrfs-snapshots",
+  "group": "snapshots",
+  "title": "Btrfs snapshots (1)",
+  "why": "Made by hand or by another tool. bsweep snapshots lists each one with the command that removes it, for you to run once nobody needs it.",
+  "size": 16384,
+  "level": "manual",
+  "command": "bsweep snapshots --tool btrfs",
+  "where": "/mnt/bs-btrfs"
+ },
+ {
+  "id": "timeshift-snapshots",
+  "group": "snapshots",
+  "title": "Timeshift (2)",
+  "why": "Deleted files stay on the disk while a snapshot holds them. bsweep snapshots lists each one with its date, and removes one with timeshift, the newest always kept. Their size can't be told.",
+  "size": 0,
+  "level": "manual",
+  "command": "bsweep snapshots --tool timeshift",
+  "where": "/"
+ },
+ {
+  "id": "zfs-snapshots",
+  "group": "snapshots",
+  "title": "ZFS snapshots (1)",
+  "why": "Deleted files stay on the disk while a snapshot holds them. bsweep snapshots lists each one with its date, and removes one with zfs, the newest always kept.",
+  "size": 0,
+  "level": "manual",
+  "command": "bsweep snapshots --tool zfs",
+  "where": "/bspool/data"
+ }
+]

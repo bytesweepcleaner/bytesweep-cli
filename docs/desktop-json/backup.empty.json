@@ -1,0 +1,18 @@
+{
+ "install": {
+  "manager": "apt",
+  "commands": [
+   [
+    "apt-get",
+    "install",
+    "-y",
+    "restic"
+   ]
+  ],
+  "root": true,
+  "note": ""
+ },
+ "plans": [],
+ "resticInstalled": true,
+ "resticVersion": "0.18.1"
+}

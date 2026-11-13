@@ -1,0 +1,157 @@
+{
+ "health": [
+  {
+   "area": "Backups",
+   "level": "bad",
+   "title": "No backup job or backup folder found",
+   "fix": "If backups run elsewhere, this is fine. If not, this is the top risk here"
+  },
+  {
+   "area": "Services",
+   "level": "bad",
+   "title": "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'.",
+   "fix": "systemctl restart shop-worker.service",
+   "seeWhy": "journalctl -u shop-worker.service -n 50"
+  },
+  {
+   "area": "Updates",
+   "level": "bad",
+   "title": "117 security updates waiting (183 updates in all)",
+   "fix": "sudo bsweep updates install --security"
+  },
+  {
+   "area": "Memory",
+   "level": "warn",
+   "title": "No swap: one memory spike kills a process",
+   "fix": "Prevent tab can add a swap file"
+  },
+  {
+   "area": "Security",
+   "level": "warn",
+   "title": "No firewall is active",
+   "fix": "sudo ufw allow OpenSSH \u0026\u0026 sudo ufw enable (allow SSH first). A cloud firewall counts too"
+  },
+  {
+   "area": "Security",
+   "level": "warn",
+   "title": "Nothing blocks repeated SSH guesses",
+   "fix": "sudo apt-get install fail2ban, then sudo systemctl enable --now fail2ban"
+  },
+  {
+   "area": "Clock",
+   "level": "ok",
+   "title": "The clock is kept right by chronyc"
+  },
+  {
+   "area": "Names",
+   "level": "ok",
+   "title": "Names resolve"
+  }
+ ],
+ "held": [],
+ "items": [
+  {
+   "id": "dev-go-build",
+   "group": "dev",
+   "title": "Go build cache",
+   "why": "Built again on the next go build, which is slower once.",
+   "size": 325947392,
+   "level": "safe",
+   "command": "go clean -cache, as alex",
+   "where": "/home/alex.guest/.cache/go-build",
+   "lastUsed": "2026-11-06T11:24:32Z"
+  },
+  {
+   "id": "dev-nuget",
+   "group": "dev",
+   "title": "NuGet packages",
+   "why": "Restored again on the next dotnet restore.",
+   "size": 1235353600,
+   "level": "review",
+   "command": "rm -r ~alex/.nuget/packages",
+   "where": "/home/alex.guest/.nuget/packages",
+   "lastUsed": "2026-11-06T11:15:31Z"
+  },
+  {
+   "id": "rotated-logs",
+   "group": "logs",
+   "title": "Old rotated logs (8 files)",
+   "why": "Archived copies of logs. Keep them if an audit needs them.",
+   "size": 69263360,
+   "level": "review",
+   "command": "remove old copies in /var/log",
+   "where": "/var/log"
+  },
+  {
+   "id": "dev-go-mod",
+   "group": "dev",
+   "title": "Go module cache",
+   "why": "Downloaded again on the next go build. A build with no network needs it.",
+   "size": 56446976,
+   "level": "review",
+   "command": "go clean -modcache, as alex",
+   "where": "/home/alex.guest/go/pkg/mod",
+   "lastUsed": "2026-11-06T10:52:58Z"
+  },
+  {
+   "id": "crash-dumps",
+   "group": "system",
+   "title": "Crash dumps (1)",
+   "why": "Memory copies from crashed programs. Keep them if you are debugging one.",
+   "size": 41943040,
+   "level": "review",
+   "command": "remove what is in /var/crash, /var/lib/systemd/coredump",
+   "where": "/var"
+  }
+ ],
+ "mounts": [
+  {
+   "Path": "/",
+   "Source": "/dev/vda1",
+   "Type": "ext4",
+   "Dev": 64769,
+   "Total": 30083776512,
+   "Used": 9263194112,
+   "Avail": 20803805184,
+   "Reserved": 16777216,
+   "InodesTotal": 3801088,
+   "InodesUsed": 162103
+  },
+  {
+   "Path": "/boot",
+   "Source": "/dev/vda13",
+   "Type": "ext4",
+   "Dev": 64781,
+   "Total": 933457920,
+   "Used": 131096576,
+   "Avail": 737193984,
+   "Reserved": 65167360,
+   "InodesTotal": 59136,
+   "InodesUsed": 284
+  },
+  {
+   "Path": "/boot/efi",
+   "Source": "/dev/vda15",
+   "Type": "vfat",
+   "Dev": 64783,
+   "Total": 102185984,
+   "Used": 6806016,
+   "Avail": 95379968,
+   "Reserved": 0,
+   "InodesTotal": 0,
+   "InodesUsed": 0
+  },
+  {
+   "Path": "/mnt/backup",
+   "Source": "/dev/loop0",
+   "Type": "ext4",
+   "Dev": 1792,
+   "Total": 601563136,
+   "Used": 31662080,
+   "Avail": 525860864,
+   "Reserved": 44040192,
+   "InodesTotal": 38400,
+   "InodesUsed": 20
+  }
+ ]
+}

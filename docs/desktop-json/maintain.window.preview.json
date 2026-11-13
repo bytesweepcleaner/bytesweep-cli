@@ -1,0 +1,15 @@
+{
+ "about": "Unattended changes would wait for sat, sun from 02:00 to 05:00. No alerts would be sent inside it.",
+ "dryRun": true,
+ "window": {
+  "on": true,
+  "days": [
+   "sat",
+   "sun"
+  ],
+  "from": "02:00",
+  "to": "05:00",
+  "pauseAlerts": true,
+  "inNow": false
+ }
+}

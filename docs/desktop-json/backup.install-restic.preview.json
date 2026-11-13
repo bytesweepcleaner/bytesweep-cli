@@ -1,0 +1,18 @@
+{
+ "dryRun": true,
+ "install": {
+  "manager": "apt",
+  "commands": [
+   [
+    "apt-get",
+    "install",
+    "-y",
+    "restic"
+   ]
+  ],
+  "root": true,
+  "note": ""
+ },
+ "installed": false,
+ "version": ""
+}

@@ -1,0 +1,44 @@
+{
+ "now": "2026-11-09T10:33:18+05:30",
+ "days": 30,
+ "recording": true,
+ "dailyRecord": false,
+ "enoughHistory": true,
+ "switchOn": [
+  [
+   "timer",
+   "on"
+  ]
+ ],
+ "say": "/ will be full around 23 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week.",
+ "disks": [
+  {
+   "path": "/",
+   "total": 30083776512,
+   "free": 18001199104,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 1326932303,
+   "trend": "growing",
+   "fullOn": "2026-11-23",
+   "daysLeft": 13.6,
+   "soon": true,
+   "confidence": "high",
+   "setAside": 1,
+   "growing": [
+    {
+     "path": "/var/lib/docker",
+     "perDay": 1200081032
+    }
+   ],
+   "say": "/ will be full around 23 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week."
+  }
+ ],
+ "soonest": {
+  "path": "/",
+  "daysLeft": 13.6,
+  "fullOn": "2026-11-23",
+  "confidence": "high"
+ }
+}

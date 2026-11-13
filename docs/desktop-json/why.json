@@ -1,0 +1,12 @@
+{
+ "disk": "/",
+ "free": 20812218368,
+ "inodePct": 4.26464738516972,
+ "next": "Nothing needed.",
+ "pct": 30.78052730466928,
+ "reasons": [
+  "On /: 310.8 MB can go with no risk, 1.3 GB more after a look. See Clean.",
+  "237.0 MB is waiting in Undo and still takes space."
+ ],
+ "total": 30083776512
+}

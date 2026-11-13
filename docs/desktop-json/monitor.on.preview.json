@@ -1,0 +1,5 @@
+{
+ "about": "A sample would be recorded every 5 minutes (CPU, memory, disks, kept 30 days), with alerts on your limits.",
+ "dryRun": true,
+ "recording": true
+}

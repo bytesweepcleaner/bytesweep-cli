@@ -1,0 +1,10 @@
+{
+ "action": "free",
+ "dryRun": true,
+ "entry": {
+  "id": "18e5707f31840e4a",
+  "original": "/srv/downloads/big.iso.part",
+  "size": 2002944,
+  "cleaned": "2026-11-06T16:45:18.170906186+05:30"
+ }
+}

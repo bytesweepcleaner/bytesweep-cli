@@ -1,0 +1,9 @@
+{
+ "dryRun": true,
+ "left": 1,
+ "target": {
+  "id": "a2",
+  "kind": "webhook",
+  "url": "http://127.0.0.1:8799/hook?second"
+ }
+}

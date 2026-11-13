@@ -1,0 +1,48 @@
+{
+ "action": "remove",
+ "failed": [],
+ "freed": 31497216,
+ "freedKnown": true,
+ "keepNewest": 1,
+ "kept": [],
+ "removed": [
+  {
+   "id": "snapper:bstest:2",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 20987904,
+   "sizeKnown": true,
+   "description": "after big file",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "bspool/data@one",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 10509312,
+   "sizeKnown": true,
+   "description": "one",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@one"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  }
+ ]
+}

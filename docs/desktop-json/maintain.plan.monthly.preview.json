@@ -1,0 +1,16 @@
+{
+ "about": "Maintenance would run on day 15 of each month at 04:30: clear old logs, clean what is safe to clean.",
+ "dryRun": true,
+ "plan": {
+  "on": true,
+  "every": "monthly",
+  "day": "15",
+  "at": "04:30",
+  "steps": [
+   "logs",
+   "clean-safe"
+  ],
+  "older": "7d",
+  "next": "2026-11-15T04:30:00+05:30"
+ }
+}

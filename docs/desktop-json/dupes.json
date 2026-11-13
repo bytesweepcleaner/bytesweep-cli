@@ -1,0 +1,22 @@
+{
+ "groups": [
+  {
+   "id": "d34bd262cbeb",
+   "folder": false,
+   "size": 15728640,
+   "copies": [
+    {
+     "path": "/srv/media/photos/IMG_0001.jpg",
+     "modified": "2026-11-06T16:45:40+05:30"
+    },
+    {
+     "path": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+     "modified": "2026-11-06T16:45:40+05:30"
+    }
+   ],
+   "save": 15728640
+  }
+ ],
+ "filesLooked": 32,
+ "skipped": []
+}

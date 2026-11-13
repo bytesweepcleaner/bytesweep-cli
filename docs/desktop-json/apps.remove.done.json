@@ -1,0 +1,19 @@
+{
+ "error": "",
+ "freed": 241664,
+ "plan": {
+  "app": {
+   "id": "deb:cowsay",
+   "name": "cowsay",
+   "version": "3.03+dfsg2-8build1",
+   "source": "dpkg",
+   "size": 89088
+  },
+  "command": "apt-get remove -y cowsay",
+  "checked": "apt-get -s remove cowsay",
+  "also": [],
+  "note": "Settings files it keeps in /etc, if any, stay: bsweep apps leftovers lists them, and can purge them."
+ },
+ "removed": true,
+ "undo": false
+}

@@ -1,0 +1,222 @@
+{
+ "host": "lima-linux",
+ "disks": [
+  {
+   "path": "/",
+   "pct": 35.915573927713574,
+   "inodePct": 5.657169736664871,
+   "free": 19268263936,
+   "total": 30083776512
+  },
+  {
+   "path": "/boot",
+   "pct": 26.364129537467274,
+   "inodePct": 0.487012987012987,
+   "free": 639373312,
+   "total": 933457920
+  },
+  {
+   "path": "/boot/efi",
+   "pct": 6.660420278381818,
+   "inodePct": 0,
+   "free": 95379968,
+   "total": 102185984
+  },
+  {
+   "path": "/mnt/backup",
+   "pct": 5.67906313825176,
+   "inodePct": 0.052083333333333336,
+   "free": 525860864,
+   "total": 601563136
+  }
+ ],
+ "safe": 787660800,
+ "bad": 3,
+ "warn": 6,
+ "problems": [
+  "Out of memory killed: dotnet 12×, rootlesskit 8×, buildkitd 6×, containerd 4×, containerd-star 4×, containerd-root 3×, (containerd-ro 2×, realpath 2×, (sd-pam 1×, 9 1×, dbus-daemon 1×, exe 1×, grep 1×, systemd 1× (7 days)",
+  "demo-fail.service has failed: demo-fail.service: Failed with result 'exit-code'.",
+  "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'."
+ ],
+ "licensed": true,
+ "now": {
+  "t": "2026-11-09T09:04:05.731511975+05:30",
+  "cpu": 95.83333333333333,
+  "memUsed": 5300932608,
+  "memTotal": 6189252608,
+  "swapUsed": 0,
+  "swapTotal": 0,
+  "load": 2.91,
+  "netRx": 0,
+  "netTx": 0,
+  "cores": [
+   96.66666666666667,
+   96.66666666666667,
+   93.10344827586206,
+   100
+  ],
+  "diskRead": 21260155
+ },
+ "updates": {
+  "total": 66,
+  "security": 0,
+  "restartNeeded": true,
+  "checked": "2026-11-09T08:59:44+05:30"
+ },
+ "findings": [
+  {
+   "id": "memory.oom-kills",
+   "area": "Memory",
+   "level": "bad",
+   "title": "Out of memory killed: dotnet 12×, rootlesskit 8×, buildkitd 6×, containerd 4×, containerd-star 4×, containerd-root 3×, (containerd-ro 2×, realpath 2×, (sd-pam 1×, 9 1×, dbus-daemon 1×, exe 1×, grep 1×, systemd 1× (7 days)",
+   "fix": "Add memory or swap (Prevent tab), or limit that service with MemoryMax=",
+   "about": "The system ran out of memory and stopped a program to keep itself running. That program may have been your website, your database or a job halfway through.",
+   "risk": "It will happen again at the next busy moment, and the program that is stopped may not come back by itself.",
+   "steps": [
+    "See which program was stopped: it is named above.",
+    "Give the server more memory, or add a swap file (the Prevent screen can add one).",
+    "If one program keeps growing, put a memory limit on it (MemoryMax= in its service)."
+   ]
+  },
+  {
+   "id": "services.failed",
+   "area": "Services",
+   "level": "bad",
+   "title": "demo-fail.service has failed: demo-fail.service: Failed with result 'exit-code'.",
+   "fix": "systemctl restart demo-fail.service",
+   "seeWhy": "journalctl -u demo-fail.service -n 50",
+   "about": "A service is a program the server keeps running in the background, such as a website or a database. This one has stopped with an error.",
+   "risk": "Whatever it does, such as serving a site or running jobs, isn't happening until it runs again.",
+   "steps": [
+    "Read its last lines of log to see why it stopped.",
+    "Fix what the log points at, such as a wrong setting or a full disk.",
+    "Then restart it, and check it stays running."
+   ],
+   "action": {
+    "label": "Restart demo-fail",
+    "args": [
+     "services",
+     "restart",
+     "demo-fail.service"
+    ]
+   }
+  },
+  {
+   "id": "services.failed",
+   "area": "Services",
+   "level": "bad",
+   "title": "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'.",
+   "fix": "systemctl restart shop-worker.service",
+   "seeWhy": "journalctl -u shop-worker.service -n 50",
+   "about": "A service is a program the server keeps running in the background, such as a website or a database. This one has stopped with an error.",
+   "risk": "Whatever it does, such as serving a site or running jobs, isn't happening until it runs again.",
+   "steps": [
+    "Read its last lines of log to see why it stopped.",
+    "Fix what the log points at, such as a wrong setting or a full disk.",
+    "Then restart it, and check it stays running."
+   ],
+   "action": {
+    "label": "Restart shop-worker",
+    "args": [
+     "services",
+     "restart",
+     "shop-worker.service"
+    ]
+   }
+  },
+  {
+   "id": "backups.same-disk",
+   "area": "Backups",
+   "level": "warn",
+   "title": "Backups are on the system disk: a disk failure loses both",
+   "fix": "Copy them to another machine",
+   "about": "The backups sit on the same disk as the data they protect.",
+   "risk": "If that disk breaks, the data and its backups are lost together.",
+   "steps": [
+    "Copy the backups to another machine or to cloud storage.",
+    "Or point the backup tool at a place off this server."
+   ]
+  },
+  {
+   "id": "memory.no-swap",
+   "area": "Memory",
+   "level": "warn",
+   "title": "No swap: one memory spike kills a process",
+   "fix": "Prevent tab can add a swap file",
+   "about": "Swap is room on the disk the system can borrow when memory runs out. This server has none, so there is no cushion at all.",
+   "risk": "One sudden spike in memory use makes the system stop a program at once.",
+   "steps": [
+    "Add a swap file: the Prevent screen does it in one step.",
+    "A swap file of 1 to 2 GB is enough for most small servers."
+   ]
+  },
+  {
+   "id": "security.no-firewall",
+   "area": "Security",
+   "level": "warn",
+   "title": "No firewall is active",
+   "fix": "sudo ufw allow OpenSSH && sudo ufw enable (allow SSH first). A cloud firewall counts too",
+   "about": "A firewall decides which connections from the internet may reach this server. None is switched on here.",
+   "risk": "Any program that opens a port, even by mistake, can be reached by anyone.",
+   "steps": [
+    "Allow SSH first, so you don't lock yourself out.",
+    "Then switch the firewall on: the command is above.",
+    "A firewall at your cloud provider counts too, if you use one."
+   ]
+  },
+  {
+   "id": "security.ssh-guessing",
+   "area": "Security",
+   "level": "warn",
+   "title": "Nothing blocks repeated SSH guesses",
+   "fix": "sudo apt-get install fail2ban, then sudo systemctl enable --now fail2ban",
+   "about": "Nothing slows down people who keep guessing SSH passwords. A tool like fail2ban blocks an address after a few wrong tries.",
+   "risk": "Guessing can go on day and night until a password is found.",
+   "steps": [
+    "Install fail2ban and switch it on: the command is above.",
+    "Better still, log in with keys only, so there is no password to guess."
+   ]
+  },
+  {
+   "id": "updates.waiting",
+   "area": "Updates",
+   "level": "warn",
+   "title": "66 updates waiting",
+   "fix": "sudo bsweep updates install",
+   "about": "Newer versions of installed software are waiting. None is marked as a security fix, so this is less urgent.",
+   "risk": "Bugs that are already fixed stay, and the longer updates wait the bigger the next jump is.",
+   "steps": [
+    "Install them at a quiet time: ByteSweep shows exactly what it will run first.",
+    "If the system then says a restart is needed, restart when it suits you."
+   ],
+   "action": {
+    "label": "Install updates",
+    "args": [
+     "updates",
+     "install"
+    ]
+   }
+  },
+  {
+   "id": "system.restart-needed",
+   "area": "Updates",
+   "level": "warn",
+   "title": "A reboot is waiting: installed fixes aren't active yet",
+   "fix": "Reboot at a quiet time",
+   "about": "Updates were installed that only take effect after a restart. Until then the old, unfixed versions are still running.",
+   "risk": "The holes the updates close stay open until the machine restarts.",
+   "steps": [
+    "Pick a quiet time, when few people use it.",
+    "Restart it: ByteSweep shows what it will do first, and bsweep reboot --at picks a time instead.",
+    "Check your sites and services are running again afterwards."
+   ],
+   "action": {
+    "label": "Restart the server",
+    "args": [
+     "reboot",
+     "--now"
+    ]
+   }
+  }
+ ]
+}

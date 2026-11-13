@@ -1,0 +1,9 @@
+{
+ "after": 36855808,
+ "before": 0,
+ "disk": "/mnt/target",
+ "failed": [],
+ "reached": true,
+ "stopped": [],
+ "target": 25543680
+}

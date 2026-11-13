@@ -1,0 +1,25 @@
+{
+ "id": "b1",
+ "snapshots": [
+  {
+   "id": "9ea46941",
+   "full": "9ea469414f038b579dbe0f15ee44269df134d4b913822a4fda1fbb6446887d52",
+   "time": "2026-11-09T10:39:45+05:30",
+   "size": 11925019,
+   "files": 54,
+   "paths": [
+    "/srv/bk-test"
+   ]
+  },
+  {
+   "id": "45c7bab0",
+   "full": "45c7bab09f6fd6c8ff0de6037d4ab0e611c3c782adeee86296b92bb06cf964b7",
+   "time": "2026-11-09T10:33:06+05:30",
+   "size": 11925013,
+   "files": 53,
+   "paths": [
+    "/srv/bk-test"
+   ]
+  }
+ ]
+}

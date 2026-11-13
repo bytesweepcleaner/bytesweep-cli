@@ -1,0 +1,67 @@
+{
+ "action": "logs-clear",
+ "about": "Clear logs older than 7 days. Live logs stay. This can't be undone.",
+ "command": [
+  "logs",
+  "clear",
+  "--older",
+  "7d",
+  "--json",
+  "--yes"
+ ],
+ "parallel": 1,
+ "hosts": [
+  {
+   "name": "dead",
+   "ok": false,
+   "skipped": false,
+   "did": "",
+   "freed": 0,
+   "error": "can't reach it: ssh: connect to host 127.0.0.1 port 1: Connection refused",
+   "exit": -1,
+   "licensed": true,
+   "restarts": false,
+   "output": {},
+   "seconds": 0.001
+  },
+  {
+   "name": "web1",
+   "ok": true,
+   "skipped": false,
+   "did": "Cleared old logs: 0 B back.",
+   "freed": 0,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "failed": [],
+    "freed": 0
+   },
+   "seconds": 0.11
+  },
+  {
+   "name": "web2",
+   "ok": true,
+   "skipped": false,
+   "did": "Cleared old logs: 0 B back.",
+   "freed": 0,
+   "error": "",
+   "exit": 0,
+   "licensed": true,
+   "restarts": false,
+   "output": {
+    "failed": [],
+    "freed": 0
+   },
+   "seconds": 0.109
+  }
+ ],
+ "ok": 2,
+ "failed": 1,
+ "skipped": 0,
+ "stopped": false,
+ "freed": 0,
+ "started": "2026-11-09T10:38:58.934154972+05:30",
+ "finished": "2026-11-09T10:38:59.156152984+05:30"
+}

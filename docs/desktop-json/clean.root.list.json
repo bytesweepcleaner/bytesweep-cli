@@ -1,0 +1,52 @@
+[
+ {
+  "id": "package-cache",
+  "group": "system",
+  "title": "Downloaded package files",
+  "why": "Installers kept after installing; downloaded again if needed.",
+  "size": 62914560,
+  "level": "safe",
+  "command": "remove downloaded packages in /mnt/target/var/cache/apt/archives",
+  "where": "/mnt/target/var/cache"
+ },
+ {
+  "id": "journal-old",
+  "group": "logs",
+  "title": "System journal older than 7 days",
+  "why": "Archived journal files. journald is not running, so they are removed as files, as journalctl --vacuum-time=7d would.",
+  "size": 20971520,
+  "level": "safe",
+  "command": "remove archived journal files older than 7 days in /mnt/target/var/log/journal",
+  "where": "/mnt/target/var/log/journal"
+ },
+ {
+  "id": "old-tmp",
+  "group": "system",
+  "title": "Temporary files untouched for 7 days (1)",
+  "why": "Files no program has changed in a week. The system is not running, so none is in use.",
+  "size": 15728640,
+  "level": "safe",
+  "command": "remove old files in /mnt/target/tmp, /mnt/target/var/tmp",
+  "where": "/mnt/target/tmp"
+ },
+ {
+  "id": "dev-pip",
+  "group": "dev",
+  "title": "pip cache",
+  "why": "Downloaded again on the next pip install.",
+  "size": 12582912,
+  "level": "safe",
+  "command": "remove the pip cache in every home folder",
+  "where": "/mnt/target/home/ana"
+ },
+ {
+  "id": "rotated-logs",
+  "group": "logs",
+  "title": "Old rotated logs (1 files)",
+  "why": "Archived copies of logs. Keep them if an audit needs them.",
+  "size": 10485760,
+  "level": "review",
+  "command": "remove old copies in /mnt/target/var/log",
+  "where": "/mnt/target/var/log"
+ }
+]

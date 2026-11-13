@@ -1,0 +1,16 @@
+{
+ "plan": {
+  "on": false,
+  "every": "weekly",
+  "day": "sun",
+  "at": "03:00",
+  "steps": [
+   "updates-security",
+   "logs",
+   "clean-safe",
+   "restart-services"
+  ],
+  "older": "7d",
+  "next": ""
+ }
+}

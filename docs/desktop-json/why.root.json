@@ -1,0 +1,14 @@
+{
+ "disk": "/mnt/target",
+ "free": 0,
+ "inodePct": 0.13427734375,
+ "next": "Next: sudo bsweep rescue --root /mnt/target",
+ "pct": 100,
+ "reasons": [
+  "On /mnt/target: 107.0 MB can go with no risk, 10.0 MB more after a look. See Clean.",
+  "/mnt/target/var is taking 408.0 MB.",
+  "/mnt/target/home is taking 52.0 MB.",
+  "/mnt/target/tmp is taking 16.0 MB."
+ ],
+ "total": 510873600
+}

@@ -1,0 +1,8 @@
+{
+ "warn": 85,
+ "crit": 95,
+ "alerts": {
+  "cpu": 90,
+  "memory": 90
+ }
+}

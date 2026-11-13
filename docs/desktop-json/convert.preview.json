@@ -1,0 +1,54 @@
+{
+ "dryRun": true,
+ "pictures": [
+  {
+   "from": "/srv/pictures/SCAN_001.PNG",
+   "to": "/srv/pictures/SCAN_001.jpg",
+   "format": "png",
+   "width": 320,
+   "height": 200,
+   "note": "see-through parts become white"
+  },
+  {
+   "from": "/srv/pictures/SCAN_002.PNG",
+   "to": "/srv/pictures/SCAN_002.jpg",
+   "format": "png",
+   "width": 320,
+   "height": 200,
+   "note": "see-through parts become white"
+  },
+  {
+   "from": "/srv/pictures/SCAN_003.PNG",
+   "to": "/srv/pictures/SCAN_003.jpg",
+   "format": "png",
+   "width": 320,
+   "height": 200,
+   "note": "see-through parts become white"
+  },
+  {
+   "from": "/srv/pictures/scan-001 (2).jpg",
+   "skip": "already JPEG"
+  },
+  {
+   "from": "/srv/pictures/scan-001.jpg",
+   "skip": "already JPEG"
+  },
+  {
+   "from": "/srv/pictures/scan-002 (2).jpg",
+   "skip": "already JPEG"
+  },
+  {
+   "from": "/srv/pictures/scan-002.jpg",
+   "skip": "already JPEG"
+  },
+  {
+   "from": "/srv/pictures/scan-003 (2).jpg",
+   "skip": "already JPEG"
+  },
+  {
+   "from": "/srv/pictures/scan-003.jpg",
+   "skip": "already JPEG"
+  }
+ ],
+ "to": "jpeg"
+}

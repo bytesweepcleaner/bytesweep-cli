@@ -1,0 +1,11 @@
+{
+ "dryRun": true,
+ "items": [
+  {
+   "path": "/srv/exports/old-export.csv",
+   "size": 20971520
+  }
+ ],
+ "total": 20971520,
+ "undo": false
+}

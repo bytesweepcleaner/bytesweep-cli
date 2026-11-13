@@ -1,0 +1,102 @@
+[
+ {
+  "path": "/srv/data",
+  "size": 1073750016,
+  "inodes": 2
+ },
+ {
+  "path": "/srv/media",
+  "size": 141574144,
+  "inodes": 13
+ },
+ {
+  "path": "/srv/exports",
+  "size": 83890176,
+  "inodes": 3
+ },
+ {
+  "path": "/srv/media/photos",
+  "size": 62918656,
+  "inodes": 5
+ },
+ {
+  "path": "/srv/media/photos-copy",
+  "size": 62918656,
+  "inodes": 5
+ },
+ {
+  "path": "/srv/old-projects",
+  "size": 31469568,
+  "inodes": 4
+ },
+ {
+  "path": "/srv/old-projects/shop-v1",
+  "size": 31465472,
+  "inodes": 3
+ },
+ {
+  "path": "/srv/old-projects/shop-v1/src",
+  "size": 31461376,
+  "inodes": 2
+ },
+ {
+  "path": "/srv/media/upload-tmp",
+  "size": 15732736,
+  "inodes": 2
+ },
+ {
+  "path": "/srv/downloads",
+  "size": 5038080,
+  "inodes": 5
+ },
+ {
+  "path": "/srv/data/db-backup-2025-12.tar",
+  "size": 1073745920,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/exports/orders-2025.csv",
+  "size": 62914560,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/old-projects/shop-v1/src/bundle.js",
+  "size": 31457280,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/exports/old-export.csv",
+  "size": 20971520,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/photos-copy/IMG_0002.jpg",
+  "size": 15728640,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/photos-copy/IMG_0001.jpg",
+  "size": 15728640,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/photos/IMG_0004.jpg",
+  "size": 15728640,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/photos-copy/IMG_0003.jpg",
+  "size": 15728640,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/photos-copy/IMG_0004.jpg",
+  "size": 15728640,
+  "inodes": 1
+ },
+ {
+  "path": "/srv/media/upload-tmp/IMG_0001 (1).jpg",
+  "size": 15728640,
+  "inodes": 1
+ }
+]

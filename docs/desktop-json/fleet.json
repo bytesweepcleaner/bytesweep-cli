@@ -1,0 +1,22 @@
+[
+ {
+  "host": "127.0.0.1",
+  "disk": "/",
+  "pct": 28.953477220316227,
+  "inodePct": 4.13152760472791,
+  "canFree": 0,
+  "bad": 3,
+  "warn": 3,
+  "top": "No backup job or backup folder found"
+ },
+ {
+  "host": "localhost",
+  "disk": "/",
+  "pct": 28.953477220316227,
+  "inodePct": 4.13152760472791,
+  "canFree": 0,
+  "bad": 3,
+  "warn": 3,
+  "top": "No backup job or backup folder found"
+ }
+]

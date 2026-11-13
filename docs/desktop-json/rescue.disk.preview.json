@@ -1,0 +1,109 @@
+{
+ "disk": "/",
+ "dryRun": true,
+ "steps": [
+  {
+   "title": "Undo copy of /srv/media/photos",
+   "command": "end Undo early",
+   "size": 62914560,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/media/photos-copy",
+   "command": "end Undo early",
+   "size": 62914560,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/exports/old-export.csv",
+   "command": "end Undo early",
+   "size": 20971520,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/exports/old-export.csv",
+   "command": "end Undo early",
+   "size": 20971520,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/exports/old-export.csv",
+   "command": "end Undo early",
+   "size": 20971520,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/media/upload-tmp/IMG_0001 (1).jpg",
+   "command": "end Undo early",
+   "size": 15728640,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/media/upload-tmp/IMG_0001 (1).jpg",
+   "command": "end Undo early",
+   "size": 15728640,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/media/upload-tmp/IMG_0001 (1).jpg",
+   "command": "end Undo early",
+   "size": 15728640,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.4",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.5",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.4",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.5",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.5",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /var/log/shop/app.log.4",
+   "command": "end Undo early",
+   "size": 11331981,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/downloads/big.iso.part",
+   "command": "end Undo early",
+   "size": 2002944,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/downloads/big.iso.part",
+   "command": "end Undo early",
+   "size": 2002944,
+   "hard": true
+  },
+  {
+   "title": "Undo copy of /srv/downloads/big.iso.part",
+   "command": "end Undo early",
+   "size": 2002944,
+   "hard": true
+  }
+ ],
+ "target": 25769803776
+}

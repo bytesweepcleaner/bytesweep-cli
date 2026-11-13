@@ -1,0 +1,53 @@
+{
+ "ok": true,
+ "runs": [
+  {
+   "id": "b1",
+   "time": "2026-11-09T10:39:49+05:30",
+   "ok": true,
+   "added": 0,
+   "total": 11925019,
+   "files": 54,
+   "changed": 0,
+   "duration": 0.6,
+   "snapshot": "9ea469414f038b579dbe0f15ee44269df134d4b913822a4fda1fbb6446887d52",
+   "snapshots": 2,
+   "forgotten": 1,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  },
+  {
+   "id": "b2",
+   "time": "2026-11-09T10:39:53+05:30",
+   "ok": true,
+   "added": 20561,
+   "total": 8925019,
+   "files": 53,
+   "changed": 1,
+   "duration": 0.8,
+   "snapshot": "030830900632961b61da63212194fc96cc922b55c782bfba5227bd96b182eb14",
+   "snapshots": 1,
+   "forgotten": 1,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  },
+  {
+   "id": "b3",
+   "time": "2026-11-09T10:39:57+05:30",
+   "ok": true,
+   "added": 735,
+   "total": 3000000,
+   "files": 1,
+   "changed": 0,
+   "duration": 0.7,
+   "snapshot": "3633fa43929b066744c4406964447f4d3c5f7910ffb075387b9d18f1a8dc8a52",
+   "snapshots": 2,
+   "forgotten": 0,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "file": "dl.iso",
+ "arch": "x86_64",
+ "version": "1.1.0",
+ "size": 55879680,
+ "sha256": "66ab05c81a55eb988532447bbfa1aaf8b7b544cefd42f5abac59e5c702bc5bbf",
+ "verified": true,
+ "url": "http://127.0.0.1:8899/bsweep-rescue-x86_64.iso"
+}

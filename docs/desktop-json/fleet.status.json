@@ -1,0 +1,304 @@
+[
+ {
+  "name": "web2",
+  "address": "alex@localhost",
+  "tags": [
+   "prod"
+  ],
+  "reachable": true,
+  "error": "",
+  "bsweepVersion": "1.1.0-test+6eaa167cf",
+  "root": true,
+  "fullest": {
+   "path": "/",
+   "pct": 47.04303858443806,
+   "inodePct": 6.39398509058459,
+   "free": 15922569216,
+   "total": 30083776512
+  },
+  "disks": [
+   {
+    "path": "/",
+    "pct": 47.04303858443806,
+    "inodePct": 6.39398509058459,
+    "free": 15922569216,
+    "total": 30083776512
+   },
+   {
+    "path": "/boot",
+    "pct": 26.364129537467274,
+    "inodePct": 0.487012987012987,
+    "free": 639373312,
+    "total": 933457920
+   },
+   {
+    "path": "/mnt/bs-btrfs",
+    "pct": 11.543269898597027,
+    "inodePct": 0,
+    "free": 208666624,
+    "total": 314572800
+   },
+   {
+    "path": "/mnt/backup",
+    "pct": 8.754426436663385,
+    "inodePct": 1.4583333333333333,
+    "free": 508715008,
+    "total": 601563136
+   },
+   {
+    "path": "/boot/efi",
+    "pct": 6.660420278381818,
+    "inodePct": 0,
+    "free": 95379968,
+    "total": 102185984
+   },
+   {
+    "path": "/bspool/data",
+    "pct": 4.2752867570385815,
+    "inodePct": 0.0029768739421465813,
+    "free": 120324096,
+    "total": 125698048
+   },
+   {
+    "path": "/bspool",
+    "pct": 0.1088139281828074,
+    "inodePct": 0.0029768739421465813,
+    "free": 120324096,
+    "total": 120455168
+   }
+  ],
+  "safe": 2743132160,
+  "forecast": {
+   "known": false,
+   "daysLeft": 0,
+   "path": ""
+  },
+  "updates": {
+   "total": 66,
+   "security": 0,
+   "restartNeeded": true,
+   "checked": "2026-11-09T09:04:43+05:30"
+  },
+  "problems": [
+   "Out of memory killed: dotnet 31×, rootlesskit 26×, buildkitd 14×, containerd-star 9×, containerd 8×, (containerd-ro 6×, containerd-root 4×, systemd 4×, exe 3×, grep 2×, realpath 2×, (sd-pam 1×, 9 1×, dbus-daemon 1× (7 days)",
+   "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'."
+  ],
+  "warnings": [
+   "Timeshift last started 3 minutes ago (/etc/timeshift/timeshift.json), but nothing here says whether it worked",
+   "Timeshift: its schedule (Timeshift settings, Schedule) is switched off, so no new backups start",
+   "Backups are on the system disk: a disk failure loses both",
+   "No swap: one memory spike kills a process",
+   "No firewall is active",
+   "Nothing blocks repeated SSH guesses",
+   "66 updates waiting",
+   "A reboot is waiting: installed fixes aren't active yet"
+  ],
+  "failedServices": [
+   "shop-worker.service"
+  ],
+  "maintenance": {
+   "known": true,
+   "planOn": false,
+   "every": "weekly",
+   "next": "",
+   "lastRun": {
+    "ran": true,
+    "ok": true,
+    "time": "2026-11-09T10:36:34+05:30"
+   }
+  },
+  "backups": {
+   "known": true,
+   "stale": false,
+   "newest": "2026-11-09T10:38:39+05:30",
+   "found": 4
+  },
+  "licensed": true,
+  "cpu": 33.60655737704918,
+  "memPct": 49.05621793616086,
+  "missing": [
+   "forecast"
+  ],
+  "checked": "2026-11-09T10:38:39.76797758+05:30",
+  "seconds": 10.841
+ },
+ {
+  "name": "web1",
+  "address": "alex@127.0.0.1",
+  "tags": [
+   "db",
+   "prod"
+  ],
+  "reachable": true,
+  "error": "",
+  "bsweepVersion": "1.1.0-test+6eaa167cf",
+  "root": true,
+  "fullest": {
+   "path": "/",
+   "pct": 47.04302496152891,
+   "inodePct": 6.39398509058459,
+   "free": 15922573312,
+   "total": 30083776512
+  },
+  "disks": [
+   {
+    "path": "/",
+    "pct": 47.04302496152891,
+    "inodePct": 6.39398509058459,
+    "free": 15922573312,
+    "total": 30083776512
+   },
+   {
+    "path": "/boot",
+    "pct": 26.364129537467274,
+    "inodePct": 0.487012987012987,
+    "free": 639373312,
+    "total": 933457920
+   },
+   {
+    "path": "/mnt/bs-btrfs",
+    "pct": 11.543269898597027,
+    "inodePct": 0,
+    "free": 208666624,
+    "total": 314572800
+   },
+   {
+    "path": "/mnt/backup",
+    "pct": 8.754426436663385,
+    "inodePct": 1.4583333333333333,
+    "free": 508715008,
+    "total": 601563136
+   },
+   {
+    "path": "/boot/efi",
+    "pct": 6.660420278381818,
+    "inodePct": 0,
+    "free": 95379968,
+    "total": 102185984
+   },
+   {
+    "path": "/bspool/data",
+    "pct": 4.2752867570385815,
+    "inodePct": 0.0029768739421465813,
+    "free": 120324096,
+    "total": 125698048
+   },
+   {
+    "path": "/bspool",
+    "pct": 0.1088139281828074,
+    "inodePct": 0.0029768739421465813,
+    "free": 120324096,
+    "total": 120455168
+   }
+  ],
+  "safe": 2743382016,
+  "forecast": {
+   "known": false,
+   "daysLeft": 0,
+   "path": ""
+  },
+  "updates": {
+   "total": 66,
+   "security": 0,
+   "restartNeeded": true,
+   "checked": "2026-11-09T09:04:43+05:30"
+  },
+  "problems": [
+   "Out of memory killed: dotnet 31×, rootlesskit 26×, buildkitd 14×, containerd-star 9×, containerd 8×, (containerd-ro 6×, containerd-root 4×, systemd 4×, exe 3×, grep 2×, realpath 2×, (sd-pam 1×, 9 1×, dbus-daemon 1× (7 days)",
+   "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'."
+  ],
+  "warnings": [
+   "Timeshift last started 3 minutes ago (/etc/timeshift/timeshift.json), but nothing here says whether it worked",
+   "Timeshift: its schedule (Timeshift settings, Schedule) is switched off, so no new backups start",
+   "Backups are on the system disk: a disk failure loses both",
+   "No swap: one memory spike kills a process",
+   "No firewall is active",
+   "Nothing blocks repeated SSH guesses",
+   "66 updates waiting",
+   "A reboot is waiting: installed fixes aren't active yet"
+  ],
+  "failedServices": [
+   "shop-worker.service"
+  ],
+  "maintenance": {
+   "known": true,
+   "planOn": false,
+   "every": "weekly",
+   "next": "",
+   "lastRun": {
+    "ran": true,
+    "ok": true,
+    "time": "2026-11-09T10:36:34+05:30"
+   }
+  },
+  "backups": {
+   "known": true,
+   "stale": false,
+   "newest": "2026-11-09T10:38:39+05:30",
+   "found": 4
+  },
+  "licensed": true,
+  "cpu": 47.93388429752066,
+  "memPct": 48.757021616785174,
+  "missing": [
+   "forecast"
+  ],
+  "checked": "2026-11-09T10:38:39.767933413+05:30",
+  "seconds": 10.831
+ },
+ {
+  "name": "dead",
+  "address": "alex@127.0.0.1:1",
+  "tags": [],
+  "reachable": false,
+  "error": "ssh: connect to host 127.0.0.1 port 1: Connection refused",
+  "bsweepVersion": "",
+  "root": false,
+  "fullest": {
+   "path": "",
+   "pct": 0,
+   "inodePct": 0,
+   "free": 0,
+   "total": 0
+  },
+  "disks": [],
+  "safe": 0,
+  "forecast": {
+   "known": false,
+   "daysLeft": 0,
+   "path": ""
+  },
+  "updates": {
+   "total": 0,
+   "security": 0,
+   "restartNeeded": false,
+   "checked": ""
+  },
+  "problems": [],
+  "warnings": [],
+  "failedServices": [],
+  "maintenance": {
+   "known": false,
+   "planOn": false,
+   "every": "",
+   "next": "",
+   "lastRun": {
+    "ran": false,
+    "ok": false,
+    "time": ""
+   }
+  },
+  "backups": {
+   "known": false,
+   "stale": false,
+   "newest": "",
+   "found": 0
+  },
+  "licensed": true,
+  "cpu": 0,
+  "memPct": 0,
+  "missing": [],
+  "checked": "2026-11-09T10:38:39.766978197+05:30",
+  "seconds": 0.04
+ }
+]

@@ -1,0 +1,26 @@
+{
+ "dryRun": true,
+ "items": [
+  {
+   "id": "journal",
+   "group": "logs",
+   "title": "System journal older than 7 days",
+   "why": "",
+   "size": 0,
+   "level": "safe",
+   "command": "journalctl --vacuum-time=7d",
+   "where": "/var/log"
+  },
+  {
+   "id": "rotated",
+   "group": "logs",
+   "title": "Rotated logs older than 7 days (8 files)",
+   "why": "",
+   "size": 69263360,
+   "level": "safe",
+   "command": "rm old copies in /var/log",
+   "where": "/var/log"
+  }
+ ],
+ "total": 69263360
+}

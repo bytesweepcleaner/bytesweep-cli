@@ -1,0 +1,112 @@
+{
+ "action": "remove",
+ "commands": [
+  "snapper -c bstest delete 2",
+  "zfs destroy bspool/data@two"
+ ],
+ "dryRun": true,
+ "freed": 20987904,
+ "freedKnown": true,
+ "keepNewest": 1,
+ "kept": [
+  {
+   "id": "snapper:bstest:4",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 8404992,
+   "sizeKnown": true,
+   "description": "nightly",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": true,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "4"
+   ],
+   "note": "",
+   "why": "The newest one is kept: it may be the only way back."
+  },
+  {
+   "id": "btrfs:/mnt/bs-btrfs/manual-snap",
+   "tool": "btrfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 16384,
+   "sizeKnown": true,
+   "description": "manual-snap",
+   "where": "/mnt/bs-btrfs",
+   "disk": "/mnt/bs-btrfs",
+   "newest": true,
+   "canRemove": false,
+   "removeCommand": [
+    "btrfs",
+    "subvolume",
+    "delete",
+    "/mnt/bs-btrfs/manual-snap"
+   ],
+   "note": "Made by hand or by another tool, so ByteSweep only explains it. Btrfs can't size one without quotas. If nobody needs it, the command removes it (as root); check it is the snapshot first: the path is from the top of the filesystem.",
+   "why": "Made by hand or by another tool, so ByteSweep only explains it. Btrfs can't size one without quotas. If nobody needs it, the command removes it (as root); check it is the snapshot first: the path is from the top of the filesystem."
+  },
+  {
+   "id": "lvm:bsvg/data_snap",
+   "tool": "lvm",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 20971520,
+   "sizeKnown": true,
+   "description": "Snapshot of bsvg/data, 0% of its area used",
+   "where": "bsvg/data",
+   "disk": "",
+   "newest": true,
+   "canRemove": false,
+   "removeCommand": [
+    "lvremove",
+    "bsvg/data_snap"
+   ],
+   "note": "LVM sets this area aside for it, and every write to data is slower while it exists. ByteSweep only explains it: a backup run may still read it. When nothing does, the command removes it (as root).",
+   "why": "LVM sets this area aside for it, and every write to data is slower while it exists. ByteSweep only explains it: a backup run may still read it. When nothing does, the command removes it (as root)."
+  }
+ ],
+ "remove": [
+  {
+   "id": "snapper:bstest:2",
+   "tool": "snapper",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 20987904,
+   "sizeKnown": true,
+   "description": "after big file",
+   "where": "bstest",
+   "disk": "/mnt/bs-btrfs",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "snapper",
+    "-c",
+    "bstest",
+    "delete",
+    "2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "bspool/data@two",
+   "tool": "zfs",
+   "when": "2026-11-09T10:43:46+05:30",
+   "size": 0,
+   "sizeKnown": true,
+   "description": "two",
+   "where": "bspool/data",
+   "disk": "/bspool/data",
+   "newest": false,
+   "canRemove": true,
+   "removeCommand": [
+    "zfs",
+    "destroy",
+    "bspool/data@two"
+   ],
+   "note": "Holds what was deleted or changed since it was made. zfs destroy refuses one a clone was made from."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "about": "b2 would stop: no more backups of /srv/bk-test/site. The copies at sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/b2 stay, and so does the password that reads them (kept root-only).",
+ "dryRun": true,
+ "forgetData": false,
+ "plan": {
+  "id": "b2",
+  "folders": [
+   "/srv/bk-test/site"
+  ],
+  "target": {
+   "kind": "sftp",
+   "where": "sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/b2"
+  },
+  "keep": {
+   "daily": 1,
+   "weekly": 0,
+   "monthly": 0
+  },
+  "schedule": {
+   "every": "daily",
+   "day": "",
+   "at": "10:35",
+   "withMaintenance": false,
+   "when": "every day at 10:35"
+  },
+  "created": "2026-11-09T10:33:52+05:30",
+  "keys": [],
+  "sameDisk": true,
+  "last": {
+   "id": "b2",
+   "time": "2026-11-09T10:39:53+05:30",
+   "ok": true,
+   "added": 20561,
+   "total": 8925019,
+   "files": 53,
+   "changed": 1,
+   "duration": 0.8,
+   "snapshot": "030830900632961b61da63212194fc96cc922b55c782bfba5227bd96b182eb14",
+   "snapshots": 1,
+   "forgotten": 1,
+   "warnings": [],
+   "error": "",
+   "by": "person"
+  },
+  "lastOK": "2026-11-09T10:39:53+05:30",
+  "next": "2026-11-10T10:35:00+05:30",
+  "timer": true
+ }
+}

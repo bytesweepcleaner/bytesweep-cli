@@ -1,0 +1,37 @@
+{
+ "new": [
+  {
+   "key": "job:cron:/opt/old-app/bin/cleanup.sh",
+   "level": "critical",
+   "text": "scheduled job /opt/old-app/bin/cleanup.sh: runs /opt/old-app/bin/cleanup.sh, which doesn't exist"
+  },
+  {
+   "key": "site:shop.example.com Its folder /var/www/shop/public is gone: the site answers with errors",
+   "level": "critical",
+   "text": "site shop.example.com: Its folder /var/www/shop/public is gone: the site answers with errors"
+  },
+  {
+   "key": "unit:shop-worker.service",
+   "level": "critical",
+   "text": "shop-worker.service has failed"
+  }
+ ],
+ "over": [],
+ "problems": [
+  {
+   "key": "job:cron:/opt/old-app/bin/cleanup.sh",
+   "level": "critical",
+   "text": "scheduled job /opt/old-app/bin/cleanup.sh: runs /opt/old-app/bin/cleanup.sh, which doesn't exist"
+  },
+  {
+   "key": "site:shop.example.com Its folder /var/www/shop/public is gone: the site answers with errors",
+   "level": "critical",
+   "text": "site shop.example.com: Its folder /var/www/shop/public is gone: the site answers with errors"
+  },
+  {
+   "key": "unit:shop-worker.service",
+   "level": "critical",
+   "text": "shop-worker.service has failed"
+  }
+ ]
+}

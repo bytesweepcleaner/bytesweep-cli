@@ -1,0 +1,22 @@
+{
+ "dryRun": true,
+ "expectedSaving": 5517905,
+ "items": [
+  {
+   "path": "/var/log/shop/app.log.5",
+   "size": 11331981,
+   "kind": "log",
+   "expectedSize": 8572984,
+   "modified": "2026-09-22T16:54:32.85013362+05:30"
+  },
+  {
+   "path": "/var/log/shop/app.log.4",
+   "size": 11331981,
+   "kind": "log",
+   "expectedSize": 8573073,
+   "modified": "2026-10-01T16:54:32.834825671+05:30"
+  }
+ ],
+ "size": 22663962,
+ "undo": true
+}

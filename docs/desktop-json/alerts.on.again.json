@@ -1,0 +1,16 @@
+{
+ "on": true,
+ "settings": {
+  "targets": [
+   {
+    "id": "a1",
+    "kind": "webhook",
+    "url": "http://127.0.0.1:8799/hook"
+   }
+  ],
+  "fullDays": 3,
+  "certDays": 14,
+  "everyMinutes": 30
+ },
+ "timer": false
+}

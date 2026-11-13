@@ -1,0 +1,22 @@
+{
+ "onUSB": true,
+ "parts": [
+  {
+   "device": "/dev/vda",
+   "disk": "/dev/vda",
+   "model": "",
+   "size": 536870912,
+   "fsType": "ext4",
+   "label": "computer",
+   "system": "linux",
+   "name": "Debian GNU/Linux 13 (trixie)",
+   "used": 499355648,
+   "free": 0,
+   "pct": 100,
+   "cleanable": true,
+   "hibernated": false,
+   "note": ""
+  }
+ ],
+ "target": "/mnt/target"
+}

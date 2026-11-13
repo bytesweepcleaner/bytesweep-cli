@@ -1,0 +1,10 @@
+{
+ "action": "restore",
+ "dryRun": true,
+ "entry": {
+  "id": "18e5710badcf714f",
+  "original": "/srv/exports/old-export.csv",
+  "size": 20971520,
+  "cleaned": "2026-11-06T16:55:21.551642959+05:30"
+ }
+}

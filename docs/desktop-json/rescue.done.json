@@ -1,0 +1,11 @@
+{
+ "after": 21217931264,
+ "before": 21217931264,
+ "disk": "/",
+ "failed": [],
+ "reached": false,
+ "stopped": [
+  "shop-worker.service"
+ ],
+ "target": 25769803776
+}

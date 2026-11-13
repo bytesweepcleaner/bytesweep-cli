@@ -1,0 +1,19 @@
+{
+ "device": {
+  "device": "stick.img",
+  "model": "a new image file",
+  "size": 0,
+  "kind": "file",
+  "removable": true,
+  "system": false,
+  "mounted": []
+ },
+ "dryRun": true,
+ "image": "dl.iso",
+ "imageSize": 55879680,
+ "verdict": {
+  "refused": "",
+  "needsConfirm": false,
+  "reason": ""
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "about": "b2 would back up /srv/bk-test to s3:s3.amazonaws.com/my-bucket/web1, encrypted with a new password shown once. It runs every Sat at 01:30. After each run it keeps 14 daily, 8 weekly, 12 monthly copies.",
+ "dryRun": true,
+ "maintenance": {
+  "planOn": false,
+  "stepAdded": false
+ },
+ "plan": {
+  "id": "b2",
+  "folders": [
+   "/srv/bk-test"
+  ],
+  "target": {
+   "kind": "s3",
+   "where": "s3:s3.amazonaws.com/my-bucket/web1"
+  },
+  "keep": {
+   "daily": 14,
+   "weekly": 8,
+   "monthly": 12
+  },
+  "schedule": {
+   "every": "weekly",
+   "day": "sat",
+   "at": "01:30",
+   "withMaintenance": false,
+   "when": "every Sat at 01:30"
+  },
+  "created": "2026-11-09T10:40:27+05:30",
+  "keys": [
+   "AWS_ACCESS_KEY_ID",
+   "AWS_SECRET_ACCESS_KEY"
+  ],
+  "last": {
+   "id": "b2",
+   "time": "0001-01-01T00:00:00Z",
+   "ok": false,
+   "added": 0,
+   "total": 0,
+   "files": 0,
+   "changed": 0,
+   "duration": 0,
+   "snapshot": "",
+   "snapshots": 0,
+   "forgotten": 0,
+   "warnings": [],
+   "error": "",
+   "by": ""
+  },
+  "lastOK": "0001-01-01T00:00:00Z",
+  "next": "2026-11-14T01:30:00+05:30",
+  "timer": false
+ },
+ "resticInstalled": true
+}

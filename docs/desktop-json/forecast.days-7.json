@@ -1,0 +1,146 @@
+{
+ "now": "2026-11-09T10:33:18+05:30",
+ "days": 7,
+ "recording": true,
+ "dailyRecord": false,
+ "enoughHistory": true,
+ "switchOn": [
+  [
+   "timer",
+   "on"
+  ]
+ ],
+ "say": "/ will be full around 23 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week.",
+ "disks": [
+  {
+   "path": "/",
+   "total": 30083776512,
+   "free": 18001199104,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 1326932303,
+   "trend": "growing",
+   "fullOn": "2026-11-23",
+   "daysLeft": 13.6,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 1,
+   "growing": [
+    {
+     "path": "/var/lib/docker",
+     "perDay": 1200081032
+    }
+   ],
+   "say": "/ will be full around 23 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week."
+  },
+  {
+   "path": "/boot",
+   "total": 933457920,
+   "free": 639373312,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/boot isn't filling up: about the same over the last 14 days."
+  },
+  {
+   "path": "/mnt/bs-btrfs",
+   "total": 314572800,
+   "free": 208666624,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/mnt/bs-btrfs isn't filling up: about the same over the last 14 days."
+  },
+  {
+   "path": "/mnt/backup",
+   "total": 601563136,
+   "free": 512811008,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/mnt/backup isn't filling up: about the same over the last 14 days."
+  },
+  {
+   "path": "/boot/efi",
+   "total": 102185984,
+   "free": 95379968,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/boot/efi isn't filling up: about the same over the last 14 days."
+  },
+  {
+   "path": "/bspool/data",
+   "total": 115212288,
+   "free": 109838336,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/bspool/data isn't filling up: about the same over the last 14 days."
+  },
+  {
+   "path": "/bspool",
+   "total": 109969408,
+   "free": 109838336,
+   "enoughHistory": true,
+   "historyDays": 14,
+   "source": "monitor",
+   "perDay": 0,
+   "trend": "flat",
+   "fullOn": "",
+   "daysLeft": -1,
+   "soon": false,
+   "confidence": "high",
+   "setAside": 0,
+   "growing": [],
+   "say": "/bspool isn't filling up: about the same over the last 14 days."
+  }
+ ],
+ "soonest": {
+  "path": "/",
+  "daysLeft": 13.6,
+  "fullOn": "2026-11-23",
+  "confidence": "high"
+ }
+}

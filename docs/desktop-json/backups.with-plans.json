@@ -1,0 +1,54 @@
+{
+ "found": [
+  {
+   "tool": "ByteSweep backup b1",
+   "where": "/mnt/backup/bytesweep-test",
+   "last": "2026-11-09T10:39:49+05:30",
+   "ageHours": 0,
+   "ok": true,
+   "note": "The last good backup was just now."
+  },
+  {
+   "tool": "ByteSweep backup b2",
+   "where": "bsweep backup b2, to sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/b2",
+   "last": "2026-11-09T10:39:53+05:30",
+   "ageHours": 0,
+   "ok": true,
+   "note": "The last good backup was just now."
+  },
+  {
+   "tool": "ByteSweep backup b3",
+   "where": "/mnt/backup/bytesweep-test-b3",
+   "last": "2026-11-09T10:39:57+05:30",
+   "ageHours": 0,
+   "ok": true,
+   "note": "The last good backup was just now."
+  },
+  {
+   "tool": "Snapper",
+   "where": "/mnt/bs-btrfs",
+   "last": "2026-11-09T10:38:39+05:30",
+   "ageHours": 0,
+   "ok": true,
+   "note": "The last good backup was just now. Snapshots stay on the same disk."
+  },
+  {
+   "tool": "Timeshift",
+   "where": "/etc/timeshift/timeshift.json",
+   "last": "",
+   "ageHours": 0,
+   "ok": false,
+   "note": "It last started 4 minutes ago, but nothing says whether it worked. its schedule (Timeshift settings, Schedule) is switched off, so no new backups start. Snapshots stay on the same disk."
+  },
+  {
+   "tool": "backup folder",
+   "where": "/srv/backups",
+   "last": "2026-11-08T03:07:51+05:30",
+   "ageHours": 31.5,
+   "ok": false,
+   "note": "The newest file is shop-db-nightly.sql.gz, from 31 hours ago."
+  }
+ ],
+ "stale": false,
+ "newest": "2026-11-09T10:39:57+05:30"
+}

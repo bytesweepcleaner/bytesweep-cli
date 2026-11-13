@@ -1,0 +1,204 @@
+{
+ "system": "linux",
+ "risk": "medium",
+ "firewall": "off",
+ "items": [
+  {
+   "group": "Sharing services",
+   "id": "ssh",
+   "name": "Remote login (SSH)",
+   "state": "on",
+   "risk": "low",
+   "who": "the network",
+   "says": "Keys only: passwords don't work. Someone with an account here can sign in over the network and run commands.",
+   "fix": "sudo systemctl disable --now ssh.socket (if you reach this computer over SSH, that cuts you off)",
+   "seen": "listening on port 22",
+   "ports": [
+    22
+   ],
+   "openToNetwork": true,
+   "program": "ssh"
+  },
+  {
+   "group": "Sharing services",
+   "id": "smb",
+   "name": "File sharing (Samba)",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Other computers can open the folders this one shares.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "afp",
+   "name": "File sharing (AFP)",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Older Macs can open the folders this one shares.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "nfs",
+   "name": "NFS file sharing",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Other computers can mount the folders in /etc/exports. NFS asks for no password: it trusts the address a computer says it has.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "vnc",
+   "name": "Screen sharing (VNC)",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Someone can see this screen and, with the password, use it.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "rdp",
+   "name": "Remote desktop (RDP)",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Someone with an account here can sign in to this desktop over the network.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "printer",
+   "name": "Printer sharing (CUPS)",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Other computers can print on the printers this one shares.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "ftp",
+   "name": "FTP server",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Files and passwords cross the network unencrypted, so anyone on the way can read them.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "telnet",
+   "name": "Telnet",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Everything typed, passwords too, crosses the network unencrypted.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "cockpit",
+   "name": "Cockpit web console",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Anyone with an account here can manage this server from a web browser.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "webmin",
+   "name": "Webmin",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Anyone with a Webmin login can manage this server from a web browser.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Sharing services",
+   "id": "media",
+   "name": "Media server",
+   "state": "off",
+   "risk": "none",
+   "says": "Off. Devices on the network can browse and play the music and videos it serves.",
+   "openToNetwork": false
+  },
+  {
+   "group": "Open to the network",
+   "id": "port:80",
+   "name": "Port 80",
+   "state": "on",
+   "risk": "low",
+   "who": "the network",
+   "says": "Other computers can connect to nginx on port 80, usually a web server.",
+   "fix": "Have nginx listen on 127.0.0.1 only, or switch it off: sudo systemctl disable --now nginx",
+   "seen": "listening on 0.0.0.0",
+   "ports": [
+    80
+   ],
+   "openToNetwork": true,
+   "program": "nginx"
+  },
+  {
+   "group": "Open to the network",
+   "id": "port:3000",
+   "name": "Port 3000",
+   "state": "on",
+   "risk": "low",
+   "who": "the network",
+   "says": "Other computers can connect to python3 on port 3000, usually a web app.",
+   "fix": "Have shop-dev listen on 127.0.0.1 only, or switch it off: sudo systemctl disable --now shop-dev",
+   "seen": "listening on 0.0.0.0",
+   "ports": [
+    3000
+   ],
+   "openToNetwork": true,
+   "program": "python3"
+  },
+  {
+   "group": "Open to the network",
+   "id": "port:3001",
+   "name": "Port 3001",
+   "state": "on",
+   "risk": "low",
+   "who": "the network",
+   "says": "Other computers can connect to python3 on port 3001.",
+   "fix": "Have python3 listen on 127.0.0.1 only, or stop it: bsweep ports stop 3001",
+   "seen": "listening on 0.0.0.0",
+   "ports": [
+    3001
+   ],
+   "openToNetwork": true,
+   "program": "python3"
+  },
+  {
+   "group": "Who can log in",
+   "id": "account:alex",
+   "name": "alex",
+   "state": "on",
+   "risk": "medium",
+   "who": "administrator",
+   "says": "Can become the administrator; password locked; 2 SSH keys can log in; sudo asks no password: anyone who gets into this account controls the machine; last logged in 6 Nov.",
+   "fix": "Remove NOPASSWD for alex with sudo visudo (and the files in /etc/sudoers.d)",
+   "seen": "/etc/passwd, /etc/shadow, /etc/group, sudoers, lastlog",
+   "openToNetwork": false
+  },
+  {
+   "group": "Who can log in",
+   "id": "account:root",
+   "name": "root",
+   "state": "on",
+   "risk": "low",
+   "who": "administrator",
+   "says": "Can become the administrator; password locked.",
+   "seen": "/etc/passwd, /etc/shadow, /etc/group, sudoers, lastlog",
+   "openToNetwork": false
+  },
+  {
+   "group": "Firewall",
+   "id": "firewall",
+   "name": "Firewall",
+   "state": "off",
+   "risk": "medium",
+   "says": "Off: everything listed as open to the network can be reached by any computer that can reach this one.",
+   "fix": "sudo ufw allow OpenSSH \u0026\u0026 sudo ufw enable (allow SSH first). A cloud firewall counts too",
+   "openToNetwork": false
+  }
+ ],
+ "localOnly": 5
+}

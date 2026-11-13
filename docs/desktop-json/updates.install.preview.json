@@ -1,0 +1,27 @@
+{
+ "dryRun": true,
+ "ran": false,
+ "skipped": [],
+ "steps": [
+  {
+   "manager": "apt",
+   "command": [
+    "apt-get",
+    "-y",
+    "-o",
+    "Dpkg::Options::=--force-confdef",
+    "-o",
+    "Dpkg::Options::=--force-confold",
+    "-o",
+    "DPkg::Lock::Timeout=0",
+    "--with-new-pkgs",
+    "upgrade"
+   ],
+   "env": [
+    "DEBIAN_FRONTEND=noninteractive",
+    "NEEDRESTART_MODE=l"
+   ],
+   "updates": 183
+  }
+ ]
+}

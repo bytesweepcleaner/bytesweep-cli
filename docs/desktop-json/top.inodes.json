@@ -1,0 +1,27 @@
+[
+ {
+  "path": "/var/lib",
+  "size": 577150976,
+  "inodes": 5449
+ },
+ {
+  "path": "/var/lib/dpkg",
+  "size": 36319232,
+  "inodes": 3300
+ },
+ {
+  "path": "/var/lib/dpkg/info",
+  "size": 34246656,
+  "inodes": 3229
+ },
+ {
+  "path": "/var/lib/postgresql",
+  "size": 103591936,
+  "inodes": 1312
+ },
+ {
+  "path": "/var/lib/postgresql/18",
+  "size": 103587840,
+  "inodes": 1311
+ }
+]

@@ -1,0 +1,43 @@
+{
+ "blocked": 0,
+ "changing": 3,
+ "dryRun": true,
+ "rows": [
+  {
+   "from": "/srv/pictures/scan-001 (2).jpg",
+   "to": "/srv/pictures/scan-001 (2).jpg"
+  },
+  {
+   "from": "/srv/pictures/scan-001.jpg",
+   "to": "/srv/pictures/scan-001.jpg"
+  },
+  {
+   "from": "/srv/pictures/scan-002 (2).jpg",
+   "to": "/srv/pictures/scan-002 (2).jpg"
+  },
+  {
+   "from": "/srv/pictures/scan-002.jpg",
+   "to": "/srv/pictures/scan-002.jpg"
+  },
+  {
+   "from": "/srv/pictures/scan-003 (2).jpg",
+   "to": "/srv/pictures/scan-003 (2).jpg"
+  },
+  {
+   "from": "/srv/pictures/scan-003.jpg",
+   "to": "/srv/pictures/scan-003.jpg"
+  },
+  {
+   "from": "/srv/pictures/SCAN_001.PNG",
+   "to": "/srv/pictures/scan-001.PNG"
+  },
+  {
+   "from": "/srv/pictures/SCAN_002.PNG",
+   "to": "/srv/pictures/scan-002.PNG"
+  },
+  {
+   "from": "/srv/pictures/SCAN_003.PNG",
+   "to": "/srv/pictures/scan-003.PNG"
+  }
+ ]
+}

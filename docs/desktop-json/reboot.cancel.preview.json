@@ -1,0 +1,9 @@
+{
+ "about": "The restart set for Mon 9 Nov 23:59 would be cancelled.",
+ "command": [
+  "shutdown",
+  "-c"
+ ],
+ "dryRun": true,
+ "scheduled": "2026-11-09T23:59:00+05:30"
+}

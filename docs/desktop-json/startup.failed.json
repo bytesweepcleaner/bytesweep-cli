@@ -1,0 +1,16 @@
+[
+ {
+  "id": "shop-worker.service",
+  "name": "shop-worker",
+  "group": "Runs in the background",
+  "kind": "systemd service",
+  "runs": "/bin/sh -c echo \"worker: redis at 127.0.0.1:6379 refused the connection\" \u003e\u00262; exit 1",
+  "maker": "added on this computer",
+  "on": true,
+  "failed": "failed: exit-code",
+  "lastStart": "2026-11-06T16:54:33+05:30",
+  "needsAdmin": true,
+  "path": "/etc/systemd/system/shop-worker.service",
+  "seeWhy": "journalctl -u shop-worker.service -n 50"
+ }
+]

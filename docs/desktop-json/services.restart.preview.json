@@ -1,0 +1,9 @@
+{
+ "command": [
+  "systemctl",
+  "restart",
+  "demo-ok.service"
+ ],
+ "dryRun": true,
+ "name": "demo-ok.service"
+}

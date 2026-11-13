@@ -1,0 +1,13 @@
+{
+ "dryRun": true,
+ "items": [
+  {
+   "path": "/srv/old-projects/shop-v1",
+   "size": 31457280,
+   "files": 1,
+   "dir": true
+  }
+ ],
+ "to": "/mnt/backup",
+ "total": 31457280
+}

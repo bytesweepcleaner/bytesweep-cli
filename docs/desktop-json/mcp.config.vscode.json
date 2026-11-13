@@ -1,0 +1,24 @@
+{
+ "client": "vscode",
+ "name": "bsweep",
+ "command": "/home/alex.guest/agent-mcp/bsweep",
+ "args": [
+  "mcp"
+ ],
+ "allowChanges": false,
+ "needsSudo": false,
+ "file": ".vscode/mcp.json",
+ "json": {
+  "servers": {
+   "bsweep": {
+    "args": [
+     "mcp"
+    ],
+    "command": "/home/alex.guest/agent-mcp/bsweep",
+    "type": "stdio"
+   }
+  }
+ },
+ "shell": "code --add-mcp '{\"args\":[\"mcp\"],\"command\":\"/home/alex.guest/agent-mcp/bsweep\",\"name\":\"bsweep\"}'",
+ "note": "It can look at this machine and plan changes, but not make them. Add --allow-changes to let it apply a plan after your yes."
+}

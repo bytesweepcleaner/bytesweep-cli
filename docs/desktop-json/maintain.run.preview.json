@@ -1,0 +1,40 @@
+{
+ "dryRun": true,
+ "plan": {
+  "on": true,
+  "every": "weekly",
+  "day": "sun",
+  "at": "03:00",
+  "steps": [
+   "updates-security",
+   "logs",
+   "clean-safe",
+   "restart-services"
+  ],
+  "older": "7d",
+  "next": "2026-11-15T03:00:00+05:30"
+ },
+ "restartNeeded": true,
+ "steps": [
+  {
+   "step": "updates-security",
+   "would": "Install the security updates.",
+   "size": 0
+  },
+  {
+   "step": "logs",
+   "would": "Clear logs older than 7d.",
+   "size": 69263360
+  },
+  {
+   "step": "clean-safe",
+   "would": "Clean what is safe to clean.",
+   "size": 787660800
+  },
+  {
+   "step": "restart-services",
+   "would": "Restart services still running the old files after updates.",
+   "size": 0
+  }
+ ]
+}

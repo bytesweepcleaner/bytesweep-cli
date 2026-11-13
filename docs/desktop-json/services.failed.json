@@ -1,0 +1,35 @@
+{
+ "failed": 2,
+ "services": [
+  {
+   "name": "demo-fail.service",
+   "description": "Demo that fails on purpose",
+   "state": "failed",
+   "sub": "failed",
+   "since": "2026-11-09T09:03:56+05:30",
+   "restartable": true,
+   "log": [
+    "demo-fail.service: Failed with result 'exit-code'.",
+    "Started demo-fail.service - Demo that fails on purpose.",
+    "demo: config file /etc/demo.conf is missing",
+    "demo-fail.service: Main process exited, code=exited, status=1/FAILURE",
+    "demo-fail.service: Failed with result 'exit-code'."
+   ]
+  },
+  {
+   "name": "shop-worker.service",
+   "description": "Shop queue worker",
+   "state": "failed",
+   "sub": "failed",
+   "since": "2026-11-09T09:03:39+05:30",
+   "restartable": true,
+   "log": [
+    "shop-worker.service: Failed with result 'exit-code'.",
+    "Started shop-worker.service - Shop queue worker.",
+    "worker: redis at 127.0.0.1:6379 refused the connection",
+    "shop-worker.service: Main process exited, code=exited, status=1/FAILURE",
+    "shop-worker.service: Failed with result 'exit-code'."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "dryRun": true,
+ "plan": {
+  "root": "/srv/inbox",
+  "by": "kind",
+  "moves": [
+   {
+    "from": "/srv/inbox/invoice-0042.pdf",
+    "to": "/srv/inbox/Documents/invoice-0042.pdf",
+    "folder": "Documents",
+    "size": 200000
+   },
+   {
+    "from": "/srv/inbox/notes.txt",
+    "to": "/srv/inbox/Documents/notes.txt",
+    "folder": "Documents",
+    "size": 200000
+   },
+   {
+    "from": "/srv/inbox/sheet.xlsx",
+    "to": "/srv/inbox/Documents/sheet.xlsx",
+    "folder": "Documents",
+    "size": 200000
+   },
+   {
+    "from": "/srv/inbox/holiday.mp4",
+    "to": "/srv/inbox/Videos/holiday.mp4",
+    "folder": "Videos",
+    "size": 200000
+   },
+   {
+    "from": "/srv/inbox/song.mp3",
+    "to": "/srv/inbox/Music/song.mp3",
+    "folder": "Music",
+    "size": 200000
+   }
+  ],
+  "folders": [
+   "Documents",
+   "Videos",
+   "Music"
+  ],
+  "skipped": [],
+  "foldersLeftAlone": 0
+ }
+}

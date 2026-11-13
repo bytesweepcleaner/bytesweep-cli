@@ -1,0 +1,151 @@
+{
+ "install": {
+  "manager": "apt",
+  "commands": [
+   [
+    "apt-get",
+    "install",
+    "-y",
+    "restic"
+   ]
+  ],
+  "root": true,
+  "note": ""
+ },
+ "plans": [
+  {
+   "id": "b1",
+   "folders": [
+    "/srv/bk-test"
+   ],
+   "target": {
+    "kind": "disk",
+    "where": "/mnt/backup/bytesweep-test"
+   },
+   "keep": {
+    "daily": 7,
+    "weekly": 4,
+    "monthly": 6
+   },
+   "schedule": {
+    "every": "daily",
+    "day": "",
+    "at": "02:00",
+    "withMaintenance": false,
+    "when": "every day at 02:00"
+   },
+   "created": "2026-11-09T10:32:53+05:30",
+   "keys": [],
+   "sameDisk": true,
+   "last": {
+    "id": "b1",
+    "time": "2026-11-09T10:36:24+05:30",
+    "ok": true,
+    "added": 0,
+    "total": 11925019,
+    "files": 54,
+    "changed": 0,
+    "duration": 0.6,
+    "snapshot": "bb6f10176783a8583c183f72aea0fdf55ee295882789f42a154b53b3f8defc03",
+    "snapshots": 2,
+    "forgotten": 1,
+    "warnings": [],
+    "error": "",
+    "by": "maintenance"
+   },
+   "lastOK": "2026-11-09T10:36:24+05:30",
+   "next": "2026-11-10T02:00:00+05:30",
+   "timer": true
+  },
+  {
+   "id": "b2",
+   "folders": [
+    "/srv/bk-test/site"
+   ],
+   "target": {
+    "kind": "sftp",
+    "where": "sftp:alex@localhost:/home/alex.guest/agent-backup/sftp-repo/b2"
+   },
+   "keep": {
+    "daily": 1,
+    "weekly": 0,
+    "monthly": 0
+   },
+   "schedule": {
+    "every": "daily",
+    "day": "",
+    "at": "10:35",
+    "withMaintenance": false,
+    "when": "every day at 10:35"
+   },
+   "created": "2026-11-09T10:33:52+05:30",
+   "keys": [],
+   "sameDisk": true,
+   "last": {
+    "id": "b2",
+    "time": "2026-11-09T10:36:29+05:30",
+    "ok": true,
+    "added": 0,
+    "total": 8925019,
+    "files": 53,
+    "changed": 0,
+    "duration": 0.8,
+    "snapshot": "d1a781a1cf7dd4296b50533191812b30e429074732230ce1d9d7967ca3b4bc33",
+    "snapshots": 1,
+    "forgotten": 1,
+    "warnings": [],
+    "error": "",
+    "by": "maintenance"
+   },
+   "lastOK": "2026-11-09T10:36:29+05:30",
+   "next": "2026-11-10T10:35:00+05:30",
+   "timer": true
+  },
+  {
+   "id": "b3",
+   "folders": [
+    "/srv/bk-test/db"
+   ],
+   "target": {
+    "kind": "disk",
+    "where": "/mnt/backup/bytesweep-test-b3"
+   },
+   "keep": {
+    "daily": 7,
+    "weekly": 4,
+    "monthly": 6
+   },
+   "schedule": {
+    "every": "",
+    "day": "",
+    "at": "",
+    "withMaintenance": true,
+    "when": "with the maintenance plan"
+   },
+   "created": "2026-11-09T10:36:18+05:30",
+   "keys": [],
+   "sameDisk": true,
+   "last": {
+    "id": "b3",
+    "time": "2026-11-09T10:36:34+05:30",
+    "ok": true,
+    "added": 3001543,
+    "total": 3000000,
+    "files": 1,
+    "changed": 1,
+    "duration": 0.8,
+    "snapshot": "643f6641e0ea94faaac0a20eb47809f2d11a2a5a0168a4fa521015af40fddeeb",
+    "snapshots": 1,
+    "forgotten": 0,
+    "warnings": [],
+    "error": "",
+    "by": "maintenance"
+   },
+   "lastOK": "2026-11-09T10:36:34+05:30",
+   "next": "",
+   "timer": false
+  }
+ ],
+ "resticInstalled": true,
+ "resticVersion": "0.18.1"
+}

@@ -1,0 +1,225 @@
+[
+ {
+  "id": "memory.oom-kills",
+  "area": "Memory",
+  "level": "bad",
+  "title": "Out of memory killed: dotnet 31×, rootlesskit 26×, buildkitd 14×, containerd-star 9×, containerd 8×, (containerd-ro 6×, containerd-root 4×, systemd 4×, exe 3×, grep 2×, realpath 2×, (sd-pam 1×, 9 1×, dbus-daemon 1× (7 days)",
+  "fix": "Add memory or swap (Prevent tab), or limit that service with MemoryMax=",
+  "about": "The system ran out of memory and stopped a program to keep itself running. That program may have been your website, your database or a job halfway through.",
+  "risk": "It will happen again at the next busy moment, and the program that is stopped may not come back by itself.",
+  "steps": [
+   "See which program was stopped: it is named above.",
+   "Give the server more memory, or add a swap file (the Prevent screen can add one).",
+   "If one program keeps growing, put a memory limit on it (MemoryMax= in its service)."
+  ]
+ },
+ {
+  "id": "services.failed",
+  "area": "Services",
+  "level": "bad",
+  "title": "shop-worker.service has failed: shop-worker.service: Failed with result 'exit-code'.",
+  "fix": "systemctl restart shop-worker.service",
+  "seeWhy": "journalctl -u shop-worker.service -n 50",
+  "about": "A service is a program the server keeps running in the background, such as a website or a database. This one has stopped with an error.",
+  "risk": "Whatever it does, such as serving a site or running jobs, isn't happening until it runs again.",
+  "steps": [
+   "Read its last lines of log to see why it stopped.",
+   "Fix what the log points at, such as a wrong setting or a full disk.",
+   "Then restart it, and check it stays running."
+  ],
+  "action": {
+   "label": "Restart shop-worker",
+   "args": [
+    "services",
+    "restart",
+    "shop-worker.service"
+   ]
+  }
+ },
+ {
+  "id": "backups.result-unknown",
+  "area": "Backups",
+  "level": "warn",
+  "title": "Timeshift last started just now (/etc/timeshift/timeshift.json), but nothing here says whether it worked",
+  "fix": "See its backups: sudo timeshift --list",
+  "seeWhy": "ls /var/log/timeshift",
+  "about": "A backup job starts, but nothing on this server says whether it finished well.",
+  "risk": "Backups may have been failing quietly for a long time.",
+  "steps": [
+   "List the backups the tool has made: the command is above.",
+   "Make the job write a log, so failures show."
+  ]
+ },
+ {
+  "id": "backups.switched-off",
+  "area": "Backups",
+  "level": "warn",
+  "title": "Timeshift: its schedule (Timeshift settings, Schedule) is switched off, so no new backups start",
+  "fix": "Switch on its schedule (Timeshift settings, Schedule)",
+  "about": "The backup tool is installed, but the schedule that starts it is switched off, so no new backups are made.",
+  "risk": "Backups stop getting newer, and nobody notices until they are needed.",
+  "steps": [
+   "Switch the schedule back on: the command is above."
+  ]
+ },
+ {
+  "id": "backups.never-finished",
+  "area": "Backups",
+  "level": "warn",
+  "title": "backup job is set up (bytesweep-backup-b1.timer), but no finished backup was found",
+  "fix": "Check the backup job's log",
+  "seeWhy": "journalctl -u bytesweep-backup-b1.service -n 50",
+  "about": "A backup tool is set up here, but no finished backup was found.",
+  "risk": "There may be nothing to bring back if data is lost.",
+  "steps": [
+   "Run the backup once by hand and watch that it finishes.",
+   "List the backups the tool has made: the command is above."
+  ]
+ },
+ {
+  "id": "backups.same-disk",
+  "area": "Backups",
+  "level": "warn",
+  "title": "Backups are on the system disk: a disk failure loses both",
+  "fix": "Copy them to another machine",
+  "about": "The backups sit on the same disk as the data they protect.",
+  "risk": "If that disk breaks, the data and its backups are lost together.",
+  "steps": [
+   "Copy the backups to another machine or to cloud storage.",
+   "Or point the backup tool at a place off this server."
+  ]
+ },
+ {
+  "id": "disk.filling-soon",
+  "area": "Disks",
+  "level": "warn",
+  "title": "/ will be full in about 13 days (around 22 Nov) at this rate; /var/lib/docker grows 1.1 GB a day",
+  "fix": "bsweep clean --safe --dry-run shows what can go",
+  "seeWhy": "bsweep forecast --disk /",
+  "about": "At the pace this disk has filled over the last days, it runs out of room soon. The date comes from what the monitor and the daily record wrote down, so it moves if the pace changes.",
+  "risk": "When a disk is full, databases stop saving, websites show errors, logs stop and updates fail, often all at once.",
+  "steps": [
+   "See what grows and how fast: bsweep forecast names the folders.",
+   "Clean what is safe to clean: the button shows what would go before anything is cleaned.",
+   "If the growth is real data, such as a database or uploads, give the disk more room or move that folder to a larger disk.",
+   "To be told before it gets close: bsweep alerts add forecast --days 7."
+  ],
+  "action": {
+   "label": "Clean containers' safe items",
+   "args": [
+    "clean",
+    "--group",
+    "containers",
+    "--safe"
+   ]
+  }
+ },
+ {
+  "id": "memory.no-swap",
+  "area": "Memory",
+  "level": "warn",
+  "title": "No swap: one memory spike kills a process",
+  "fix": "Prevent tab can add a swap file",
+  "about": "Swap is room on the disk the system can borrow when memory runs out. This server has none, so there is no cushion at all.",
+  "risk": "One sudden spike in memory use makes the system stop a program at once.",
+  "steps": [
+   "Add a swap file: the Prevent screen does it in one step.",
+   "A swap file of 1 to 2 GB is enough for most small servers."
+  ]
+ },
+ {
+  "id": "security.no-firewall",
+  "area": "Security",
+  "level": "warn",
+  "title": "No firewall is active",
+  "fix": "sudo ufw allow OpenSSH \u0026\u0026 sudo ufw enable (allow SSH first). A cloud firewall counts too",
+  "about": "A firewall decides which connections from the internet may reach this server. None is switched on here.",
+  "risk": "Any program that opens a port, even by mistake, can be reached by anyone.",
+  "steps": [
+   "Allow SSH first, so you don't lock yourself out.",
+   "Then switch the firewall on: the command is above.",
+   "A firewall at your cloud provider counts too, if you use one."
+  ]
+ },
+ {
+  "id": "security.ssh-guessing",
+  "area": "Security",
+  "level": "warn",
+  "title": "Nothing blocks repeated SSH guesses",
+  "fix": "sudo apt-get install fail2ban, then sudo systemctl enable --now fail2ban",
+  "about": "Nothing slows down people who keep guessing SSH passwords. A tool like fail2ban blocks an address after a few wrong tries.",
+  "risk": "Guessing can go on day and night until a password is found.",
+  "steps": [
+   "Install fail2ban and switch it on: the command is above.",
+   "Better still, log in with keys only, so there is no password to guess."
+  ]
+ },
+ {
+  "id": "updates.waiting",
+  "area": "Updates",
+  "level": "warn",
+  "title": "66 updates waiting",
+  "fix": "sudo bsweep updates install",
+  "about": "Newer versions of installed software are waiting. None is marked as a security fix, so this is less urgent.",
+  "risk": "Bugs that are already fixed stay, and the longer updates wait the bigger the next jump is.",
+  "steps": [
+   "Install them at a quiet time: ByteSweep shows exactly what it will run first.",
+   "If the system then says a restart is needed, restart when it suits you."
+  ],
+  "action": {
+   "label": "Install updates",
+   "args": [
+    "updates",
+    "install"
+   ]
+  }
+ },
+ {
+  "id": "system.restart-needed",
+  "area": "Updates",
+  "level": "warn",
+  "title": "A reboot is waiting: installed fixes aren't active yet",
+  "fix": "Reboot at a quiet time",
+  "about": "Updates were installed that only take effect after a restart. Until then the old, unfixed versions are still running.",
+  "risk": "The holes the updates close stay open until the machine restarts.",
+  "steps": [
+   "Pick a quiet time, when few people use it.",
+   "Restart it: ByteSweep shows what it will do first, and bsweep reboot --at picks a time instead.",
+   "Check your sites and services are running again afterwards."
+  ],
+  "action": {
+   "label": "Restart the server",
+   "args": [
+    "reboot",
+    "--now"
+   ]
+  }
+ },
+ {
+  "id": "backups.ok",
+  "area": "Backups",
+  "level": "ok",
+  "title": "Snapper: last good backup 10 minutes ago (snapperd.service)",
+  "about": "Backups are being made, and the newest is recent.",
+  "risk": "",
+  "steps": []
+ },
+ {
+  "id": "clock.ok",
+  "area": "Clock",
+  "level": "ok",
+  "title": "The clock is kept right by chronyc",
+  "about": "The clock is kept in step with a time server.",
+  "risk": "",
+  "steps": []
+ },
+ {
+  "id": "names.ok",
+  "area": "Names",
+  "level": "ok",
+  "title": "Names resolve",
+  "about": "Names like example.com turn into addresses quickly.",
+  "risk": "",
+  "steps": []
+ }
+]
