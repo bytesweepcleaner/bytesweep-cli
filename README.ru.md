@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>Почему диск заполнен? Узнайте причину и безопасно освободите место на диске в любом терминале.</b><br>
-  Бесплатный анализатор дискового пространства и очистка диска с открытым исходным кодом для Linux-серверов, Mac, Windows и BSD.
+  Бесплатный анализатор дискового пространства и очистка диска для Linux-серверов, Mac, Windows и BSD.
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="Релиз" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="Лицензия: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="Тесты" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22+" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="Скачать" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="Linux, macOS, Windows, BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="Звёзды" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ ByteSweep CLI (`bsweep`) показывает, **почему диск запо�
 всё ещё открыты, иноды и снапшоты, и объясняет ответ простыми словами. Перед каждой очисткой показывается точная
 команда, рискованные действия ждут вашей проверки, а удалённые файлы 7 дней лежат в Undo (отмена).
 
-Это один статический файл: без среды выполнения, без агента, ничего не остаётся запущенным. **Бесплатно и с открытым исходным кодом (GPL-3.0):
+Это один статический файл: без среды выполнения, без агента, ничего не остаётся запущенным. **Бесплатно:
 все команды, на любой машине, без лицензии, ключа и пробного периода.**
 
 ## Возможности
@@ -78,11 +75,7 @@ Windows (PowerShell от имени администратора):
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-Оба скрипта проверяют подписанные контрольные суммы до установки. С Go 1.22 или новее можно также собрать программу самостоятельно:
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+Оба скрипта проверяют подписанные контрольные суммы до установки.
 
 `sudo bsweep update` устанавливает следующий релиз. Все системы и процессоры: [docs/platforms.md](docs/platforms.md).
 
@@ -262,7 +255,7 @@ CLI бесплатна и останется бесплатной. Для тел
 и работающее ядро, никогда не выбирает снапшот за вас и никогда не меняет настройки SSH или файрвола.
 
 **Это бесплатно? Он куда-нибудь отправляет данные?**
-Бесплатно и с открытым исходным кодом под GPL-3.0, без аккаунта, аналитики и пробного периода. В сеть он выходит, только когда вы просите:
+Бесплатно, без аккаунта, аналитики и пробного периода. В сеть он выходит, только когда вы просите:
 `bsweep update`, оповещения в добавленные вами места и SSH для fleet, копирования и синхронизации.
 
 ## Конфиденциальность
@@ -270,17 +263,6 @@ CLI бесплатна и останется бесплатной. Для тел
 Никакой аналитики и никакого аккаунта. Ничего о вас и ваших файлах не покидает машину. bsweep выходит
 в сеть, только когда вы просите: `bsweep update` скачивает с bytesweep.app (и сначала проверяет
 подпись), оповещения отправляются только в добавленные вами места, а fleet, копирование и синхронизация используют ваш собственный SSH.
-
-## Сборка и тесты
-
-Нужен Go 1.22 или новее: `go test ./...`, затем `go build -o bsweep ./cmd/bsweep`.
-`VERSION=1.0.1 ./build.sh` собирает все релизные сборки. См. [bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) и
-[SECURITY.md](SECURITY.md).
-
-## Лицензия
-
-GPL-3.0: можно свободно использовать, изменять и распространять. Изменённая копия, которую вы передаёте другим, должна оставаться открытой
-под той же лицензией. См. [LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE).
 
 ---
 

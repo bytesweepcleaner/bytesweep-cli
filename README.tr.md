@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>Disk neden dolu? Nedenini öğrenin ve disk alanını her terminalde güvenle boşaltın.</b><br>
-  Linux sunucular, Mac, Windows ve BSD'ler için ücretsiz, açık kaynaklı bir disk alanı analiz ve temizleme aracı.
+  Linux sunucular, Mac, Windows ve BSD'ler için ücretsiz bir disk alanı analiz ve temizleme aracı.
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="Sürüm" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="Lisans: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="Testler" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22+" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="İndir" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="Linux, macOS, Windows, BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="Yıldızlar" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ ByteSweep CLI (`bsweep`) size **diskin neden dolu olduğunu** söyler ve alanı 
 dosyalar, inode'lar ve snapshot'ları okur ve cevabı sade bir dille açıklar. Her temizlik önce tam komutu
 gösterir, riskli olanlar sizin göz atmanızı bekler ve kaldırdığınız dosyalar 7 gün boyunca Undo'ya (geri al) gider.
 
-Tek bir statik dosyadır: runtime yok, ajan yok, arkada çalışan hiçbir şey kalmaz. **Ücretsiz ve açık kaynak (GPL-3.0):
+Tek bir statik dosyadır: runtime yok, ajan yok, arkada çalışan hiçbir şey kalmaz. **Ücretsiz:
 her komut, her makinede, lisans, anahtar veya deneme süresi olmadan.**
 
 ## Özellikler
@@ -78,11 +75,7 @@ Windows (yönetici olarak PowerShell):
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-İkisi de herhangi bir şey kurmadan önce imzalı checksum'ları doğrular. Go 1.22 veya daha yenisiyle kendiniz de derleyebilirsiniz:
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+İkisi de herhangi bir şey kurmadan önce imzalı checksum'ları doğrular.
 
 `sudo bsweep update` bir sonraki sürümü getirir. Tüm sistemler ve işlemciler: [docs/platforms.md](docs/platforms.md).
 
@@ -262,7 +255,7 @@ bekler ve taramalar düşük CPU ve boşta disk önceliğiyle çalışır. Verit
 veya çalışan çekirdeği asla silmez, sizin yerinize asla snapshot seçmez ve SSH ya da güvenlik duvarı ayarlarını asla değiştirmez.
 
 **Ücretsiz mi? Bir yere veri gönderiyor mu?**
-GPL-3.0 altında ücretsiz ve açık kaynak; hesap, analitik veya deneme süresi yok. Yalnızca siz istediğinizde internete çıkar:
+Ücretsiz; hesap, analitik veya deneme süresi yok. Yalnızca siz istediğinizde internete çıkar:
 `bsweep update`, eklediğiniz yerlere giden uyarılar ve fleet, kopyalama ve senkronizasyon için SSH.
 
 ## Gizlilik
@@ -270,17 +263,6 @@ GPL-3.0 altında ücretsiz ve açık kaynak; hesap, analitik veya deneme süresi
 Analitik yok, hesap yok. Sizinle veya dosyalarınızla ilgili hiçbir şey makineden çıkmaz. bsweep yalnızca siz
 istediğinizde internete çıkar: `bsweep update` bytesweep.app'ten indirir (ve önce imzayı
 doğrular), uyarılar yalnızca eklediğiniz yerlere gider; fleet, kopyalama ve senkronizasyon kendi SSH'ınızı kullanır.
-
-## Derleme ve test
-
-Go 1.22 veya daha yenisi gerekir: `go test ./...`, ardından `go build -o bsweep ./cmd/bsweep`.
-`VERSION=1.0.1 ./build.sh` tüm sürüm derlemelerini üretir. Bkz. [bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) ve
-[SECURITY.md](SECURITY.md).
-
-## Lisans
-
-GPL-3.0: kullanmak, değiştirmek ve paylaşmak serbesttir. Başkalarına verdiğiniz değiştirilmiş bir kopya aynı lisans
-altında açık kalmalıdır. Bkz. [LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE).
 
 ---
 

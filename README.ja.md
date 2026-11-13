@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>ディスク容量不足の原因を突き止め、どのターミナルでも安全に空き容量を増やせます。</b><br>
-  Linuxサーバー、Mac、Windows、BSD に対応した、無料・オープンソースのディスク容量分析＆クリーンアップツールです。
+  Linuxサーバー、Mac、Windows、BSD に対応した、無料のディスク容量分析＆クリーンアップツールです。
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="リリース" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="ライセンス: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="テスト" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22 以降" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="ダウンロード" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="Linux、macOS、Windows、BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="スター" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ ByteSweep CLI（`bsweep`）は、**ディスクが満杯になった理由**を�
 inode、スナップショットを読み取り、その答えをわかりやすい言葉で説明します。どのクリーンアップも実行前に正確なコマンドを表示し、
 リスクのあるものは確認を待ち、削除したファイルは 7 日間 Undo（元に戻す）に残ります。
 
-単一の静的バイナリです。ランタイムもエージェントも不要で、常駐するものも残りません。**無料かつオープンソース（GPL-3.0）：
+単一の静的バイナリです。ランタイムもエージェントも不要で、常駐するものも残りません。**無料：
 すべてのコマンドを、すべてのマシンで、ライセンスやキー、試用期間なしで使えます。**
 
 ## 主な機能
@@ -78,11 +75,7 @@ Windows（管理者として PowerShell を実行）：
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-どちらも、インストール前に署名付きチェックサムを検証します。Go 1.22 以降があれば、自分でビルドすることもできます：
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+どちらも、インストール前に署名付きチェックサムを検証します。
 
 `sudo bsweep update` で次のリリースを取得できます。対応 OS とプロセッサーの一覧：[docs/platforms.md](docs/platforms.md)。
 
@@ -262,7 +255,7 @@ Mac や Windows のコマンドラインからでも短い名前で使えます�
 スナップショットを勝手に選ぶことも、SSH やファイアウォールの設定を変更することもありません。
 
 **無料ですか？データをどこかに送信しますか？**
-GPL-3.0 の無料オープンソースで、アカウント、アナリティクス、試用期間はありません。オンラインになるのは依頼したときだけです：
+無料で、アカウント、アナリティクス、試用期間はありません。オンラインになるのは依頼したときだけです：
 `bsweep update`、自分で追加した通知先へのアラート、fleet・copy・sync のための SSH。
 
 ## プライバシー
@@ -270,17 +263,6 @@ GPL-3.0 の無料オープンソースで、アカウント、アナリティク
 アナリティクスもアカウントもありません。あなたやあなたのファイルに関する情報がマシンの外に出ることはありません。bsweep が
 オンラインになるのは依頼したときだけです。`bsweep update` は bytesweep.app からダウンロードし（先に署名を
 検証します）、アラートは追加した通知先にのみ送られ、fleet・copy・sync は自分の SSH を使います。
-
-## ビルドとテスト
-
-Go 1.22 以降が必要です：`go test ./...`、次に `go build -o bsweep ./cmd/bsweep`。
-`VERSION=1.0.1 ./build.sh` ですべてのリリースビルドを作成します。[bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) と
-[SECURITY.md](SECURITY.md) を参照してください。
-
-## ライセンス
-
-GPL-3.0：自由に使用、改変、共有できます。改変したものを他者に配布する場合は、同じライセンスの下で
-オープンソースのままにする必要があります。[LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE) を参照してください。
 
 ---
 

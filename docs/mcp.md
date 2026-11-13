@@ -8,7 +8,7 @@ clean it, with the same rules as the command line and the app.
 - **Transport:** stdio, JSON-RPC 2.0, one message a line. Protocol `2025-06-18`; `2024-11-05`,
   `2025-03-26` and `2025-11-25` are answered too. Methods: `initialize`, `ping`, `tools/list`,
   `tools/call`, `notifications/cancelled` (stops a running look); `resources/list` and
-  `prompts/list` answer empty lists. Hand-written (`internal/mcp`), no new dependency.
+  `prompts/list` answer empty lists.
 - **Free.** Changes need administrator rights, exactly as `bsweep` on the command line.
 
 ## Set it up
@@ -155,7 +155,7 @@ The ecosystem's lifecycle, with the person in the middle:
 1. **Discover / analyze**: looks (`summary`, `why`, `clean_list`...). Nothing changes.
 2. **Plan / preview**: a `plan_*` tool runs the command without `--yes`, which in bsweep is
    always a preview (`"dryRun": true`). Before that, every path in `plan_rm` is resolved (links
-   in its folder followed) and checked with `internal/undo`'s protected-path rules, the same as
+   in its folder followed) and checked with the same protected-path rules as
    `bsweep rm`: system folders, databases' data, container stores, mounted disks, the Undo store
    and the config's `keep` list are refused before any plan exists. Database internals are never
    removed as files; `databases` only explains each engine's own commands.
@@ -197,8 +197,6 @@ bsweep log:
   mcp  undo restore  /home/alex.guest/agent-mcp/real/old-export.log
   mcp  mcp           plan-c577...: bsweep undo restore 18e647d970411d3a --json --yes
 ```
-
-`go test ./cmd/bsweep -run MCP` drives the server over in-memory pipes the same way; run as root it also does the real clean to Undo and the restore.
 
 ### Second session (2026-11-09, after forecast, snapshots, backup and fleet were merged)
 

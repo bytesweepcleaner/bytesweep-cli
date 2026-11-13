@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>Why is my disk full? Find out, and free the space safely, in any terminal.</b><br>
-  A free, open-source disk space analyzer and cleaner for Linux servers, Mac, Windows and the BSDs.
+  A free disk space analyzer and cleaner for Linux servers, Mac, Windows and the BSDs.
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="Release" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="Licence: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22+" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="Download" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="Linux, macOS, Windows, BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ It reads `df`, `du`, Docker, the systemd journal, package caches, old kernels, d
 still open, inodes and snapshots, and explains the answer in plain words. Every cleanup shows the exact
 command first, the risky ones wait for a look, and files you remove go to Undo for 7 days.
 
-It is one static file: no runtime, no agent, nothing left running. **Free and open source (GPL-3.0):
+It is one static file: no runtime, no agent, nothing left running. **Free:
 every command, on every machine, with no licence, key or trial.**
 
 ## Features
@@ -78,11 +75,7 @@ Windows (PowerShell as administrator):
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-Both check the signed checksums before anything is installed. With Go 1.22 or newer you can also build it yourself:
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+Both check the signed checksums before anything is installed.
 
 `sudo bsweep update` gets the next release. Every system and processor: [docs/platforms.md](docs/platforms.md).
 
@@ -262,7 +255,7 @@ for 7 days, and scans run at low CPU and idle disk priority. It never removes da
 or the running kernel, never picks a snapshot for you, and never changes SSH or firewall settings.
 
 **Is it free? Does it send data anywhere?**
-Free and open source under GPL-3.0, with no account, analytics or trial. It goes online only when you ask:
+Free, with no account, analytics or trial. It goes online only when you ask:
 `bsweep update`, alerts to the places you add, and SSH for fleet, copy and sync.
 
 ## Privacy
@@ -270,17 +263,6 @@ Free and open source under GPL-3.0, with no account, analytics or trial. It goes
 No analytics and no account. Nothing about you or your files leaves the machine. bsweep goes
 online only when you ask it to: `bsweep update` downloads from bytesweep.app (and checks the
 signature first), alerts go only to the places you add, and fleet, copy and sync use your own SSH.
-
-## Build and test
-
-Needs Go 1.22 or newer: `go test ./...`, then `go build -o bsweep ./cmd/bsweep`.
-`VERSION=1.0.1 ./build.sh` makes every release build. See [bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) and
-[SECURITY.md](SECURITY.md).
-
-## Licence
-
-GPL-3.0: free to use, change and share. A changed copy you give to others must stay open
-under the same licence. See [LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE).
 
 ---
 

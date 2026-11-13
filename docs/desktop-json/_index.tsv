@@ -214,7 +214,7 @@ snapshots.resize.notwindows	3	empty	sudo -n bsweep snapshots resize --max 5% --j
 snapshots.after	0	yes	sudo -n bsweep snapshots --json	
 clean.list.snapshots	0	yes	sudo -n bsweep clean --list --group snapshots --json	
 snapshots.mac	0	yes	bsweep snapshots --json (macOS 27 on the Mac mini, no sudo: only the update snapshot)	
-snapshots.windows-sample	0	yes	(not captured: the parser over internal/snapshots/testdata/windows-script.json, BSWEEP_WINDOWS_SAMPLE=FILE go test -run WindowsSample ./internal/snapshots)	
+snapshots.windows-sample	0	yes	(not captured on a real machine: a Windows sample read by the same parser)	
 backup	0	yes	sudo -n bsweep backup --json	
 backup.run.done	0	yes	sudo -n bsweep backup run b1 --json --yes	
 backup.run.all.done	0	yes	sudo -n bsweep backup run --json --yes	

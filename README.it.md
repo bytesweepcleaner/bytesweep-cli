@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>Perché il mio disco è pieno? Scoprilo e libera spazio in sicurezza, in qualsiasi terminale.</b><br>
-  Un analizzatore e pulitore dello spazio su disco gratuito e open source per server Linux, Mac, Windows e i BSD.
+  Un analizzatore e pulitore dello spazio su disco gratuito per server Linux, Mac, Windows e i BSD.
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="Versione" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="Licenza: GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="Test" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22+" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="Scarica" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="Linux, macOS, Windows, BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="Stelle" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ Legge `df`, `du`, Docker, il journal di systemd, le cache dei pacchetti, i kerne
 ancora aperti, gli inode e gli snapshot, e ti spiega la risposta in parole semplici. Ogni pulizia mostra prima il comando
 esatto, quelle rischiose aspettano che tu le controlli, e i file che rimuovi finiscono in Undo (annulla) per 7 giorni.
 
-È un unico file statico: niente runtime, niente agent, niente che resti in esecuzione. **Gratuito e open source (GPL-3.0):
+È un unico file statico: niente runtime, niente agent, niente che resti in esecuzione. **Gratuito:
 tutti i comandi, su ogni macchina, senza licenza, chiave o periodo di prova.**
 
 ## Funzionalità
@@ -78,11 +75,7 @@ Windows (PowerShell come amministratore):
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-Entrambi verificano i checksum firmati prima di installare qualsiasi cosa. Con Go 1.22 o successivo puoi anche compilarlo da te:
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+Entrambi verificano i checksum firmati prima di installare qualsiasi cosa.
 
 `sudo bsweep update` scarica la release successiva. Tutti i sistemi e i processori: [docs/platforms.md](docs/platforms.md).
 
@@ -262,7 +255,7 @@ per 7 giorni, e le scansioni girano con CPU bassa e priorità disco idle. Non ri
 o il kernel in esecuzione, non sceglie mai uno snapshot al posto tuo e non modifica mai le impostazioni di SSH o del firewall.
 
 **È gratuito? Invia dati da qualche parte?**
-Gratuito e open source con licenza GPL-3.0, senza account, analytics o periodo di prova. Va online solo quando lo chiedi tu:
+Gratuito, senza account, analytics o periodo di prova. Va online solo quando lo chiedi tu:
 `bsweep update`, gli avvisi verso le destinazioni che aggiungi e SSH per fleet, copy e sync.
 
 ## Privacy
@@ -270,17 +263,6 @@ Gratuito e open source con licenza GPL-3.0, senza account, analytics o periodo d
 Niente analytics e niente account. Nulla su di te o sui tuoi file lascia la macchina. bsweep va
 online solo quando glielo chiedi: `bsweep update` scarica da bytesweep.app (e prima verifica la
 firma), gli avvisi vanno solo alle destinazioni che aggiungi, e fleet, copy e sync usano il tuo SSH.
-
-## Compilazione e test
-
-Serve Go 1.22 o successivo: `go test ./...`, poi `go build -o bsweep ./cmd/bsweep`.
-`VERSION=1.0.1 ./build.sh` crea tutte le build della release. Vedi [bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) e
-[SECURITY.md](SECURITY.md).
-
-## Licenza
-
-GPL-3.0: libero da usare, modificare e condividere. Una copia modificata che distribuisci ad altri deve restare aperta
-con la stessa licenza. Vedi [LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE).
 
 ---
 

@@ -19,14 +19,11 @@
 
 <p align="center">
   <b>磁碟空間不足？磁碟為什麼滿了？在任何終端機裡找出原因，並安全地清理磁碟空間。</b><br>
-  一套免費、開放原始碼的磁碟空間分析與清理工具，適用於 Linux 伺服器、Mac、Windows 和 BSD 系統。
+  一套免費的磁碟空間分析與清理工具，適用於 Linux 伺服器、Mac、Windows 和 BSD 系統。
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="發行版本" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE"><img alt="授權條款：GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-blue?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/actions/workflows/test.yml"><img alt="測試" src="https://img.shields.io/github/actions/workflow/status/bytesweepcleaner/bytesweep-cli/test.yml?branch=main&label=tests&style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/go.mod"><img alt="Go 1.22+" src="https://img.shields.io/badge/go-1.22%2B-00ADD8?style=flat-square"></a>
+  <a href="https://bytesweep.app/cli"><img alt="下載" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
   <a href="docs/platforms.md"><img alt="支援 Linux、macOS、Windows、BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
   <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="星星數" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
 </p>
@@ -40,7 +37,7 @@ ByteSweep CLI（`bsweep`）告訴你**磁碟為什麼滿了**，並在**不破�
 inode 和快照，再用淺顯易懂的話說明原因。每次清理都會先顯示確切的指令，有風險的項目會等你先看過，
 你刪除的檔案會進入 Undo（復原）保留 7 天。
 
-它只是一個靜態檔案：不需要執行環境，沒有代理程式，也不會留下任何常駐程式。**免費且開放原始碼（GPL-3.0）：
+它只是一個靜態檔案：不需要執行環境，沒有代理程式，也不會留下任何常駐程式。**免費：
 每個指令、每台電腦都能用，不需要授權、金鑰或試用。**
 
 ## 功能
@@ -78,11 +75,7 @@ Windows（以系統管理員身分執行 PowerShell）：
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-兩種方式都會在安裝任何東西之前驗證已簽章的檢查碼。如果你有 Go 1.22 或更新版本，也可以自行建置：
-
-```sh
-go install github.com/bytesweepcleaner/bytesweep-cli/cmd/bsweep@latest
-```
+兩種方式都會在安裝任何東西之前驗證已簽章的檢查碼。
 
 `sudo bsweep update` 用來取得下一個版本。支援的所有系統和處理器：[docs/platforms.md](docs/platforms.md)。
 
@@ -261,7 +254,7 @@ volume 永遠不會被清除，因為一個 volume 可能就是一個資料庫�
 也絕不變更 SSH 或防火牆設定。
 
 **它是免費的嗎？會把資料傳送到別處嗎？**
-免費且開放原始碼，採用 GPL-3.0 授權，不需要帳號，沒有分析追蹤，也沒有試用期。只有在你要求時它才會連網：
+免費，不需要帳號，沒有分析追蹤，也沒有試用期。只有在你要求時它才會連網：
 `bsweep update`、傳送到你所新增位置的警示，以及 fleet、copy 和 sync 所用的 SSH。
 
 ## 隱私權
@@ -269,17 +262,6 @@ volume 永遠不會被清除，因為一個 volume 可能就是一個資料庫�
 沒有分析追蹤，也不需要帳號。關於你和你的檔案的任何資訊都不會離開這台電腦。bsweep 只在你要求時
 才連網：`bsweep update` 從 bytesweep.app 下載（並先驗證簽章），警示只傳送到你新增的位置，
 fleet、copy 和 sync 使用你自己的 SSH。
-
-## 建置與測試
-
-需要 Go 1.22 或更新版本：先執行 `go test ./...`，再執行 `go build -o bsweep ./cmd/bsweep`。
-`VERSION=1.0.1 ./build.sh` 會產生所有發行版本的建置。請參閱 [bytesweep-cli](https://github.com/bytesweepcleaner/bytesweep-cli) 和
-[SECURITY.md](SECURITY.md)。
-
-## 授權條款
-
-GPL-3.0：可以自由使用、修改和分享。你提供給他人的修改版本必須以相同的授權條款維持開放原始碼。
-請參閱 [LICENSE](https://github.com/bytesweepcleaner/bytesweep-cli/blob/main/LICENSE)。
 
 ---
 

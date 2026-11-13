@@ -2,7 +2,7 @@
 
 ## 1.0.1 (2026-11)
 
-- ByteSweep CLI is now free and open source (GPL-3.0). Every command works on every machine,
+- ByteSweep CLI is now free. Every command works on every machine,
   with no licence, key or trial.
 - `licence`, `activate` and `deactivate` remain only to say so; they change nothing.
 - Exit code 4 ("needs a licence") is no longer used.

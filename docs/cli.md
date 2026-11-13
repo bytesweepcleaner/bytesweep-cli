@@ -13,7 +13,7 @@ Run `bsweep help COMMAND` or `bsweep COMMAND --help` for examples. Flags work be
 | 4 | Not used since 1.0.1 (it was "needs a licence"; ByteSweep CLI is free now) |
 | 5 | Needs root (or Run as administrator on Windows) |
 
-## Free and open source
+## Free
 
 Since 1.0.1 every command runs on every machine with no licence, no key and no trial. A
 change still needs root (or Run as administrator) where it touches the system, as before.

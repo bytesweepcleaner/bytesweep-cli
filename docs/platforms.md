@@ -1,9 +1,8 @@
 # Every system
 
 One program, `bsweep`, for every terminal: Linux, macOS, Windows, the BSDs, Solaris, illumos and AIX.
-It is one static file with no runtime. Releases are built by `build.sh` for 23 system and processor
-pairs; `bsweep update` and `bsweep connect` pick the right one by the names in
-`internal/platform` (`AssetName`).
+It is one static file with no runtime, built for 23 system and processor pairs; `bsweep update`
+and `bsweep connect` pick the right one.
 
 | System | Install | Run as administrator |
 |---|---|---|

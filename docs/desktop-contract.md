@@ -86,7 +86,7 @@ has an older ByteSweep CLI: update it (`sudo bsweep update`)".
 
 ## Free (1.0.1, 12 November 2026)
 
-ByteSweep CLI is free and open source from 1.0.1: no licence, no key, no trial, on any number
+ByteSweep CLI is free from 1.0.1: no licence, no key, no trial, on any number
 of machines. What changed for the desktop apps:
 
 - `version --json` has `"free": true` and `"licence": {"licensed": true, "free": true, "key": "not needed"}`, and no
@@ -213,7 +213,7 @@ Every health finding (`health --json`, `summary --json`'s `findings`) has:
 
 | Field | |
 |---|---|
-| `id` | stable kind, `area.kind`: `updates.security-waiting`, `updates.waiting`, `system.restart-needed`, `services.failed`, `services.crash-loop`, `security.ssh-root-password`, `security.no-firewall`, `backups.stale`, `backups.none`, `certificates.expired`, `drives.failing`, `clock.no-sync`, `names.not-resolving`, ... (about 60, all in `internal/health/explain.go`). Never holds anything about the machine |
+| `id` | stable kind, `area.kind`: `updates.security-waiting`, `updates.waiting`, `system.restart-needed`, `services.failed`, `services.crash-loop`, `security.ssh-root-password`, `security.no-firewall`, `backups.stale`, `backups.none`, `certificates.expired`, `drives.failing`, `clock.no-sync`, `names.not-resolving`, ... (about 60). Never holds anything about the machine |
 | `about` | 1 or 2 plain sentences: what it means, for someone who isn't a system administrator |
 | `risk` | 1 plain sentence: what can happen if it is left. `""` for `ok` findings |
 | `steps[]` | what a person can do, in order (may be `[]`) |
@@ -285,9 +285,8 @@ Each of `disks[]`:
 | `say` | one plain sentence: "/ will be full around 22 Nov at this rate, in about 14 days; /var/lib/docker grew 1.1 GB a day this week." / "/boot isn't filling up: about the same over the last 14 days." / "/ has an hour of history; a forecast needs 2 days." |
 
 Exit: 0 nothing fills within `--days`, 1 a disk does, 2 a disk fills within 3 days (the JSON is printed in every case).
-How the fixtures were made: `TestSeedRealHistory` in `internal/forecast` (BSWEEP_SEED_DIR,
-BSWEEP_SEED_DAYS, BSWEEP_SEED_DISK) writes 30 days of samples and a daily record that end at what
-the disks use now; the test binary ran in its own mount namespace with a copy of
+How the fixtures were made: 30 days of samples and a daily record were written to end at what
+the disks use now, in a separate mount namespace with a copy of
 `/var/lib/bytesweep` and `/etc/bytesweep`, so the VM's real files were not touched.
 ## Snapshots (2026-11-09)
 
