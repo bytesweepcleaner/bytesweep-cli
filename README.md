@@ -1,5 +1,5 @@
 <p align="center">
-  <b>English</b> ·
+  <a href="README.md"><strong>English</strong></a> ·
   <a href="README.de.md">Deutsch</a> ·
   <a href="README.es.md">Español</a> ·
   <a href="README.fr.md">Français</a> ·
@@ -15,79 +15,206 @@
   <a href="README.zh-Hant.md">繁體中文</a>
 </p>
 
-<h1 align="center">ByteSweep CLI: Disk Space Analyzer and Cleaner for Linux, Mac and Windows</h1>
+<h1 align="center">ByteSweep - CLI</h1>
 
 <p align="center">
-  <b>Why is my disk full? Find out, and free the space safely, in any terminal.</b><br>
-  A free disk space analyzer and cleaner for Linux servers, Mac, Windows and the BSDs.
+  <strong>STORAGE &amp; SYSTEMS MANAGEMENT</strong><br>
+  Understand your storage. Manage your systems. Clean with confidence.
 </p>
 
 <p align="center">
-  <a href="https://bytesweep.app/cli"><img alt="Download" src="https://img.shields.io/badge/download-bytesweep.app%2Fcli-2ea44f?style=flat-square"></a>
-  <a href="docs/platforms.md"><img alt="Linux, macOS, Windows, BSD" src="https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-555?style=flat-square"></a>
-  <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=flat-square"></a>
+  Cross-platform tools for storage analysis, safer cleanup, system diagnostics, and server operations.
 </p>
 
 <p align="center">
-  <img src="docs/images/bsweep-overview.png" width="900" alt="ByteSweep CLI in a terminal: a Linux server's root disk at 100%, with why it is full, what can be cleaned with no risk, and the Rescue key">
+  <a href="https://bytesweep.app/cli"><img alt="Download ByteSweep CLI" src="https://img.shields.io/badge/Download-ByteSweep%20CLI-1769AA?style=for-the-badge"></a>
+  <a href="docs/platforms.md"><img alt="Supported platforms" src="https://img.shields.io/badge/Platforms-Linux%20%7C%20macOS%20%7C%20Windows%20%7C%20BSD-475569?style=for-the-badge"></a>
+  <a href="https://github.com/bytesweepcleaner/bytesweep/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/bytesweepcleaner/bytesweep?style=for-the-badge&amp;logo=github&amp;color=111827"></a>
+  <a href="https://bytesweep.app/"><img alt="Product website" src="https://img.shields.io/badge/Website-bytesweep.app-0F766E?style=for-the-badge"></a>
 </p>
 
-ByteSweep CLI (`bsweep`) tells you **why a disk is full** and frees the space **without breaking anything**.
-It reads `df`, `du`, Docker, the systemd journal, package caches, old kernels, deleted files that are
-still open, inodes and snapshots, and explains the answer in plain words. Every cleanup shows the exact
-command first, the risky ones wait for a look, and files you remove go to Undo for 7 days.
+<p align="center">
+  <img src="docs/images/bsweep-overview.png" width="920" alt="ByteSweep CLI showing disk usage, cleanup opportunities, and system information in a terminal">
+</p>
 
-It is one static file: no runtime, no agent, nothing left running. **Free:
-every command, on every machine, with no licence, key or trial.**
+---
 
-## Features
+## Overview
 
-- **Why it's full, in one answer.** `bsweep why` names the folders, caches and logs that take the space, and the gap `du` can't see.
-- **"No space left on device" with free bytes.** Inodes per disk, and the folders with the most files.
-- **`df` and `du` disagree.** The Held screen lists deleted files still kept open, and the service that holds each one.
-- **Docker disk usage.** Build cache, unused images, stopped containers and container logs; volumes are never pruned.
-- **Logs.** Vacuum the systemd journal, clear rotated logs, empty huge live logs in place; schedule it daily, weekly or monthly.
-- **A full disk right now.** `bsweep rescue` frees just enough, safest first, and writes nothing to the full disk.
-- **Safe by design.** Exact commands shown first, `--dry-run` everywhere, Undo for 7 days, never your databases or the running kernel.
-- **Duplicates, big files, compress and archive.** Find copies by content, gzip old logs, move old projects to another disk and bring them back.
-- **Health, updates, ports and startup.** Failed services, out-of-memory kills, dying disks, expired certificates, backups that stopped, what listens on each port.
-- **Many servers.** `bsweep fleet` over SSH with nothing installed, `bsweep manage` for every server on one screen.
-- **AI assistants.** `bsweep mcp` is a Model Context Protocol server for Claude, Cursor, VS Code and any MCP client.
-- **Scripts and monitoring.** `--json` on almost every command, exit codes for `bsweep check`, webhooks.
+**ByteSweep CLI** (`bsweep`) is a free disk-space analyzer and cleanup tool for Linux, macOS, Windows, BSD, and other Unix-like systems.
+
+It helps answer a practical question: **why is this disk full, and what can be safely reclaimed?**
+
+ByteSweep examines filesystem usage, inodes, Docker storage, system logs, package caches, old kernels, deleted-but-open files, and snapshots. It brings the findings together and explains them in plain language. Before cleanup, it shows the commands it intends to run. Riskier actions require review, and supported file removals can be restored from Undo for seven days.
+
+The CLI is distributed as a static executable. It requires no language runtime and leaves no background agent running. It is free to use on every supported machine, with no licence key or trial.
+
+> **Repository focus:** This repository documents ByteSweep CLI (`bsweep`). ByteSweep is also available as desktop and mobile applications; see [ByteSweep applications](#bytesweep-applications).
+
+## What ByteSweep provides
+
+| Capability | What it helps you do |
+|---|---|
+| **Storage visibility** | Find large directories, caches, logs, snapshots, inode pressure, and space held by deleted-but-open files. |
+| **Controlled cleanup** | Preview cleanup commands, review risky items, use dry runs, and restore supported file removals for seven days. |
+| **Docker diagnostics** | Inspect build cache, unused images, stopped containers, and container logs without pruning volumes. |
+| **System health** | Review failed services, out-of-memory kills, disk health, certificates, backups, ports, and startup entries. |
+| **Server operations** | Inspect and manage multiple hosts over SSH, transfer files, and review fleet status. |
+| **Automation and integration** | Use JSON output, exit codes, webhooks, scripts, monitoring, and the MCP server. |
+
+## Designed around visibility and control
+
+ByteSweep is built to make system maintenance reviewable rather than opaque.
+
+- **See the proposed action first.** Cleanup screens show the commands that will be executed.
+- **Preview before changing anything.** Use `--dry-run` on supported cleanup commands.
+- **Keep a recovery window.** Supported file removals go to a local Undo area for seven days.
+- **Protect critical data.** Docker volumes are not pruned. ByteSweep does not remove databases or the running kernel.
+- **Keep server changes deliberate.** ByteSweep does not change SSH or firewall settings, and it does not restart the machine automatically.
+- **Run without a resident agent.** The CLI is a static executable and does not leave a background process running.
+
+The recovery model has important limits. See [How cleanup and Undo work](#how-cleanup-and-undo-work) before using cleanup commands on production systems.
 
 ## Install
 
-Linux, macOS and the BSDs:
+### Linux, macOS, and BSD
+
+Install using the official installer:
 
 ```sh
 curl -fsSL https://bytesweep.app/install-cli.sh | sudo sh
 ```
 
-Or run the same script straight from GitHub:
+Or run the installer directly from this repository:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/bytesweepcleaner/bytesweep/main/install-cli.sh | sudo sh
 ```
 
-Windows (PowerShell as administrator):
+### Windows
+
+Run PowerShell as Administrator:
 
 ```powershell
 irm https://bytesweep.app/install-cli.ps1 | iex
 ```
 
-Both check the signed checksums before anything is installed.
+The installers verify signed checksums before installing the executable.
 
-`sudo bsweep update` gets the next release. Every system and processor: [docs/platforms.md](docs/platforms.md).
+Update an installed CLI with:
 
-## Supported systems
+```sh
+sudo bsweep update
+```
 
-One static `bsweep` file for each system and processor: 23 builds in all. The install line picks the right one.
+For processor and operating-system details, see [Supported platforms](docs/platforms.md).
 
-| System | Processors | Versions |
+## Quick start
+
+```sh
+sudo bsweep                         # Open the full-screen interface
+bsweep why                          # Explain why the disk is full
+sudo bsweep rescue                  # Recover a critically full disk, safest actions first
+bsweep clean --list                 # List cleanup opportunities by group
+sudo bsweep clean --safe --dry-run  # Preview a safe cleanup without applying it
+bsweep dupes /srv --dry-run         # Find duplicate files and preview the proposed action
+bsweep check                        # Return a status code for monitoring and cron
+```
+
+### When a disk reaches 100%
+
+Run the rescue workflow:
+
+```sh
+sudo bsweep rescue
+```
+
+`bsweep rescue` works through the safest recovery opportunities first and aims to free enough space to make the system usable. It is designed not to write to the full disk while performing the rescue operation.
+
+## Core capabilities
+
+### 1. Storage analysis and diagnostics
+
+ByteSweep looks beyond a simple directory-size scan. It combines filesystem information with system-level sources that can explain why reported disk usage does not add up.
+
+- **Disk overview:** Identify the directories, caches, and logs consuming space.
+- **Filesystem and inode usage:** Inspect free bytes and inode availability per filesystem; locate directories containing large numbers of files.
+- **Deleted files still held open:** Find deleted files that continue to consume disk space, and identify the process or service holding them.
+- **Docker and virtualized environments:** Inspect build cache, unused images, stopped containers, and container logs across supported environments, including Docker, Colima, Lima, Podman, Multipass, Vagrant, minikube, and Android emulators.
+- **Snapshots and restore points:** Review storage held by Time Machine, Windows restore points, Timeshift, Snapper, ZFS, Btrfs, and LVM where supported.
+- **Reserved and hidden space:** Identify filesystem-reserved space, data outside a partition, and files hidden beneath mount points.
+- **Disk growth:** Review what has changed and estimate when a disk may fill at the observed growth rate.
+- **Large files and duplicates:** Find large files and identify duplicate content without counting hard links and clones as independent copies.
+
+### 2. Cleanup and recovery
+
+ByteSweep groups cleanup opportunities and shows the intended action before it runs.
+
+- **Package and application data:** Review package-manager caches, old packages, old kernels, unused applications, and application leftovers.
+- **Containers:** Review Docker and supported container-runtime data. Docker volumes are never pruned because they may contain databases.
+- **System logs:** Vacuum the systemd journal, clear rotated logs, and empty supported large live logs in place so the service can continue writing.
+- **Temporary and cached files:** Review temporary files, crash dumps, browser and application caches, old snaps, and other supported cleanup groups.
+- **Application and web-project leftovers:** Review old application releases, WordPress caches, Laravel logs, and PHP sessions. The old-release workflow keeps the live release and the three most recent releases.
+- **Snapshots:** Inspect supported snapshots and choose which items to remove. ByteSweep does not choose a snapshot on your behalf.
+- **Duplicates:** Find copies by content and choose which copy to retain.
+- **Tidy and organize:** Review desktop and download-folder clutter, including repeated downloads and old installers. Supported actions move files to Undo. Additional file workflows include organizing, renaming, and converting files, with the proposed action shown first.
+- **Compress:** Compress eligible older files where compression saves space, then verify the result before the original is moved to Undo.
+- **Archive:** Move older projects to another disk, verify files by checksum, and support bringing archived data back later.
+- **Scheduled log maintenance:** Schedule supported log cleanup daily, weekly, or monthly.
+- **Prevent recurring growth:** Configure supported journal limits and Docker log limits, record disk usage, and create a tested logrotate rule for logs that are not being rotated.
+
+### 3. System health and security posture
+
+The health and inspection tools surface operational issues without silently changing system configuration.
+
+- **Disk health:** Read available drive-health information and classify drives as Healthy, Worn, or Failing where supported.
+- **Service health:** Review failed services, crash loops, and out-of-memory events.
+- **Backups:** Check supported tools including restic, Borg, rsnapshot, duplicity, Timeshift, Snapper, vzdump, Time Machine, and Windows Backup; report when a backup last worked or failed. Repository passwords are not required for these checks.
+- **Certificates:** Inspect certificates used by nginx, Apache, Caddy, and Let's Encrypt renewal workflows.
+- **Ports and listeners:** Identify what is listening on a port and whether it is exposed to the network.
+- **Startup entries:** Review systemd, cron, launchd, and Windows services. Supported startup entries can be switched off and restored.
+- **Application permissions:** Read recorded camera, microphone, and screen permissions on supported platforms and point to the relevant system setting.
+- **Privacy traces:** Review shell and REPL history, recent files, previews, and editor backups. These items are presented for review.
+- **Sharing and exposure:** Inspect shared folders, file and screen sharing, SSH, remote desktop, open ports, Docker-published ports, and firewall status.
+- **Sleep and wake diagnostics:** Review sleep events, wake sources, and current wake blockers where supported.
+- **Updates:** Inspect updates through supported package and system tools, including apt, dnf, zypper, pacman, apk, snap, Flatpak, Homebrew, winget, macOS Software Update, and Windows Update. Security updates are shown first; ByteSweep can report package-lock holders and whether a restart is needed, but it does not restart the system automatically.
+- **Process control:** Request that a selected process close, allowing time for it to save. Protected processes such as PID 1, sshd, and the current shell are not stopped through this workflow; services are handled through their service manager.
+- **Platform security status:** On macOS and Windows, inspect available information about the firewall, FileVault or BitLocker, SIP, Gatekeeper, and antivirus status. ByteSweep provides guidance and commands; it does not change SSH or firewall settings.
+
+### 4. Server and fleet operations
+
+ByteSweep can work across multiple machines using SSH. Fleet operations do not require a separate ByteSweep installation on every remote host for the fleet inspection workflow.
+
+- **Fleet overview:** Use `bsweep fleet` to inspect multiple hosts over SSH.
+- **Server management:** Use `bsweep manage` to review servers from one screen, including live monitoring and supported bulk actions.
+- **Remote session:** Use `bsweep connect` to open the ByteSweep interface on a configured host.
+- **File transfer:** Use saved host names with `bsweep copy-to` to transfer files without repeatedly entering SSH connection details.
+- **Resumable transfer:** Resume interrupted transfers and send only changed data where supported.
+- **Sync with review:** Preview sync changes before applying them, resume interrupted transfers where supported, send only changed data where supported, and retain removed files for seven days where the Undo workflow applies. Sync refuses to empty a folder.
+- **Container environments:** Inspect supported Podman and Kubernetes node storage through the relevant container tooling.
+
+### 5. Automation, monitoring, and integrations
+
+ByteSweep supports operational workflows that need predictable command output.
+
+- **JSON output:** Use `--json` on supported commands for structured output.
+- **Exit codes:** Use `bsweep check` in monitoring, cron, CI, and automation workflows.
+- **Webhooks:** Send alerts to destinations configured by the operator.
+- **Scripts:** Use command-line options and explicit cleanup modes in scripts.
+- **MCP server:** Run `bsweep mcp` to expose ByteSweep tools to compatible Model Context Protocol clients, including Claude, Cursor, and VS Code.
+- **Remote workflows:** Combine SSH-based fleet inspection, transfer, and management commands.
+
+See the [CLI reference](docs/cli.md), [recipes](docs/recipes.md), and [MCP documentation](docs/mcp.md) for command details and examples.
+
+## Supported platforms
+
+ByteSweep CLI provides 23 builds across the operating systems and processor architectures listed below. The installer selects the appropriate build for the current system.
+
+| Operating system | Processor architectures | Notes |
 |---|---|---|
-| **Linux** | x86_64, ARM64, ARMv7, i386, RISC-V 64, ppc64le, s390x, LoongArch64 | Any distribution: Ubuntu, Debian, Fedora, RHEL, CentOS, AlmaLinux, Rocky Linux, openSUSE, Arch, Alpine and more |
-| **Mac** | Apple silicon (ARM64), Intel (x86_64) | macOS 11 Big Sur and later |
-| **Windows** | x64, ARM64, 32-bit (i386) | Windows 10 and 11 |
+| **Linux** | x86_64, ARM64, ARMv7, i386, RISC-V 64, ppc64le, s390x, LoongArch64 | Supports distributions including Ubuntu, Debian, Fedora, RHEL, CentOS, AlmaLinux, Rocky Linux, openSUSE, Arch, and Alpine. |
+| **macOS** | Apple silicon (ARM64), Intel (x86_64) | macOS 11 Big Sur and later. |
+| **Windows** | x64, ARM64, 32-bit (i386) | Windows 10 and 11. |
 | **FreeBSD** | x86_64, ARM64 |  |
 | **OpenBSD** | x86_64, ARM64 |  |
 | **NetBSD** | x86_64, ARM64 |  |
@@ -95,175 +222,120 @@ One static `bsweep` file for each system and processor: 23 builds in all. The in
 | **Solaris** | x86_64 |  |
 | **illumos** | x86_64 |  |
 | **AIX** | ppc64 |  |
-| **Android** (Termux) | ARM64 | Linux ARM64 build in Termux; looking only, because Android gives no root |
+| **Android (Termux)** | ARM64 | Read-only inspection; Android does not provide root access to the CLI. |
 
-Works in any terminal: Terminal, iTerm2, Windows Terminal, PowerShell, GNOME Terminal, Konsole, xterm, the Linux console, tmux, screen, PuTTY and over SSH. What differs on each system: [docs/platforms.md](docs/platforms.md).
+ByteSweep works in common terminal environments, including Terminal, iTerm2, Windows Terminal, PowerShell, GNOME Terminal, Konsole, xterm, the Linux console, tmux, screen, PuTTY, and SSH sessions.
 
-## Quick start
+See [platform details](docs/platforms.md) for platform-specific behavior.
 
-```sh
-sudo bsweep                        # the full-screen app
-bsweep why                         # one answer: why this disk is full
-sudo bsweep rescue                 # disk at 100%: free just enough, safest first
-bsweep clean --list                # everything that can go, by group
-sudo bsweep clean --safe --dry-run # what a safe clean would do, without doing it
-bsweep dupes /srv --dry-run        # duplicate files, and which copy would stay
-bsweep check                       # exit code for monitoring and cron
-```
+## How cleanup and Undo work
 
-## ByteSweep for your phone and computer
+ByteSweep distinguishes between file operations that can be staged for recovery and maintenance actions that must be performed through the operating system's own tools.
+
+### File cleanup with Undo
+
+- In the interactive Explore interface, supported file removals are moved to `<disk>/.bytesweep-undo` for seven days.
+- A move to the Undo area on the same disk does **not** immediately free disk space. The space is reclaimed when the Undo period ends or when Undo is emptied.
+- The interface explains this behavior.
+
+### Immediate removal
+
+- Immediate removal is available for supported commands and does not use Undo.
+- Use the explicit `--now` option where supported, or select the immediate-removal action in the interactive interface.
+- Immediate removal should be treated as permanent.
+
+### System-tool cleanup
+
+- Operations performed through tools such as `journalctl`, Docker, `apt`, and other package managers cannot be reversed through ByteSweep Undo.
+- The confirmation screen lists the commands that will run.
+
+**Operational guidance:** Use `--dry-run` where available, review every proposed command, and understand whether a cleanup action uses Undo before running it on an important system.
+
+## ByteSweep applications
+
+ByteSweep is also available as desktop and mobile applications. The CLI remains free; the applications have their own platform-specific features and trial or purchase terms.
 
 <p align="center">
-  <a href="https://bytesweep.app/?ref=github"><img src="docs/images/bytesweep-apps-en.png" width="900" alt="ByteSweep apps for iPhone, Android, Mac, Windows and Linux"></a>
+  <a href="https://bytesweep.app/?ref=github"><img src="docs/images/bytesweep-apps-en.png" width="920" alt="ByteSweep applications for iPhone, Android, Mac, Windows, and Linux"></a>
 </p>
 
-<p align="center">
-  <a href="https://apps.apple.com/us/app/bytesweep-storage-cleaner/id6811826959"><img alt="App Store: iPhone & iPad" src="https://img.shields.io/badge/App_Store-iPhone_%26_iPad-0D96F6?style=for-the-badge&logo=apple&logoColor=white" height="44"></a>
-  <a href="https://play.google.com/store/apps/details?id=com.bytesweep.app"><img alt="Google Play: Android" src="https://img.shields.io/badge/Google_Play-Android-34A853?style=for-the-badge&logo=googleplay&logoColor=white" height="44"></a>
-  <a href="https://apps.microsoft.com/detail/9N7WMJS8QCQX"><img alt="Microsoft Store: Windows" src="https://img.shields.io/badge/Microsoft_Store-Windows-0078D4?style=for-the-badge" height="44"></a>
-  <a href="https://bytesweep.app/mac.html?ref=github"><img alt="Download for Mac" src="https://img.shields.io/badge/Download-Mac-111111?style=for-the-badge&logo=apple&logoColor=white" height="44"></a>
-  <a href="https://bytesweep.app/linux.html?ref=github"><img alt="Download for Linux" src="https://img.shields.io/badge/Download-Linux-E95420?style=for-the-badge&logo=linux&logoColor=white" height="44"></a>
-</p>
+| Platform | Product capabilities | Availability |
+|---|---|---|
+| **iPhone &amp; iPad** | Find similar photos and duplicates, shrink large videos, and review older items by month. | Free for the first 1 GB and 30 items, then pay once. [App Store](https://apps.apple.com/us/app/bytesweep-storage-cleaner/id6811826959) |
+| **Android** | Find similar photos, duplicates, large videos, and unused apps. | Free for the first 1 GB and 30 items, then pay once. [Google Play](https://play.google.com/store/apps/details?id=com.bytesweep.app) |
+| **Mac** | Analyze storage usage, including System Data, Docker, and Xcode, with a seven-day Undo for supported removals. | Free to try for three days. Available through [direct download](https://bytesweep.app/mac.html?ref=github) and the [Mac App Store](https://apps.apple.com/us/app/bytesweep-storage-transfer/id6822710125?mt=12). |
+| **Windows** | Clean supported Windows Update leftovers, temporary files, browser caches, and game caches, with a seven-day Undo for supported removals. | Free to try for three days. [Microsoft Store](https://apps.microsoft.com/detail/9N7WMJS8QCQX) |
+| **Linux** | Clean supported package caches, old snaps, unused Flatpak runtimes, and system journal data; find duplicates and large files. | Free to try for three days. [Download for Linux](https://bytesweep.app/linux.html?ref=github) |
 
-The CLI is free and stays free. For the phone in your pocket and the computer on your desk there are ByteSweep apps, with the same rule: you see everything before it goes.
-
-<table>
-  <tr>
-    <td><b>iPhone &amp; iPad</b></td>
-    <td>Find similar photos and duplicates, shrink big videos and swipe through old months. Free for your first 1 GB and 30 items, then pay once.</td>
-    <td><a href="https://apps.apple.com/us/app/bytesweep-storage-cleaner/id6811826959"><img alt="App Store: iPhone & iPad" src="https://img.shields.io/badge/App_Store-iPhone_%26_iPad-0D96F6?style=for-the-badge&logo=apple&logoColor=white" height="36"></a></td>
-  </tr>
-  <tr>
-    <td><b>Android</b></td>
-    <td>Find similar photos, duplicates, big videos and unused apps. Free for your first 1 GB and 30 items, then pay once, no subscription.</td>
-    <td><a href="https://play.google.com/store/apps/details?id=com.bytesweep.app"><img alt="Google Play: Android" src="https://img.shields.io/badge/Google_Play-Android-34A853?style=for-the-badge&logo=googleplay&logoColor=white" height="36"></a></td>
-  </tr>
-  <tr>
-    <td><b>Mac</b></td>
-    <td>Finds what filled your Mac, from System Data to Docker and Xcode, with a 7-day Undo for what can go back. Free to try for 3 days. Also on the Mac App Store.</td>
-    <td><a href="https://bytesweep.app/mac.html?ref=github"><img alt="Download for Mac" src="https://img.shields.io/badge/Download-Mac-111111?style=for-the-badge&logo=apple&logoColor=white" height="36"></a><br><a href="https://apps.apple.com/us/app/bytesweep-storage-transfer/id6822710125?mt=12"><img alt="Mac App Store" src="https://img.shields.io/badge/Mac_App_Store-Mac-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" height="36"></a></td>
-  </tr>
-  <tr>
-    <td><b>Windows</b></td>
-    <td>Clears Windows Update leftovers, temp files and browser and game caches, with a 7-day Undo for what can go back. Free to try for 3 days.</td>
-    <td><a href="https://apps.microsoft.com/detail/9N7WMJS8QCQX"><img alt="Microsoft Store: Windows" src="https://img.shields.io/badge/Microsoft_Store-Windows-0078D4?style=for-the-badge" height="36"></a></td>
-  </tr>
-  <tr>
-    <td><b>Linux</b></td>
-    <td>Clears apt, dnf and pacman caches, old snaps, unused Flatpak runtimes and the journal, and finds duplicates and big files. Free to try for 3 days.</td>
-    <td><a href="https://bytesweep.app/linux.html?ref=github"><img alt="Download for Linux" src="https://img.shields.io/badge/Download-Linux-E95420?style=for-the-badge&logo=linux&logoColor=white" height="36"></a></td>
-  </tr>
-</table>
-
-## Every problem it answers
-
-| Pain on a real server | What ByteSweep does |
-|---|---|
-| `df` says full, `du` disagrees | Held tab: deleted files still open, who holds them. Overview names any gap a scan can't see |
-| "No space left" with free bytes | Inodes per disk, Explore sorts by file count (`i`) |
-| Docker ate the disk | Build cache, untagged and unused images, stopped containers, container logs `docker system df` doesn't show; every VM (Colima, Lima, Podman, Multipass, Vagrant, minikube, Android emulators...) by name, with space it can give back |
-| A blind prune deleted a database | Volumes are never pruned. Databases and /var/lib/docker can't be cleaned by hand either |
-| Journal, rotated logs, huge live logs | Vacuum through journalctl; live logs emptied in place so services keep writing |
-| /boot full, upgrades fail | Old kernels, never the running one |
-| Package and language caches, old snaps, crash dumps, old /tmp | Each through its own tool; the exact command is shown first |
-| The plan was upgraded, the disk wasn't | Finds disk space outside any partition |
-| ext4's hidden 5% | Names reserved space and the tune2fs line |
-| It fills again next month | Prevent tab: journal cap, Docker log limit, daily record |
-| "What changed overnight?" | What grew, and when the disk will be full at this pace |
-| The scan slows production | Runs at low CPU and idle disk priority; stays on one disk |
-| Disk at 100% and everything is failing | `bsweep rescue` or `R`: frees just enough, safest first, then names the services that stopped. Writes nothing to the full disk |
-| Podman or Kubernetes nodes | Same cleanup through podman and crictl; volumes stay untouched |
-| Snapshots holding space | `bsweep snapshots`: Time Machine, restore points, shadow copies, Timeshift, Snapper, ZFS, Btrfs and LVM, with sizes where the tool can say. Removes only what you pick and keeps the newest of each |
-| Files hidden under a mount | Looks beneath every mount through a read-only bind and shows how to reach them |
-| Old deploys and web app leftovers | Old releases (keeps live + 3), WordPress cache, Laravel logs, PHP sessions |
-| Logs need clearing regularly | `bsweep logs clear`, or `bsweep schedule logs` daily, weekly or monthly |
-| A log nothing rotates | Prevent writes a logrotate rule, tested before it stays |
-| Old projects filling a busy disk | `bsweep archive /srv/old --to /mnt/backup`: to another disk, every file checked by checksum, then freed; `where` works with it unplugged, `bring-back` puts it back |
-| Old logs and dumps taking space | `bsweep compress /var/log --older 30d`: gzip where it saves, read back before the original goes to Undo; live logs stay |
-| The same files, three times over | `bsweep dupes`: copies by content, hard links and clones counted once; keep one, the rest to Undo |
-| Downloads full of old installers and "(1)" copies | `bsweep tidy`: the desktop's rules, each file to Undo; `organize`, `rename` and `convert` for the rest, each shown first and undoable |
-| "What is on port 3000?" | `bsweep ports`: program, project or container, open to the network or not; stop a dev project in one go |
-| Which package is huge, and what removed apps left | `bsweep apps`: every package and app, largest first; remove through apt, dnf, pacman, snap, flatpak or brew after their own dry run; never what the system needs |
-| Chat apps quietly filling the disk | Chats and Mail group: Slack, Teams, Discord, Element and Thunderbird caches for review; Telegram files and Zoom recordings only one by one, to Undo |
-| Which apps can use the camera, microphone or screen? | `bsweep permissions`: allowed and refused, last used and in use now where the system records it (macOS TCC, Windows privacy settings, Flatpak, Snap, open devices); only reads, says where to switch each off |
-| Command history and other traces | Privacy traces group: shell and REPL history, recent files, previews, editor backups; always for review, each to Undo |
-| Updates waiting, and is a restart needed? | `bsweep updates`: security fixes first, through apt, dnf, zypper, pacman, apk, snap, flatpak, Homebrew, winget, macOS's Software Update or Windows Update; names who holds a busy package lock; never restarts by itself |
-| A program that won't quit | `bsweep stop PID\|NAME`, or `s` on Live: asks it to close, 10 seconds to save; never sshd, PID 1 or your own shell, and a service gets its `systemctl` command instead |
-| "Why did it wake up at 3 am?" | `bsweep sleep`: each sleep and what woke it (lid, USB, Bluetooth, network, a timer), what keeps it awake now, wakes planned; advice only, no power setting changed. A server that never sleeps says so |
-| "What can people see?" | `bsweep sharesafe`: shared folders (guest? can they change files?), file and screen sharing, SSH, remote desktop, open ports, Docker's published ports, the firewall; a risk for each and where to switch it off. Only reads |
-| What starts by itself, and what failed | `bsweep startup`: systemd, cron @reboot, launchd, Windows services; the system's own only with `--all`; switch off and back on exactly |
-| Service died in the night | Health tab: out-of-memory kills, failed services, crash loops |
-| A disk about to die | `bsweep drives`: every physical disk Healthy, Worn or Failing, and why in plain words; `check` and Health warn too. Only reads |
-| "Do the backups even run?" | Health names the tool (restic, borg, rsnapshot, duplicity, Timeshift, Snapper, vzdump, Time Machine, Windows Backup) and when it last worked or failed. No repository password needed |
-| Certificate expired by surprise | Reads nginx, Apache, Caddy and Let's Encrypt certs; flags broken renewal |
-| Updates, SSH, firewall, backups | Health on macOS and Windows also reads the firewall, FileVault or BitLocker, SIP and Gatekeeper or the antivirus. Advice with exact commands. ByteSweep won't change SSH or firewalls: that's how people get locked out |
-| Many servers | `bsweep fleet`: one table over SSH, nothing installed |
-| Moving files without scp syntax | Save a host once, then `bsweep copy-to office ./site /srv/site` |
-| A dropped transfer starts over | Resumes where it stopped and sends only what changed |
-| A sync wipes the wrong folder | Shows changes first, keeps removed files 7 days, refuses to empty a folder |
-| Reviewing a server from your laptop | `bsweep connect office` opens the full app on it |
-| Too many servers to keep track of | `bsweep manage`: every server on one screen, with live Monitor and bulk actions |
-| Part of a monitoring setup | `bsweep check` exit codes, webhook, `report --json`, `clean --safe --yes` |
-
-Every command and exit code: [docs/cli.md](docs/cli.md). Cron, Ansible, CI and fleet examples: [docs/recipes.md](docs/recipes.md).
-
-## How Clean and Undo work
-
-- **Clean** in Explore moves the file to `<disk>/.bytesweep-undo` for 7 days. A move on the
-  same disk frees nothing, so the space returns when Undo ends. The screen says this.
-- **Remove now** returns the space at once, with no Undo: `F` in the app's question, `--now` on
-  every command that would use Undo (rm, dupes, clean, apps, tidy, compress). That is the choice
-  on a disk at 100%. `bsweep undo free --all` empties Undo itself.
-- Rule cleanups go through journalctl, docker, apt and friends, and can't be undone. The
-  confirm screen lists every command.
-
-## Hosts, transfer and sync
-
-Set a host up once in `bsweep.yml` (`bsweep init`, then `bsweep host add`), and use its short name after
-that, from a server or from a Mac or Windows command line. See [docs/transfer.md](docs/transfer.md).
-
-## AI assistants (MCP)
-
-`bsweep mcp` lets Claude Desktop, Claude Code, Cursor, VS Code and other MCP clients look at a machine
-and help clean it, with the same rules as the command line. See [docs/mcp.md](docs/mcp.md).
-
-## FAQ
-
-**How do I find out what is using disk space on Linux?**
-Run `bsweep why` for a one-screen answer, or `sudo bsweep` and open Explore to walk the folders,
-largest first. It also counts what a folder walk can't: deleted files still held open, Docker, snapshots and reserved space.
-
-**Why does `df` say the disk is full when `du` adds up to less?**
-Usually a program still holds a deleted file open, often a log. The Held screen lists each one and the
-service that holds it, and empties a held log in place so the service keeps writing.
-
-**How do I fix "No space left on device" when `df` shows free space?**
-The disk is out of inodes: too many small files. ByteSweep shows inodes per disk, and Explore sorts by
-file count (`i`) to find the folder that holds them.
-
-**How do I free Docker disk space safely?**
-`bsweep clean --list --group containers` lists build cache, unused images, stopped containers and
-container logs. Volumes are never pruned, because a volume can be a database.
-
-**My server's disk is at 100%. What now?**
-`sudo bsweep rescue`, or `R` in the app. It frees just enough, safest first, writes nothing to the full
-disk, then names the services that stopped.
-
-**Is it safe to run on a production server?**
-Every cleanup shows its exact command first, `--dry-run` previews anything, removed files wait in Undo
-for 7 days, and scans run at low CPU and idle disk priority. It never removes databases, Docker volumes
-or the running kernel, never picks a snapshot for you, and never changes SSH or firewall settings.
-
-**Is it free? Does it send data anywhere?**
-Free, with no account, analytics or trial. It goes online only when you ask:
-`bsweep update`, alerts to the places you add, and SSH for fleet, copy and sync.
+For product details and downloads, visit [bytesweep.app](https://bytesweep.app/).
 
 ## Privacy
 
-No analytics and no account. Nothing about you or your files leaves the machine. bsweep goes
-online only when you ask it to: `bsweep update` downloads from bytesweep.app (and checks the
-signature first), alerts go only to the places you add, and fleet, copy and sync use your own SSH.
+### ByteSweep CLI
+
+The CLI does not require an account and does not include analytics. Information about the system and its files stays on the machine during local use.
+
+The CLI connects to external services only when the operator requests an action that needs a connection, such as:
+
+- `bsweep update` to download an update from `bytesweep.app` and verify its signature;
+- sending alerts to destinations configured by the operator;
+- SSH-based fleet, copy, and sync operations initiated by the operator.
+
+## Documentation
+
+| Resource | Description |
+|---|---|
+| [CLI command reference](docs/cli.md) | Commands, options, and exit codes. |
+| [Platform support](docs/platforms.md) | Operating-system and processor support, including platform-specific differences. |
+| [Recipes and automation](docs/recipes.md) | Examples for cron, Ansible, CI, and fleet workflows. |
+| [File transfer](docs/transfer.md) | Host configuration, remote copy, and sync workflows. |
+| [MCP integration](docs/mcp.md) | Connect ByteSweep to compatible MCP clients. |
+| [Product website](https://bytesweep.app/) | ByteSweep products and downloads. |
+
+## Frequently asked questions
+
+### How do I find out what is using disk space on Linux?
+
+Run `bsweep why` for a concise explanation, or launch `sudo bsweep` and use Explore to inspect directories from largest to smallest. ByteSweep can also report usage that a directory walk may not account for, including deleted files held open, Docker data, snapshots, and reserved space.
+
+### Why does `df` report more usage than `du`?
+
+A process may still hold a deleted file open. The Held view identifies the file and the process or service holding it.
+
+### Why does a system report “No space left on device” when bytes are available?
+
+The filesystem may have run out of inodes. ByteSweep displays inode usage per filesystem and can help locate directories containing large numbers of small files.
+
+### How can I inspect Docker disk usage safely?
+
+Use:
+
+```sh
+bsweep clean --list --group containers
+```
+
+This lists supported cleanup opportunities such as build cache, unused images, stopped containers, and container logs. **Docker volumes are not pruned.**
+
+### Can I use ByteSweep on a production server?
+
+ByteSweep includes review and dry-run workflows, runs scans at low CPU and idle disk priority, and does not remove databases, Docker volumes, or the running kernel. However, not every operation is reversible: system-tool cleanup and immediate removal do not use the seven-day Undo workflow. Review the exact commands and recovery behavior before applying changes on production systems.
+
+### Does ByteSweep CLI require an account or licence?
+
+No. ByteSweep CLI is free, with no account, licence key, or trial.
+
+### Does ByteSweep run a background service?
+
+No. The CLI is distributed as a static executable and does not leave a resident agent running.
+
+## Contributing and support
+
+For command usage and platform behavior, start with the [documentation](#documentation). Product information and application downloads are available at [bytesweep.app](https://bytesweep.app/).
 
 ---
 
-ByteSweep also comes as a desktop app for Mac, Windows and Linux: [bytesweep.app](https://bytesweep.app/?ref=github)
+<p align="center">
+  <strong>ByteSweep</strong><br>
+  <sub>Storage &amp; Management Toolkit</sub><br>
+  <a href="https://bytesweep.app/">bytesweep.app</a>
+</p>
