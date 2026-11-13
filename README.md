@@ -336,6 +336,6 @@ For command usage and platform behavior, start with the [documentation](#documen
 
 <p align="center">
   <strong>ByteSweep</strong><br>
-  <sub>Storage &amp; Management Toolkit</sub><br>
+  <sub>Storage Management Toolkit</sub><br>
   <a href="https://bytesweep.app/">bytesweep.app</a>
 </p>
