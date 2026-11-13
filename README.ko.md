@@ -66,6 +66,12 @@ Linux, macOS, BSD:
 curl -fsSL https://bytesweep.app/install-cli.sh | sudo sh
 ```
 
+또는 같은 스크립트를 GitHub에서 바로 실행합니다:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/bytesweepcleaner/bytesweep/main/install-cli.sh | sudo sh
+```
+
 Windows(관리자 권한 PowerShell):
 
 ```powershell

@@ -66,6 +66,12 @@ Linux, macOS en de BSD's:
 curl -fsSL https://bytesweep.app/install-cli.sh | sudo sh
 ```
 
+Of voer hetzelfde script direct vanaf GitHub uit:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/bytesweepcleaner/bytesweep/main/install-cli.sh | sudo sh
+```
+
 Windows (PowerShell als administrator):
 
 ```powershell
